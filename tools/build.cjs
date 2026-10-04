@@ -1,0 +1,20 @@
+'use strict';
+// Create a clean deployable Node application. No credentials or runtime data are included.
+const fs=require('fs'),path=require('path');
+require('./verify.cjs');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'dist');
+if(path.dirname(out)!==root||path.basename(out)!=='dist')throw new Error('Unexpected build path');
+fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out,{recursive:true});
+const dirs=['about','admin','assets','blog','case-studies','contact','faqs','lib','llm-info','locations','privacy-policy','services','startups','subscription','terms-conditions','testimonials'];
+const media=require('../data/public-media.json');
+for(const dir of dirs)fs.cpSync(path.join(root,dir),path.join(out,dir),{recursive:true,filter:source=>{const relative=path.relative(path.join(root,'assets/images'),source).split(path.sep).join('/');return !source.startsWith(path.join(root,'assets/images')+path.sep)||fs.statSync(source).isDirectory()||media.includes(relative);}});
+for(const file of ['index.html','404.html','CODEINE_Portfolio.html','server.js','package.json','package-lock.json','Dockerfile','.dockerignore','.env.example','README_CMS.md','FINAL_BUILD.md','sitemap.xml','robots.txt','llms.txt'])fs.copyFileSync(path.join(root,file),path.join(out,file));
+fs.mkdirSync(path.join(out,'data'),{recursive:true});
+for(const file of ['railway.json','RAILWAY.md'])fs.copyFileSync(path.join(root,file),path.join(out,file));
+for(const file of ['projects.json','project-redirects.json','public-media.json'])fs.copyFileSync(path.join(root,'data',file),path.join(out,'data',file));
+fs.cpSync(path.join(root,'test'),path.join(out,'test'),{recursive:true});
+fs.mkdirSync(path.join(out,'tools'));
+for(const file of ['verify.cjs','build.cjs','migrate-cloud.cjs','verify-cloud.cjs'])fs.copyFileSync(path.join(root,'tools',file),path.join(out,'tools',file));
+fs.mkdirSync(path.join(out,'docs'));
+for(const file of ['entity.txt','CLOUD_STORAGE.md','cloud-migration.json','cloud-verification.json','cloud-browser-verification.json'])if(fs.existsSync(path.join(root,'docs',file)))fs.copyFileSync(path.join(root,'docs',file),path.join(out,'docs',file));
+console.log('Production package ready: '+out+' (npm ci --omit=dev, configure environment, npm start).');

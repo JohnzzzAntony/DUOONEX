@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-02T22:32:46.066Z",
+  "results": [
+    {
+      "width": 1440,
+      "route": "/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 1440,
+      "route": "/case-studies/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 1440,
+      "route": "/case-studies/nexora/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 1440,
+      "route": "/case-studies/finora/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 1440,
+      "route": "/case-studies/invitara/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 1440,
+      "route": "/contact/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 390,
+      "route": "/case-studies/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 390,
+      "route": "/case-studies/nexora/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 390,
+      "route": "/case-studies/finora/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 390,
+      "route": "/case-studies/invitara/",
+      "imagesLoaded": true
+    },
+    {
+      "width": 390,
+      "route": "/contact/",
+      "imagesLoaded": true
+    }
+  ],
+  "videoPlayed": true,
+  "errors": []
+}

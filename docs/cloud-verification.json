@@ -1,0 +1,13 @@
+{
+  "pages": 86,
+  "media": 29,
+  "checks": [
+    "Object-storage video byte ranges",
+    "PostgreSQL draft/publish and concurrent-edit conflict",
+    "CMS upload stored and served through object storage",
+    "Enquiry written to PostgreSQL and removed after verification",
+    "Database content and uploaded media survive application restart"
+  ],
+  "completedAt": "2026-10-04T14:20:26.776Z",
+  "temporaryDataRemoved": true
+}
