@@ -163,10 +163,14 @@ function createServer(options={}) {
   return server;
 }
 async function createConfiguredServer(options={}){
+  require('./lib/startup').validateStartupEnvironment({...process.env,CMS_ADMIN_TOKEN:options.secret||process.env.CMS_ADMIN_TOKEN});
   if(!process.env.DATABASE_URL)return createServer(options);
   const storage=await require('./lib/cloud').createCloudStorage();
   try{require('./lib/pages').loadDatabasePages(storage.pages);seo.loadDatabaseSettings(storage.config);return createServer({...options,storage,publicMedia:storage.config.publicMedia,notFoundHtml:storage.config.notFoundHtml});}
   catch(e){await storage.close();throw e;}
 }
-if(require.main===module)createConfiguredServer().then(server=>server.listen(Number(process.env.PORT||3000),process.env.HOST||'0.0.0.0',()=>console.log('DuooNex ready on port '+(process.env.PORT||3000)+' ('+(process.env.DATABASE_URL?'PostgreSQL + object storage':'local storage')+')'))).catch(()=>{console.error('Startup failed. Check database migration, storage settings and admin secret.');process.exitCode=1;});
+if(require.main===module){
+  const failed=error=>{console.error(require('./lib/startup').startupDiagnostic(error));process.exitCode=1;};
+  createConfiguredServer().then(server=>{server.on('error',error=>{failed(error);server.close();});server.listen(Number(process.env.PORT||3000),process.env.HOST||'0.0.0.0',()=>console.log('DuooNex ready on port '+(process.env.PORT||3000)+' ('+(process.env.DATABASE_URL?'PostgreSQL + object storage':'local storage')+')'));}).catch(failed);
+}
 module.exports={createServer,createConfiguredServer};
