@@ -8,5 +8,6 @@ test
 *.log
 dist
 release
+portfolio-mockups
 tools
 docs

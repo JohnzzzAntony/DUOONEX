@@ -12,16 +12,18 @@
 - [UI/UX design](https://duoonex.com/services/ui-ux-design/): Figma journeys, interfaces and prototypes.
 
 ## Selected projects
-- [Karji Perfumes](https://duoonex.com/case-studies/kodezi/): A luxury retail storefront bringing fragrance brands, watches and accessories into a clear product-discovery journey.
-- [Touch of Oud](https://duoonex.com/case-studies/off-white/): An Arabian fragrance storefront connecting perfume, oud, home fragrance and gifting through brand-led product content.
-- [Flower District](https://duoonex.com/case-studies/tournated/): A floral and gifting storefront organised around collections, occasions, bespoke events and store information.
-- [Daima](https://duoonex.com/case-studies/callai/): A gourmet e-commerce storefront for dates, chocolates, Arabic sweets and gifting, with category-led product discovery.
-- [Nexora](https://duoonex.com/case-studies/nexora/): A shared workspace for support tickets, tasks, approvals and customer service, with organisation-scoped access and activity history.
 - [Finora](https://duoonex.com/case-studies/finora/): A UAE-focused accounting platform connecting sales, purchases, inventory, banking and ledger-based business reports.
-- [Invitara](https://duoonex.com/case-studies/invitara/): Five animated invitation experiences with personalisation, guest replies, account-based publishing and event-date access rules.
+- [Nexora](https://duoonex.com/case-studies/nexora/): A shared workspace for support tickets, tasks, approvals and customer service, with organisation-scoped access and activity history.
+- [Invitara](https://duoonex.com/case-studies/invitara/): Animated digital invitations with personalisation, guest replies, account-based publishing and event-date access rules.
 - [Mechaura International](https://duoonex.com/case-studies/mechaura/): An industrial catalogue website connecting UAE buyers with product specifications, sector information and quotation enquiries.
-- [AssetHub](https://duoonex.com/case-studies/assethub/): An IT asset management workspace for equipment records, assignments, locations, maintenance and lifecycle history.
-- [Jaber Property Manager](https://duoonex.com/case-studies/jaber-property/): A property operations application linking companies, properties, units, main leases, subleases and rental records.
+- [WorkFlow Hub](https://duoonex.com/case-studies/workflow-hub/): An internal tool that turns incoming emails into owned tasks, drafts professional replies and chases work until it is closed.
+- [DREC Property Management System](https://duoonex.com/case-studies/drec-pms/): A property and lease platform managing plots, units, subtenants, subleases, EJARI registrations, rent collection and compliance alerts.
+- [CertGuard](https://duoonex.com/case-studies/certguard/): A domain and SSL control panel that verifies expiry dates against live sources, alerts before expiry and automates certificate renewal.
+- [Mino Suppliers](https://duoonex.com/case-studies/mino-suppliers/): An eco-friendly hygiene paper supplier website with a B2B portal for custom pricing, approvals, net-terms ordering and invoices.
+- [JKR International](https://duoonex.com/case-studies/jkr-international/): A medical equipment storefront for the UAE combining direct purchase, an enquiry cart for quotations and a full admin panel.
+- [The House of Karji](https://duoonex.com/case-studies/house-of-karji/): A custom luxury fragrance storefront with editorial merchandising, a fragrance finder and a full commerce admin.
+- [Carter Studio](https://duoonex.com/case-studies/carter-studio/): A dark, motion-led website for a freelance web studio with services, portfolio, pricing, blog and an admin CMS.
+- [Rydge Studio](https://duoonex.com/case-studies/rydge-studio/): An editorial creative-studio portfolio where every word, image and section is editable from an admin backend.
 
 ## Company and contact
 - [About DuooNex](https://duoonex.com/about/)

@@ -1,150 +1,48 @@
 [
   {
-    "slug": "kodezi",
-    "name": "Karji Perfumes",
-    "category": "Luxury retail storefront",
-    "url": "https://www.karjistore.com/",
-    "stack": "Commerce",
-    "tags": "Websites|B2B/B2C",
+    "slug": "finora",
+    "name": "Finora",
+    "category": "Accounting & business operations",
+    "stack": "Next.js",
+    "tags": "Websites|SaaS|Fintech|AI|B2B/B2C",
     "media": [
-      "karji.webp",
-      "karji-detail.webp"
+      "finora-mockup-1.webp",
+      "finora-mockup-2.webp",
+      "finora-mockup-3.webp",
+      "finora-mockup-4.webp",
+      "finora-mockup-5.webp",
+      "finora-signin.png",
+      "finora-signin-mobile.png"
     ],
     "alt": [
-      "Karji Perfumes working storefront homepage",
-      "Karji Perfumes product discovery and catalogue view"
+      "Finora dashboard on laptop, tablet and phone — cash, receivables, payables and cash-position chart",
+      "Finora invoice list with outstanding, overdue and draft totals across three screen sizes",
+      "Finora invoice detail showing allocations and the ledger entries it posted",
+      "Finora profit and loss report derived from the general ledger",
+      "Finora journal register with posted entries from invoices, bills and expenses",
+      "Finora public sign-in interface, captured from the developed application",
+      "Finora mobile sign-in interface"
     ],
+    "summary": "A UAE-focused accounting platform connecting sales, purchases, inventory, banking and ledger-based business reports.",
+    "overview": "Finora is a business accounting application designed around the daily work of UAE trading and service companies. Sales, purchases, expenses and inventory connect to a double-entry ledger. Teams can review invoices, payments, bank transactions and reports within the same organisation workspace.",
+    "detail": "The implementation uses Next.js, TypeScript and Prisma, with money stored in integer minor units. The source includes balanced journal posting, reversing entries, document numbering, inventory movements, UAE VAT handling and role-based access. The device mockups were captured from a local build running demonstration data for a fictional trading company; no customer or financial records are shown.",
     "features": [
-      "Fragrance and brand navigation",
-      "Watches and accessories",
-      "Product comparison and discovery",
-      "Collection and product content",
-      "Mobile shopping journeys",
-      "Storefront content structure"
+      "Sales invoices, quotes and customer payments",
+      "Purchase orders, bills and vendor payments",
+      "Bank accounts, transfers and reconciliation",
+      "Inventory items, warehouses and valuation",
+      "P&L, balance sheet, trial balance and ageing reports",
+      "UAE VAT return view, roles and AI assistance"
     ],
-    "summary": "A luxury retail storefront bringing fragrance brands, watches and accessories into a clear product-discovery journey.",
-    "overview": "Karji Perfumes brings a broad luxury retail catalogue into one storefront. The website combines fragrance brands, watches and accessories with product discovery and shopping actions. The project scope centres on catalogue structure, product content and the customer journey across desktop and mobile.",
-    "detail": "The gallery contains original captures of the working Karji Perfumes website taken for this portfolio. They show the public storefront and its product-discovery content. The case study describes the supplied project scope and visible experience; it does not attribute sales or conversion results to the build.",
-    "journey": "The Karji Perfumes journey begins with fragrance and brand navigation and moves towards a relevant product or enquiry. Watches and accessories and product comparison and discovery help explain the range. Clear product information supports the next action without making visitors rely only on imagery.",
-    "engineering": "The work connects collection and product content with reusable storefront patterns. Category labels, product information and mobile interactions should remain consistent across the catalogue. The case study focuses on the customer-facing work rather than claiming unverified backend or fulfilment integrations.",
-    "delivery": "The evidenced scope for Karji Perfumes covers the storefront experience and the areas listed above. Live product prices, stock and operational policies are maintained by the retailer. Screenshots record the website at the time of capture and may differ from later updates.",
-    "next": "For a related UAE commerce project, start with the catalogue, customer decisions and content ownership. Karji Perfumes provides a concrete reference for luxury retail storefront; the appropriate platform and integration scope should follow your own business requirements.",
+    "journey": "Users move from a customer or supplier record to a commercial document, then to posting and settlement. Every invoice shows the journal entries it created, so staff can trace a balance back to its source. The dashboard summarises cash, receivables and payables and links overdue items to the underlying records.",
+    "engineering": "Financial documents feed balanced journal entries rather than isolated dashboard totals. The code represents amounts in fils and handles corrections through reversing entries. Tenant context, roles and server-side validation are part of the implementation, alongside reporting, approvals and recurring documents.",
+    "delivery": "Developed application; not deployed to a public live URL. The documented scope includes accounting, inventory, banking, reports and account administration. The assistant and external services depend on their configured providers. Tax settings and financial reports need business-specific review before operational use; the portfolio does not represent regulatory certification.",
+    "next": "Finora illustrates a custom business platform built around connected records and traceable transactions. A comparable UAE project starts with the chart of accounts, document lifecycle, approval responsibilities and migration requirements.",
     "steps": [
-      "Structure fragrance and brand navigation so customers can identify the relevant range.",
-      "Connect product comparison and discovery with informative product detail pages.",
-      "Make collection and product content consistent with the wider storefront journey.",
-      "Review mobile shopping journeys alongside navigation and shopping actions."
-    ]
-  },
-  {
-    "slug": "off-white",
-    "name": "Touch of Oud",
-    "category": "Fragrance & gifting commerce",
-    "url": "https://www.touchofoud.com/",
-    "stack": "Commerce",
-    "tags": "Websites|B2B/B2C",
-    "media": [
-      "touch-of-oud.webp",
-      "touch-of-oud-detail.webp"
-    ],
-    "alt": [
-      "Touch of Oud working storefront homepage",
-      "Touch of Oud product discovery and catalogue view"
-    ],
-    "features": [
-      "Perfume and oud collections",
-      "Home fragrance and body scent",
-      "Gift boxes and product discovery",
-      "Brand-led product storytelling",
-      "Mobile catalogue navigation",
-      "Product selection and cart journeys"
-    ],
-    "summary": "An Arabian fragrance storefront connecting perfume, oud, home fragrance and gifting through brand-led product content.",
-    "overview": "Touch of Oud presents perfume, oud, home fragrance and gifting through a brand-led storefront. Customers move from a collection into product details and selection. The project focus connects visual storytelling with clear categories and a practical mobile shopping journey.",
-    "detail": "The gallery contains original captures of the working Touch of Oud website taken for this portfolio. They show the public storefront and its product-discovery content. The case study describes the supplied project scope and visible experience; it does not attribute sales or conversion results to the build.",
-    "journey": "The Touch of Oud journey begins with perfume and oud collections and moves towards a relevant product or enquiry. Home fragrance and body scent and gift boxes and product discovery help explain the range. Clear product information supports the next action without making visitors rely only on imagery.",
-    "engineering": "The work connects brand-led product storytelling with reusable storefront patterns. Category labels, product information and mobile interactions should remain consistent across the catalogue. The case study focuses on the customer-facing work rather than claiming unverified backend or fulfilment integrations.",
-    "delivery": "The evidenced scope for Touch of Oud covers the storefront experience and the areas listed above. Live product prices, stock and operational policies are maintained by the retailer. Screenshots record the website at the time of capture and may differ from later updates.",
-    "next": "For a related UAE commerce project, start with the catalogue, customer decisions and content ownership. Touch of Oud provides a concrete reference for fragrance & gifting commerce; the appropriate platform and integration scope should follow your own business requirements.",
-    "steps": [
-      "Structure perfume and oud collections so customers can identify the relevant range.",
-      "Connect gift boxes and product discovery with informative product detail pages.",
-      "Make brand-led product storytelling consistent with the wider storefront journey.",
-      "Review mobile catalogue navigation alongside navigation and shopping actions."
-    ]
-  },
-  {
-    "slug": "tournated",
-    "name": "Flower District",
-    "category": "Flowers & occasion gifting",
-    "url": "https://flowerdistrict.ae/",
-    "stack": "Commerce",
-    "tags": "Websites|B2B/B2C",
-    "media": [
-      "flower-district.webp",
-      "flower-district-detail.webp"
-    ],
-    "alt": [
-      "Flower District working storefront homepage",
-      "Flower District product discovery and catalogue view"
-    ],
-    "features": [
-      "Floral and eternal collections",
-      "Occasion-led product discovery",
-      "Curated gift sets",
-      "Event and bespoke enquiries",
-      "Store location information",
-      "Mobile gifting journeys"
-    ],
-    "summary": "A floral and gifting storefront organised around collections, occasions, bespoke events and store information.",
-    "overview": "Flower District brings floral collections, gift sets and event enquiries into an occasion-led website. Customers can browse the range, explore gifting options and find store information. The project focus is a clear journey between inspiration, product details and the next shopping or enquiry action.",
-    "detail": "The gallery contains original captures of the working Flower District website taken for this portfolio. They show the public storefront and its product-discovery content. The case study describes the supplied project scope and visible experience; it does not attribute sales or conversion results to the build.",
-    "journey": "The Flower District journey begins with floral and eternal collections and moves towards a relevant product or enquiry. Occasion-led product discovery and curated gift sets help explain the range. Clear product information supports the next action without making visitors rely only on imagery.",
-    "engineering": "The work connects event and bespoke enquiries with reusable storefront patterns. Category labels, product information and mobile interactions should remain consistent across the catalogue. The case study focuses on the customer-facing work rather than claiming unverified backend or fulfilment integrations.",
-    "delivery": "The evidenced scope for Flower District covers the storefront experience and the areas listed above. Live product prices, stock and operational policies are maintained by the retailer. Screenshots record the website at the time of capture and may differ from later updates.",
-    "next": "For a related UAE commerce project, start with the catalogue, customer decisions and content ownership. Flower District provides a concrete reference for flowers & occasion gifting; the appropriate platform and integration scope should follow your own business requirements.",
-    "steps": [
-      "Structure floral and eternal collections so customers can identify the relevant range.",
-      "Connect curated gift sets with informative product detail pages.",
-      "Make event and bespoke enquiries consistent with the wider storefront journey.",
-      "Review store location information alongside navigation and shopping actions."
-    ]
-  },
-  {
-    "slug": "callai",
-    "name": "Daima",
-    "category": "Gourmet retail & gifting",
-    "url": "https://www.daima.ae/",
-    "stack": "Commerce",
-    "tags": "Websites|B2B/B2C",
-    "media": [
-      "daima.webp",
-      "daima-detail.webp"
-    ],
-    "alt": [
-      "Daima working storefront homepage",
-      "Daima product discovery and catalogue view"
-    ],
-    "features": [
-      "Dates and chocolate collections",
-      "Arabic sweets and gourmet products",
-      "Category and product search",
-      "Gift assortment presentation",
-      "Mobile product information",
-      "Customer account and cart journeys"
-    ],
-    "summary": "A gourmet e-commerce storefront for dates, chocolates, Arabic sweets and gifting, with category-led product discovery.",
-    "overview": "Daima presents dates, chocolates, Arabic sweets and other gourmet products in a category-led storefront. Product discovery, gifting context and clear selection information are central to the experience. The project focuses on helping customers navigate a broad range without losing the path to the cart.",
-    "detail": "The gallery contains original captures of the working Daima website taken for this portfolio. They show the public storefront and its product-discovery content. The case study describes the supplied project scope and visible experience; it does not attribute sales or conversion results to the build.",
-    "journey": "The Daima journey begins with dates and chocolate collections and moves towards a relevant product or enquiry. Arabic sweets and gourmet products and category and product search help explain the range. Clear product information supports the next action without making visitors rely only on imagery.",
-    "engineering": "The work connects gift assortment presentation with reusable storefront patterns. Category labels, product information and mobile interactions should remain consistent across the catalogue. The case study focuses on the customer-facing work rather than claiming unverified backend or fulfilment integrations.",
-    "delivery": "The evidenced scope for Daima covers the storefront experience and the areas listed above. Live product prices, stock and operational policies are maintained by the retailer. Screenshots record the website at the time of capture and may differ from later updates.",
-    "next": "For a related UAE commerce project, start with the catalogue, customer decisions and content ownership. Daima provides a concrete reference for gourmet retail & gifting; the appropriate platform and integration scope should follow your own business requirements.",
-    "steps": [
-      "Structure dates and chocolate collections so customers can identify the relevant range.",
-      "Connect category and product search with informative product detail pages.",
-      "Make gift assortment presentation consistent with the wider storefront journey.",
-      "Review mobile product information alongside navigation and shopping actions."
+      "Create customer and supplier records with the details needed for documents.",
+      "Manage invoices, bills, payments and their posting lifecycle.",
+      "Reconcile bank activity and review stock movements across warehouses.",
+      "Use ledger-based reports and VAT summaries to understand the business."
     ]
   },
   {
@@ -155,23 +53,33 @@
     "tags": "Websites|SaaS|B2B/B2C",
     "repo": "https://github.com/JohnzzzAntony/Ticketing-",
     "media": [
+      "nexora-mockup-1.webp",
+      "nexora-mockup-2.webp",
+      "nexora-mockup-3.webp",
+      "nexora-mockup-4.webp",
+      "nexora-mockup-5.webp",
       "nexora-signin.png",
       "nexora-signin-mobile.png"
     ],
     "alt": [
+      "Nexora workspace dashboard on laptop, tablet and phone",
+      "Nexora ticket queue with status, priority and assignee columns",
+      "Nexora ticket detail with conversation, properties and service targets",
+      "Nexora public product page — Connect. Assign. Achieve.",
+      "Nexora customer portal listing a customer's own requests",
       "Nexora public sign-in interface, captured from the developed application",
       "Nexora mobile sign-in interface"
     ],
     "summary": "A shared workspace for support tickets, tasks, approvals and customer service, with organisation-scoped access and activity history.",
     "overview": "Nexora is a help desk and work management application for teams handling service requests alongside everyday tasks. Staff can assign tickets, track status, add internal notes and coordinate project work. Customers have a separate portal, while organisation-level permissions keep each workspace focused on its own records.",
-    "detail": "Built with Next.js, React, TypeScript, Prisma and PostgreSQL, the application connects ticket handling with assets, knowledge articles and approvals. Its source includes authentication, workspace membership, private attachments and scoped API access. The gallery shows the actual sign-in interface, captured locally without customer records.",
+    "detail": "Built with Next.js, React, TypeScript, Prisma and PostgreSQL, the application connects ticket handling with assets, knowledge articles and approvals. Its source includes authentication, workspace membership, private attachments and scoped API access. The device mockups show the seeded demonstration workspace (fictional users and requests), not a customer account.",
     "features": [
       "Ticket assignment and status transitions",
       "Public replies and private internal notes",
       "Project tasks, checklists and time tracking",
       "Customer portal and knowledge articles",
-      "Assets, departments and locations",
-      "Workspace roles and session management"
+      "SLA targets, assets, departments and locations",
+      "Workspace roles, API keys and session management"
     ],
     "journey": "A request becomes an assigned ticket with a visible status and activity trail. Agents can reply to customers, keep internal context private and link operational work to tasks. Dashboards bring outstanding requests into view so teams can decide what needs attention next.",
     "engineering": "Tenant-scoped queries and role checks support separate workspaces. Ticket transitions, attachment access and approval actions follow server-side rules. The interface brings these rules into the daily workflow through status labels, assignment controls and a consistent navigation structure.",
@@ -185,42 +93,6 @@
     ]
   },
   {
-    "slug": "finora",
-    "name": "Finora",
-    "category": "Accounting & business operations",
-    "stack": "Next.js",
-    "tags": "Websites|SaaS|Fintech|AI|B2B/B2C",
-    "media": [
-      "finora-signin.png",
-      "finora-signin-mobile.png"
-    ],
-    "alt": [
-      "Finora public sign-in interface, captured from the developed application",
-      "Finora mobile sign-in interface"
-    ],
-    "summary": "A UAE-focused accounting platform connecting sales, purchases, inventory, banking and ledger-based business reports.",
-    "overview": "Finora is a business accounting application designed around the daily work of UAE trading and service companies. Sales, purchases, expenses and inventory connect to a double-entry ledger. Teams can review invoices, payments, bank transactions and reports within the same organisation workspace.",
-    "detail": "The implementation uses Next.js, TypeScript and Prisma, with money stored in integer minor units. The source includes balanced journal posting, reversing entries, document numbering, inventory movements and role-based access. The gallery shows the actual sign-in interface, captured locally without customer or financial records.",
-    "features": [
-      "Sales invoices and customer payments",
-      "Purchase orders, bills and vendor payments",
-      "Bank imports and reconciliation",
-      "Inventory and warehouse movements",
-      "Ledger-based financial reports",
-      "Organisation roles and AI assistance"
-    ],
-    "journey": "Users move from a customer or supplier record to a commercial document, then to posting and settlement. Related journal entries provide a traceable accounting view. The dashboard summarises cash, receivables and payables so staff can move from an overview to the underlying records.",
-    "engineering": "Financial documents feed balanced journal entries rather than isolated dashboard totals. The code represents amounts in fils and handles corrections through reversing entries. Tenant context, roles and server-side validation are part of the implementation, alongside reporting and document workflows.",
-    "delivery": "Developed application; not deployed to a public live URL. The documented scope includes accounting, inventory, banking, reports and account administration. The assistant and external services depend on their configured providers. Tax settings and financial reports need business-specific review before operational use; the portfolio does not represent regulatory certification.",
-    "next": "Finora illustrates a custom business platform built around connected records and traceable transactions. A comparable UAE project starts with the chart of accounts, document lifecycle, approval responsibilities and migration requirements.",
-    "steps": [
-      "Create customer and supplier records with the details needed for documents.",
-      "Manage invoices, bills, payments and their posting lifecycle.",
-      "Reconcile bank activity and review stock movements across warehouses.",
-      "Use ledger-based reports and the walkthrough to understand daily operations."
-    ]
-  },
-  {
     "slug": "invitara",
     "name": "Invitara",
     "category": "Interactive invitation platform",
@@ -228,31 +100,31 @@
     "tags": "Websites|SaaS|B2B/B2C",
     "repo": "https://github.com/JohnzzzAntony/Invitation-01",
     "media": [
+      "invitara-mockup-1.webp",
+      "invitara-mockup-2.webp",
+      "invitara-mockup-3.webp",
+      "invitara-mockup-4.webp",
+      "invitara-mockup-5.webp",
       "invitara-1.webp",
-      "invitara-2.webp",
-      "invitara-3.webp",
-      "invitara-4.webp",
-      "invitara-5.webp",
-      "invitara-6.webp",
       "invitara-7.webp",
       "invitara.mp4"
     ],
     "alt": [
+      "Invitara home page on laptop, tablet and phone — Create invitations worth experiencing",
+      "Invitara signature collection with template cards and occasion filters",
+      "Invitara template detail page with live mobile preview and inclusions",
+      "A wedding invitation theme opening in the Invitara experience viewer",
+      "Invitara editor with section controls and live invitation canvas",
       "Invitara invitation collection storefront",
-      "Vellum wedding invitation experience",
-      "Nocturne cinematic gala invitation",
-      "Confetti Club birthday invitation",
-      "Little Bloom baby celebration invitation",
-      "Atlas destination wedding invitation",
       "Invitara mobile invitation editor",
       "Nocturne invitation film from the project"
     ],
-    "summary": "Five animated invitation experiences with personalisation, guest replies, account-based publishing and event-date access rules.",
-    "overview": "Invitara is an invitation platform with five distinct experiences for weddings, galas, birthdays and family celebrations. Customers choose a design, personalise content and share a published guest link. The product combines animated storytelling with an editor, RSVP collection and an account dashboard.",
-    "detail": "The application uses Node.js, Express, SQLite and a locally bundled GSAP frontend. Vellum, Nocturne, Confetti Club, Little Bloom and Atlas each have their own composition. The original screenshots show the storefront, invitation themes and mobile editor; the film belongs to the Nocturne experience.",
+    "summary": "Animated digital invitations with personalisation, guest replies, account-based publishing and event-date access rules.",
+    "overview": "Invitara is an invitation platform for weddings, engagements, birthdays, baby showers and other celebrations. Customers choose a design, personalise content and share a published guest link. The product combines animated storytelling with an editor, RSVP collection and an account dashboard.",
+    "detail": "The application uses Node.js, Express, SQLite and locally bundled animation libraries (GSAP, Motion, Anime.js and Three.js). The current collection contains independently designed invitations across many occasions, each built on a shared editor and content contract. Couple names and event details in the mockups are template placeholders, not commissioned client events.",
     "features": [
-      "Five independent invitation compositions",
-      "Editable content, images and section order",
+      "Independently designed invitation compositions",
+      "Editable content, images, theme and section order",
       "Guest replies and CSV export",
       "Account-based saves and publishing",
       "Stripe webhook purchase verification",
@@ -263,7 +135,7 @@
     "delivery": "Developed application; not deployed to a public live URL. Drafts and previews work without payment credentials. Live checkout requires configured Stripe keys and webhook delivery. After the event, the editor becomes read-only and replies close while the published invitation remains available as a keepsake.",
     "next": "Invitara connects expressive web design with a practical content and purchase workflow. A similar event product should define who can edit, how guests respond, when access expires and what remains available after the event.",
     "steps": [
-      "Preview five themes with distinct typography, motion and opening interactions.",
+      "Preview themes with distinct typography, motion and opening interactions.",
       "Personalise text, photos, colours and section order in the editor.",
       "Publish after verified purchase and share the invitation with guests.",
       "Manage guest replies and retain the invitation after the event ends."
@@ -278,45 +150,383 @@
     "repo": "https://github.com/JohnzzzAntony/New-Mechaura",
     "url": "https://mechaurainternational.com/",
     "media": [
-      "mechaura.webp",
-      "mechaura-detail.webp",
+      "mechaura-mockup-1.webp",
+      "mechaura-mockup-2.webp",
+      "mechaura-mockup-3.webp",
+      "mechaura-mockup-4.webp",
+      "mechaura-mockup-5.webp",
       "mechaura-1.webp",
       "mechaura-2.webp",
-      "mechaura-3.webp",
       "mechaura.mp4",
       "mechaura-processing.mp4",
       "mechaura-sequence.mp4"
     ],
     "alt": [
-      "Mechaura industrial supplier website homepage",
-      "Mechaura product and industry content",
+      "Mechaura International home page on laptop, tablet and phone — industrial components and MRO supply",
+      "Mechaura product catalogue with category filters and product families",
+      "Mechaura product family page for abrasive removal brush segments",
+      "Mechaura multi-step quotation request form",
+      "Mechaura local landing page for industrial supply in Dubai",
       "Industrial equipment imagery from Mechaura",
       "Mechaura abrasive brush product image",
-      "Mechaura bandsaw blade product image",
       "Mechaura product showcase film",
       "Mechaura machinery processing film",
       "Mechaura industrial product sequence"
     ],
     "summary": "An industrial catalogue website connecting UAE buyers with product specifications, sector information and quotation enquiries.",
-    "overview": "Mechaura International is an industrial supplier website organised around products, sectors and quotation enquiries. Its catalogue covers abrasive brushes, bearings, hydraulic hoses, elevator accessories and tooling. Product imagery and motion content help buyers understand the range before contacting the supplier.",
-    "detail": "The project uses a Vite build with generated product and article pages, a sitemap workflow and optimised image assets. The portfolio includes captures of the working website plus original product visuals and three films stored with the source project.",
+    "overview": "Mechaura International is an industrial supplier website organised around products, sectors and quotation enquiries. Its catalogue covers abrasive brushes, bearings, hydraulic hoses and pumps, filtration, cutting tools and elevator accessories. Product imagery and motion content help buyers understand the range before contacting the supplier.",
+    "detail": "The project uses a Vite build with generated product, sector, location and article pages, a sitemap and llms.txt workflow and optimised image assets. A companion WordPress theme packages the same design for WordPress hosting. The device mockups are captured from the production build of the website.",
     "features": [
-      "Product-led catalogue navigation",
-      "Dedicated industrial product pages",
-      "Sector-specific information",
-      "Quotation and contact journeys",
-      "Optimised WebP product imagery",
-      "Product videos and editorial content"
+      "Product-led catalogue navigation and part-number search",
+      "Dedicated product family pages with specifications",
+      "Sector and Dubai, Abu Dhabi and Sharjah landing pages",
+      "Multi-step quotation and WhatsApp enquiry journeys",
+      "Technical guides for maintenance teams",
+      "Optimised WebP imagery, structured data and sitemap"
     ],
-    "journey": "Buyers can enter through a product category or an industry page, review relevant equipment and move to a quotation enquiry. The website separates product information from company and service content so technical and commercial visitors can find an appropriate next step.",
-    "engineering": "Product and editorial pages are generated as static content for delivery through the website build. Images are prepared in WebP, while videos provide supporting product context. Metadata and sitemap generation keep discovery tied to the pages that the build actually publishes.",
+    "journey": "Buyers can enter through search, a product category, an industry or a city page, review relevant equipment and move to a quotation enquiry. The website separates product information from company and service content so technical and commercial visitors can find an appropriate next step.",
+    "engineering": "Product and editorial pages are generated as static content for delivery through the website build. Images are prepared in WebP, while videos provide supporting product context. Metadata, structured data and sitemap generation keep discovery tied to the pages that the build actually publishes.",
     "delivery": "The delivered website scope is catalogue presentation and business enquiries. It is not presented as an online checkout or stock-control application. Product availability, quotation responses and fulfilment remain supplier-operated processes.",
     "next": "Mechaura shows how an industrial website can organise technical products for UAE and GCC buyers. A similar catalogue starts with product categories, usable specifications, sector requirements and a clear enquiry route.",
     "steps": [
       "Organise the catalogue around equipment categories and buyer terminology.",
       "Explain product applications through dedicated pages and original visuals.",
-      "Connect industry content with relevant products and enquiry actions.",
+      "Connect industry and city content with relevant products and enquiry actions.",
       "Generate static pages, optimise assets and publish a crawlable sitemap."
+    ]
+  },
+  {
+    "slug": "workflow-hub",
+    "name": "WorkFlow Hub",
+    "category": "Work assignment & follow-up tracker",
+    "stack": "Next.js",
+    "tags": "Websites|SaaS|AI|B2B/B2C",
+    "media": [
+      "workflow-hub-mockup-1.webp",
+      "workflow-hub-mockup-2.webp",
+      "workflow-hub-mockup-3.webp",
+      "workflow-hub-mockup-4.webp",
+      "workflow-hub-mockup-5.webp"
+    ],
+    "alt": [
+      "WorkFlow Hub daily snapshot on laptop, tablet and phone",
+      "WorkFlow Hub Kanban work board grouped by status",
+      "WorkFlow Hub — turning a pasted email into a task with an AI reply draft",
+      "WorkFlow Hub reports by category, priority and employee workload",
+      "WorkFlow Hub employee directory with departments, branches and skills"
+    ],
+    "summary": "An internal tool that turns incoming emails into owned tasks, drafts professional replies and chases work until it is closed.",
+    "overview": "WorkFlow Hub is built around a common operations loop: a request arrives by email, someone reads it, assigns it, replies and follows up until it is done. It covers website, online payments, web development, store support and back-office categories. Each task has a single owner, a due date and an activity history.",
+    "detail": "The application uses Next.js, TypeScript, Prisma and PostgreSQL with session-based sign-in for administrators and employees. An AI step extracts the subject, sender, summary, category and priority from a pasted email and drafts an editable reply. The device mockups were captured from a local build running demonstration data; names, branches and tasks are fictional.",
+    "features": [
+      "Email-to-task intake with AI summary and reply draft",
+      "Kanban board and filterable list views",
+      "Single-owner assignment with comments and activity log",
+      "Automatic reminders, overdue flags and follow-up cadence",
+      "Domain, hosting and contract renewal tracking",
+      "Departments, branches, reports and notifications"
+    ],
+    "journey": "An administrator pastes an email, reviews the extracted details and the suggested reply, then creates the task and assigns an employee. The assignee is notified, updates status on the board and adds comments. The follow-up engine reminds owners before due dates and flags work that stalls.",
+    "engineering": "Scheduled jobs evaluate due dates, review reminders and renewal windows against configurable thresholds. Status changes write activity logs and notifications. Role checks separate administrator screens such as employees, settings and reports from the employee workspace.",
+    "delivery": "Developed internal application. Outlook mailbox integration and AI drafting depend on configured providers; drafts are always reviewed before a reply is sent from the user's own mail client.",
+    "next": "WorkFlow Hub shows how a focused internal tool can replace scattered email threads and spreadsheets. A similar project starts with the real request sources, the categories of work and the follow-up rules the team already uses.",
+    "steps": [
+      "Capture incoming requests and summarise them into structured tasks.",
+      "Assign one clear owner, a priority and a due date.",
+      "Track progress on the board and keep context in comments.",
+      "Let reminders, renewals and reports keep work moving to completion."
+    ]
+  },
+  {
+    "slug": "drec-pms",
+    "name": "DREC Property Management System",
+    "category": "Property & lease management",
+    "stack": "Next.js",
+    "tags": "Websites|SaaS|B2B/B2C",
+    "media": [
+      "drec-pms-mockup-1.webp",
+      "drec-pms-mockup-2.webp",
+      "drec-pms-mockup-3.webp",
+      "drec-pms-mockup-4.webp",
+      "drec-pms-mockup-5.webp"
+    ],
+    "alt": [
+      "Property management executive dashboard on laptop, tablet and phone",
+      "Property register with plots, lease numbers, annual rent and status",
+      "Sublease management table with contract values and expiry dates",
+      "Compliance alerts for expiring leases",
+      "EJARI registration tracking with status and expiry"
+    ],
+    "summary": "A property and lease platform managing plots, units, subtenants, subleases, EJARI registrations, rent collection and compliance alerts.",
+    "overview": "The system manages the full hierarchy from landlord to internal tenant company, property and plot, unit or warehouse, subtenant and EJARI registration. Property managers track main leases and subleases, finance users follow invoices and receipts, and the dashboard summarises occupancy, contract value and upcoming expiries.",
+    "detail": "Built with Next.js 16, TypeScript, Prisma, Zustand and Recharts, with role-based access for super administrators, property managers, finance users and read-only viewers. The data model was designed from the client's lease spreadsheet. All company names, contract numbers, plot numbers and amounts in the mockups were replaced with fictional demonstration values.",
+    "features": [
+      "Companies, properties, plots and unit registers",
+      "Main lease and sublease contracts with fee calculations",
+      "Subtenant records with trade licence tracking",
+      "EJARI registration status and expiry tracking",
+      "Rent collection with invoices and receipts",
+      "Compliance alerts, reports and role-based access"
+    ],
+    "journey": "A manager opens the dashboard, sees occupancy and leases approaching expiry, then drills into a property, its units and the subleases attached to them. Compliance alerts point to contracts, EJARI registrations or licences that need action, and reports export the data for review.",
+    "engineering": "Each level of the hierarchy is a related record, so totals on the dashboard come from the same data the registers display. Expiry checks generate compliance alerts, and an audit log records changes. Role checks limit editing to the appropriate users.",
+    "delivery": "Developed application for a property management client. Data import from the client's spreadsheets is part of the build; publication of client-identifying details requires the client's approval.",
+    "next": "This project shows how a lease spreadsheet can become a structured operational system. A similar platform starts with the ownership hierarchy, contract types, renewal rules and the regulatory registrations the team must track.",
+    "steps": [
+      "Model the portfolio from landlord and company down to units and subtenants.",
+      "Record leases and subleases with values, dates and EJARI references.",
+      "Track rent invoices, receipts and outstanding balances.",
+      "Surface expiries and compliance actions before they become problems."
+    ]
+  },
+  {
+    "slug": "certguard",
+    "name": "CertGuard",
+    "category": "Domain & SSL management",
+    "stack": "Next.js",
+    "tags": "Websites|SaaS|B2B/B2C",
+    "media": [
+      "certguard-mockup-1.webp",
+      "certguard-mockup-2.webp",
+      "certguard-mockup-3.webp",
+      "certguard-mockup-4.webp",
+      "certguard-mockup-5.webp"
+    ],
+    "alt": [
+      "CertGuard dashboard on laptop, tablet and phone — domains, certificates, servers and alerts",
+      "CertGuard domain list with registrar, SSL expiry, domain expiry and verification status",
+      "CertGuard domain detail comparing stored dates with RDAP and live SSL results",
+      "CertGuard certificate inventory with issuer, validity and install status",
+      "CertGuard notification inbox with critical expiry alerts"
+    ],
+    "summary": "A domain and SSL control panel that verifies expiry dates against live sources, alerts before expiry and automates certificate renewal.",
+    "overview": "CertGuard centralises domains, SSL/TLS certificates, servers and DNS providers for teams that manage many websites. Instead of trusting manually entered dates, it checks domain registration data and inspects the certificate served by each site, then flags mismatches, upcoming expiries and errors.",
+    "detail": "The application uses Next.js, TypeScript, Prisma and PostgreSQL. Domain expiry comes from RDAP, certificates are inspected over a live TLS connection, and issuance follows an ACME workflow with HTTP-01 or DNS-01 validation. The mockups use the built-in demonstration data (example.com-style domains).",
+    "features": [
+      "RDAP domain verification and live SSL inspection",
+      "Stored-versus-discovered date comparison",
+      "ACME certificate request, renewal and rollback",
+      "SSH server registry with Nginx and Apache operations",
+      "Email, WhatsApp, Telegram and Slack alerts",
+      "Automation logs, reports and role-based access"
+    ],
+    "journey": "An administrator adds a domain; CertGuard verifies registration and certificate details and marks the record as verified or mismatched. The dashboard and notifications highlight what expires soon, and renewals can be requested, installed and verified with every step recorded.",
+    "engineering": "Verification, issuance and installation are separate services behind interfaces, so providers can be swapped. Credentials and tokens are stored encrypted, deployments validate configuration before reload and roll back on failure, and every operation writes an audit entry.",
+    "delivery": "Developed application. Live certificate issuance and installation require configured ACME, DNS and SSH access; without them the issuance pipeline runs in a clearly marked simulation mode.",
+    "next": "CertGuard reflects the day-to-day work of keeping dozens of domains and certificates healthy. A similar tool starts with an inventory of domains, registrars, hosting servers and who must be notified before something expires.",
+    "steps": [
+      "Add domains and verify their registration and SSL details.",
+      "Compare stored dates with authoritative sources and resolve mismatches.",
+      "Request, renew and install certificates with logged automation.",
+      "Alert the right people well before any expiry date."
+    ]
+  },
+  {
+    "slug": "mino-suppliers",
+    "name": "Mino Suppliers",
+    "category": "B2B website & ordering portal",
+    "stack": "Next.js",
+    "tags": "Websites|B2B/B2C",
+    "media": [
+      "mino-suppliers-mockup-1.webp",
+      "mino-suppliers-mockup-2.webp",
+      "mino-suppliers-mockup-3.webp",
+      "mino-suppliers-mockup-4.webp",
+      "mino-suppliers-mockup-5.webp"
+    ],
+    "alt": [
+      "Mino Suppliers home page on laptop, tablet and phone — Soft. Sustainable. Responsible.",
+      "Mino product detail with recycled-content and certification information",
+      "Mino customer portal dashboard with orders awaiting approval",
+      "Mino portal catalogue showing tier pricing for a hospitality customer",
+      "Mino admin overview with revenue, orders, leads and order status"
+    ],
+    "summary": "An eco-friendly hygiene paper supplier website with a B2B portal for custom pricing, approvals, net-terms ordering and invoices.",
+    "overview": "Mino Suppliers combines a marketing website with a trade portal. Visitors browse sustainable tissue, towel and napkin products and apply for a wholesale account. Approved business customers sign in to order at their own pricing tier, reuse order guides, route large orders for approval and follow invoices on net terms.",
+    "detail": "Built with Next.js, TypeScript, Prisma and PostgreSQL. Pricing tiers and customer-specific prices are resolved on the server, and orders above a company's approval threshold wait for an approver. The mockups use fictional customers and demonstration orders.",
+    "features": [
+      "Product catalogue with certifications and recycled content",
+      "Wholesale application and lead management",
+      "Customer-specific pricing tiers and discounts",
+      "Order guides, cart and net-terms checkout",
+      "Approval thresholds and multi-user company accounts",
+      "Invoices, sustainability impact and admin reports"
+    ],
+    "journey": "A prospective customer reads about the products, submits a wholesale enquiry and is approved by the team. Purchasers then order from the portal at their agreed prices, approvers review orders above the limit, and finance follows invoices — while admins see leads, customers, orders and revenue in one place.",
+    "engineering": "Roles distinguish visitors, purchasers, approvers, company owners and staff. Prices, approval rules and payment terms come from the customer's company record, so the same catalogue shows the correct commercial terms for each account.",
+    "delivery": "Developed application. Card payment, email notifications and analytics are designed as later integrations; the documented scope covers the website, portal and administration.",
+    "next": "Mino shows how a supplier can move B2B ordering from email and spreadsheets into a self-service portal. A similar build starts with pricing rules, approval responsibilities and invoicing terms.",
+    "steps": [
+      "Present the product range and its sustainability credentials.",
+      "Qualify and onboard wholesale customers.",
+      "Let customers order at their own prices with approvals where needed.",
+      "Give the team one view of leads, orders, invoices and performance."
+    ]
+  },
+  {
+    "slug": "jkr-international",
+    "name": "JKR International",
+    "category": "Medical equipment e-commerce",
+    "stack": "Next.js",
+    "tags": "Websites|B2B/B2C",
+    "media": [
+      "jkr-international-mockup-1.webp",
+      "jkr-international-mockup-2.webp",
+      "jkr-international-mockup-3.webp",
+      "jkr-international-mockup-4.webp",
+      "jkr-international-mockup-5.webp"
+    ],
+    "alt": [
+      "JKR International storefront on laptop, tablet and phone — rehabilitation and mobility solutions",
+      "JKR International product catalogue with brand, price and availability filters",
+      "JKR International product page with pricing, enquiry cart and delivery information",
+      "JKR International blog with buying guides and care articles",
+      "JKR International admin dashboard with revenue, orders and enquiries"
+    ],
+    "summary": "A medical equipment storefront for the UAE combining direct purchase, an enquiry cart for quotations and a full admin panel.",
+    "overview": "JKR International supplies wheelchairs, patient-handling equipment, respiratory and diagnostic devices to hospitals, clinics and home-care customers. The platform supports both retail purchases and B2B quotation requests, with category, brand and collection browsing, product comparison, wishlists and order tracking.",
+    "detail": "The original platform was built with Django, PostgreSQL and Cloudinary; this Next.js and Prisma rebuild adds an enquiry cart, English and Arabic interface support and a custom admin panel. Product imagery in the mockups is illustrative placeholder artwork from the local demonstration build, not the client's production photography.",
+    "features": [
+      "Category, brand and collection catalogue",
+      "Enquiry cart for quotations alongside checkout",
+      "Product comparison, wishlist and recently viewed",
+      "English and Arabic interface support",
+      "Order tracking, accounts and store locations",
+      "Admin for products, orders, enquiries, blog and settings"
+    ],
+    "journey": "Clinical buyers search or browse by category and brand, compare products and either add them to the enquiry cart for a quotation or purchase directly. The team manages orders, enquiries, content and catalogue updates from the admin panel.",
+    "engineering": "Catalogue, orders, enquiries and content share one data model, so admin changes appear on the storefront immediately. Payment, transactional email and media storage are integrated through configurable providers.",
+    "delivery": "The original platform was built on Django; the Next.js rebuild shown here is a developed application captured locally. Payment and email providers require live credentials.",
+    "next": "JKR shows how a specialist distributor can serve both retail and institutional buyers. A similar project starts with how customers actually buy — instant purchase, quotation or tender — and the product data each route needs.",
+    "steps": [
+      "Organise equipment by category, brand and clinical use.",
+      "Support quotation requests alongside direct purchase.",
+      "Publish buying guides that answer common customer questions.",
+      "Manage catalogue, orders and enquiries from one admin panel."
+    ]
+  },
+  {
+    "slug": "house-of-karji",
+    "name": "The House of Karji",
+    "category": "Luxury fragrance commerce platform",
+    "stack": "Next.js",
+    "tags": "Websites|B2B/B2C",
+    "media": [
+      "house-of-karji-mockup-1.webp",
+      "house-of-karji-mockup-2.webp",
+      "house-of-karji-mockup-3.webp",
+      "house-of-karji-mockup-4.webp"
+    ],
+    "alt": [
+      "The House of Karji storefront on laptop, tablet and phone — Extrait de Parfum collection",
+      "The House of Karji shop with fragrance family, brand and availability filters",
+      "The House of Karji product page with fragrance notes, sizes and add to cart",
+      "The House of Karji admin dashboard with revenue, orders and order status"
+    ],
+    "summary": "A custom luxury fragrance storefront with editorial merchandising, a fragrance finder and a full commerce admin.",
+    "overview": "The House of Karji is a custom-built fragrance store designed as an alternative to a theme-based storefront. It presents collections through an editorial home page, rich product pages with fragrance pyramids and size options, a scent quiz, store locations and a streamlined cart and checkout.",
+    "detail": "Built with Next.js, TypeScript, Prisma, Zustand and Framer Motion. Banners, promotions, BOGO offers, advertisements, CMS pages and store locations are managed from the admin. The mockups use demonstration fragrance houses and products from the local build.",
+    "features": [
+      "Editorial home page with hero carousel and curated sections",
+      "Shop filters by family, brand, availability and price",
+      "Product pages with notes, sizes and reviews",
+      "Fragrance finder quiz, wishlist and recently viewed",
+      "Promotions, BOGO offers and banner management",
+      "Admin for catalogue, sales, customers and CMS"
+    ],
+    "journey": "Shoppers move from campaign banners and curated collections to a product page, choose a size and add it to the cart, or use the fragrance finder when unsure. The team manages products, campaigns and orders from the admin panel.",
+    "engineering": "Storefront sections read from the same catalogue and campaign tables the admin edits, so merchandising changes do not need code. Cart, wishlist and recently viewed items persist in the browser for a smooth return visit.",
+    "delivery": "Developed application captured locally; the live Karji store operates on Shopify. Payment providers such as Tabby, Tamara and card gateways require live credentials.",
+    "next": "This build explores how a fragrance retailer could own its storefront experience end to end. A similar project weighs custom flexibility against the operational convenience of a hosted commerce platform.",
+    "steps": [
+      "Present collections with an editorial, brand-led layout.",
+      "Help shoppers choose through notes, filters and a fragrance finder.",
+      "Keep cart and checkout short across screen sizes.",
+      "Run campaigns and orders from a dedicated admin panel."
+    ]
+  },
+  {
+    "slug": "carter-studio",
+    "name": "Carter Studio",
+    "category": "Studio website & content CMS",
+    "stack": "Next.js",
+    "tags": "Websites|B2B/B2C",
+    "media": [
+      "carter-studio-mockup-1.webp",
+      "carter-studio-mockup-2.webp",
+      "carter-studio-mockup-3.webp",
+      "carter-studio-mockup-4.webp",
+      "carter-studio-mockup-5.webp"
+    ],
+    "alt": [
+      "Carter Studio home page on laptop, tablet and phone",
+      "Carter Studio services index with filters and service cards",
+      "Carter Studio case study page for a Shopify project",
+      "Carter Studio pricing packages",
+      "Carter Studio portfolio grid filtered by project type"
+    ],
+    "summary": "A dark, motion-led website for a freelance web studio with services, portfolio, pricing, blog and an admin CMS.",
+    "overview": "Carter Studio is a complete studio website template: services with detail pages, a filterable portfolio with case studies, transparent pricing, a blog, testimonials and a contact brief form. Every section is driven by content managed in an admin panel.",
+    "detail": "Built with Next.js, TypeScript, Prisma, GSAP and Three.js. The admin manages projects, services, pricing plans, testimonials, skills, FAQs, blog posts, contact submissions and newsletter subscribers. The studio name and persona are fictional; the mockups were captured from the local build.",
+    "features": [
+      "Animated hero and services sections",
+      "Service detail pages with packages",
+      "Filterable portfolio and case studies",
+      "Pricing, FAQs and testimonials",
+      "Blog with search and newsletter signup",
+      "Admin CMS with dashboard and exports"
+    ],
+    "journey": "Visitors move from the hero to services and relevant case studies, compare packages on the pricing page and send a project brief. The owner updates content and reviews enquiries from the admin dashboard.",
+    "engineering": "Content collections are stored in the database and rendered by shared section components, so new services or case studies appear without code changes. Sitemaps and metadata are generated from the same records.",
+    "delivery": "Developed website template captured locally. Hosting, domain and email delivery are configured per deployment.",
+    "next": "Carter Studio shows how a small studio can present services, proof and pricing in one coherent journey. A similar site starts with the services offered, the strongest case studies and the enquiry details needed to quote.",
+    "steps": [
+      "Position the studio clearly in the first screen.",
+      "Link each service to relevant case studies.",
+      "Make pricing and process easy to understand.",
+      "Manage all content and enquiries from the admin."
+    ]
+  },
+  {
+    "slug": "rydge-studio",
+    "name": "Rydge Studio",
+    "category": "Portfolio website with full CMS",
+    "stack": "Next.js",
+    "tags": "Websites|B2B/B2C",
+    "media": [
+      "rydge-studio-mockup-1.webp",
+      "rydge-studio-mockup-2.webp",
+      "rydge-studio-mockup-3.webp",
+      "rydge-studio-mockup-4.webp",
+      "rydge-studio-mockup-5.webp"
+    ],
+    "alt": [
+      "Rydge Studio home page on laptop, tablet and phone — oversized editorial typography",
+      "Rydge Studio selected work index",
+      "Rydge Studio project detail page",
+      "Rydge Studio admin dashboard with editable collections",
+      "Rydge Studio about page"
+    ],
+    "summary": "An editorial creative-studio portfolio where every word, image and section is editable from an admin backend.",
+    "overview": "Rydge Studio is a portfolio site for a creative studio with a home page, portfolio, project pages, services, about, blog and contact. Its visual language uses viewport-scaled typography, a strict black-and-white palette and motion such as marquees and text reveals.",
+    "detail": "Built with Next.js, TypeScript, Tailwind, Prisma and SQLite, with GSAP and Lenis for motion. The design language references a commercial Webflow template and was rebuilt with original placeholder imagery and copy; the engineering work is the CMS that makes every public section editable.",
+    "features": [
+      "Viewport-scaled editorial typography",
+      "Portfolio grid and list views with project pages",
+      "Services, team, awards and approach sections",
+      "Blog and contact form with submissions inbox",
+      "Admin editing for every page, section and collection",
+      "Media library and site settings"
+    ],
+    "journey": "Visitors scroll through the studio story, browse work and open project pages before getting in touch. The studio edits pages, sections, collections and media from the admin without touching templates.",
+    "engineering": "Public templates read all content from the database rather than hard-coded copy. A signed admin session protects editing, and a seed script creates a complete demonstration site in one command.",
+    "delivery": "Developed website captured locally from its seeded demonstration content.",
+    "next": "Rydge Studio demonstrates a fully content-managed portfolio. A similar project starts with the content types the studio needs to update most often.",
+    "steps": [
+      "Introduce the studio with bold, editorial typography.",
+      "Present work in grid and list views with detailed project pages.",
+      "Collect enquiries and manage submissions.",
+      "Edit every page and collection from the admin."
     ]
   }
 ]

@@ -14,7 +14,7 @@ for(const file of ['railway.json','RAILWAY.md'])fs.copyFileSync(path.join(root,f
 for(const file of ['projects.json','project-redirects.json','public-media.json'])fs.copyFileSync(path.join(root,'data',file),path.join(out,'data',file));
 fs.cpSync(path.join(root,'test'),path.join(out,'test'),{recursive:true});
 fs.mkdirSync(path.join(out,'tools'));
-for(const file of ['verify.cjs','build.cjs','migrate-cloud.cjs','verify-cloud.cjs'])fs.copyFileSync(path.join(root,'tools',file),path.join(out,'tools',file));
+for(const file of ['verify.cjs','build.cjs','migrate-cloud.cjs','verify-cloud.cjs','update-cloud-portfolio.cjs'])fs.copyFileSync(path.join(root,'tools',file),path.join(out,'tools',file));
 fs.mkdirSync(path.join(out,'docs'));
-for(const file of ['entity.txt','CLOUD_STORAGE.md','cloud-migration.json','cloud-verification.json','cloud-browser-verification.json'])if(fs.existsSync(path.join(root,'docs',file)))fs.copyFileSync(path.join(root,'docs',file),path.join(out,'docs',file));
+for(const file of ['entity.txt','CLOUD_STORAGE.md','PORTFOLIO_UPDATE.md','cloud-migration.json','cloud-verification.json','cloud-browser-verification.json'])if(fs.existsSync(path.join(root,'docs',file)))fs.copyFileSync(path.join(root,'docs',file),path.join(out,'docs',file));
 console.log('Production package ready: '+out+' (npm ci --omit=dev, configure environment, npm start).');

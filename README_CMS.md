@@ -6,7 +6,7 @@ The current site is migrated to Neon PostgreSQL and private S3-compatible storag
 
 `npm start` loads a private `.env.local` when present. Host environment variables take precedence. Credentials are excluded from Git, Docker build contexts and release archives.
 
-The existing HTML, CSS and browser JavaScript remain the frontend. The Node backend renders published edits into 86 source pages before sending HTML, including SEO metadata. No client-side content fetch is needed. The selected portfolio contains eight projects. Fourteen retired or withheld project routes redirect to current project pages or the portfolio. The sitemap excludes redirects and noindex pages; its origin, canonical URLs and machine-readable company links use `SITE_URL` (default `https://duoonex.com`).
+The existing HTML, CSS and browser JavaScript remain the frontend. The Node backend renders published edits into 94 source pages before sending HTML, including SEO metadata. No client-side content fetch is needed. The selected portfolio contains 12 projects. Eighteen retired or withheld project routes redirect to current project pages or the portfolio. The sitemap excludes redirects and noindex pages; its origin, canonical URLs and machine-readable company links use `SITE_URL` (default `https://duoonex.com`).
 
 ## Local startup
 

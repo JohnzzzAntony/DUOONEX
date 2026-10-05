@@ -120,11 +120,12 @@
   $$('[data-filter-group]').forEach(function (group) {
     var target = $('#' + group.dataset.filterGroup);
     if (!target) return;
+    $$('[data-filter]', group).forEach(function (b) { b.setAttribute('aria-pressed', String(b.classList.contains('is-active'))); });
     group.addEventListener('click', function (e) {
       var btn = e.target.closest('[data-filter]');
       if (!btn) return;
       e.preventDefault();
-      $$('[data-filter]', group).forEach(function (b) { b.classList.toggle('is-active', b === btn); });
+      $$('[data-filter]', group).forEach(function (b) { b.classList.toggle('is-active', b === btn); b.setAttribute('aria-pressed', String(b === btn)); });
       var want = btn.dataset.filter;
       $$('[data-tags]', target).forEach(function (card) {
         var tags = card.dataset.tags.split('|');
