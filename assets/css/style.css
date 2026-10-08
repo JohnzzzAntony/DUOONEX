@@ -189,14 +189,14 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; letter-spacing: 
 .footer .logo__img { width: 200px; }
 
 /* NexPixel Studio project imagery */
-.art--indigo { background-image: linear-gradient(135deg, rgba(11,59,44,.18), rgba(11,59,44,.28)), url('../images/projects/karji.webp'); background-size: cover; background-position: center; }
+.art--indigo { background-image: linear-gradient(135deg, rgba(11,59,44,.18), rgba(11,59,44,.28)), url('../images/projects/certguard-mockup-1.webp'); background-size: cover; background-position: center; }
 .art--dark { background-image: linear-gradient(135deg, rgba(8,12,28,.18), rgba(11,59,44,.25)), url('../images/projects/nexora-signin.png'); background-size: cover; background-position: center; }
-.art--sky { background-image: linear-gradient(135deg, rgba(255,255,255,.08), rgba(11,59,44,.16)), url('../images/projects/touch-of-oud.webp'); background-size: cover; background-position: center; }
+.art--sky { background-image: linear-gradient(135deg, rgba(255,255,255,.08), rgba(11,59,44,.16)), url('../images/projects/drec-pms-mockup-1.webp'); background-size: cover; background-position: center; }
 .art--grey { background-image: linear-gradient(135deg, rgba(242,244,255,.14), rgba(11,59,44,.16)), url('../images/projects/invitara-1.webp'); background-size: cover; background-position: center; }
 .art--magenta { background-image: linear-gradient(135deg, rgba(18,12,42,.18), rgba(0,229,153,.22)), url('../images/projects/nexora-signin-mobile.png'); background-size: cover; background-position: center; }
 .art--sunset { background-image: linear-gradient(135deg, rgba(247,247,245,.08), rgba(11,59,44,.14)), url('../images/projects/mechaura.webp'); background-size: cover; background-position: center; }
 .art--ember { background-image: linear-gradient(135deg, rgba(5,16,54,.12), rgba(0,122,82,.2)), url('../images/projects/finora-signin.png'); background-size: cover; background-position: center; }
-.art--lime { background-image: linear-gradient(135deg, rgba(200,245,226,.08), rgba(11,59,44,.18)), url('../images/projects/flower-district.webp'); background-size: cover; background-position: center; }
+.art--lime { background-image: linear-gradient(135deg, rgba(200,245,226,.08), rgba(11,59,44,.18)), url('../images/projects/carter-studio-mockup-1.webp'); background-size: cover; background-position: center; }
 .nav { display: flex; align-items: center; gap: 26px; margin-inline: auto; }
 .nav__link { position: relative; font-size: var(--fs-sm); font-weight: 500; padding-block: 6px; }
 .nav__link sup { font-size: 9px; color: var(--gray-400); margin-left: 2px; vertical-align: super; }
@@ -381,14 +381,14 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; letter-spacing: 
 .art--grey { background: linear-gradient(140deg, #C9C9C9, #E8E8E8 60%, #F6F5F5); }
 .art--yellow { background: linear-gradient(140deg, #00E599, #C8F5E2 60%, #EFEFEC); }
 .art--orange { background: linear-gradient(140deg, #0B3B2C, #00A870 60%, #00E599); }
-.art--indigo { background-image: linear-gradient(135deg, rgba(11,59,44,.18), rgba(11,59,44,.28)), url('../images/projects/karji.webp'); background-size: cover; background-position: center; }
+.art--indigo { background-image: linear-gradient(135deg, rgba(11,59,44,.18), rgba(11,59,44,.28)), url('../images/projects/certguard-mockup-1.webp'); background-size: cover; background-position: center; }
 .art--dark { background-image: linear-gradient(135deg, rgba(8,12,28,.18), rgba(11,59,44,.25)), url('../images/projects/nexora-signin.png'); background-size: cover; background-position: center; }
-.art--sky { background-image: linear-gradient(135deg, rgba(255,255,255,.08), rgba(11,59,44,.16)), url('../images/projects/touch-of-oud.webp'); background-size: cover; background-position: center; }
+.art--sky { background-image: linear-gradient(135deg, rgba(255,255,255,.08), rgba(11,59,44,.16)), url('../images/projects/drec-pms-mockup-1.webp'); background-size: cover; background-position: center; }
 .art--grey { background-image: linear-gradient(135deg, rgba(242,244,255,.14), rgba(11,59,44,.16)), url('../images/projects/invitara-1.webp'); background-size: cover; background-position: center; }
 .art--magenta { background-image: linear-gradient(135deg, rgba(18,12,42,.18), rgba(0,229,153,.22)), url('../images/projects/nexora-signin-mobile.png'); background-size: cover; background-position: center; }
 .art--sunset { background-image: linear-gradient(135deg, rgba(247,247,245,.08), rgba(11,59,44,.14)), url('../images/projects/mechaura.webp'); background-size: cover; background-position: center; }
 .art--ember { background-image: linear-gradient(135deg, rgba(5,16,54,.12), rgba(0,122,82,.2)), url('../images/projects/finora-signin.png'); background-size: cover; background-position: center; }
-.art--lime { background-image: linear-gradient(135deg, rgba(200,245,226,.08), rgba(11,59,44,.18)), url('../images/projects/flower-district.webp'); background-size: cover; background-position: center; }
+.art--lime { background-image: linear-gradient(135deg, rgba(200,245,226,.08), rgba(11,59,44,.18)), url('../images/projects/carter-studio-mockup-1.webp'); background-size: cover; background-position: center; }
 .art__label { position: absolute; left: 20px; bottom: 18px; z-index: 1; font-size: var(--fs-xs); font-weight: 600; color: rgba(255, 255, 255, .82); letter-spacing: .04em; }
 .art--grey .art__label, .art--yellow .art__label, .art--lime .art__label { color: rgba(0, 0, 0, .55); }
 

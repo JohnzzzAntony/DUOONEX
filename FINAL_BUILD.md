@@ -23,7 +23,7 @@ The application projects are developed but not publicly deployed, as confirmed b
 ## Final contents
 
 - 86 source pages plus a styled 404 page; 55 indexable canonical URLs.
-- Eight selected projects: Karji Perfumes, Touch of Oud, Flower District, Daima, Nexora, Finora, Invitara, Mechaura International.
+- Selected projects: Nexora, Finora, Invitara, Mechaura International and the other entries in `data/projects.json` (e-commerce projects removed 9 October 2026).
 - 24 original images and four source videos, with accessible gallery controls and full-resolution image links.
 - Nexora and Finora use fresh high-resolution captures of their actual local sign-in pages, without seeded customers, account balances or sample transactions.
 - Invitara media shows the owner's invitation themes and original film. Theme preview names/events demonstrate the product's templates; they are not presented as commissioned client events.

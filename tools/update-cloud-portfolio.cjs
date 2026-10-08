@@ -1,12 +1,16 @@
 'use strict';
 // Explicit, backed-up release migration. --check is read-only.
+// Pages and /assets/images media that no longer exist locally are removed from the database;
+// --purge-objects also deletes their now-unreferenced storage objects after the commit.
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const {DeleteObjectCommand} = require('@aws-sdk/client-s3');
 const {clients, putMedia, saveMedia, contentTypes} = require('../lib/cloud');
 const {files, documentFor} = require('../lib/pages');
 async function main() {
   const apply = process.argv.includes('--apply');
+  const purgeObjects = process.argv.includes('--purge-objects');
   const {pool, s3} = clients({direct:true});
   let client;
   try {
@@ -15,18 +19,22 @@ async function main() {
     const cms = (await pool.query('SELECT state,revision FROM duoonex_site.cms WHERE id=1')).rows[0];
     const oldByFile = new Map(oldPages.map(p => [p.file,p]));
     const changed = files.map(file => ({file, html:fs.readFileSync(file,'utf8'), doc:documentFor(file)})).filter(p => oldByFile.get(p.file)?.fingerprint !== p.doc.fingerprint);
-    const conflicts = changed.filter(p => {
-      const record = cms.state.pages[p.file];
+    const removed = oldPages.filter(p => !files.includes(p.file)).map(p => p.file);
+    const conflicts = [...changed.map(p => p.file), ...removed].filter(file => {
+      const record = cms.state.pages[file];
       return record && (Object.keys(record.draft || {}).length || Object.keys(record.published || {}).length);
     });
     const publicMedia = require('../data/public-media.json');
-    const oldMedia = new Map((await pool.query('SELECT url,sha256 FROM duoonex_site.media')).rows.map(m => [m.url,m.sha256]));
+    const mediaRows = (await pool.query('SELECT url,sha256,bucket,object_key FROM duoonex_site.media')).rows;
+    const oldMedia = new Map(mediaRows.map(m => [m.url,m.sha256]));
+    const allowed = new Set(publicMedia.map(name => '/assets/images/'+name));
+    const removedMedia = mediaRows.filter(m => m.url.startsWith('/assets/images/') && !allowed.has(m.url));
     const media = publicMedia.map(name => {
       const file = path.join('assets/images',name);
       const hash = crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
       return {file,url:'/assets/images/'+name,hash};
     }).filter(m => oldMedia.get(m.url) !== m.hash);
-    console.log(JSON.stringify({mode:apply?'apply':'check',changedPages:changed.length,newOrChangedMedia:media.length,projects:require('../data/projects.json').length,cmsConflicts:conflicts.map(p=>p.file),preservedInquiries:cms.state.inquiries.length,preservedUploads:cms.state.media.length}));
+    console.log(JSON.stringify({mode:apply?'apply':'check',changedPages:changed.length,removedPages:removed,newOrChangedMedia:media.length,removedMedia:removedMedia.length,projects:require('../data/projects.json').length,cmsConflicts:conflicts,preservedInquiries:cms.state.inquiries.length,preservedUploads:cms.state.media.length}));
     if(conflicts.length) throw new Error('CMS edits need reconciliation before changing their templates');
     if(!apply) return;
     const bucket = oldSettings.bucket;
@@ -50,12 +58,21 @@ async function main() {
       const record = current.state.pages[p.file];
       current.state.pages[p.file] = {...record, version:(record?.version||0)+1, draft:{},published:{},history:record?.history||[],fingerprint:p.doc.fingerprint,title:p.doc.title};
     }
+    if(removed.length) await client.query('DELETE FROM duoonex_site.pages WHERE file = ANY($1)',[removed]);
+    for(const file of removed) delete current.state.pages[file];
+    if(removedMedia.length) await client.query('DELETE FROM duoonex_site.media WHERE url = ANY($1)',[removedMedia.map(m => m.url)]);
     const settings = {projects:require('../data/projects.json'),redirects:require('../data/project-redirects.json'),publicMedia,sitemap:fs.readFileSync('sitemap.xml','utf8'),llms:fs.readFileSync('llms.txt','utf8'),notFoundHtml:fs.readFileSync('404.html','utf8'),entity:fs.readFileSync('docs/entity.txt','utf8')};
     for(const [key,value] of Object.entries(settings)) await client.query('INSERT INTO duoonex_site.settings(key,value) VALUES($1,$2) ON CONFLICT(key) DO UPDATE SET value=excluded.value,updated_at=now()',[key,JSON.stringify(value)]);
     for(const item of uploaded) await saveMedia(client,item);
     await client.query('UPDATE duoonex_site.cms SET state=$1,revision=revision+1,updated_at=now() WHERE id=1',[JSON.stringify(current.state)]);
     await client.query('COMMIT');
-    console.log(JSON.stringify({complete:true,backupId,pages:changed.length,media:uploaded.length,projects:settings.projects.length}));
+    console.log(JSON.stringify({complete:true,backupId,pages:changed.length,removedPages:removed.length,media:uploaded.length,removedMedia:removedMedia.length,projects:settings.projects.length}));
+    if(purgeObjects && removedMedia.length) {
+      const inUse = new Set((await pool.query('SELECT bucket,object_key FROM duoonex_site.media')).rows.map(m => m.bucket+'/'+m.object_key));
+      const orphans = [...new Map(removedMedia.filter(m => !inUse.has(m.bucket+'/'+m.object_key)).map(m => [m.bucket+'/'+m.object_key,m])).values()];
+      for(let i=0;i<orphans.length;i+=6) await Promise.all(orphans.slice(i,i+6).map(m => s3.send(new DeleteObjectCommand({Bucket:m.bucket,Key:m.object_key}))));
+      console.log(JSON.stringify({purgedObjects:orphans.length}));
+    }
   } catch(error) {
     if(client) await client.query('ROLLBACK').catch(()=>{});
     throw error;

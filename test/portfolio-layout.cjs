@@ -21,6 +21,6 @@ const assert=require('node:assert/strict');
     assert.equal(await page.locator('[data-gallery-position]').innerText(),'2 / '+project.media.length);
    }
   }
-  console.log('All 12 expanded screen galleries and carousel controls pass at desktop, tablet and mobile widths.');
+  console.log('All '+require('../data/projects.json').length+' expanded screen galleries and carousel controls pass at desktop, tablet and mobile widths.');
  } finally {if(browser)await browser.close();server.closeAllConnections();await new Promise(r=>server.close(r));}
 })().catch(e=>{console.error(e);process.exitCode=1});

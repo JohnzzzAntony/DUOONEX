@@ -1,6 +1,6 @@
 # Portfolio update — 5 October 2026
 
-The site now lists the 12 projects in `portfolio-mockups/projects.mockups.json`. The older Karji Perfumes, Touch of Oud, Flower District and Daima listings redirect to the portfolio. The supplied House of Karji project is included as its own case study.
+The site lists the 9 projects in `data/projects.json`. The House of Karji, JKR International and Mino Suppliers case studies, the older Karji Perfumes, Touch of Oud, Flower District and Daima listings, and all of their images were removed on 9 October 2026; their URLs redirect to the portfolio.
 
 All supplied project image files are copied into `assets/images/projects/` and included in the public media allowlist. Each case study preserves the supplied copy and main gallery, uses high-resolution mockups where available, and includes an expandable gallery of every supplied viewport screenshot. PNG and high-resolution WebP variants remain available as alternate image formats.
 
