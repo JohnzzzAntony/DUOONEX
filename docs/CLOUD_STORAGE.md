@@ -9,7 +9,7 @@ The site uses the supplied Neon PostgreSQL database and the private `media` buck
 - `duoonex_site.cms`: drafts, published field overrides, revision history, media-library entries and enquiries in JSONB. Row locking serializes writes; stale page versions return a conflict instead of overwriting edits.
 - `duoonex_site.media`: stable site URLs mapped to object keys, MIME types, byte lengths and SHA-256 checksums.
 
-The initial migration copied all 29 published media files (24 project images, four project videos and the original DuooNex logo). Generic artwork and excluded demo-record captures were not uploaded. There were no local production enquiries or admin uploads to import. Test-output directories are never migration inputs.
+The initial migration copied all 29 published media files (24 project images, four project videos and the original DuooNex logo, since replaced by the NexPixel Studio marks). Generic artwork and excluded demo-record captures were not uploaded. There were no local production enquiries or admin uploads to import. Test-output directories are never migration inputs.
 
 Objects use content-addressed keys under `duoonex/media/`. The bucket stays private. The Node server streams approved objects through the existing `/assets/images/…` and `/media/…` URLs, including byte-range video responses. Credentials and temporary signed URLs are not exposed to browsers.
 

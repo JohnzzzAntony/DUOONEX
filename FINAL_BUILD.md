@@ -1,6 +1,14 @@
-# DuooNex final build and launch assessment
+# NexPixel Studio final build and launch assessment
 
 Prepared 2 October 2026 for https://duoonex.com.
+
+## Rebrand to NexPixel Studio (8 October 2026)
+
+The source now uses **NexPixel Studio** and the tagline **Designing what’s next.** on every page, in the metadata, JSON-LD, llms.txt, the CMS and these docs. Colour tokens are charcoal `#17191C` with copper accents: `#B9826B`, and `#8F5A45` for small text, which meets AA contrast. The logo is a pixel-built NP mark with a copper infinity stroke beside a Manrope wordmark, in `assets/images/nexpixel-*`, with matching favicon, app icons and a 1200×630 social card. The homepage has new hero copy and a philosophy section. The footer carries the tagline, and the 404 page uses the spec copy. These marks are interim because no master logo file was supplied; replace the files under the same names when it arrives.
+
+Technical identifiers that production depends on are unchanged: the `duoonex_site` database schema, the `duoonex/media/` object keys, the GitHub repository name and the `duoonex.com` canonical origin, which is set by `SITE_URL`.
+
+**Cloud rollout still required.** In cloud mode, page templates, settings (including the 404 page and the public-media allowlist) and images come from PostgreSQL and object storage. Deploying this code changes the stylesheet and server immediately, but the pages keep their stored DuooNex content until a backed-up content migration replaces the templates and settings and uploads the new `nexpixel-*` media. The legacy `.logo__img` style is kept so stored templates still render their old logo correctly until then.
 
 ## Launch assessment
 
@@ -21,7 +29,7 @@ The application projects are developed but not publicly deployed, as confirmed b
 - Invitara media shows the owner's invitation themes and original film. Theme preview names/events demonstrate the product's templates; they are not presented as commissioned client events.
 - AssetHub and Jaber are withheld because available screenshots contain demo operational records. Their source references remain in docs/excluded-projects.json for reinstatement with clean owner-approved media.
 - Generic inherited artwork, sample-data dashboard captures and the Finora demo-record tutorial are excluded from the public media allowlist and release archive.
-- Dead CTA links, inherited testimonial quotations, repeated pricing text and duplicate budget choices have been fixed. Existing testimonial sections now describe DuooNex's own project commitments, without fabricated endorsements.
+- Dead CTA links, inherited testimonial quotations, repeated pricing text and duplicate budget choices have been fixed. Existing testimonial sections now describe NexPixel Studio's own project commitments, without fabricated endorsements.
 - Complete page metadata, canonical domain, social metadata, visible-content FAQ schema, project schema, robots.txt, sitemap.xml and llms.txt.
 - Working CMS enquiry inbox. Email notifications are not configured; administrators must read enquiries at /admin/.
 

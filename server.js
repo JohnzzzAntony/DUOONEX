@@ -24,7 +24,7 @@ function createServer(options={}) {
   function rate(req,kind,max){const key=kind+req.socket.remoteAddress;const now=Date.now();let bucket=limits.get(key);if(!bucket||bucket.until<now) {bucket={count:0,until:now+900000};limits.set(key,bucket);}if(++bucket.count>max) fail(429,'Too many requests. Try again in 15 minutes.');}
   const janitor=setInterval(()=>{const now=Date.now();for(const [key,v] of sessions)if(v.expires<now)sessions.delete(key);for(const [key,v] of limits)if(v.until<now)limits.delete(key);},60000);janitor.unref();
   async function json(req,max=2*1024*1024){if(!/^application\/json(?:;|$)/i.test(req.headers['content-type']||'')) fail(415,'JSON required');let size=0;const chunks=[];for await(const chunk of req){size+=chunk.length;if(size>max)fail(413,'Request too large');chunks.push(chunk);}try{return JSON.parse(Buffer.concat(chunks).toString());}catch{fail(400,'Invalid JSON');}}
-  function auth(req){const cookie=(req.headers.cookie||'').split(';').map(s=>s.trim()).find(s=>s.startsWith('duoonex_session='));const token=cookie?.slice(16);const session=sessions.get(token);if(!session||session.expires<Date.now())fail(401,'Please sign in');return token;}
+  function auth(req){const cookie=(req.headers.cookie||'').split(';').map(s=>s.trim()).find(s=>s.startsWith('nexpixel_session='));const token=cookie?.slice('nexpixel_session='.length);const session=sessions.get(token);if(!session||session.expires<Date.now())fail(401,'Please sign in');return token;}
   function sameOrigin(req){if(req.headers.origin && req.headers.origin!==`${production?'https':'http'}://${req.headers.host}`)fail(403,'Origin rejected');}
   const server=http.createServer(async(req,res)=>{
     res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Referrer-Policy','same-origin');res.setHeader('X-Frame-Options','SAMEORIGIN');
@@ -55,7 +55,7 @@ function createServer(options={}) {
         const hash=v=>crypto.createHash('sha256').update(v).digest();
         if(typeof input.password!=='string'||!crypto.timingSafeEqual(hash(input.password),hash(secret)))fail(401,'Incorrect admin password');
         const token=crypto.randomBytes(32).toString('hex');sessions.set(token,{expires:Date.now()+8*3600000});
-        res.setHeader('Set-Cookie',`duoonex_session=${token}; Path=/; HttpOnly; SameSite=Strict; Max-Age=28800${production?'; Secure':''}`);
+        res.setHeader('Set-Cookie',`nexpixel_session=${token}; Path=/; HttpOnly; SameSite=Strict; Max-Age=28800${production?'; Secure':''}`);
         return send(200,{ok:true});
       }
       if(pathname==='/api/inquiries'&&method==='POST') {
@@ -69,7 +69,7 @@ function createServer(options={}) {
       if(pathname.startsWith('/api/')) {
         const token=auth(req);
         if(pathname==='/api/session')return send(200,{ok:true});
-        if(pathname==='/api/logout'&&method==='POST'){sessions.delete(token);res.setHeader('Set-Cookie','duoonex_session=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0');return send(200,{ok:true});}
+        if(pathname==='/api/logout'&&method==='POST'){sessions.delete(token);res.setHeader('Set-Cookie','nexpixel_session=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0');return send(200,{ok:true});}
         if(pathname==='/api/pages'&&method==='GET')return send(200,files.map(file=>({file,title:record(file).title||titles.get(file),version:record(file).version,changed:JSON.stringify(record(file).draft)!==JSON.stringify(record(file).published)})));
         if(pathname==='/api/page') {
           const file=url.searchParams.get('file');if(!files.includes(file))fail(404,'Page not found');
@@ -108,7 +108,7 @@ function createServer(options={}) {
         }
         if(pathname==='/api/inquiries'&&method==='GET')return send(200,state.inquiries);
         if(pathname==='/api/inquiries'&&method==='DELETE'){const input=await json(req);state.inquiries=state.inquiries.filter(i=>i.id!==input.id);await persist();return send(200,{ok:true});}
-        if(pathname==='/api/backup'&&method==='GET'){res.setHeader('Content-Disposition','attachment; filename="duoonex-content-backup.json"');return send(200,state);}
+        if(pathname==='/api/backup'&&method==='GET'){res.setHeader('Content-Disposition','attachment; filename="nexpixel-studio-content-backup.json"');return send(200,state);}
         fail(404,'Endpoint not found');
       }
       if(method!=='GET'&&method!=='HEAD')fail(405,'Method not allowed');
@@ -171,6 +171,6 @@ async function createConfiguredServer(options={}){
 }
 if(require.main===module){
   const failed=error=>{console.error(require('./lib/startup').startupDiagnostic(error));process.exitCode=1;};
-  createConfiguredServer().then(server=>{server.on('error',error=>{failed(error);server.close();});server.listen(Number(process.env.PORT||3000),process.env.HOST||'0.0.0.0',()=>console.log('DuooNex ready on port '+(process.env.PORT||3000)+' ('+(process.env.DATABASE_URL?'PostgreSQL + object storage':'local storage')+')'));}).catch(failed);
+  createConfiguredServer().then(server=>{server.on('error',error=>{failed(error);server.close();});server.listen(Number(process.env.PORT||3000),process.env.HOST||'0.0.0.0',()=>console.log('NexPixel Studio ready on port '+(process.env.PORT||3000)+' ('+(process.env.DATABASE_URL?'PostgreSQL + object storage':'local storage')+')'));}).catch(failed);
 }
 module.exports={createServer,createConfiguredServer};

@@ -1,5 +1,4 @@
 [
-  "duoonex-logo.png",
   "projects/carter-studio-mockup-1.png",
   "projects/carter-studio-mockup-1.webp",
   "projects/carter-studio-mockup-1@2x.webp",
@@ -600,5 +599,12 @@
   "projects/workflow-hub-mockup-4@2x.webp",
   "projects/workflow-hub-mockup-5.png",
   "projects/workflow-hub-mockup-5.webp",
-  "projects/workflow-hub-mockup-5@2x.webp"
+  "projects/workflow-hub-mockup-5@2x.webp",
+  "nexpixel-mark.svg",
+  "nexpixel-mark-light.svg",
+  "nexpixel-favicon.svg",
+  "nexpixel-icon-32.png",
+  "nexpixel-icon-512.png",
+  "nexpixel-apple-touch-icon.png",
+  "nexpixel-og-image.png"
 ]

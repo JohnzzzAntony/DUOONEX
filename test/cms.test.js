@@ -26,7 +26,7 @@ test('Every existing page exposes text, images, SEO and preserved structure',()=
   }
 });
 test('Drafts, publishing, authentication, media, persistence and enquiries',async()=>{
-  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'duoonex-test-'));
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'nexpixel-test-'));
   let server=createServer({secret,dataDir:dir,production:false});let base=await listen(server),cookie='';
   const request=(url,method='GET',data,authenticated=true)=>fetch(base+url,{method,headers:{'Content-Type':'application/json',...(authenticated&&cookie?{cookie}: {})},body:data===undefined?undefined:JSON.stringify(data)});
   try {
@@ -69,6 +69,6 @@ test('Drafts, publishing, authentication, media, persistence and enquiries',asyn
     assert.equal((await (await request('/api/inquiries')).json()).length,1);
     await close(server);server=createServer({secret,dataDir:dir,production:false});base=await listen(server);
     assert.match(await (await request('/')).text(),/New SEO title/);assert.equal((await request(media.url)).status,200);assert.equal((await request('/api/session')).status,401);
-  } finally {await close(server);if(path.dirname(path.resolve(dir))===path.resolve(os.tmpdir())&&path.basename(dir).startsWith('duoonex-test-'))fs.rmSync(dir,{recursive:true,force:true});}
+  } finally {await close(server);if(path.dirname(path.resolve(dir))===path.resolve(os.tmpdir())&&path.basename(dir).startsWith('nexpixel-test-'))fs.rmSync(dir,{recursive:true,force:true});}
 });
 test('Missing or short admin secret prevents startup',()=>{assert.throws(()=>createServer({secret:'short'}),/at least 32/);});

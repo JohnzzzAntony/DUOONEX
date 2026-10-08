@@ -1,4 +1,4 @@
-# DuooNex website manager
+# NexPixel Studio website manager
 
 ## Connected cloud storage
 
@@ -55,9 +55,9 @@ Build command: `npm ci --omit=dev`. Start command: `npm start`. Health endpoint:
 Docker example (set the secret in your shell first):
 
 ```sh
-docker build -t duoonex .
-docker volume create duoonex-data
-docker run -d --name duoonex --restart unless-stopped -p 127.0.0.1:3000:3000 --env CMS_ADMIN_TOKEN -v duoonex-data:/data duoonex
+docker build -t nexpixel-studio .
+docker volume create nexpixel-studio-data
+docker run -d --name nexpixel-studio --restart unless-stopped -p 127.0.0.1:3000:3000 --env CMS_ADMIN_TOKEN -v nexpixel-studio-data:/data nexpixel-studio
 ```
 
 Place an HTTPS reverse proxy in front of port 3000. The container runs as the unprivileged `node` user. A bind-mounted directory must be writable by that user. Do not deploy multiple replicas against the same directory.

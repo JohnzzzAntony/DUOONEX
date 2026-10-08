@@ -1,4 +1,4 @@
-/* DuooNex website interactions. No dependencies. */
+/* NexPixel Studio website interactions. No dependencies. */
 (function () {
   'use strict';
 

@@ -1,6 +1,6 @@
-# DuooNex
+# NexPixel Studio
 
-> Dubai-based website and application development for UAE businesses, with remote delivery for GCC and international projects.
+> Designing what’s next. NexPixel Studio is a Dubai-based creative technology studio designing and building websites, digital products, UI/UX, SaaS, mobile products and digital brands for UAE businesses, with remote delivery for GCC and international projects.
 
 ## Services
 - [Custom websites](https://duoonex.com/services/web-design/): Responsive business websites and content management.
@@ -26,7 +26,7 @@
 - [Rydge Studio](https://duoonex.com/case-studies/rydge-studio/): An editorial creative-studio portfolio where every word, image and section is editable from an admin backend.
 
 ## Company and contact
-- [About DuooNex](https://duoonex.com/about/)
+- [About NexPixel Studio](https://duoonex.com/about/)
 - [Company facts](https://duoonex.com/llm-info/)
 - [Contact](https://duoonex.com/contact/)
 - Email: johnsantonyjo@gmail.com

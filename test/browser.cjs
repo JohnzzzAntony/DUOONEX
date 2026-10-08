@@ -3,7 +3,7 @@ const {chromium}=require(process.env.PLAYWRIGHT_PATH||'playwright');
 const {createServer}=require('../server');
 const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 (async()=>{
-  const dataDir=fs.mkdtempSync(path.join(os.tmpdir(),'duoonex-browser-'));
+  const dataDir=fs.mkdtempSync(path.join(os.tmpdir(),'nexpixel-browser-'));
   const secret=crypto.randomBytes(32).toString('hex');
   const server=createServer({secret,dataDir,production:false});
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
@@ -43,6 +43,6 @@ const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),cryp
     assert.deepEqual(errors,[]);console.log('Browser smoke passed: login, editing, preview, publish, upload, enquiry inbox and mobile layout.');
   } finally {
     if(browser)await browser.close();server.closeAllConnections();await new Promise(resolve=>server.close(resolve));
-    if(path.dirname(path.resolve(dataDir))===path.resolve(os.tmpdir())&&path.basename(dataDir).startsWith('duoonex-browser-'))fs.rmSync(dataDir,{recursive:true,force:true});
+    if(path.dirname(path.resolve(dataDir))===path.resolve(os.tmpdir())&&path.basename(dataDir).startsWith('nexpixel-browser-'))fs.rmSync(dataDir,{recursive:true,force:true});
   }
 })().catch(error=>{console.error(error);process.exitCode=1;});

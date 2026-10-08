@@ -6,21 +6,21 @@ const path=require('node:path');
 const {createServer}=require('../server');
 const seo=require('../lib/seo');
 test('Public SEO uses the configured origin and excludes retired/noindex routes',async()=>{
-  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'duoonex-seo-'));
-  const server=createServer({secret:'test-only-seo-secret-12345678901234567890',dataDir:dir,siteUrl:'https://duoonex.example'});
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'nexpixel-seo-'));
+  const server=createServer({secret:'test-only-seo-secret-12345678901234567890',dataDir:dir,siteUrl:'https://nexpixel.example'});
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   const base='http://127.0.0.1:'+server.address().port;
   try {
     const html=await (await fetch(base+'/case-studies/nexora/')).text();
-    assert.match(html,/rel="canonical" href="https:\/\/duoonex\.example\/case-studies\/nexora\/"/);
+    assert.match(html,/rel="canonical" href="https:\/\/nexpixel\.example\/case-studies\/nexora\/"/);
     assert.doesNotMatch(html,/https:\/\/duoonex\.com/);
     const sitemap=await (await fetch(base+'/sitemap.xml')).text();
-    assert.match(sitemap,/https:\/\/duoonex\.example\/case-studies\/finora\//);
+    assert.match(sitemap,/https:\/\/nexpixel\.example\/case-studies\/finora\//);
     assert.doesNotMatch(sitemap,/rooda|CODEINE|ui-ux-agency-in-london/);
     const redirect=await fetch(base+'/case-studies/rooda/index.html',{redirect:'manual'});
     assert.equal(redirect.status,301);assert.equal(redirect.headers.get('location'),'/case-studies/nexora/');
     assert.match(await (await fetch(base+'/robots.txt')).text(),/Disallow: \/api\//);
-    assert.match(await (await fetch(base+'/llms.txt')).text(),/\[Finora\]\(https:\/\/duoonex\.example/);
+    assert.match(await (await fetch(base+'/llms.txt')).text(),/\[Finora\]\(https:\/\/nexpixel\.example/);
     const missing=await fetch(base+'/page-that-does-not-exist/',{headers:{Accept:'text/html'}});
     assert.equal(missing.status,404);assert.match(await missing.text(),/Page not found/);
     for(const media of ['custom-dashboard.png','projects/assethub-1.webp','projects/finora.mp4'])assert.equal((await fetch(base+'/assets/images/'+media)).status,404,'Unapproved media must not be public');
