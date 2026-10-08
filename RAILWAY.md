@@ -26,3 +26,5 @@ Optional migration settings: `DIRECT_URL` (Neon direct connection) and `S3_BUCKE
 The admin password is the CMS_ADMIN_TOKEN value. Keep secrets in Railway Variables. Never commit an environment file containing credentials. The application reads pages and CMS state from PostgreSQL and streams private object-storage media through its existing public URLs.
 
 Local tests and cloud checks confirm the build works. Railway deployment, DNS and HTTPS can only be verified after the service is actually deployed.
+
+Coming soon: requests for `nexpixels.com` and `www.nexpixels.com` get `coming-soon/index.html` (other paths redirect to `/`; `/admin`, `/api` and `/assets` still work). The Railway domain keeps serving the full site. To launch the full site on nexpixels.com, set the Railway variable `COMING_SOON_HOSTS` to an empty value, or list other hosts comma-separated.

@@ -19,6 +19,8 @@ function createServer(options={}) {
   let localState=storage?null:fs.existsSync(db)?JSON.parse(fs.readFileSync(db,'utf8')):{pages:{},media:[],inquiries:[]};
   const sessions=new Map(),limits=new Map();
   const fingerprint=file=>fingerprints.get(file);
+  const comingSoonHosts=new Set((options.comingSoonHosts??process.env.COMING_SOON_HOSTS??'nexpixels.com,www.nexpixels.com').split(',').map(h=>h.trim().toLowerCase()).filter(Boolean));
+  const comingSoon=fs.readFileSync(path.join(ROOT,'coming-soon/index.html'));
   function persistLocal(){const tmp=db+'.tmp';try{fs.writeFileSync(tmp,JSON.stringify(localState),{mode:0o600});fs.renameSync(tmp,db);}catch(error){localState=fs.existsSync(db)?JSON.parse(fs.readFileSync(db,'utf8')):{pages:{},media:[],inquiries:[]};throw error;}}
   function fail(status,message){throw Object.assign(new Error(message),{status});}
   function rate(req,kind,max){const key=kind+req.socket.remoteAddress;const now=Date.now();let bucket=limits.get(key);if(!bucket||bucket.until<now) {bucket={count:0,until:now+900000};limits.set(key,bucket);}if(++bucket.count>max) fail(429,'Too many requests. Try again in 15 minutes.');}
@@ -43,6 +45,10 @@ function createServer(options={}) {
       if(!['GET','HEAD','POST','PUT','DELETE'].includes(method))fail(405,'Method not allowed');
       if(!['GET','HEAD'].includes(method))sameOrigin(req);
       if(pathname==='/api/health')return send(200,{ok:true});
+      if(comingSoonHosts.has((req.headers.host||'').toLowerCase().replace(/:\d+$/,''))&&['GET','HEAD'].includes(method)&&!/^\/(admin|api|assets)(\/|$)/.test(pathname)&&pathname!=='/robots.txt') {
+        if(pathname!=='/'){res.writeHead(302,{Location:'/'});return res.end();}
+        return send(200,comingSoon,'text/html');
+      }
       if(pathname==='/robots.txt'&&method==='GET')return send(200,seo.robots(origin),'text/plain');
       if(pathname==='/llms.txt'&&method==='GET')return send(200,seo.llms(origin),'text/plain');
       const canonicalPath=pathname.replace(/index\.html$/,'').replace(/\/?$/,'/');
