@@ -43,14 +43,14 @@ async function main() {
     const latest = (await client.query('SELECT file,fingerprint FROM duoonex_site.pages FOR UPDATE')).rows;
     if(latest.length!==oldPages.length || latest.some(p=>oldByFile.get(p.file)?.fingerprint!==p.fingerprint)) throw new Error('Templates changed during upload; retry migration');
     await client.query('CREATE TABLE IF NOT EXISTS duoonex_site.release_backups (id text PRIMARY KEY, created_at timestamptz NOT NULL DEFAULT now(), snapshot jsonb NOT NULL)');
-    const backupId = 'portfolio-'+new Date().toISOString();
+    const backupId = 'release-'+new Date().toISOString();
     await client.query(`INSERT INTO duoonex_site.release_backups(id,snapshot) SELECT $1,jsonb_build_object('pages',(SELECT jsonb_agg(to_jsonb(p)) FROM duoonex_site.pages p),'settings',(SELECT jsonb_agg(to_jsonb(s)) FROM duoonex_site.settings s),'cms',(SELECT to_jsonb(c) FROM duoonex_site.cms c WHERE id=1),'media',(SELECT jsonb_agg(to_jsonb(m)) FROM duoonex_site.media m))`,[backupId]);
     for(const p of changed) {
       await client.query('INSERT INTO duoonex_site.pages(file,html,title,fingerprint,fields) VALUES($1,$2,$3,$4,$5) ON CONFLICT(file) DO UPDATE SET html=excluded.html,title=excluded.title,fingerprint=excluded.fingerprint,fields=excluded.fields,updated_at=now()',[p.file,p.html,p.doc.title,p.doc.fingerprint,JSON.stringify(p.doc.fields)]);
       const record = current.state.pages[p.file];
       current.state.pages[p.file] = {...record, version:(record?.version||0)+1, draft:{},published:{},history:record?.history||[],fingerprint:p.doc.fingerprint,title:p.doc.title};
     }
-    const settings = {projects:require('../data/projects.json'),redirects:require('../data/project-redirects.json'),publicMedia,sitemap:fs.readFileSync('sitemap.xml','utf8'),llms:fs.readFileSync('llms.txt','utf8')};
+    const settings = {projects:require('../data/projects.json'),redirects:require('../data/project-redirects.json'),publicMedia,sitemap:fs.readFileSync('sitemap.xml','utf8'),llms:fs.readFileSync('llms.txt','utf8'),notFoundHtml:fs.readFileSync('404.html','utf8'),entity:fs.readFileSync('docs/entity.txt','utf8')};
     for(const [key,value] of Object.entries(settings)) await client.query('INSERT INTO duoonex_site.settings(key,value) VALUES($1,$2) ON CONFLICT(key) DO UPDATE SET value=excluded.value,updated_at=now()',[key,JSON.stringify(value)]);
     for(const item of uploaded) await saveMedia(client,item);
     await client.query('UPDATE duoonex_site.cms SET state=$1,revision=revision+1,updated_at=now() WHERE id=1',[JSON.stringify(current.state)]);
