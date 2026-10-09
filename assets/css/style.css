@@ -196,7 +196,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; letter-spacing: 
 .art--magenta { background-image: linear-gradient(135deg, rgba(18,12,42,.18), rgba(0,229,153,.22)), url('../images/projects/nexora-signin-mobile.png'); background-size: cover; background-position: center; }
 .art--sunset { background-image: linear-gradient(135deg, rgba(247,247,245,.08), rgba(11,59,44,.14)), url('../images/projects/mechaura.webp'); background-size: cover; background-position: center; }
 .art--ember { background-image: linear-gradient(135deg, rgba(5,16,54,.12), rgba(0,122,82,.2)), url('../images/projects/finora-signin.png'); background-size: cover; background-position: center; }
-.art--lime { background-image: linear-gradient(135deg, rgba(200,245,226,.08), rgba(11,59,44,.18)), url('../images/projects/carter-studio-mockup-1.webp'); background-size: cover; background-position: center; }
+.art--lime { background-image: linear-gradient(135deg, rgba(200,245,226,.08), rgba(11,59,44,.18)), url('../images/projects/finora-signin.png'); background-size: cover; background-position: center; }
 .nav { display: flex; align-items: center; gap: 26px; margin-inline: auto; }
 .nav__link { position: relative; font-size: var(--fs-sm); font-weight: 500; padding-block: 6px; }
 .nav__link sup { font-size: 9px; color: var(--gray-400); margin-left: 2px; vertical-align: super; }
@@ -388,7 +388,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; letter-spacing: 
 .art--magenta { background-image: linear-gradient(135deg, rgba(18,12,42,.18), rgba(0,229,153,.22)), url('../images/projects/nexora-signin-mobile.png'); background-size: cover; background-position: center; }
 .art--sunset { background-image: linear-gradient(135deg, rgba(247,247,245,.08), rgba(11,59,44,.14)), url('../images/projects/mechaura.webp'); background-size: cover; background-position: center; }
 .art--ember { background-image: linear-gradient(135deg, rgba(5,16,54,.12), rgba(0,122,82,.2)), url('../images/projects/finora-signin.png'); background-size: cover; background-position: center; }
-.art--lime { background-image: linear-gradient(135deg, rgba(200,245,226,.08), rgba(11,59,44,.18)), url('../images/projects/carter-studio-mockup-1.webp'); background-size: cover; background-position: center; }
+.art--lime { background-image: linear-gradient(135deg, rgba(200,245,226,.08), rgba(11,59,44,.18)), url('../images/projects/finora-signin.png'); background-size: cover; background-position: center; }
 .art__label { position: absolute; left: 20px; bottom: 18px; z-index: 1; font-size: var(--fs-xs); font-weight: 600; color: rgba(255, 255, 255, .82); letter-spacing: .04em; }
 .art--grey .art__label, .art--yellow .art__label, .art--lime .art__label { color: rgba(0, 0, 0, .55); }
 

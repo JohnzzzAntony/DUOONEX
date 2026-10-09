@@ -19,8 +19,6 @@
 - [WorkFlow Hub](https://duoonex.com/case-studies/workflow-hub/): An internal tool that turns incoming emails into owned tasks, drafts professional replies and chases work until it is closed.
 - [DREC Property Management System](https://duoonex.com/case-studies/drec-pms/): A property and lease platform managing plots, units, subtenants, subleases, EJARI registrations, rent collection and compliance alerts.
 - [CertGuard](https://duoonex.com/case-studies/certguard/): A domain and SSL control panel that verifies expiry dates against live sources, alerts before expiry and automates certificate renewal.
-- [Carter Studio](https://duoonex.com/case-studies/carter-studio/): A dark, motion-led website for a freelance web studio with services, portfolio, pricing, blog and an admin CMS.
-- [Rydge Studio](https://duoonex.com/case-studies/rydge-studio/): An editorial creative-studio portfolio where every word, image and section is editable from an admin backend.
 
 ## Company and contact
 - [About NexPixel Studio](https://duoonex.com/about/)
