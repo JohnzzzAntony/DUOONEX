@@ -6,7 +6,7 @@ Prepared 2 October 2026 for https://nexpixels.com.
 
 The source now uses **NexPixels** and the tagline **Designing what’s next.** on every page, in the metadata, JSON-LD, llms.txt, the CMS and these docs. Colour tokens are charcoal `#17191C` with copper accents: `#B9826B`, and `#8F5A45` for small text, which meets AA contrast. The logo is a pixel-built NP mark with a copper infinity stroke beside a Manrope wordmark, in `assets/images/nexpixel-*`, with matching favicon, app icons and a 1200×630 social card. The homepage has new hero copy and a philosophy section. The footer carries the tagline, and the 404 page uses the spec copy. These marks are interim because no master logo file was supplied; replace the files under the same names when it arrives.
 
-Technical identifiers that production depends on are unchanged: the `duoonex_site` database schema, the `duoonex/media/` object keys, the GitHub repository name and the `nexpixels.com` canonical origin, which is set by `SITE_URL`.
+Technical identifiers that production depends on are unchanged: the `nexpixels_site` database schema, the `nexpixels/media/` object keys, the GitHub repository name and the `nexpixels.com` canonical origin, which is set by `SITE_URL`.
 
 **Cloud rollout still required.** In cloud mode, page templates, settings (including the 404 page and the public-media allowlist) and images come from PostgreSQL and object storage. Deploying this code changes the stylesheet and server immediately, but the pages keep their stored content until a backed-up content migration replaces the templates and settings and uploads the new `nexpixel-*` media. The legacy `.logo__img` style is kept so stored templates still render their old logo correctly until then.
 
