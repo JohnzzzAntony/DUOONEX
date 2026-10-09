@@ -3,27 +3,27 @@
 > Designing what’s next. NexPixels is a Dubai-based creative technology studio designing and building websites, digital products, UI/UX, SaaS, mobile products and digital brands for UAE businesses, with remote delivery for GCC and international projects.
 
 ## Services
-- [Custom websites](https://duoonex.com/services/web-design/): Responsive business websites and content management.
-- [Custom applications](https://duoonex.com/services/web-app-mvp-development/): Operational workflows, dashboards and customer portals.
-- [React and Next.js](https://duoonex.com/services/saas-mvp-development/): API-connected websites and application interfaces.
-- [Python and AI workflows](https://duoonex.com/services/ai-mvp-development/): Business backends, APIs and scoped AI integrations.
-- [Shopify development](https://duoonex.com/services/webflow/): Liquid themes, product content and store integrations.
-- [WordPress development](https://duoonex.com/services/law-firm-web-design-development/): Service websites and manageable publishing.
-- [UI/UX design](https://duoonex.com/services/ui-ux-design/): Figma journeys, interfaces and prototypes.
+- [Custom websites](https://nexpixels.com/services/web-design/): Responsive business websites and content management.
+- [Custom applications](https://nexpixels.com/services/web-app-mvp-development/): Operational workflows, dashboards and customer portals.
+- [React and Next.js](https://nexpixels.com/services/react-nextjs-development/): API-connected websites and application interfaces.
+- [Python and AI workflows](https://nexpixels.com/services/python-ai-workflows/): Business backends, APIs and scoped AI integrations.
+- [Shopify development](https://nexpixels.com/services/shopify-development/): Liquid themes, product content and store integrations.
+- [WordPress development](https://nexpixels.com/services/wordpress-development/): Service websites and manageable publishing.
+- [UI/UX design](https://nexpixels.com/services/ui-ux-design/): Figma journeys, interfaces and prototypes.
 
 ## Selected projects
-- [Finora](https://duoonex.com/case-studies/finora/): A UAE-focused accounting platform connecting sales, purchases, inventory, banking and ledger-based business reports.
-- [Nexora](https://duoonex.com/case-studies/nexora/): A shared workspace for support tickets, tasks, approvals and customer service, with organisation-scoped access and activity history.
-- [Invitara](https://duoonex.com/case-studies/invitara/): Animated digital invitations with personalisation, guest replies, account-based publishing and event-date access rules.
-- [Mechaura International](https://duoonex.com/case-studies/mechaura/): An industrial catalogue website connecting UAE buyers with product specifications, sector information and quotation enquiries.
-- [WorkFlow Hub](https://duoonex.com/case-studies/workflow-hub/): An internal tool that turns incoming emails into owned tasks, drafts professional replies and chases work until it is closed.
-- [DREC Property Management System](https://duoonex.com/case-studies/drec-pms/): A property and lease platform managing plots, units, subtenants, subleases, EJARI registrations, rent collection and compliance alerts.
-- [CertGuard](https://duoonex.com/case-studies/certguard/): A domain and SSL control panel that verifies expiry dates against live sources, alerts before expiry and automates certificate renewal.
+- [Finora](https://nexpixels.com/case-studies/finora/): A UAE-focused accounting platform connecting sales, purchases, inventory, banking and ledger-based business reports.
+- [Nexora](https://nexpixels.com/case-studies/nexora/): A shared workspace for support tickets, tasks, approvals and customer service, with organisation-scoped access and activity history.
+- [Invitara](https://nexpixels.com/case-studies/invitara/): Animated digital invitations with personalisation, guest replies, account-based publishing and event-date access rules.
+- [Mechaura International](https://nexpixels.com/case-studies/mechaura/): An industrial catalogue website connecting UAE buyers with product specifications, sector information and quotation enquiries.
+- [WorkFlow Hub](https://nexpixels.com/case-studies/workflow-hub/): An internal tool that turns incoming emails into owned tasks, drafts professional replies and chases work until it is closed.
+- [DREC Property Management System](https://nexpixels.com/case-studies/drec-pms/): A property and lease platform managing plots, units, subtenants, subleases, EJARI registrations, rent collection and compliance alerts.
+- [CertGuard](https://nexpixels.com/case-studies/certguard/): A domain and SSL control panel that verifies expiry dates against live sources, alerts before expiry and automates certificate renewal.
 
 ## Company and contact
-- [About NexPixels](https://duoonex.com/about/)
-- [Company facts](https://duoonex.com/llm-info/)
-- [Contact](https://duoonex.com/contact/)
+- [About NexPixels](https://nexpixels.com/about/)
+- [Company facts](https://nexpixels.com/llm-info/)
+- [Contact](https://nexpixels.com/contact/)
 - Email: johnsantonyjo@gmail.com
 - Phone / WhatsApp: +971 58 810 2728
 - Location: Dubai, United Arab Emirates

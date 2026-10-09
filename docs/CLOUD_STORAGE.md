@@ -17,7 +17,7 @@ Objects use content-addressed keys under `duoonex/media/`. The bucket stays priv
 
 `npm start` loads `.env.local` when present. This ignored local file contains the supplied connection settings and a generated CMS admin token. Deployment uses the host's secret/environment settings; the release archive never includes `.env.local`.
 
-Required cloud settings: `DATABASE_URL`, `AWS_ENDPOINT_URL_S3`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, `CMS_ADMIN_TOKEN`. Set `SITE_URL=https://duoonex.com` and `NODE_ENV=production` behind HTTPS. `DIRECT_URL` and `S3_BUCKET=media` are used for migration. Database connections verify TLS certificates and enable channel binding.
+Required cloud settings: `DATABASE_URL`, `AWS_ENDPOINT_URL_S3`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, `CMS_ADMIN_TOKEN`. Set `SITE_URL=https://nexpixels.com` and `NODE_ENV=production` behind HTTPS. `DIRECT_URL` and `S3_BUCKET=media` are used for migration. Database connections verify TLS certificates and enable channel binding.
 
 When `DATABASE_URL` is set, startup loads page templates and settings from PostgreSQL. Cloud connection failures stop startup; they do not silently select a stale local copy. Browser-request content overrides, enquiries and uploads use cloud storage. No local writable content volume is needed in cloud mode.
 
@@ -33,4 +33,4 @@ Admin sessions and rate limits currently remain in application memory. Use one a
 
 Enable database and storage backup/retention through the provider. CMS backup exports content state; it is not a full database or object-storage backup. Preserve the complete schema and bucket for disaster recovery.
 
-The website has not been published to duoonex.com by this migration. Hosting, HTTPS and domain routing still need deployment configuration.
+The website has not been published to nexpixels.com by this migration. Hosting, HTTPS and domain routing still need deployment configuration.

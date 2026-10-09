@@ -71,15 +71,4 @@ test('Drafts, publishing, authentication, media, persistence and enquiries',asyn
     assert.match(await (await request('/')).text(),/New SEO title/);assert.equal((await request(media.url)).status,200);assert.equal((await request('/api/session')).status,401);
   } finally {await close(server);if(path.dirname(path.resolve(dir))===path.resolve(os.tmpdir())&&path.basename(dir).startsWith('nexpixel-test-'))fs.rmSync(dir,{recursive:true,force:true});}
 });
-test('Coming-soon hosts get the launch page while admin, API and other hosts keep the full site',async()=>{
-  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'nexpixel-test-'));
-  const server=createServer({secret,dataDir:dir,production:false,comingSoonHosts:'nexpixels.com,www.nexpixels.com'});const base=await listen(server);
-  const get=(url,host)=>new Promise((resolve,reject)=>require('node:http').get(base+url,{headers:host?{host}:{}},res=>{let body='';res.setEncoding('utf8');res.on('data',c=>body+=c);res.on('end',()=>resolve({status:res.statusCode,headers:{get:k=>res.headers[k]},text:async()=>body}));}).on('error',reject));
-  try {
-    for(const host of ['nexpixels.com','WWW.NexPixels.com:443']){const page=await get('/',host);assert.equal(page.status,200,host);assert.match(await page.text(),/Coming soon/);}
-    const deep=await get('/services/','nexpixels.com');assert.equal(deep.status,302);assert.equal(deep.headers.get('location'),'/');
-    assert.equal((await get('/admin/','nexpixels.com')).status,200);assert.equal((await get('/api/health','nexpixels.com')).status,200);assert.equal((await get('/robots.txt','nexpixels.com')).status,200);
-    assert.doesNotMatch(await (await get('/')).text(),/Coming soon/);
-  } finally {await close(server);if(path.basename(dir).startsWith('nexpixel-test-'))fs.rmSync(dir,{recursive:true,force:true});}
-});
 test('Missing or short admin secret prevents startup',()=>{assert.throws(()=>createServer({secret:'short'}),/at least 32/);});

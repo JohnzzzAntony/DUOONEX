@@ -1,12 +1,12 @@
 # NexPixels final build and launch assessment
 
-Prepared 2 October 2026 for https://duoonex.com.
+Prepared 2 October 2026 for https://nexpixels.com.
 
 ## Rebrand to NexPixels (8 October 2026)
 
 The source now uses **NexPixels** and the tagline **Designing what’s next.** on every page, in the metadata, JSON-LD, llms.txt, the CMS and these docs. Colour tokens are charcoal `#17191C` with copper accents: `#B9826B`, and `#8F5A45` for small text, which meets AA contrast. The logo is a pixel-built NP mark with a copper infinity stroke beside a Manrope wordmark, in `assets/images/nexpixel-*`, with matching favicon, app icons and a 1200×630 social card. The homepage has new hero copy and a philosophy section. The footer carries the tagline, and the 404 page uses the spec copy. These marks are interim because no master logo file was supplied; replace the files under the same names when it arrives.
 
-Technical identifiers that production depends on are unchanged: the `duoonex_site` database schema, the `duoonex/media/` object keys, the GitHub repository name and the `duoonex.com` canonical origin, which is set by `SITE_URL`.
+Technical identifiers that production depends on are unchanged: the `duoonex_site` database schema, the `duoonex/media/` object keys, the GitHub repository name and the `nexpixels.com` canonical origin, which is set by `SITE_URL`.
 
 **Cloud rollout still required.** In cloud mode, page templates, settings (including the 404 page and the public-media allowlist) and images come from PostgreSQL and object storage. Deploying this code changes the stylesheet and server immediately, but the pages keep their stored DuooNex content until a backed-up content migration replaces the templates and settings and uploads the new `nexpixel-*` media. The legacy `.logo__img` style is kept so stored templates still render their old logo correctly until then.
 
@@ -52,7 +52,7 @@ Reports: test-output/full-site-results.json, docs/design-preservation.json, docs
 
 1. Extract the release ZIP or use dist as the application directory.
 2. Install Node.js 24 and run npm ci --omit=dev.
-3. Configure CMS_ADMIN_TOKEN, DATABASE_URL, AWS_ENDPOINT_URL_S3, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and AWS_REGION through hosting secrets; SITE_URL=https://duoonex.com; NODE_ENV=production; PORT as required by the host. The content migration has already been completed.
+3. Configure CMS_ADMIN_TOKEN, DATABASE_URL, AWS_ENDPOINT_URL_S3, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and AWS_REGION through hosting secrets; SITE_URL=https://nexpixels.com; NODE_ENV=production; PORT as required by the host. The content migration has already been completed.
 4. Run npm start behind HTTPS, preserving the Host header. Use one instance or sticky admin sessions. Back up PostgreSQL and the media bucket. CMS_DATA_DIR is needed only for optional local-file mode.
 5. Check /api/health, every public navigation route, /admin/ login and a real enquiry on the deployed HTTPS domain. Confirm receipt in the admin inbox, then remove that test enquiry.
 6. Verify the domain in search consoles and submit /sitemap.xml after launch.

@@ -21,5 +21,17 @@
   "/case-studies/jkr-international/": "/case-studies/",
   "/case-studies/house-of-karji/": "/case-studies/",
   "/case-studies/carter-studio/": "/case-studies/",
-  "/case-studies/rydge-studio/": "/case-studies/"
+  "/case-studies/rydge-studio/": "/case-studies/",
+  "/services/webflow/": "/services/shopify-development/",
+  "/services/brand-identity-design/": "/services/ecommerce-development/",
+  "/services/law-firm-web-design-development/": "/services/wordpress-development/",
+  "/services/ui-ux-design-for-ai-based-products/": "/services/ecommerce-integrations/",
+  "/services/mobile-app-design/": "/services/mobile-ecommerce-ux/",
+  "/services/ai-mvp-development/": "/services/python-ai-workflows/",
+  "/services/saas-mvp-development/": "/services/react-nextjs-development/",
+  "/services/digital-product-design/": "/services/figma-to-website/",
+  "/services/ux-usability-testing/": "/services/qa-launch-testing/",
+  "/services/ui-ux-consultancy/": "/services/website-strategy/",
+  "/services/ux-research/": "/services/ecommerce-ux-research/",
+  "/blog/best-webflow-agencies/": "/blog/best-shopify-agencies/"
 }

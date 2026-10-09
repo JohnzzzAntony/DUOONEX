@@ -4,7 +4,7 @@
 2. Before deploying, add the environment variables below through Variables → Raw Editor. Use the private `.env.railway` file prepared in the original local workspace; it is intentionally excluded from Git.
 3. Railway builds the root Dockerfile. Leave custom build/start commands blank. The container starts `node server.js`, binds to Railway's PORT and uses `/api/health` for readiness.
 4. Use one replica. No attached volume is required with the configured Neon database and object storage.
-5. Generate a Railway domain and check the homepage, projects, media and `/admin/`. Add `duoonex.com` as a custom domain and apply the exact DNS records Railway displays. HTTPS must be active for production admin cookies.
+5. Generate a Railway domain and check the homepage, projects, media and `/admin/`. Add `nexpixels.com` as a custom domain and apply the exact DNS records Railway displays. HTTPS must be active for production admin cookies.
 6. Submit one real test enquiry and confirm it appears in the admin inbox, then delete it. Email notifications are not configured.
 
 Required variables:
@@ -12,7 +12,7 @@ Required variables:
 ```dotenv
 NODE_ENV=production
 HOST=0.0.0.0
-SITE_URL=https://duoonex.com
+SITE_URL=https://nexpixels.com
 CMS_ADMIN_TOKEN=<existing private admin secret>
 DATABASE_URL=<existing Neon pooled connection string>
 AWS_ENDPOINT_URL_S3=<existing Neon object-storage endpoint>
@@ -27,4 +27,3 @@ The admin password is the CMS_ADMIN_TOKEN value. Keep secrets in Railway Variabl
 
 Local tests and cloud checks confirm the build works. Railway deployment, DNS and HTTPS can only be verified after the service is actually deployed.
 
-Coming soon: requests for `nexpixels.com` and `www.nexpixels.com` get `coming-soon/index.html` (other paths redirect to `/`; `/admin`, `/api` and `/assets` still work). The Railway domain keeps serving the full site. To launch the full site on nexpixels.com, set the Railway variable `COMING_SOON_HOSTS` to an empty value, or list other hosts comma-separated.

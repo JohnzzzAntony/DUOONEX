@@ -35,6 +35,6 @@ test('Public SEO uses the configured origin and excludes retired/noindex routes'
   } finally {server.closeAllConnections();await new Promise(resolve=>server.close(resolve));fs.rmSync(dir,{recursive:true,force:true});}
 });
 test('Canonical origin rejects URL credentials and paths',()=>{
-  assert.equal(seo.siteOrigin(),'https://duoonex.com');
+  assert.equal(seo.siteOrigin(),'https://nexpixels.com');
   for(const value of ['javascript:alert(1)','https://user:password@example.com','https://example.com/site/'])assert.throws(()=>seo.siteOrigin(value));
 });

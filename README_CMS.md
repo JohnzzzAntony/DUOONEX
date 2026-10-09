@@ -6,7 +6,7 @@ The current site is migrated to Neon PostgreSQL and private S3-compatible storag
 
 `npm start` loads a private `.env.local` when present. Host environment variables take precedence. Credentials are excluded from Git, Docker build contexts and release archives.
 
-The existing HTML, CSS and browser JavaScript remain the frontend. The Node backend renders published edits into 94 source pages before sending HTML, including SEO metadata. No client-side content fetch is needed. The selected portfolio contains 12 projects. Eighteen retired or withheld project routes redirect to current project pages or the portfolio. The sitemap excludes redirects and noindex pages; its origin, canonical URLs and machine-readable company links use `SITE_URL` (default `https://duoonex.com`).
+The existing HTML, CSS and browser JavaScript remain the frontend. The Node backend renders published edits into 94 source pages before sending HTML, including SEO metadata. No client-side content fetch is needed. The selected portfolio contains 12 projects. Eighteen retired or withheld project routes redirect to current project pages or the portfolio. The sitemap excludes redirects and noindex pages; its origin, canonical URLs and machine-readable company links use `SITE_URL` (default `https://nexpixels.com`).
 
 ## Local startup
 
@@ -48,7 +48,7 @@ Configure:
 | `NODE_ENV` | `production` (Secure session cookies require HTTPS) |
 | `CMS_DATA_DIR` | Absolute persistent directory, e.g. `/data` |
 | `PORT` | Provider port or `3000` |
-| `SITE_URL` | `https://duoonex.com`, or the actual public HTTP(S) origin without a path |
+| `SITE_URL` | `https://nexpixels.com`, or the actual public HTTP(S) origin without a path |
 
 Build command: `npm ci --omit=dev`. Start command: `npm start`. Health endpoint: `/api/health`. Terminate HTTPS at the hosting proxy and preserve the original Host header. Local HTTP testing uses non-production mode. `.env.example` documents variables; `.env.local` is loaded by the start script when present.
 
