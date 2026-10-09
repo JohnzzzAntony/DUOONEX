@@ -1,4 +1,4 @@
-# Deploy NexPixel Studio on Railway
+# Deploy NexPixels on Railway
 
 1. Create a Railway service from `JohnzzzAntony/DUOONEX`, branch `main`, root directory `/`.
 2. Before deploying, add the environment variables below through Variables → Raw Editor. Use the private `.env.railway` file prepared in the original local workspace; it is intentionally excluded from Git.

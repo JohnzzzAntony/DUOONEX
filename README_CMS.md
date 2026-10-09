@@ -1,4 +1,4 @@
-# NexPixel Studio website manager
+# NexPixels website manager
 
 ## Connected cloud storage
 

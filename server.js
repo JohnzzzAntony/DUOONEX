@@ -177,6 +177,6 @@ async function createConfiguredServer(options={}){
 }
 if(require.main===module){
   const failed=error=>{console.error(require('./lib/startup').startupDiagnostic(error));process.exitCode=1;};
-  createConfiguredServer().then(server=>{server.on('error',error=>{failed(error);server.close();});server.listen(Number(process.env.PORT||3000),process.env.HOST||'0.0.0.0',()=>console.log('NexPixel Studio ready on port '+(process.env.PORT||3000)+' ('+(process.env.DATABASE_URL?'PostgreSQL + object storage':'local storage')+')'));}).catch(failed);
+  createConfiguredServer().then(server=>{server.on('error',error=>{failed(error);server.close();});server.listen(Number(process.env.PORT||3000),process.env.HOST||'0.0.0.0',()=>console.log('NexPixels ready on port '+(process.env.PORT||3000)+' ('+(process.env.DATABASE_URL?'PostgreSQL + object storage':'local storage')+')'));}).catch(failed);
 }
 module.exports={createServer,createConfiguredServer};

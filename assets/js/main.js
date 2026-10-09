@@ -1,4 +1,4 @@
-/* NexPixel Studio website interactions. No dependencies. */
+/* NexPixels website interactions. No dependencies. */
 (function () {
   'use strict';
 

@@ -2,7 +2,7 @@
   "name": "nexpixel-studio-site-cms",
   "version": "1.0.0",
   "private": true,
-  "description": "NexPixel Studio static frontend with a lightweight content management backend",
+  "description": "NexPixels static frontend with a lightweight content management backend",
   "scripts": {
     "start": "node --env-file-if-exists=.env.local server.js",
     "migrate:cloud": "node --env-file-if-exists=.env.local tools/migrate-cloud.cjs",

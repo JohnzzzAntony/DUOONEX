@@ -188,7 +188,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; letter-spacing: 
 .logo__img { width: 168px; height: auto; display: block; flex: none; }
 .footer .logo__img { width: 200px; }
 
-/* NexPixel Studio project imagery */
+/* NexPixels project imagery */
 .art--indigo { background-image: linear-gradient(135deg, rgba(11,59,44,.18), rgba(11,59,44,.28)), url('../images/projects/certguard-mockup-1.webp'); background-size: cover; background-position: center; }
 .art--dark { background-image: linear-gradient(135deg, rgba(8,12,28,.18), rgba(11,59,44,.25)), url('../images/projects/nexora-signin.png'); background-size: cover; background-position: center; }
 .art--sky { background-image: linear-gradient(135deg, rgba(255,255,255,.08), rgba(11,59,44,.16)), url('../images/projects/drec-pms-mockup-1.webp'); background-size: cover; background-position: center; }

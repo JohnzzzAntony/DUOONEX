@@ -1,6 +1,6 @@
-# NexPixel Studio
+# NexPixels
 
-> Designing what’s next. NexPixel Studio is a Dubai-based creative technology studio designing and building websites, digital products, UI/UX, SaaS, mobile products and digital brands for UAE businesses, with remote delivery for GCC and international projects.
+> Designing what’s next. NexPixels is a Dubai-based creative technology studio designing and building websites, digital products, UI/UX, SaaS, mobile products and digital brands for UAE businesses, with remote delivery for GCC and international projects.
 
 ## Services
 - [Custom websites](https://duoonex.com/services/web-design/): Responsive business websites and content management.
@@ -21,7 +21,7 @@
 - [CertGuard](https://duoonex.com/case-studies/certguard/): A domain and SSL control panel that verifies expiry dates against live sources, alerts before expiry and automates certificate renewal.
 
 ## Company and contact
-- [About NexPixel Studio](https://duoonex.com/about/)
+- [About NexPixels](https://duoonex.com/about/)
 - [Company facts](https://duoonex.com/llm-info/)
 - [Contact](https://duoonex.com/contact/)
 - Email: johnsantonyjo@gmail.com
