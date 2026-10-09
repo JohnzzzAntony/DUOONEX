@@ -8,7 +8,7 @@ fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out,{recursive:true});
 const dirs=['about','admin','assets','blog','case-studies','contact','faqs','lib','llm-info','locations','privacy-policy','services','startups','subscription','terms-conditions','testimonials'];
 const media=require('../data/public-media.json');
 for(const dir of dirs)fs.cpSync(path.join(root,dir),path.join(out,dir),{recursive:true,filter:source=>{const relative=path.relative(path.join(root,'assets/images'),source).split(path.sep).join('/');return !source.startsWith(path.join(root,'assets/images')+path.sep)||fs.statSync(source).isDirectory()||media.includes(relative);}});
-for(const file of ['index.html','404.html','CODEINE_Portfolio.html','server.js','package.json','package-lock.json','Dockerfile','.dockerignore','.env.example','README_CMS.md','FINAL_BUILD.md','sitemap.xml','robots.txt','llms.txt'])fs.copyFileSync(path.join(root,file),path.join(out,file));
+for(const file of ['index.html','404.html','server.js','package.json','package-lock.json','Dockerfile','.dockerignore','.env.example','README_CMS.md','FINAL_BUILD.md','sitemap.xml','robots.txt','llms.txt'])fs.copyFileSync(path.join(root,file),path.join(out,file));
 fs.mkdirSync(path.join(out,'data'),{recursive:true});
 for(const file of ['railway.json','RAILWAY.md'])fs.copyFileSync(path.join(root,file),path.join(out,file));
 for(const file of ['projects.json','project-redirects.json','public-media.json'])fs.copyFileSync(path.join(root,'data',file),path.join(out,'data',file));

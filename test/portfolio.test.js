@@ -8,7 +8,7 @@ const approved = new Set(require('../data/public-media.json'));
 const redirects = require('../data/project-redirects.json');
 
 test('Portfolio cards, complete project details and screen links match the catalog', () => {
-  for (const file of ['index.html', 'CODEINE_Portfolio.html', 'case-studies/index.html']) {
+  for (const file of ['index.html', 'case-studies/index.html']) {
     const $ = cheerio.load(fs.readFileSync(file, 'utf8'));
     assert.deepEqual($('.work__card').map((_, el) => $(el).attr('href')).get(), projects.map(p => '/case-studies/' + p.slug + '/'));
     $('[data-filter]').each((_, el) => {

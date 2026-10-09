@@ -55,9 +55,9 @@ Build command: `npm ci --omit=dev`. Start command: `npm start`. Health endpoint:
 Docker example (set the secret in your shell first):
 
 ```sh
-docker build -t nexpixel-studio .
-docker volume create nexpixel-studio-data
-docker run -d --name nexpixel-studio --restart unless-stopped -p 127.0.0.1:3000:3000 --env CMS_ADMIN_TOKEN -v nexpixel-studio-data:/data nexpixel-studio
+docker build -t nexpixels .
+docker volume create nexpixels-data
+docker run -d --name nexpixels --restart unless-stopped -p 127.0.0.1:3000:3000 --env CMS_ADMIN_TOKEN -v nexpixels-data:/data nexpixels
 ```
 
 Place an HTTPS reverse proxy in front of port 3000. The container runs as the unprivileged `node` user. A bind-mounted directory must be writable by that user. Do not deploy multiple replicas against the same directory.

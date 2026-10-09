@@ -8,7 +8,7 @@ The source now uses **NexPixels** and the tagline **Designing what’s next.** o
 
 Technical identifiers that production depends on are unchanged: the `duoonex_site` database schema, the `duoonex/media/` object keys, the GitHub repository name and the `nexpixels.com` canonical origin, which is set by `SITE_URL`.
 
-**Cloud rollout still required.** In cloud mode, page templates, settings (including the 404 page and the public-media allowlist) and images come from PostgreSQL and object storage. Deploying this code changes the stylesheet and server immediately, but the pages keep their stored DuooNex content until a backed-up content migration replaces the templates and settings and uploads the new `nexpixel-*` media. The legacy `.logo__img` style is kept so stored templates still render their old logo correctly until then.
+**Cloud rollout still required.** In cloud mode, page templates, settings (including the 404 page and the public-media allowlist) and images come from PostgreSQL and object storage. Deploying this code changes the stylesheet and server immediately, but the pages keep their stored content until a backed-up content migration replaces the templates and settings and uploads the new `nexpixel-*` media. The legacy `.logo__img` style is kept so stored templates still render their old logo correctly until then.
 
 ## Launch assessment
 

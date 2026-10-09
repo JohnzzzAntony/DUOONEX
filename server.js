@@ -111,7 +111,7 @@ function createServer(options={}) {
         }
         if(pathname==='/api/inquiries'&&method==='GET')return send(200,state.inquiries);
         if(pathname==='/api/inquiries'&&method==='DELETE'){const input=await json(req);state.inquiries=state.inquiries.filter(i=>i.id!==input.id);await persist();return send(200,{ok:true});}
-        if(pathname==='/api/backup'&&method==='GET'){res.setHeader('Content-Disposition','attachment; filename="nexpixel-studio-content-backup.json"');return send(200,state);}
+        if(pathname==='/api/backup'&&method==='GET'){res.setHeader('Content-Disposition','attachment; filename="nexpixels-content-backup.json"');return send(200,state);}
         fail(404,'Endpoint not found');
       }
       if(method!=='GET'&&method!=='HEAD')fail(405,'Method not allowed');

@@ -16,7 +16,7 @@ test('Public SEO uses the configured origin and excludes retired/noindex routes'
     assert.doesNotMatch(html,/https:\/\/duoonex\.com/);
     const sitemap=await (await fetch(base+'/sitemap.xml')).text();
     assert.match(sitemap,/https:\/\/nexpixel\.example\/case-studies\/finora\//);
-    assert.doesNotMatch(sitemap,/rooda|CODEINE|ui-ux-agency-in-london/);
+    assert.doesNotMatch(sitemap,/rooda|ui-ux-agency-in-london/);
     const redirect=await fetch(base+'/case-studies/rooda/index.html',{redirect:'manual'});
     assert.equal(redirect.status,301);assert.equal(redirect.headers.get('location'),'/case-studies/nexora/');
     assert.match(await (await fetch(base+'/robots.txt')).text(),/Disallow: \/api\//);
