@@ -3840,6 +3840,10 @@ body.is-locked .wa-float {
   background-color: var(--brand-primary);
 }
 
+.cf-dots {
+  display: none;
+}
+
 /* ---- Mobile-only layout (<768px): sections become swipeable card carousels ---- */
 @media (max-width: 767px) {
   .section {
@@ -3848,9 +3852,7 @@ body.is-locked .wa-float {
 
   .work,
   .vtest,
-  .panels,
   .industries,
-  .stats,
   .badges,
   .awards__grid,
   .divisions,
@@ -3871,28 +3873,175 @@ body.is-locked .wa-float {
     -webkit-overflow-scrolling: touch;
   }
 
-  :is(.work, .vtest, .panels, .industries, .stats, .badges, .awards__grid, .divisions, .cards-3, .cards-2, .plans, .compare__cols, .footer__offices)::-webkit-scrollbar {
+  :is(.work, .vtest, .industries, .badges, .awards__grid, .divisions, .cards-3, .cards-2, .plans, .compare__cols, .footer__offices)::-webkit-scrollbar {
     display: none;
   }
 
-  :is(.work, .vtest, .panels, .industries, .stats, .badges, .awards__grid, .divisions, .cards-3, .cards-2, .plans, .compare__cols, .footer__offices)>* {
+  :is(.work, .vtest, .industries, .badges, .awards__grid, .divisions, .cards-3, .cards-2, .plans, .compare__cols, .footer__offices)>* {
     flex: 0 0 82%;
     min-width: 0;
     scroll-snap-align: start;
   }
 
-  :is(.stats, .badges, .awards__grid, .footer__offices)>* {
+  :is(.badges, .awards__grid, .footer__offices)>* {
     flex-basis: 58%;
   }
 
+  /* Product cards: centred coverflow carousel (main.js sets --cf per card) */
+  .work {
+    scroll-snap-type: x mandatory;
+    padding-inline: 12vw;
+    scroll-padding-inline: 0;
+    perspective: 1000px;
+  }
+
+  .work>* {
+    flex-basis: 76vw;
+    scroll-snap-align: center;
+    transform: scale(calc(1 - .14 * var(--cf, 0)));
+    opacity: calc(1 - .45 * var(--cf, 0));
+    transition: transform .15s linear, opacity .15s linear;
+  }
+
+  .cf-dots {
+    display: flex !important;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .cf-dots button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 99px;
+    background: currentColor;
+    opacity: .25;
+    cursor: pointer;
+    transition: width .25s, opacity .25s;
+  }
+
+  .cf-dots button[aria-current="true"] {
+    width: 22px;
+    opacity: .9;
+  }
+
+  /* Service panels: stacked sticky cards that slide up over each other, as on desktop */
+  .panels {
+    gap: 16px;
+  }
+
   .panel {
-    position: static;
     grid-template-columns: 1fr;
     min-height: 0;
+    position: sticky;
+    top: calc(var(--nav-h) + 12px);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, .12);
+  }
+
+  .panel__body {
+    padding: 22px 20px;
+    gap: 12px;
+  }
+
+  .panel__body .h3 {
+    font-size: 22px;
   }
 
   .panel__bullets {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 12px;
+  }
+
+  .panel__bullets li {
+    font-size: 13px;
+    padding-left: 12px;
+  }
+
+  .panel__bullets li::before {
+    top: 7px;
+    width: 4px;
+    height: 4px;
+  }
+
+  .panel__body .btn {
+    margin-top: 6px;
+  }
+
+  /* One card per screen, fully inside the page; dots show there are more */
+  :is(.vtest, .industries, .divisions, .cards-3, .cards-2, .plans, .compare__cols)>* {
+    flex-basis: 100%;
+  }
+
+  .vtest__card {
+    aspect-ratio: 1 / 1;
+  }
+
+  /* Stat cards: 2x2 grid, all visible */
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat {
+    padding: 16px;
+    min-height: 0;
+  }
+
+  .stat:last-child:nth-child(odd) {
+    grid-column: span 2;
+  }
+
+  .stat__v {
+    font-size: 30px;
+  }
+
+  .stat__l {
+    font-size: 13px;
+  }
+
+  .division {
+    min-height: 220px;
+  }
+
+  .ind {
+    min-height: 240px;
+  }
+
+  .compare__cols {
+    margin-top: 28px;
+  }
+
+  .compare__col+.compare__col {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .vtest__foot {
+    margin: 8px;
+    padding: 10px 12px;
+  }
+
+  .vtest__quote {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .vtest__who {
+    margin-top: 8px;
+    gap: 8px;
+  }
+
+  .vtest__who strong {
+    font-size: 12px;
+  }
+
+  .vtest__who .btn {
+    padding: 6px 10px;
+    font-size: 11px;
   }
 
   .panel .mosaic {

@@ -128,6 +128,86 @@
     show(0);
   });
 
+  /* ---- Product cards: mobile coverflow auto-carousel ---- */
+  var mobile = window.matchMedia('(max-width: 767px)');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  $$('.work').forEach(function (track) {
+    var dots = document.createElement('div');
+    dots.className = 'cf-dots';
+    track.after(dots);
+    var cards = function () { return Array.prototype.filter.call(track.children, function (c) { return c.offsetParent !== null; }); };
+    var active = 0, paused = false;
+    /* Card offset from the track's visible centre, in px */
+    var offset = function (card) {
+      var t = track.getBoundingClientRect(), r = card.getBoundingClientRect();
+      return r.left + r.width / 2 - (t.left + t.width / 2);
+    };
+    var go = function (i) {
+      var list = cards();
+      if (!list.length) return;
+      i = (i + list.length) % list.length;
+      track.scrollTo({left: track.scrollLeft + offset(list[i]), behavior: reduceMotion.matches ? 'auto' : 'smooth'});
+    };
+    var buildDots = function () {
+      dots.textContent = '';
+      cards().forEach(function (c, i) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Show card ' + (i + 1));
+        b.addEventListener('click', function () { go(i); });
+        dots.appendChild(b);
+      });
+      update();
+    };
+    var update = function () {
+      if (!mobile.matches) return;
+      var best = Infinity;
+      cards().forEach(function (c, i) {
+        var d = Math.abs(offset(c)) / c.offsetWidth;
+        c.style.setProperty('--cf', Math.min(d, 1).toFixed(3));
+        if (d < best) { best = d; active = i; }
+      });
+      $$('button', dots).forEach(function (b, i) { b.setAttribute('aria-current', String(i === active)); });
+    };
+    track.addEventListener('scroll', update, {passive: true});
+    ['pointerdown', 'focusin'].forEach(function (e) { track.addEventListener(e, function () { paused = true; }); });
+    ['pointerup', 'pointercancel', 'focusout'].forEach(function (e) { track.addEventListener(e, function () { paused = false; }); });
+    setInterval(function () {
+      if (mobile.matches && !paused && !reduceMotion.matches && !document.hidden) go(active + 1);
+    }, 3500);
+    /* Filters hide cards via display; rebuild dots only when the visible count changes */
+    new MutationObserver(function () { if (cards().length !== dots.children.length) buildDots(); })
+      .observe(track, {subtree: true, attributes: true, attributeFilter: ['style']});
+    mobile.addEventListener('change', function () { if (!mobile.matches) cards().forEach(function (c) { c.style.removeProperty('--cf'); }); else buildDots(); });
+    window.addEventListener('resize', update);
+    buildDots();
+  });
+
+  /* ---- Mobile one-card carousels: position dots ---- */
+  $$('.vtest, .industries, .divisions, .cards-3, .cards-2, .plans, .compare__cols').forEach(function (track) {
+    var count = track.children.length;
+    if (count < 2) return;
+    var dots = document.createElement('div');
+    dots.className = 'cf-dots';
+    for (var i = 0; i < count; i++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Show card ' + (i + 1));
+      b.addEventListener('click', (function (n) { return function () {
+        track.scrollTo({left: track.children[n].offsetLeft - track.children[0].offsetLeft, behavior: reduceMotion.matches ? 'auto' : 'smooth'});
+      }; })(i));
+      dots.appendChild(b);
+    }
+    track.after(dots);
+    var update = function () {
+      var step = (track.children[1].offsetLeft - track.children[0].offsetLeft) || 1;
+      var active = Math.round(track.scrollLeft / step);
+      $$('button', dots).forEach(function (b, n) { b.setAttribute('aria-current', String(n === active)); });
+    };
+    track.addEventListener('scroll', update, {passive: true});
+    update();
+  });
+
   /* ---- Case study / blog filters ---- */
   $$('[data-filter-group]').forEach(function (group) {
     var target = $('#' + group.dataset.filterGroup);
