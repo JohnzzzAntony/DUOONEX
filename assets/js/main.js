@@ -56,12 +56,24 @@
   var burger = $('[data-burger]');
   var drawer = $('[data-drawer]');
   if (burger && drawer) {
-    burger.addEventListener('click', function () {
-      var isOpen = drawer.classList.toggle('is-open');
+    var setDrawer = function (isOpen) {
+      drawer.classList.toggle('is-open', isOpen);
       burger.classList.toggle('is-open', isOpen);
       burger.setAttribute('aria-expanded', String(isOpen));
       document.body.classList.toggle('is-locked', isOpen);
+      if (isOpen) { var first = $('a', drawer); if (first) first.focus(); }
+    };
+    burger.addEventListener('click', function () { setDrawer(!drawer.classList.contains('is-open')); });
+    document.addEventListener('keydown', function (e) {
+      if (!drawer.classList.contains('is-open')) return;
+      if (e.key === 'Escape') { setDrawer(false); burger.focus(); return; }
+      if (e.key !== 'Tab') return;
+      // Keep focus inside the drawer and its toggle while open.
+      var items = [burger].concat($$('a', drawer));
+      var i = items.indexOf(document.activeElement);
+      if (e.shiftKey ? i <= 0 : i === items.length - 1) { e.preventDefault(); items[e.shiftKey ? items.length - 1 : 0].focus(); }
     });
+    drawer.addEventListener('click', function (e) { if (e.target.closest('a')) setDrawer(false); });
   }
 
   /* ---- FAQ accordion ---- */
@@ -171,7 +183,7 @@
       if (submit) submit.disabled = true;
       try {
         var entries = new FormData(form), data = {};
-        ['name','email','message','budget','source'].forEach(function (key) { data[key] = entries.get(key) || ''; });
+        ['name','email','message','budget','source','website'].forEach(function (key) { data[key] = entries.get(key) || ''; });
         data.help = entries.getAll('help').join(', ');
         var response = await fetch('/api/inquiries', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(data) });
         var result = await response.json();
@@ -182,6 +194,16 @@
       } catch (error) { note.textContent = error.message || 'Unable to send your enquiry. Please try again.'; note.classList.remove('is-ok'); }
       finally { if (submit) submit.disabled = false; }
     });
+  });
+
+  /* No-JS form fallback redirects back with ?sent=1 */
+  if (/[?&]sent=1/.test(location.search)) $$('[data-contact-form] .form-note').forEach(function (note) {
+    note.textContent = 'Thank you. Your enquiry has been received.'; note.classList.add('is-ok');
+  });
+
+  /* ---- WhatsApp click tracking (GTM) ---- */
+  $$('[data-wa-float]').forEach(function (link) {
+    link.addEventListener('click', function () { (window.dataLayer = window.dataLayer || []).push({event: 'whatsapp_click'}); });
   });
 
   /* ---- Pause marquees while off-screen ---- */

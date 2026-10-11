@@ -3,6 +3,7 @@ const http=require('node:http');
 const fs=require('node:fs');
 const path=require('node:path');
 const crypto=require('node:crypto');
+const zlib=require('node:zlib');
 const {ROOT,files,documentFor,validate,fingerprints,titles}=require('./lib/pages');
 const seo=require('./lib/seo');
 const mime={'.css':'text/css','.js':'text/javascript','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.gif':'image/gif','.svg':'image/svg+xml','.avif':'image/avif','.xml':'application/xml','.ico':'image/x-icon','.woff2':'font/woff2','.vtt':'text/vtt'};
@@ -25,14 +26,30 @@ function createServer(options={}) {
   const janitor=setInterval(()=>{const now=Date.now();for(const [key,v] of sessions)if(v.expires<now)sessions.delete(key);for(const [key,v] of limits)if(v.until<now)limits.delete(key);},60000);janitor.unref();
   async function json(req,max=2*1024*1024){if(!/^application\/json(?:;|$)/i.test(req.headers['content-type']||'')) fail(415,'JSON required');let size=0;const chunks=[];for await(const chunk of req){size+=chunk.length;if(size>max)fail(413,'Request too large');chunks.push(chunk);}try{return JSON.parse(Buffer.concat(chunks).toString());}catch{fail(400,'Invalid JSON');}}
   function auth(req){const cookie=(req.headers.cookie||'').split(';').map(s=>s.trim()).find(s=>s.startsWith('nexpixel_session='));const token=cookie?.slice('nexpixel_session='.length);const session=sessions.get(token);if(!session||session.expires<Date.now())fail(401,'Please sign in');return token;}
+  async function form(req,max){if(!/^application\/x-www-form-urlencoded(?:;|$)/i.test(req.headers['content-type']||''))return json(req,max);let size=0;const chunks=[];for await(const chunk of req){size+=chunk.length;if(size>max)fail(413,'Request too large');chunks.push(chunk);}const params=new URLSearchParams(Buffer.concat(chunks).toString());const data={};for(const key of new Set(params.keys()))data[key]=params.getAll(key).join(', ');return data;}
+  async function notify(entry){
+    const key=options.resendKey??process.env.RESEND_API_KEY;if(!key)return;
+    const to=process.env.INQUIRY_EMAIL||'info@nexpixels.com',from=process.env.INQUIRY_FROM||'NexPixels Website <website@nexpixels.com>';
+    const text=['name','email','budget','source','help','message'].map(k=>k+': '+entry[k]).join('\n');
+    try{const r=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:'Bearer '+key,'Content-Type':'application/json'},body:JSON.stringify({from,to:[to],reply_to:entry.email,subject:'New website enquiry from '+entry.name,text}),signal:AbortSignal.timeout(8000)});if(!r.ok)console.error('Enquiry email failed',r.status,await r.text());}
+    catch(error){console.error('Enquiry email failed',error.message);}
+  }
   function sameOrigin(req){if(req.headers.origin && req.headers.origin!==`${production?'https':'http'}://${req.headers.host}`)fail(403,'Origin rejected');}
   const server=http.createServer(async(req,res)=>{
-    res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Referrer-Policy','same-origin');res.setHeader('X-Frame-Options','SAMEORIGIN');
+    res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Referrer-Policy','strict-origin-when-cross-origin');res.setHeader('Permissions-Policy','camera=(), microphone=(), geolocation=(), payment=(), usb=()');res.setHeader('Cross-Origin-Opener-Policy','same-origin');res.setHeader('Content-Security-Policy-Report-Only',"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' https:; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; frame-src https://www.googletagmanager.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'");res.setHeader('X-Frame-Options','SAMEORIGIN');
     res.setHeader('Cache-Control','no-store');
     const host=(req.headers.host||'').toLowerCase().replace(/:\d+$/,'');
     if(host!==new URL(origin).hostname)res.setHeader('X-Robots-Tag','noindex, nofollow');
     if(production)res.setHeader('Strict-Transport-Security','max-age=31536000');
-    const send=(status,value,type='application/json')=>{res.writeHead(status,{'Content-Type':type+(type.startsWith('text/')?'; charset=utf-8':'')});res.end(Buffer.isBuffer(value)?value:type==='application/json'?JSON.stringify(value):value);};
+    const send=(status,value,type='application/json')=>{
+      let body=Buffer.isBuffer(value)?value:Buffer.from(type==='application/json'?JSON.stringify(value):value);
+      const headers={'Content-Type':type+(type.startsWith('text/')?'; charset=utf-8':''),Vary:'Accept-Encoding'};
+      const accept=req.headers['accept-encoding']||'';
+      if(body.length>1024&&/^(text\/|application\/(json|xml)|image\/svg)/.test(type)){
+        if(/\bbr\b/.test(accept)){body=zlib.brotliCompressSync(body,{params:{[zlib.constants.BROTLI_PARAM_QUALITY]:5}});headers['Content-Encoding']='br';}
+        else if(/\bgzip\b/.test(accept)){body=zlib.gzipSync(body);headers['Content-Encoding']='gzip';}
+      }
+      headers['Content-Length']=body.length;res.writeHead(status,headers);res.end(req.method==='HEAD'?undefined:body);};
     let context;
     try {
       context=storage?await storage.open(!['GET','HEAD'].includes(req.method)):{state:localState,persist:persistLocal};
@@ -48,6 +65,13 @@ function createServer(options={}) {
       if(host==='www.'+new URL(origin).hostname&&['GET','HEAD'].includes(method)){res.writeHead(301,{Location:origin+req.url});return res.end();}
       if(pathname==='/robots.txt'&&method==='GET')return send(200,seo.robots(origin),'text/plain');
       if(pathname==='/llms.txt'&&method==='GET')return send(200,seo.llms(origin),'text/plain');
+      if(pathname==='/.well-known/security.txt'&&method==='GET')return send(200,`Contact: mailto:info@nexpixels.com
+Expires: ${new Date(Date.now()+180*864e5).toISOString()}
+Preferred-Languages: en
+Canonical: ${origin}/.well-known/security.txt
+`,'text/plain');
+      const legacy={'/privacy':'/privacy-policy/','/privacy/':'/privacy-policy/','/terms':'/terms-conditions/','/terms/':'/terms-conditions/'}[pathname];
+      if(legacy&&['GET','HEAD'].includes(method)){res.writeHead(301,{Location:legacy});return res.end();}
       const canonicalPath=pathname.replace(/index\.html$/,'').replace(/\/?$/,'/');
       if(seo.redirects[canonicalPath]&&['GET','HEAD'].includes(method)){res.writeHead(301,{Location:seo.redirects[canonicalPath]});return res.end();}
       if(pathname==='/sitemap.xml'&&method==='GET') {
@@ -62,12 +86,15 @@ function createServer(options={}) {
         return send(200,{ok:true});
       }
       if(pathname==='/api/inquiries'&&method==='POST') {
-        rate(req,'inquiry',10);const data=await json(req,20000);
+        rate(req,'inquiry',10);const data=await form(req,20000);
+        const html=/x-www-form-urlencoded/i.test(req.headers['content-type']||'');
+        if(data.website){if(html){res.writeHead(303,{Location:'/contact/?sent=1'});return res.end();}return send(201,{ok:true});}
         if(typeof data.name!=='string'||!data.name.trim()||data.name.length>200||typeof data.email!=='string'||!/^\S+@\S+\.\S+$/.test(data.email)||data.email.length>254) fail(400,'Enter your name and valid email');
         const entry={id:crypto.randomUUID(),created:new Date().toISOString()};
         for(const key of ['name','email','message','budget','source','help']) {const v=data[key]||'';if(typeof v!=='string'||v.length>5000)fail(400,'Invalid enquiry');entry[key]=v;}
         if(state.inquiries.length>=10000)fail(503,'Inbox full. Please contact the agency directly.');
-        state.inquiries.unshift(entry);await persist();return send(201,{ok:true});
+        state.inquiries.unshift(entry);await persist();await notify(entry);
+        if(html){res.writeHead(303,{Location:'/contact/?sent=1'});return res.end();}return send(201,{ok:true});
       }
       if(pathname.startsWith('/api/')) {
         const token=auth(req);
@@ -119,6 +146,7 @@ function createServer(options={}) {
       if(pathname==='/admin/'||pathname==='/admin/index.html')return send(200,fs.readFileSync(path.join(ROOT,'admin/index.html')),'text/html');
       let file=pathname.replace(/^\//,'');if(!file||file.endsWith('/'))file+='index.html';
       if(files.includes(file)) {
+        if(!url.searchParams.has('preview'))res.setHeader('Cache-Control','no-cache');
         const preview=url.searchParams.has('preview');if(preview)auth(req);
         const doc=documentFor(file,content(file,preview),preview);
         if(preview)res.setHeader('X-Robots-Tag','noindex, nofollow');
@@ -152,6 +180,7 @@ function createServer(options={}) {
         const stream=fs.createReadStream(target,{start,end});stream.on('error',()=>res.destroy());res.on('close',()=>stream.destroy());return stream.pipe(res);
       }
       const type=mime[extension];if(!type)fail(404,'Not found');
+      res.setHeader('Cache-Control',file.startsWith('assets/images/')?'public, max-age=604800':'no-cache');
       return send(200,fs.readFileSync(target),type);
     } catch(error) {
       if(res.headersSent){res.destroy();return;}
