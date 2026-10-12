@@ -188,9 +188,10 @@
      Optional per-card overrides: data-showcase-label (short list name), data-showcase-image,
      data-showcase-position (background focal point), data-showcase-logo, data-showcase-cta. ---- */
   (function () {
-    var section = $('#products');
-    var grid = section && $('.work', section);
-    if (!grid) return;
+    /* Homepage only (the one page with .hero). The CMS-served homepage may lack id="products". */
+    var grid = $('.hero') && $('main section .work');
+    var section = grid && grid.closest('section');
+    if (!section) return;
     var text = function (el, sel) { var n = $(sel, el); return n ? n.textContent.replace(/\s+/g, ' ').trim() : ''; };
     var projects = $$('.work__card', grid).map(function (card, i) {
       var art = $('.art', card);

@@ -4668,11 +4668,11 @@ body {
 }
 
 /* ---- Product showcase: pinned frame, project list left, details centre-right,
-   full-bleed project imagery behind. Built by main.js from the #products cards, which stay in the
+   full-bleed project imagery behind. Built by main.js from the homepage product cards, which stay in the
    HTML as the CMS-editable source and no-JS fallback. Below 1024px the frame stacks: list on top,
    details at the bottom, with shorter scroll stages. ---- */
-#products.has-pshow .work,
-#products.has-pshow .work + .cf-dots { display: none; }
+.has-pshow .work,
+.has-pshow .work + .cf-dots { display: none; }
 
 .pshow {
   --pshow-gap: 14px;
