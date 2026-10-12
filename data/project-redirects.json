@@ -34,5 +34,8 @@
   "/services/ui-ux-consultancy/": "/services/website-strategy/",
   "/services/ux-research/": "/services/ecommerce-ux-research/",
   "/blog/best-webflow-agencies/": "/blog/best-shopify-agencies/",
-  "/CODEINE_Portfolio.html/": "/"
+  "/CODEINE_Portfolio.html/": "/",
+  "/testimonials/": "/approach/",
+  "/subscription/": "/pricing/",
+  "/services/web-design/": "/services/custom-web-development/"
 }

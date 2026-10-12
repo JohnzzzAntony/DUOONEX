@@ -5,7 +5,7 @@ require('./verify.cjs');
 const root=path.resolve(__dirname,'..'),out=path.join(root,'dist');
 if(path.dirname(out)!==root||path.basename(out)!=='dist')throw new Error('Unexpected build path');
 fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out,{recursive:true});
-const dirs=['about','admin','assets','blog','case-studies','contact','faqs','lib','llm-info','locations','privacy-policy','services','startups','subscription','terms-conditions','testimonials'];
+const dirs=['about','admin','assets','blog','case-studies','contact','faqs','lib','llm-info','locations','privacy-policy','services','startups','pricing','terms-conditions','approach'];
 const media=require('../data/public-media.json');
 for(const dir of dirs)fs.cpSync(path.join(root,dir),path.join(out,dir),{recursive:true,filter:source=>{const relative=path.relative(path.join(root,'assets/images'),source).split(path.sep).join('/');return !source.startsWith(path.join(root,'assets/images')+path.sep)||fs.statSync(source).isDirectory()||media.includes(relative);}});
 for(const file of ['index.html','404.html','server.js','package.json','package-lock.json','Dockerfile','.dockerignore','.env.example','README_CMS.md','FINAL_BUILD.md','sitemap.xml','robots.txt','llms.txt'])fs.copyFileSync(path.join(root,file),path.join(out,file));
