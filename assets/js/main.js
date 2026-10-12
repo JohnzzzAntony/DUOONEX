@@ -183,6 +183,182 @@
     buildDots();
   });
 
+  /* ---- Product showcase: a pinned, scroll-driven stage built from the product cards.
+     The cards stay in the HTML as the single, CMS-editable source of truth and no-JS fallback.
+     Optional per-card overrides: data-showcase-label (short list name), data-showcase-image,
+     data-showcase-position (background focal point), data-showcase-logo, data-showcase-cta. ---- */
+  (function () {
+    var section = $('#products');
+    var grid = section && $('.work', section);
+    if (!grid) return;
+    var text = function (el, sel) { var n = $(sel, el); return n ? n.textContent.replace(/\s+/g, ' ').trim() : ''; };
+    var projects = $$('.work__card', grid).map(function (card, i) {
+      var art = $('.art', card);
+      var bg = card.getAttribute('data-showcase-image') ||
+        ((art && art.style.backgroundImage.match(/url\(["']?(.*?)["']?\)/)) || [])[1] || '';
+      var metric = $('.work__metric', card);
+      var stack = metric && metric.firstChild ? metric.firstChild.textContent.trim() : '';
+      var name = text(card, '.work__title');
+      return {
+        id: 'pshow-' + i,
+        name: name,
+        label: card.getAttribute('data-showcase-label') || name,
+        logo: card.getAttribute('data-showcase-logo') || '',
+        category: text(card, '.work__cat'),
+        description: text(card, '.work__desc'),
+        backgroundImage: bg,
+        /* Every -mockup-N.webp ships with a 3200px @2x sibling for large, high-density screens */
+        backgroundSrcset: /-mockup-\d+\.webp$/.test(bg) ? bg + ' 1600w, ' + bg.replace(/\.webp$/, '@2x.webp') + ' 3200w' : '',
+        backgroundPosition: card.getAttribute('data-showcase-position') || '62% center',
+        alt: art ? art.getAttribute('aria-label') || '' : '',
+        projectUrl: card.getAttribute('href'),
+        technologies: stack ? [stack] : [],
+        tags: (card.getAttribute('data-tags') || '').split('|').filter(function (t) { return t && t !== 'Websites' && t !== stack; }),
+        ctaLabel: card.getAttribute('data-showcase-cta') || text(card, '.work__foot .btn').replace(/\s*→$/, '') || 'View project'
+      };
+    }).filter(function (p) { return p.name && p.backgroundImage; });
+    if (projects.length < 2) return;
+
+    var el = function (tag, cls, html) { var n = document.createElement(tag); if (cls) n.className = cls; if (html) n.innerHTML = html; return n; };
+    var pad = function (n) { return (n < 9 ? '0' : '') + (n + 1); };
+    var root = el('div', 'pshow');
+    root.style.setProperty('--pshow-count', projects.length);
+    var pin = el('div', 'pshow__pin');
+    var frame = el('div', 'pshow__frame');
+    frame.setAttribute('role', 'region');
+    frame.setAttribute('aria-roledescription', 'product showcase');
+    frame.setAttribute('aria-label', 'Our products');
+    var media = el('div', 'pshow__media');
+    var layers = projects.map(function (p) {
+      var img = el('img', 'pshow__bg');
+      img.alt = '';
+      img.decoding = 'async';
+      img.style.objectPosition = p.backgroundPosition;
+      media.appendChild(img);
+      return img;
+    });
+    media.appendChild(el('div', 'pshow__shade'));
+    var nav = el('nav', 'pshow__nav');
+    nav.setAttribute('aria-label', 'Products');
+    var list = el('ol', 'pshow__list');
+    var buttons = projects.map(function (p, i) {
+      var li = el('li');
+      var b = el('button', 'pshow__name');
+      b.type = 'button';
+      b.id = p.id;
+      b.innerHTML = '<span class="pshow__plus" aria-hidden="true"></span><span class="pshow__label"></span>';
+      $('.pshow__label', b).textContent = p.label;
+      if (p.label !== p.name) b.setAttribute('aria-label', p.name);
+      li.appendChild(b);
+      list.appendChild(li);
+      return b;
+    });
+    nav.appendChild(list);
+    var count = el('p', 'pshow__count', '<span data-pshow-current>01</span> / ' + pad(projects.length - 1));
+    count.setAttribute('aria-hidden', 'true');
+    nav.appendChild(count);
+    var info = el('div', 'pshow__info',
+      '<p class="pshow__cat"></p>' +
+      '<p class="pshow__brand"></p>' +
+      '<p class="pshow__desc"></p>' +
+      '<p class="pshow__tags"></p>' +
+      '<a class="pshow__cta"><span></span><span class="arw" aria-hidden="true">→</span></a>');
+    var progress = el('div', 'pshow__progress');
+    progress.setAttribute('aria-hidden', 'true');
+    frame.appendChild(media);
+    frame.appendChild(nav);
+    frame.appendChild(info);
+    frame.appendChild(progress);
+    pin.appendChild(frame);
+    root.appendChild(pin);
+    grid.before(root);
+    section.classList.add('has-pshow');
+
+    var active = -1, shown = -1, swapTimer = 0;
+    var load = function (i) {
+      var img = layers[i], p = projects[i];
+      if (!img || img.getAttribute('src')) return;
+      if (p.backgroundSrcset) { img.sizes = '100vw'; img.srcset = p.backgroundSrcset; }
+      img.src = p.backgroundImage;
+    };
+    var render = function (i) {
+      var p = projects[i];
+      shown = i;
+      $('.pshow__cat', info).textContent = pad(i) + ' — ' + p.category;
+      var brand = $('.pshow__brand', info);
+      brand.textContent = '';
+      if (p.logo) { var logo = el('img'); logo.src = p.logo; logo.alt = p.name; brand.appendChild(logo); } else brand.textContent = p.name;
+      $('.pshow__desc', info).textContent = p.description;
+      $('.pshow__tags', info).textContent = p.tags.concat(p.technologies.map(function (t) { return 'Built with ' + t; })).join('  ·  ');
+      var cta = $('.pshow__cta', info);
+      cta.href = p.projectUrl;
+      $('span', cta).textContent = p.ctaLabel;
+      cta.setAttribute('aria-label', p.ctaLabel + ': ' + p.name);
+    };
+    var setActive = function (i) {
+      if (i === active) return;
+      active = i;
+      [i, i + 1, i - 1].forEach(function (n) { if (n >= 0 && n < projects.length) load(n); });
+      layers.forEach(function (img, n) { img.classList.toggle('is-active', n === i); });
+      buttons.forEach(function (b, n) {
+        b.parentNode.classList.toggle('is-active', n === i);
+        if (n === i) b.setAttribute('aria-current', 'true'); else b.removeAttribute('aria-current');
+      });
+      $('[data-pshow-current]', count).textContent = pad(i);
+      if (shown < 0 || reduceMotion.matches) { render(i); return; }
+      /* Fade the outgoing details up and out, then bring the latest active project in from below.
+         Rapid scrolling only ever renders the project that is active when the fade-out finishes. */
+      if (swapTimer) return;
+      info.classList.add('is-out');
+      swapTimer = setTimeout(function () {
+        swapTimer = 0;
+        render(active);
+        info.classList.remove('is-out');
+        info.classList.add('is-enter');
+        void info.offsetWidth;
+        info.classList.remove('is-enter');
+      }, 240);
+    };
+    /* Pinned distance is split into equal stages, one per project */
+    var geometry = function () {
+      var rect = root.getBoundingClientRect();
+      var top = parseFloat(getComputedStyle(pin).top) || 0;
+      return { rect: rect, top: top, run: Math.max(1, root.offsetHeight - pin.offsetHeight) };
+    };
+    /* Cheap enough (one rect read, class changes only on a new stage) to run on every scroll event */
+    var update = function () {
+      var g = geometry();
+      var p = Math.min(1, Math.max(0, (g.top - g.rect.top) / g.run));
+      frame.style.setProperty('--pshow-progress', p.toFixed(4));
+      setActive(Math.min(projects.length - 1, Math.floor(p * projects.length)));
+    };
+    var goTo = function (i) {
+      load(i);
+      var g = geometry();
+      window.scrollTo({ top: window.scrollY + g.rect.top - g.top + (i + 0.5) / projects.length * g.run, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+    };
+    buttons.forEach(function (b, i) {
+      b.addEventListener('click', function () { goTo(i); });
+      b.addEventListener('pointerenter', function () { load(i); });
+      b.addEventListener('keydown', function (e) {
+        var to = { ArrowDown: i + 1, ArrowUp: i - 1, Home: 0, End: projects.length - 1 }[e.key];
+        if (to === undefined) return;
+        e.preventDefault();
+        to = Math.max(0, Math.min(projects.length - 1, to));
+        buttons[to].focus({ preventScroll: true });
+        goTo(to);
+      });
+    });
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    /* After the page settles, warm the cache for every stage so jumps never show an empty frame */
+    window.addEventListener('load', function () {
+      var warm = function () { projects.forEach(function (p, i) { load(i); }); };
+      if (window.requestIdleCallback) requestIdleCallback(warm, { timeout: 3000 }); else setTimeout(warm, 1500);
+    });
+    update();
+  })();
+
   /* ---- Mobile one-card carousels: position dots ---- */
   $$('.vtest, .industries, .divisions, .cards-3, .cards-2, .plans, .compare__cols').forEach(function (track) {
     var count = track.children.length;
