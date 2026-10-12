@@ -1,53 +1,46 @@
+/* Load the geometric, clean Manrope typeface used by the reference-inspired design.
+   For best performance, these font preconnects can also be added in the HTML <head>. */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
 /* =========================================================================
    NexPixels — design tokens and components.
    Palette and type follow the NexPixels Brand Identity Guidelines.
    ========================================================================= */
 
 :root {
-  /* Brand — NexPixels. Deep Digital Green structure, electric accent loop,
-     off-white editorial canvas, Obsidian Black text. */
-  --brand-primary: #0B3B2C;
-  /* Deep Digital Green: dark surfaces, primary buttons */
-  --brand-accent: #00E599;
-  /* electric accent: lines, dots, highlights; on green/black only for text */
-  --brand-accent-deep: #0A6147;
-  /* Logo pixel green (nexpixels-logo.svg): accent text, links and focus on light backgrounds (7.46:1 on white) */
-  --brand-accent-soft: #C8F5E2;
-  /* light accent for fills under dark text */
-  --brand-background: #FFFFFF;
-  /* White canvas */
-  --brand-surface: #EFEFEC;
-  --brand-text: #121414;
-  /* Logo wordmark ink (nexpixels-logo.svg) */
-  --brand-muted: #5E6660;
+  /* Reference-inspired palette: vivid lime, forest green, warm cream and black. */
+  --brand-primary: #A5F044;
+  --brand-accent: #1E4030;
+  --brand-accent-deep: #A5F044;
+  --brand-accent-soft: #DDF9A6;
+  --brand-background: #F5FFE9;
+  --brand-surface: #FFFFFF;
+  --brand-text: #14251B;
+  --brand-muted: #526258;
 
-  /* Neutrals */
-  --ink: var(--brand-primary);
-  --ink-2: #134A38;
-  --obsidian: var(--brand-text);
+  --ink: #1E4030;
+  --ink-2: #142F23;
+  --obsidian: #050705;
   --gray-900: var(--brand-text);
   --gray-500: var(--brand-muted);
-  --gray-400: #6B736D;
-  --panel: #E4E7E2;
+  --gray-400: #6B786E;
+  --panel: #E5EBDD;
   --bg: var(--brand-background);
   --bg-2: var(--brand-surface);
-  --bg-3: #E9ECE7;
-  --line: #DCDFDA;
-  --line-dark: #1E5240;
+  --bg-3: #EAF5DC;
+  --line: rgba(30, 64, 48, .14);
+  --line-dark: #1E4030;
   --line-strong: #8C948E;
-  /* interactive borders: fields, chips (3.11:1 on white) */
-  --focus: var(--brand-accent-deep);
-  /* focus ring on light surfaces; dark surfaces use --brand-accent */
+  --focus: #1E4030;
 
-  /* Gradients */
-  --grad-warm: linear-gradient(90deg, #0B3B2C 0%, #0A6147 100%);
-  --grad-cool: linear-gradient(90deg, #0A0A0A 0%, #0B3B2C 100%);
-  --grad-awards: linear-gradient(135deg, #0A0A0A 0%, #0B3B2C 55%, #0F5A41 100%);
+  --grad-warm: linear-gradient(90deg, #A5F044 0%, #1E4030 55%, #142F23 100%);
+  --grad-cool: linear-gradient(90deg, #F5FFE9 0%, #DDF9A6 52%, #A5F044 100%);
+  --grad-awards: linear-gradient(135deg, #1E4030 0%, #142F23 60%, #050705 100%);
 
-  /* Type — Space Grotesk for headings, Inter for prose/UI, JetBrains Mono for metadata */
-  --display: "Space Grotesk", "Neue Haas Grotesk Display", "Helvetica Neue", Arial, sans-serif;
-  --sans: "Inter", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  --mono: "JetBrains Mono", "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  --display: "Manrope", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --sans: "Manrope", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --mono: "Manrope", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+
   --fs-display: clamp(44px, 6vw, 88px);
   --fs-h2: clamp(30px, 3.4vw, 52px);
   --fs-h3: clamp(22px, 2vw, 32px);
@@ -57,7 +50,6 @@
   --fs-xs: 12px;
   --fs-eyebrow: 12px;
 
-  /* Layout */
   --container: 1360px;
   --gutter: clamp(20px, 4vw, 80px);
   --section-y: clamp(64px, 8vw, 128px);
@@ -180,7 +172,7 @@ ul {
 }
 
 .section--dark .eyebrow {
-  color: var(--brand-accent);
+  color: var(--brand-primary);
 }
 
 /* Technical mono: metadata, coordinates, labels */
@@ -239,11 +231,11 @@ h4 {
 }
 
 .muted {
-  color: var(--gray-500);
+  color: #1E4030;
 }
 
 .section--dark .muted {
-  color: rgba(255, 255, 255, .45);
+  color: rgb(225 239 38);
 }
 
 .lede {
@@ -256,7 +248,11 @@ h4 {
 }
 
 .grad-warm {
-  color: var(--brand-accent-deep);
+  background: var(--grad-warm);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .grad-cool {
@@ -430,18 +426,18 @@ h4 {
 
 .btn--indigo {
   background: var(--brand-primary);
-  color: #fff;
+  color: #1E4030;
   border-radius: 4px;
 }
 
 .btn--indigo:hover {
   background: var(--brand-accent);
-  color: var(--obsidian);
+  color: #A5F044;
 }
 
 .btn--ghost {
   border-color: var(--line);
-  color: var(--ink);
+  color: #1E4030;
 }
 
 .btn--ghost:hover {
@@ -1327,43 +1323,43 @@ h4 {
 }
 
 .art--indigo {
-  background: linear-gradient(140deg, #121414, #0B3B2C 60%, #0A6147);
+  background: linear-gradient(140deg, #050705, #A5F044 60%, #A5F044);
 }
 
 .art--sky {
-  background: linear-gradient(140deg, #134A38, #7C847E 55%, #DCDFDA);
+  background: linear-gradient(140deg, #1E4030, #526258 55%, #DDF9A6);
 }
 
 .art--magenta {
-  background: linear-gradient(140deg, #0B3B2C, #0A6147 60%, #00E599);
+  background: linear-gradient(140deg, #A5F044, #A5F044 60%, #1E4030);
 }
 
 .art--sunset {
-  background: linear-gradient(140deg, #0A6147, #00E599 70%, #C8F5E2);
+  background: linear-gradient(140deg, #A5F044, #1E4030 70%, #DDF9A6);
 }
 
 .art--lime {
-  background: linear-gradient(140deg, #DCDFDA, #EFEFEC 60%, #F7F7F5);
+  background: linear-gradient(140deg, #DDF9A6, #F5FFE9 60%, #F5FFE9);
 }
 
 .art--ember {
-  background: linear-gradient(140deg, #121414, #0A6147 60%, #00E599);
+  background: linear-gradient(140deg, #050705, #A5F044 60%, #1E4030);
 }
 
 .art--dark {
-  background: linear-gradient(140deg, #121414, #0B3B2C 60%, #134A38);
+  background: linear-gradient(140deg, #050705, #A5F044 60%, #1E4030);
 }
 
 .art--grey {
-  background: linear-gradient(140deg, #C9C9C9, #E8E8E8 60%, #F6F5F5);
+  background: linear-gradient(140deg, #DDF9A6, #E5EBDD 60%, #F5FFE9);
 }
 
 .art--yellow {
-  background: linear-gradient(140deg, #00E599, #C8F5E2 60%, #EFEFEC);
+  background: linear-gradient(140deg, #1E4030, #DDF9A6 60%, #F5FFE9);
 }
 
 .art--orange {
-  background: linear-gradient(140deg, #0B3B2C, #0A6147 60%, #00E599);
+  background: linear-gradient(140deg, #A5F044, #A5F044 60%, #1E4030);
 }
 
 .art--indigo {
@@ -1554,7 +1550,7 @@ h4 {
 }
 
 .panel--indigo {
-  background: var(--brand-primary);
+  background: var(--ink);
   color: #fff;
 }
 
@@ -1711,7 +1707,7 @@ h4 {
 
 /* ---------- Comparison ---------- */
 .compare {
-  background: var(--brand-primary);
+  background: var(--ink);
   color: #fff;
 }
 
@@ -1879,7 +1875,7 @@ h4 {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #C9C9C9;
+  background: #DDF9A6;
   transition: background-color .15s var(--ease);
 }
 
@@ -1951,7 +1947,7 @@ h4 {
   transform: rotate(45deg);
 }
 
-/* Height is driven by JS so the transition works without relying on 0fr→1fr
+/* Height is driven by JS so the transition works without relying on 0frÃ¢â€ â€™1fr
    grid sizing, which collapses under overflow:hidden in some engines. */
 .faq__a {
   overflow: hidden;
@@ -2846,7 +2842,7 @@ select.field {
   letter-spacing: .08em;
   text-transform: uppercase;
   background: var(--brand-primary);
-  color: #fff;
+  color: var(--ink);
   padding: 4px 8px;
 }
 
@@ -2906,7 +2902,7 @@ select.field {
 }
 
 .plan__feats li::before {
-  content: "✓";
+  content: "Ã¢Å“â€œ";
   position: absolute;
   left: 0;
   color: var(--brand-accent-deep);
@@ -3668,7 +3664,7 @@ select.field {
 }
 
 /* ---------- Visual hierarchy ----------
-   Order of attention: headline → one primary action → supporting copy → everything else.
+   Order of attention: headline Ã¢â€ â€™ one primary action Ã¢â€ â€™ supporting copy Ã¢â€ â€™ everything else.
    One accent-filled button per view marks the primary action; dark-green buttons are secondary
    and ghost buttons are tertiary. Eyebrows, metadata and logo rows sit behind the headline. */
 .display {
@@ -3691,7 +3687,7 @@ select.field {
 }
 
 .section--dark .eyebrow {
-  color: var(--brand-accent);
+  color: var(--brand-primary);
 }
 
 /* Primary action: accent fill, larger target */
@@ -3700,8 +3696,9 @@ select.field {
 .cta-band .btn--light,
 .philosophy .btn--light,
 .panel .btn--light {
-  background: var(--brand-accent);
-  color: var(--obsidian);
+background: var(--brand-primary);
+    color: #1E4030;
+    border-radius: 4px;
 }
 
 .hero__actions .btn,
@@ -3720,7 +3717,8 @@ select.field {
 
 .hero__actions .btn--ghost,
 .page-hero__actions .btn--ghost {
-  border-color: var(--ink);
+  border-color: #1E4030;
+  border-radius: 4px;
 }
 
 .cta-band .btn--ghost {
@@ -3853,7 +3851,7 @@ select.field {
   padding: 10px 16px;
   border-radius: 8px;
   background: var(--brand-primary);
-  color: #fff;
+  color: var(--ink);
 }
 
 .skip-link:focus {
@@ -4302,4 +4300,322 @@ body.is-locked .wa-float {
   margin-top: 12px;
   font-size: var(--fs-xs);
   color: rgba(255, 255, 255, .7);
+}
+
+/* ---------- Glassmorphism layer ---------- */
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.68);
+  --glass-bg-strong: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(10, 97, 71, 0.16);
+  --glass-shadow: 0 12px 36px rgba(10, 45, 34, 0.08);
+  --glass-blur: 16px;
+}
+
+/* Translucent sticky navigation */
+.header {
+  background: rgba(247, 248, 244, 0.78);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(145%);
+  backdrop-filter: blur(var(--glass-blur)) saturate(145%);
+  border-bottom-color: rgba(10, 97, 71, 0.08);
+}
+
+.header.is-stuck {
+  background: rgba(247, 248, 244, 0.9);
+  border-bottom-color: var(--glass-border);
+  box-shadow: 0 8px 24px rgba(10, 45, 34, 0.045);
+}
+
+/* Glass treatment for floating/content cards */
+.work__card,
+.vtest__card,
+.ceo-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(135%);
+  backdrop-filter: blur(var(--glass-blur)) saturate(135%);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease), background-color .25s var(--ease);
+}
+
+.work__card:hover,
+.vtest__card:hover,
+.ceo-card:hover {
+  transform: translateY(-3px);
+  background: var(--glass-bg-strong);
+  border-color: rgba(10, 97, 71, 0.28);
+  box-shadow: 0 18px 44px rgba(10, 45, 34, 0.12);
+}
+
+/* Soft glass styling for pills and small floating controls */
+.pill,
+.project-screens summary {
+  background: rgba(255, 255, 255, 0.58);
+  border-color: var(--glass-border);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  backdrop-filter: blur(10px) saturate(140%);
+}
+
+.pill {
+  border-radius: 999px;
+}
+
+.project-screens summary {
+  border-radius: 12px;
+}
+
+/* Keep effects restrained on smaller devices and honor reduced motion */
+@media (max-width: 767px) {
+  :root { --glass-blur: 10px; }
+  .work__card,
+  .vtest__card,
+  .ceo-card { border-radius: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work__card,
+  .vtest__card,
+  .ceo-card { transition: none; }
+  .work__card:hover,
+  .vtest__card:hover,
+  .ceo-card:hover { transform: none; }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .header { background: var(--brand-background); }
+  .work__card,
+  .vtest__card,
+  .ceo-card,
+  .pill,
+  .project-screens summary { background: #fff; }
+}
+
+/* =========================================================================
+   PREMIUM COLOR SYSTEM — site-wide visual hierarchy
+   Forest green = trust/structure | Lime = action/highlight | Ivory = canvas
+   ========================================================================= */
+:root {
+  --color-forest-950: #142F23;
+  --color-forest-900: #1E4030;
+  --color-forest-800: #315844;
+  --color-forest-700: #1E4030;
+  --color-lime-500: #A5F044;
+  --color-lime-100: #DDF9A6;
+  --color-ivory-100: #F5FFE9;
+  --color-white: #FFFFFF;
+  --color-text: #18211D;
+  --color-muted: #626C66;
+  --color-border: rgba(10, 61, 46, .12);
+  --surface-glass: rgba(255, 255, 255, .72);
+  --shadow-premium: 0 16px 48px rgba(8, 45, 36, .08);
+
+  /* Compatibility tokens used throughout the existing stylesheet */
+  --brand-primary: var(--color-lime-500);
+  --brand-accent: var(--color-forest-700);
+  --brand-accent-deep: var(--color-lime-500);
+  --brand-accent-soft: var(--color-lime-100);
+  --brand-background: var(--color-ivory-100);
+  --brand-surface: var(--color-white);
+  --brand-text: var(--color-text);
+  --brand-muted: var(--color-muted);
+  --ink: var(--color-forest-900);
+  --ink-2: var(--color-forest-900);
+  --bg: var(--color-ivory-100);
+  --bg-2: var(--color-white);
+  --bg-3: #EDF0EA;
+  --line: var(--color-border);
+  --line-dark: rgba(255, 255, 255, .2);
+  --focus: var(--color-forest-800);
+  --glass-bg: rgba(255, 255, 255, .72);
+  --glass-bg-strong: rgba(255, 255, 255, .9);
+  --glass-border: rgba(10, 97, 71, .15);
+  --glass-shadow: 0 14px 40px rgba(8, 45, 36, .08);
+}
+
+/* Overall page: calm editorial canvas and consistently readable text */
+html { background: var(--color-ivory-100); }
+body {
+  color: var(--color-text);
+  background: var(--color-ivory-100);
+}
+::selection { background: var(--color-lime-500); color: var(--color-forest-950); }
+
+/* Section rhythm: alternate quiet light surfaces with confident forest sections */
+.section--plain { background: var(--color-ivory-100); }
+.section--mist { background: #EEF2EC; }
+.section--dark {
+  background: linear-gradient(135deg, var(--color-forest-950) 0%, var(--color-forest-900) 68%, #315844 100%);
+  color: #fff;
+}
+
+/* Keep lime as a signal, not a full-page background */
+.eyebrow,
+.section--dark .eyebrow { color: var(--color-forest-700); }
+.section--dark .eyebrow { color: var(--color-lime-500); }
+.pill { color: var(--color-forest-900); }
+
+/* Premium CTA hierarchy: lime for primary action, forest for secondary action */
+.btn {
+  border-radius: 8px;
+  font-weight: 700;
+  transition: transform .2s var(--ease), background-color .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease), box-shadow .2s var(--ease);
+}
+.btn--indigo,
+.btn--lime {
+  background: var(--color-lime-500);
+  color: #1E4030;
+}
+.btn--indigo:hover,
+.btn--lime:hover {
+  background: #1E4030;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(8, 45, 36, .16);
+}
+.btn--dark { background: var(--color-forest-900); color: #fff; }
+.btn--dark:hover { background: var(--color-forest-700); color: #fff; }
+.btn--ghost { border-color: rgba(10, 97, 71, .24); color: var(--color-forest-800); }
+.btn--ghost:hover { border-color: var(--color-forest-800); background: rgba(10, 97, 71, .05); }
+.section--dark .btn--ghost,
+.cta-band .btn--ghost { color: #fff; border-color: rgba(255, 255, 255, .38); }
+.section--dark .btn--ghost:hover,
+.cta-band .btn--ghost:hover { background: rgba(255, 255, 255, .1); border-color: #fff; }
+
+/* One consistent card language across the site */
+.work__card,
+.vtest__card,
+.ceo-card,
+.plan,
+.panel,
+.service-card,
+.cs-card {
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-premium);
+}
+.work__card,
+.vtest__card,
+.ceo-card { border-radius: 18px; }
+.plan,
+.panel,
+.service-card,
+.cs-card { border-radius: 16px; }
+
+/* Featured pricing and comparison areas use forest, never lime with white text */
+.plan.is-featured {
+  background: linear-gradient(145deg, var(--color-forest-900), var(--color-forest-800));
+  color: #fff;
+  border-color: rgba(226, 239, 37, .5);
+}
+.plan.is-featured .plan__tag {
+  background: var(--color-lime-500);
+  color: var(--color-forest-950);
+}
+.compare { background: var(--color-forest-900); color: #fff; }
+.panel--indigo {
+  background: linear-gradient(145deg, var(--color-forest-900), var(--color-forest-800));
+  color: #fff;
+}
+
+/* Footer and closing CTA: a dark, polished anchor at the end of the page */
+.footer,
+.cta-band {
+  background: linear-gradient(135deg, var(--color-forest-950), var(--color-forest-900) 68%, #315844);
+  color: #fff;
+}
+.footer a:hover { color: var(--color-lime-500); }
+
+/* Navigation: frosted ivory glass with a quiet green edge */
+.header {
+  background: rgba(247, 248, 244, .82);
+  border-bottom-color: rgba(10, 61, 46, .08);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  backdrop-filter: blur(18px) saturate(150%);
+}
+.header.is-stuck {
+  background: rgba(247, 248, 244, .94);
+  border-bottom-color: var(--color-border);
+  box-shadow: 0 8px 28px rgba(8, 45, 36, .06);
+}
+.nav__link:hover,
+.nav__link[aria-current="page"] { color: var(--color-forest-800); }
+
+/* Decorative gradient accents stay within the brand family */
+:root {
+  --grad-warm: linear-gradient(110deg, var(--color-forest-950) 0%, var(--color-forest-800) 72%, #168365 100%);
+  --grad-cool: linear-gradient(110deg, #DDF9A6 0%, #A5F044 48%, #BDEBD2 100%);
+  --grad-awards: linear-gradient(135deg, var(--color-forest-900) 0%, var(--color-forest-800) 58%, #16745A 100%);
+}
+
+/* Respect motion preferences and keep keyboard focus clearly visible */
+:focus-visible { outline: 3px solid var(--color-forest-700); outline-offset: 3px; }
+.section--dark :focus-visible,
+.footer :focus-visible,
+.drawer :focus-visible { outline-color: var(--color-lime-500); }
+
+@media (max-width: 767px) {
+  .btn { border-radius: 7px; }
+  .work__card,
+  .vtest__card,
+  .ceo-card { border-radius: 14px; }
+}
+
+/* =========================================================================
+   Premium section gradients — NexPixels
+   Use gradients on selected sections so glass surfaces have visual depth.
+   ========================================================================= */
+
+/* Soft branded glow behind the hero and its glass cards */
+.hero {
+  background:
+    radial-gradient(ellipse at 82% 18%, rgba(226, 239, 37, .18) 0%, rgba(226, 239, 37, 0) 38%),
+    radial-gradient(ellipse at 12% 85%, rgba(10, 101, 78, .10) 0%, rgba(10, 101, 78, 0) 42%),
+    linear-gradient(135deg, #F5FFE9 0%, #F2F7F0 55%, #F5FFE9 100%);
+}
+
+/* Alternating mist sections add rhythm without making the page too colorful */
+.section--mist {
+  background:
+    radial-gradient(ellipse at 92% 8%, rgba(226, 239, 37, .12) 0%, rgba(226, 239, 37, 0) 34%),
+    linear-gradient(135deg, #F4F8F2 0%, #EAF3ED 52%, #F5FFE9 100%);
+}
+
+/* Dark sections use a restrained forest gradient rather than flat green */
+.section--dark {
+  background: linear-gradient(125deg, #142F23 0%, #1E4030 68%, #315844 100%);
+  color: #fff;
+}
+
+/* Featured closing sections keep the same premium gradient language */
+.cta-band {
+  background:
+    radial-gradient(ellipse at 88% 12%, rgba(226, 239, 37, .13) 0%, rgba(226, 239, 37, 0) 36%),
+    linear-gradient(125deg, #142F23 0%, #1E4030 56%, #A5F044 100%);
+  color: #fff;
+}
+
+/* Gentle green tint behind metrics; cards remain crisp and readable */
+.section--stats,
+.stats-section {
+  background: linear-gradient(120deg, #F5FFE9 0%, #EAF5DC 52%, #DDF9A6 100%);
+}
+
+/* Give glass cards a little more definition over gradient sections */
+.hero .work__card,
+.hero .vtest__card,
+.hero .ceo-card,
+.section--mist .work__card,
+.section--mist .vtest__card,
+.section--mist .ceo-card {
+  background: rgba(255, 255, 255, .64);
+  border-color: rgba(10, 97, 71, .17);
+  box-shadow: 0 14px 38px rgba(8, 45, 36, .075);
+}
+
+@media (max-width: 767px) {
+  .hero {
+    background:
+      radial-gradient(ellipse at 90% 8%, rgba(226, 239, 37, .13) 0%, rgba(226, 239, 37, 0) 40%),
+      linear-gradient(145deg, #F5FFE9 0%, #EAF5DC 100%);
+  }
 }
