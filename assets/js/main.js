@@ -313,44 +313,207 @@
     reveals.forEach(function (el) { el.classList.add('is-in'); });
   }
 
-  /* ---- Homepage: stroke that follows scroll progress ---- */
-  $$('[data-stroke-scroll]').forEach(function (section) {
-    var path = $('[data-stroke-path]', section);
-    var line = $('.stroke-scroll__line', section);
-    var intro = $('.stroke-scroll__intro', section);
-    var card = $('[data-stroke-card]', section);
+
+  /* ---- Homepage scroll line: a large infinity framing the hero, then wide S-sweeps from side to
+     side down the page, drawn by scroll progress and ending at the footer tagline. The line sits
+     above section backgrounds but behind section content (see .has-scroll-line in style.css). ---- */
+  (function () {
+    var heroTitle = $('.hero h1');
+    var hero = $('.hero');
+    var footer = $('.footer');
+    var main = $('main');
+    if (!heroTitle || !hero || !footer || !main || !window.requestAnimationFrame) return;
+    var NS = 'http://www.w3.org/2000/svg';
     var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (!path || !card) return;
-    var len = path.getTotalLength();
-    path.style.strokeDasharray = len;
-    var clamp = function (v) { return Math.min(1, Math.max(0, v)); };
-    var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
-    var ticking = false;
-    var update = function () {
-      ticking = false;
-      if (motion.matches) {
-        path.style.strokeDashoffset = 0;
-        return;
+    var make = function (tag, cls) {
+      var n = document.createElementNS(NS, tag);
+      if (cls) n.setAttribute('class', cls);
+      return n;
+    };
+    var wrap = document.createElement('div');
+    wrap.className = 'scroll-line';
+    wrap.setAttribute('aria-hidden', 'true');
+    var svg = make('svg');
+    /* Horizontal sheen: the line brightens towards the edges as it sweeps across */
+    var defs = make('defs'), grad = make('linearGradient');
+    grad.id = 'scroll-line-grad';
+    grad.setAttribute('gradientUnits', 'userSpaceOnUse');
+    [['0', '#D8FF8A'], ['0.5', '#A5F044'], ['1', '#CFFF6E']].forEach(function (st) {
+      var stop = make('stop');
+      stop.setAttribute('offset', st[0]);
+      stop.setAttribute('stop-color', st[1]);
+      grad.appendChild(stop);
+    });
+    defs.appendChild(grad);
+    /* Glow: two wide, faint strokes under the line, far cheaper than a blur filter on a page-tall SVG */
+    var halo = make('path', 'scroll-line__halo'), glow = make('path', 'scroll-line__glow');
+    var path = make('path', 'scroll-line__path');
+    var tip = make('circle', 'scroll-line__tip'), end = make('circle', 'scroll-line__end');
+    var strokes = [halo, glow, path];
+    [defs, halo, glow, path, end, tip].forEach(function (n) { svg.appendChild(n); });
+    wrap.appendChild(svg);
+    document.body.appendChild(wrap);
+    document.body.classList.add('has-scroll-line');
+
+    var len = 0, introLen = 0, lens = [], xs = [], ys = [], ymax = [];
+    var current = 0, target = 0, running = false, ready = false;
+    var pageRect = function (el) {
+      var r = el.getBoundingClientRect();
+      return { left: r.left, right: r.right, top: r.top + window.scrollY, bottom: r.bottom + window.scrollY, height: r.height };
+    };
+    /* End of the last rendered text line of an element, in page coordinates */
+    var textEnd = function (el) {
+      var range = document.createRange();
+      range.selectNodeContents(el);
+      var rects = range.getClientRects();
+      var r = rects.length ? rects[rects.length - 1] : el.getBoundingClientRect();
+      return { x: r.right, y: r.top + window.scrollY + r.height * 0.55 };
+    };
+    /* Catmull-Rom spline through points, as cubic Béziers. Also samples the curve into a
+       cumulative length table (lens/xs/ys/ymax): per-frame getPointAtLength on a path this
+       long is far too slow. */
+    var spline = function (pts) {
+      var d = 'M' + pts[0][0].toFixed(1) + ' ' + pts[0][1].toFixed(1);
+      var px = pts[0][0], py = pts[0][1], total = 0, m = py;
+      lens = [0]; xs = [px]; ys = [py]; ymax = [py];
+      for (var i = 0; i < pts.length - 1; i++) {
+        var p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2;
+        var c1x = p1[0] + (p2[0] - p0[0]) / 6, c1y = p1[1] + (p2[1] - p0[1]) / 6;
+        var c2x = p2[0] - (p3[0] - p1[0]) / 6, c2y = p2[1] - (p3[1] - p1[1]) / 6;
+        d += 'C' + c1x.toFixed(1) + ' ' + c1y.toFixed(1) + ' ' + c2x.toFixed(1) + ' ' + c2y.toFixed(1) + ' ' +
+          p2[0].toFixed(1) + ' ' + p2[1].toFixed(1);
+        for (var k = 1; k <= 10; k++) {
+          var u = k / 10, v = 1 - u, b0 = v * v * v, b1 = 3 * v * v * u, b2 = 3 * v * u * u, b3 = u * u * u;
+          var x = b0 * p1[0] + b1 * c1x + b2 * c2x + b3 * p2[0], y = b0 * p1[1] + b1 * c1y + b2 * c2y + b3 * p2[1];
+          total += Math.hypot(x - px, y - py); px = x; py = y; m = Math.max(m, y);
+          lens.push(total); xs.push(x); ys.push(y); ymax.push(m);
+        }
       }
-      var r = section.getBoundingClientRect();
-      var travel = r.height - window.innerHeight;
-      var p = travel > 0 ? clamp(-r.top / travel) : 0;
-      /* Stroke draws from 15% to 100% over the first 80% of the scroll */
-      var drawn = 0.15 + 0.85 * clamp(p / 0.8);
-      path.style.strokeDashoffset = len * (1 - drawn);
-      /* Line drifts upward so the drawing tip stays in view */
-      line.style.setProperty('--line-shift', (-p * line.getBoundingClientRect().height * 0.55).toFixed(1) + 'px');
-      /* Card rises over the last 35% of the scroll */
-      var c = ease(clamp((p - 0.65) / 0.35));
-      card.style.setProperty('--card-shift', ((1 - c) * 115).toFixed(2) + '%');
-      intro.style.setProperty('--intro-scale', (1 - c * 0.08).toFixed(3));
-      intro.style.setProperty('--intro-opacity', (1 - c * 0.6).toFixed(3));
+      len = total;
+      return d;
     };
+    /* Lemniscate of Bernoulli centred on (cx,cy): rx is the half-width, ry the half-height of a lobe.
+       a = 0 is the crossing heading down-right, a = π/2 the right tip, a = 3π/2 the left tip. */
+    var lemniscate = function (pts, cx, cy, rx, ry, from, to) {
+      var n = Math.ceil((to - from) / (Math.PI / 24));
+      for (var i = 0; i <= n; i++) {
+        var a = from + (to - from) * i / n, c = Math.cos(a), q = 1 / (1 + c * c);
+        pts.push([cx + rx * q * Math.sin(a), cy + ry * 2.83 * q * Math.sin(a) * c]);
+      }
+    };
+
+    var build = function () {
+      if (getComputedStyle(wrap).display === 'none') { ready = false; return; }
+      wrap.style.height = '0px';
+      var W = document.documentElement.clientWidth;
+      var H = document.documentElement.scrollHeight;
+      wrap.style.height = H + 'px';
+      svg.setAttribute('width', W);
+      svg.setAttribute('height', H);
+      grad.setAttribute('x2', W);
+
+      var weight = Math.min(13, Math.max(6, W * 0.008));
+      path.style.strokeWidth = weight.toFixed(1);
+      glow.style.strokeWidth = (weight * 2.2).toFixed(1);
+      halo.style.strokeWidth = (weight * 4.5).toFixed(1);
+      tip.setAttribute('r', (weight * 0.85).toFixed(1));
+      end.setAttribute('r', (weight * 0.9).toFixed(1));
+
+      /* Sweeps turn in the page gutter, midway between the viewport edge and the content edge */
+      var inset = Math.max(heroTitle.getBoundingClientRect().left * 0.5, 22);
+      var sides = [W - inset, inset];
+      var pts = [];
+
+      /* Hero: one infinity spanning the hero (title in the left lobe, aside in the right), traced
+         once in full, then peeled off along the bottom of the right lobe into the first sweep */
+      var h = pageRect(hero);
+      var cx = W / 2, cy = h.top + h.height * 0.52;
+      /* Lobe height is capped by width so tall single-column (mobile) heroes keep a true ∞ shape */
+      var rx = W / 2 - inset * 1.4, ry = Math.min(h.height * 0.4, rx * 0.45);
+      lemniscate(pts, cx, cy, rx, ry, 0, Math.PI * 2);
+      var introPts = pts.length;
+      lemniscate(pts, cx, cy, rx, ry, Math.PI * 2 + 0.05, Math.PI * 2.3);
+      pts.push([sides[0], h.bottom + 90]);
+
+      /* Body: switch gutters roughly every 750px so the line crosses the page in long, even S-curves.
+         Turning points drift in and out a little so no two sweeps are identical. */
+      var side = 1;
+      var sections = Array.prototype.filter.call(main.children, function (el) {
+        return el.tagName === 'SECTION' && el.offsetHeight > 0 && el !== hero;
+      });
+      sections.forEach(function (sec) {
+        var b = pageRect(sec), n = Math.max(1, Math.round(b.height / 750));
+        for (var k = 0; k < n; k++) {
+          var drift = inset * 0.7 * Math.sin(pts.length * 1.7);
+          pts.push([sides[side] + (side ? drift : -drift), b.top + b.height * (k + 0.5) / n]);
+          side = 1 - side;
+        }
+      });
+
+      /* Footer: sweep in and finish just after the "Designing what's next." tagline */
+      var tag = $('.footer__tagline', footer);
+      var f = pageRect(footer);
+      var fin = tag ? textEnd(tag) : { x: W * 0.5, y: f.top + 80 };
+      var ex = fin.x + 22, ey = fin.y;
+      pts.push([sides[side], f.top + 10], [Math.min(ex + 180, W - inset), ey - 60], [ex, ey]);
+
+      var d = spline(pts);
+      introLen = lens[(introPts - 1) * 10];
+      strokes.forEach(function (s) {
+        s.setAttribute('d', d);
+        /* Dash units follow the sampled length, so dash offset and tip position stay in step */
+        s.setAttribute('pathLength', len.toFixed(1));
+        s.style.strokeDasharray = len + ' ' + len;
+      });
+      end.setAttribute('cx', ex); end.setAttribute('cy', ey);
+      ready = true;
+      current = Math.min(current, len);
+      onScroll();
+    };
+
+    /* Path length whose drawing head has reached page height y */
+    var lengthAt = function (y) {
+      var lo = 0, hi = ymax.length - 1;
+      if (y >= ymax[hi]) return len;
+      while (lo < hi) { var mid = (lo + hi) >> 1; if (ymax[mid] < y) lo = mid + 1; else hi = mid; }
+      return lens[lo];
+    };
+    var render = function () {
+      var offset = (len - current).toFixed(1);
+      strokes.forEach(function (s) { s.style.strokeDashoffset = offset; });
+      var lo = 0, hi = lens.length - 1;
+      while (lo < hi) { var mid = (lo + hi) >> 1; if (lens[mid] < current) lo = mid + 1; else hi = mid; }
+      var j = Math.max(1, lo), f = (current - lens[j - 1]) / ((lens[j] - lens[j - 1]) || 1);
+      tip.setAttribute('cx', (xs[j - 1] + (xs[j] - xs[j - 1]) * f).toFixed(1));
+      tip.setAttribute('cy', (ys[j - 1] + (ys[j] - ys[j - 1]) * f).toFixed(1));
+      tip.style.opacity = current > 2 ? '' : '0';
+      wrap.classList.toggle('is-complete', current >= len - 1);
+    };
+    /* Time-based damping: the line glides after the scroll at the same pace on any refresh rate */
+    var last = 0;
+    var tick = function (now) {
+      var dt = last ? Math.min(64, now - last) : 16;
+      last = now;
+      var diff = target - current;
+      current = Math.abs(diff) < 0.5 ? target : current + diff * (1 - Math.exp(-dt / 180));
+      render();
+      if (current !== target) window.requestAnimationFrame(tick); else { running = false; last = 0; }
+    };
+    /* The hero infinity always draws in full on load; past it, the line follows the scroll */
     var onScroll = function () {
-      if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+      if (!ready) return;
+      target = motion.matches ? len : Math.max(introLen, lengthAt(window.scrollY + window.innerHeight * 0.62));
+      if (motion.matches) { current = target; render(); return; }
+      if (!running) { running = true; window.requestAnimationFrame(tick); }
     };
+    var timer;
+    var schedule = function () { clearTimeout(timer); timer = setTimeout(build, 150); };
+
     window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    update();
-  });
+    window.addEventListener('resize', schedule);
+    window.addEventListener('load', schedule);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(schedule);
+    if (window.ResizeObserver) new ResizeObserver(schedule).observe(main);
+    build();
+  })();
 })();
