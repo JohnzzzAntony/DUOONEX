@@ -312,4 +312,45 @@
   } else {
     reveals.forEach(function (el) { el.classList.add('is-in'); });
   }
+
+  /* ---- Homepage: stroke that follows scroll progress ---- */
+  $$('[data-stroke-scroll]').forEach(function (section) {
+    var path = $('[data-stroke-path]', section);
+    var line = $('.stroke-scroll__line', section);
+    var intro = $('.stroke-scroll__intro', section);
+    var card = $('[data-stroke-card]', section);
+    var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (!path || !card) return;
+    var len = path.getTotalLength();
+    path.style.strokeDasharray = len;
+    var clamp = function (v) { return Math.min(1, Math.max(0, v)); };
+    var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
+    var ticking = false;
+    var update = function () {
+      ticking = false;
+      if (motion.matches) {
+        path.style.strokeDashoffset = 0;
+        return;
+      }
+      var r = section.getBoundingClientRect();
+      var travel = r.height - window.innerHeight;
+      var p = travel > 0 ? clamp(-r.top / travel) : 0;
+      /* Stroke draws from 15% to 100% over the first 80% of the scroll */
+      var drawn = 0.15 + 0.85 * clamp(p / 0.8);
+      path.style.strokeDashoffset = len * (1 - drawn);
+      /* Line drifts upward so the drawing tip stays in view */
+      line.style.setProperty('--line-shift', (-p * line.getBoundingClientRect().height * 0.55).toFixed(1) + 'px');
+      /* Card rises over the last 35% of the scroll */
+      var c = ease(clamp((p - 0.65) / 0.35));
+      card.style.setProperty('--card-shift', ((1 - c) * 115).toFixed(2) + '%');
+      intro.style.setProperty('--intro-scale', (1 - c * 0.08).toFixed(3));
+      intro.style.setProperty('--intro-opacity', (1 - c * 0.6).toFixed(3));
+    };
+    var onScroll = function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    update();
+  });
 })();
