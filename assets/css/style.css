@@ -2957,19 +2957,6 @@ select.field {
   color: var(--brand-accent-soft);
 }
 
-.tag-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tag-cloud span {
-  font-size: var(--fs-sm);
-  padding: 10px 16px;
-  border: 1px solid var(--line);
-  background: #fff;
-}
-
 /* Blog */
 .posts {
   display: grid;
@@ -4921,4 +4908,217 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .pshow__bg, .pshow__bg.is-active { transform: none; }
+}
+
+/* =========================================================================
+   Products page cards (#work-grid) — premium showcase
+   Builds on the site's existing .reveal trigger, --ease curve and glass card.
+   CSS only: markup, links and the CMS template stay unchanged.
+   ========================================================================= */
+#work-grid .work__media {
+  min-height: 0;
+  aspect-ratio: 16 / 10; /* matches the 1600×1000 mockups, so nothing is cropped */
+}
+#work-grid .art {
+  transition: transform .7s var(--ease);
+  will-change: transform;
+}
+/* Accent line between image and copy */
+#work-grid .work__media::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-lime-500), var(--color-forest-800));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s var(--ease);
+}
+#work-grid .work__cat { color: var(--color-forest-800); }
+#work-grid .work__metric { color: var(--ink); }
+#work-grid .work__title { transition: color .25s var(--ease); }
+#work-grid .work__desc { transition: color .35s var(--ease), transform .45s var(--ease); }
+#work-grid .work__desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* Narrow cards wrap to more lines; show the full description on phones */
+@media (max-width: 767px) {
+  #work-grid .work__desc { display: block; -webkit-line-clamp: unset; }
+}
+#work-grid .work__foot .arw { display: inline-block; transition: transform .25s var(--ease); }
+
+/* Hover and keyboard focus share one state; touch devices keep the static layout */
+@media (hover: hover) and (pointer: fine) {
+  #work-grid .work__card:hover,
+  #work-grid .work__card:focus-visible {
+    transform: translateY(-6px);
+    border-color: rgba(30, 64, 48, .32);
+    box-shadow: 0 22px 48px rgba(8, 45, 36, .13);
+  }
+  #work-grid .work__desc { transform: translateY(4px); }
+  #work-grid .work__card:is(:hover, :focus-visible) .art { transform: scale(1.04); }
+  #work-grid .work__card:is(:hover, :focus-visible) .work__media::after { transform: scaleX(1); }
+  #work-grid .work__card:is(:hover, :focus-visible) .work__title { color: var(--ink); }
+  #work-grid .work__card:is(:hover, :focus-visible) .work__desc { color: var(--color-text); transform: none; }
+  #work-grid .work__card:is(:hover, :focus-visible) .btn--ghost { border-color: var(--color-forest-800); background: rgba(10, 97, 71, .05); }
+  #work-grid .work__card:is(:hover, :focus-visible) .work__foot .arw { transform: translateX(4px); }
+}
+
+/* Staggered entrance: the grid's existing .reveal hands off to its cards */
+.js #work-grid.reveal { opacity: 1; transform: none; }
+.js #work-grid:not(.is-in) > .work__card { opacity: 0; }
+.js #work-grid.is-in > .work__card { animation: workcard-in .7s var(--ease) backwards; }
+.js #work-grid.is-in .work__media { animation: workcard-media .9s var(--ease) backwards; }
+#work-grid > :nth-child(2), #work-grid > :nth-child(2) .work__media { animation-delay: 90ms; }
+#work-grid > :nth-child(3), #work-grid > :nth-child(3) .work__media { animation-delay: 180ms; }
+#work-grid > :nth-child(4), #work-grid > :nth-child(4) .work__media { animation-delay: 270ms; }
+#work-grid > :nth-child(5), #work-grid > :nth-child(5) .work__media { animation-delay: 360ms; }
+#work-grid > :nth-child(6), #work-grid > :nth-child(6) .work__media { animation-delay: 450ms; }
+#work-grid > :nth-child(n+7), #work-grid > :nth-child(n+7) .work__media { animation-delay: 540ms; }
+@keyframes workcard-in {
+  from { opacity: 0; transform: translateY(24px); }
+}
+@keyframes workcard-media {
+  from { clip-path: inset(10% 8% 10% 8% round 12px); }
+  to { clip-path: inset(0 round 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js #work-grid:not(.is-in) > .work__card { opacity: 1; }
+  .js #work-grid.is-in > .work__card,
+  .js #work-grid.is-in .work__media { animation: none; }
+  #work-grid .work__card:is(:hover, :focus-visible) .art { transform: none; }
+}
+
+/* =========================================================================
+   Service cards (Products page) — image cards that fill with lime on hover
+   ========================================================================= */
+.svc-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.svc-card {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 3 / 4;
+  padding: clamp(24px, 2.4vw, 34px);
+  overflow: hidden;
+  border-radius: 18px;
+  color: var(--color-text);
+  background: linear-gradient(160deg, #fff 0%, var(--bg-3) 100%);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.svc-card:nth-child(even) { background: linear-gradient(160deg, #fff 0%, rgba(221, 249, 166, .55) 100%); }
+/* Lime fill wipes up from the bottom */
+.svc-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-lime-500);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform .5s var(--ease);
+}
+.svc-card__title {
+  max-width: 13ch;
+  font-size: clamp(24px, 2.1vw, 32px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  color: var(--color-forest-950);
+}
+.svc-card__img {
+  position: absolute;
+  z-index: -1;
+  left: 6%;
+  bottom: -12%;
+  width: 165%;
+  max-width: none;
+  height: auto;
+  /* Mockups sit on a grey studio backdrop; blend it into the card and fade its edges */
+  mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 22%), linear-gradient(to bottom, transparent 0, #000 30%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent 0, #000 22%), linear-gradient(to bottom, transparent 0, #000 30%);
+  mask-composite: intersect;
+  transition: transform .6s var(--ease), opacity .4s var(--ease);
+}
+.svc-card__more {
+  margin-top: auto;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .35s var(--ease), transform .45s var(--ease);
+}
+.svc-card__desc {
+  max-width: 34ch;
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--color-forest-950);
+}
+.svc-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--color-forest-900);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+.svc-card__cta .arw { display: inline-block; transition: transform .25s var(--ease); }
+
+@media (hover: hover) and (pointer: fine) {
+  .svc-card:is(:hover, :focus-visible) { transform: translateY(-4px); box-shadow: 0 18px 44px rgba(10, 45, 34, .12); }
+  .svc-card:is(:hover, :focus-visible)::before { transform: scaleY(1); }
+  .svc-card:is(:hover, :focus-visible) .svc-card__img { opacity: 0; transform: translateY(24px) scale(.96); }
+  .svc-card:is(:hover, :focus-visible) .svc-card__more { opacity: 1; transform: none; transition-delay: .12s; }
+  .svc-card:is(:hover, :focus-visible) .svc-card__cta .arw { transform: translateX(4px); }
+}
+
+/* Touch screens: no hover, so show the description and keep the image in flow */
+@media (hover: none), (pointer: coarse) {
+  .svc-card { aspect-ratio: auto; }
+  .svc-card__more { margin-top: 14px; opacity: 1; transform: none; }
+  .svc-card__img { position: static; z-index: auto; width: 120%; margin: 24px -10% -8% 8%; }
+}
+
+/* Staggered entrance, matching the product grid */
+.js .svc-cards.reveal { opacity: 1; transform: none; }
+.js .svc-cards:not(.is-in) > .svc-card { opacity: 0; }
+.js .svc-cards.is-in > .svc-card { animation: workcard-in .7s var(--ease) backwards; }
+.svc-cards > :nth-child(2) { animation-delay: 90ms; }
+.svc-cards > :nth-child(3) { animation-delay: 180ms; }
+.svc-cards > :nth-child(4) { animation-delay: 270ms; }
+.svc-cards > :nth-child(5) { animation-delay: 360ms; }
+.svc-cards > :nth-child(6) { animation-delay: 450ms; }
+
+@media (max-width: 1023px) {
+  .svc-cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .svc-cards {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-inline: calc(-1 * var(--gutter));
+    padding: 4px var(--gutter) 16px;
+    scroll-padding-inline: var(--gutter);
+    scrollbar-width: none;
+  }
+  .svc-cards::-webkit-scrollbar { display: none; }
+  .svc-card { flex: 0 0 82%; scroll-snap-align: start; border-radius: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .svc-cards:not(.is-in) > .svc-card { opacity: 1; }
+  .js .svc-cards.is-in > .svc-card { animation: none; }
 }
