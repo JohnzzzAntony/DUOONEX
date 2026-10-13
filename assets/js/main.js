@@ -522,12 +522,44 @@
       grad.appendChild(stop);
     });
     defs.appendChild(grad);
-    /* Glow: two wide, faint strokes under the line, far cheaper than a blur filter on a page-tall SVG */
-    var halo = make('path', 'scroll-line__halo'), glow = make('path', 'scroll-line__glow');
-    var path = make('path', 'scroll-line__path');
+    /* Glow: two wide, faint strokes under the line, far cheaper than a blur filter on a page-tall SVG.
+       The line is drawn twice: a soft layer clipped to light sections and the full neon layer clipped
+       to dark ones, so it stays quiet behind dark text and glows on dark backgrounds. */
+    var layers = ['light', 'dark'].map(function (tone) {
+      var clip = make('clipPath');
+      clip.id = 'scroll-line-clip-' + tone;
+      defs.appendChild(clip);
+      var g = make('g', 'scroll-line__layer scroll-line__layer--' + tone);
+      g.setAttribute('clip-path', 'url(#' + clip.id + ')');
+      var paths = ['halo', 'glow', 'path'].map(function (k) {
+        var p = make('path', 'scroll-line__' + k);
+        g.appendChild(p);
+        return p;
+      });
+      return { clip: clip, g: g, paths: paths, scale: tone === 'light' ? 0.7 : 1 };
+    });
     var tip = make('circle', 'scroll-line__tip'), end = make('circle', 'scroll-line__end');
-    var strokes = [halo, glow, path];
-    [defs, halo, glow, path, end, tip].forEach(function (n) { svg.appendChild(n); });
+    var strokes = layers[0].paths.concat(layers[1].paths);
+    [defs, layers[0].g, layers[1].g, end, tip].forEach(function (n) { svg.appendChild(n); });
+    /* Page bands with a dark background, detected from light text colour (works for gradients too) */
+    var darkBands = [];
+    var isDarkAt = function (y) {
+      for (var i = 0; i < darkBands.length; i++) if (y >= darkBands[i][0] && y < darkBands[i][1]) return true;
+      return false;
+    };
+    var hasLightText = function (el) {
+      var c = getComputedStyle(el).color.match(/[\d.]+/g);
+      return !!c && (0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]) > 150;
+    };
+    var setClip = function (clip, bands, W) {
+      while (clip.firstChild) clip.removeChild(clip.firstChild);
+      bands.forEach(function (b) {
+        var r = make('rect');
+        r.setAttribute('x', -50); r.setAttribute('width', W + 100);
+        r.setAttribute('y', b[0].toFixed(1)); r.setAttribute('height', Math.max(0, b[1] - b[0]).toFixed(1));
+        clip.appendChild(r);
+      });
+    };
     wrap.appendChild(svg);
     document.body.appendChild(wrap);
     document.body.classList.add('has-scroll-line');
@@ -590,9 +622,25 @@
       grad.setAttribute('x2', W);
 
       var weight = Math.min(13, Math.max(6, W * 0.008));
-      path.style.strokeWidth = weight.toFixed(1);
-      glow.style.strokeWidth = (weight * 2.2).toFixed(1);
-      halo.style.strokeWidth = (weight * 4.5).toFixed(1);
+      layers.forEach(function (l) {
+        var w = weight * l.scale;
+        l.paths[0].style.strokeWidth = (w * 4.5).toFixed(1);
+        l.paths[1].style.strokeWidth = (w * 2.2).toFixed(1);
+        l.paths[2].style.strokeWidth = w.toFixed(1);
+      });
+
+      /* Split the page into dark and light bands for the two clipped layers */
+      darkBands = [];
+      Array.prototype.forEach.call(main.children, function (el) {
+        if (el.offsetHeight > 0 && hasLightText(el)) { var r = pageRect(el); darkBands.push([r.top, r.bottom]); }
+      });
+      if (hasLightText(footer)) { var fr = pageRect(footer); darkBands.push([fr.top, fr.bottom]); }
+      darkBands.sort(function (a, b) { return a[0] - b[0]; });
+      var lightBands = [], from = -1000;
+      darkBands.forEach(function (b) { if (b[0] > from) lightBands.push([from, b[0]]); from = Math.max(from, b[1]); });
+      lightBands.push([from, H + 1000]);
+      setClip(layers[0].clip, lightBands, W);
+      setClip(layers[1].clip, darkBands, W);
       tip.setAttribute('r', (weight * 0.85).toFixed(1));
       end.setAttribute('r', (weight * 0.9).toFixed(1));
 
@@ -661,8 +709,10 @@
       var lo = 0, hi = lens.length - 1;
       while (lo < hi) { var mid = (lo + hi) >> 1; if (lens[mid] < current) lo = mid + 1; else hi = mid; }
       var j = Math.max(1, lo), f = (current - lens[j - 1]) / ((lens[j] - lens[j - 1]) || 1);
+      var ty = ys[j - 1] + (ys[j] - ys[j - 1]) * f;
       tip.setAttribute('cx', (xs[j - 1] + (xs[j] - xs[j - 1]) * f).toFixed(1));
-      tip.setAttribute('cy', (ys[j - 1] + (ys[j] - ys[j - 1]) * f).toFixed(1));
+      tip.setAttribute('cy', ty.toFixed(1));
+      wrap.classList.toggle('is-on-light', !isDarkAt(ty));
       tip.style.opacity = current > 2 ? '' : '0';
       wrap.classList.toggle('is-complete', current >= len - 1);
     };

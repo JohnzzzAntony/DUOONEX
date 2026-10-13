@@ -4633,6 +4633,11 @@ body {
 }
 .scroll-line__glow { stroke: var(--brand-primary); opacity: .22; }
 .scroll-line__halo { stroke: var(--brand-primary); opacity: .08; }
+/* Light backgrounds: a thinner, pale line that sits quietly behind text */
+.scroll-line__layer--light .scroll-line__path { opacity: .38; }
+.scroll-line__layer--light .scroll-line__glow { opacity: .07; }
+.scroll-line__layer--light .scroll-line__halo { opacity: .025; }
+.scroll-line.is-on-light .scroll-line__tip { filter: drop-shadow(0 0 6px rgba(165, 240, 68, .45)); }
 .scroll-line__tip {
   fill: #F2FFD6;
   stroke: var(--brand-primary);
