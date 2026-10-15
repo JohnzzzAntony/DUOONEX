@@ -7167,7 +7167,7 @@ body {
 
 .hero-3d__stage {
   position: relative;
-  width: min(92%, 580px);
+  width: min(100%, 640px);
   transform-style: preserve-3d;
   transform: rotateX(var(--rx)) rotateY(var(--ry));
   transition: transform .9s cubic-bezier(.2, .8, .2, 1);
@@ -7186,10 +7186,9 @@ body {
   height: auto;
   transform: translateZ(40px);
   filter:
-    drop-shadow(0 34px 38px rgba(14, 58, 30, .26))
-    drop-shadow(0 0 30px rgba(140, 230, 60, .32))
-    saturate(1.1) contrast(1.05);
-  -webkit-box-reflect: below 18px linear-gradient(transparent 72%, rgba(255, 255, 255, .14));
+    drop-shadow(0 30px 40px rgba(20, 70, 35, .22))
+    drop-shadow(0 0 24px rgba(140, 230, 60, .28))
+    saturate(1.08) contrast(1.04);
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -7207,8 +7206,8 @@ body {
     transparent 62%
   ) no-repeat;
   background-size: 250% 100%;
-  -webkit-mask: url("../art/hero-infinity.webp") center / 100% 100% no-repeat;
-          mask: url("../art/hero-infinity.webp") center / 100% 100% no-repeat;
+  -webkit-mask: url("../art/hero-3d-infinity.webp") center / 100% 100% no-repeat;
+          mask: url("../art/hero-3d-infinity.webp") center / 100% 100% no-repeat;
   mix-blend-mode: soft-light;
   animation: hero3dSheen 6.5s ease-in-out 1.2s infinite;
   pointer-events: none;
@@ -7252,8 +7251,8 @@ body {
 }
 
 @keyframes hero3dFloat {
-  0%, 100% { transform: translateY(0) rotateX(6deg) rotateY(-10deg); }
-  50%      { transform: translateY(-16px) rotateX(2deg) rotateY(10deg); }
+  0%, 100% { transform: translateY(0) rotateZ(0deg) rotateY(-4deg); }
+  50%      { transform: translateY(-18px) rotateZ(-.8deg) rotateY(4deg); }
 }
 
 @keyframes hero3dShadow {
