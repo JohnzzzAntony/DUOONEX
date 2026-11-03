@@ -5,6 +5,21 @@
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
+  /* First-touch attribution, kept for the session and attached to every analytics event. */
+  var attribution = (function () {
+    try {
+      var saved = JSON.parse(sessionStorage.getItem('np_attr') || 'null');
+      if (saved) return saved;
+      var q = new URLSearchParams(location.search), a = {landing_page: location.pathname, referrer: document.referrer ? new URL(document.referrer).hostname : ''};
+      ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (k) { if (q.get(k)) a[k] = q.get(k).slice(0, 100); });
+      sessionStorage.setItem('np_attr', JSON.stringify(a));
+      return a;
+    } catch (e) { return {}; }
+  })();
+  var track = function (event, params) {
+    (window.dataLayer = window.dataLayer || []).push(Object.assign({event: event}, attribution, params || {}));
+  };
+
   /* Original project media stays inside the existing artwork area. */
   $$('[data-project-gallery]').forEach(function (gallery) {
     var controls = gallery.parentElement.querySelector('[data-gallery-controls]');
@@ -447,6 +462,7 @@
         if (!response.ok) throw new Error(result.error || 'Unable to send your enquiry. Please try again.');
         note.textContent = 'Thank you. Your enquiry has been received.';
         note.classList.add('is-ok');
+        track('lead_submit', {lead_source: 'contact', budget: data.budget || undefined});
         form.reset();
       } catch (error) { note.textContent = error.message || 'Unable to send your enquiry. Please try again.'; note.classList.remove('is-ok'); }
       finally { if (submit) submit.disabled = false; }
@@ -458,9 +474,43 @@
     note.textContent = 'Thank you. Your enquiry has been received.'; note.classList.add('is-ok');
   });
 
-  /* ---- WhatsApp click tracking (GTM) ---- */
-  $$('[data-wa-float]').forEach(function (link) {
-    link.addEventListener('click', function () { (window.dataLayer = window.dataLayer || []).push({event: 'whatsapp_click'}); });
+  /* ---- Analytics (GTM dataLayer). No personal data is pushed. ---- */
+  if (/[?&]sent=1/.test(location.search)) track('lead_submit', {lead_source: 'contact'});
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    var name = link.getAttribute('data-event') ||
+      (/wa\.me\//.test(href) ? 'whatsapp_click' : /^mailto:/.test(href) ? 'email_click' : /^tel:/.test(href) ? 'phone_click' : '');
+    if (name) track(name, {link_text: link.textContent.replace(/\s+/g, ' ').trim().slice(0, 80), link_url: href});
+  });
+  var section = location.pathname.split('/')[1];
+  if (location.pathname.split('/').filter(Boolean).length === 2) {
+    var view = {work: 'case_study_view', products: 'case_study_view', services: 'service_view', blog: 'insight_read'}[section];
+    if (view) track(view, {page_path: location.pathname});
+  }
+
+  /* ---- Hero showcase: cycle real project screens ---- */
+  if (!reduceMotion.matches) $$('.v2-browser__screens').forEach(function (stack) {
+    var shots = $$('img', stack), i = 0;
+    if (shots.length < 2) return;
+    stack.classList.add('is-cycling');
+    shots[0].classList.add('is-active');
+    setInterval(function () {
+      if (document.hidden) return;
+      shots[i].classList.remove('is-active');
+      i = (i + 1) % shots.length;
+      shots[i].classList.add('is-active');
+    }, 4200);
+  });
+
+  /* ---- Magnetic primary CTA (fine pointers only) ---- */
+  if (!reduceMotion.matches && window.matchMedia('(pointer: fine)').matches) $$('[data-magnetic]').forEach(function (btn) {
+    btn.addEventListener('pointermove', function (e) {
+      var r = btn.getBoundingClientRect();
+      btn.style.transform = 'translate(' + ((e.clientX - r.left - r.width / 2) * .18) + 'px,' + ((e.clientY - r.top - r.height / 2) * .28) + 'px)';
+    });
+    btn.addEventListener('pointerleave', function () { btn.style.transform = ''; });
   });
 
   /* ---- Pause marquees while off-screen ---- */
