@@ -160,7 +160,7 @@ Canonical: ${origin}/.well-known/security.txt
         return;
       }
       if(/^\/media\/[a-f0-9-]+\.(png|jpg|webp|gif)$/.test(pathname)) target=path.join(dir,'uploads',path.basename(pathname));
-      else if(/^(assets\/(css|js|images|art)\/|admin\/(admin\.js|admin\.css|preview\.js)$)/.test(file)&&!file.split('/').some(s=>s==='..'||s.startsWith('.'))&&!file.includes('\\'))target=path.resolve(ROOT,file);
+      else if(/^(assets\/(css|js|images)\/|admin\/(admin\.js|admin\.css|preview\.js)$)/.test(file)&&!file.split('/').some(s=>s==='..'||s.startsWith('.'))&&!file.includes('\\'))target=path.resolve(ROOT,file);
       if(!target||!fs.existsSync(target)||!fs.statSync(target).isFile())fail(404,'Not found');
       const extension=path.extname(target).toLowerCase();
       if(file.startsWith('assets/images/')&&!publicMedia.includes(file.slice('assets/images/'.length)))fail(404,'Not found');
