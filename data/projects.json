@@ -2,7 +2,6 @@
   {
     "slug": "finora",
     "name": "Finora",
-    "type": "product",
     "category": "Accounting & business operations",
     "stack": "Next.js",
     "tags": "Websites|SaaS|Fintech|AI|B2B/B2C",
@@ -49,7 +48,6 @@
   {
     "slug": "nexora",
     "name": "Nexora",
-    "type": "product",
     "category": "Help desk & work management",
     "stack": "Next.js",
     "tags": "Websites|SaaS|B2B/B2C",
@@ -97,7 +95,6 @@
   {
     "slug": "invitara",
     "name": "Invitara",
-    "type": "product",
     "category": "Interactive invitation platform",
     "stack": "Node.js",
     "tags": "Websites|SaaS|B2B/B2C",
@@ -147,7 +144,6 @@
   {
     "slug": "mechaura",
     "name": "Mechaura International",
-    "type": "work",
     "category": "Industrial supplier website",
     "stack": "Vite",
     "tags": "Websites|B2B/B2C",
@@ -202,7 +198,6 @@
   {
     "slug": "workflow-hub",
     "name": "WorkFlow Hub",
-    "type": "product",
     "category": "Work assignment & follow-up tracker",
     "stack": "Next.js",
     "tags": "Websites|SaaS|AI|B2B/B2C",
@@ -245,7 +240,6 @@
   {
     "slug": "drec-pms",
     "name": "DREC Property Management System",
-    "type": "product",
     "category": "Property & lease management",
     "stack": "Next.js",
     "tags": "Websites|SaaS|B2B/B2C",
@@ -288,7 +282,6 @@
   {
     "slug": "certguard",
     "name": "CertGuard",
-    "type": "product",
     "category": "Domain & SSL management",
     "stack": "Next.js",
     "tags": "Websites|SaaS|B2B/B2C",
