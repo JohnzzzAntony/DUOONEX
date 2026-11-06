@@ -1,0 +1,226 @@
+{
+  "/assets/images/projects/nexora-signin.png": {
+    "width": 3200,
+    "height": 2000,
+    "originalBytes": 399014,
+    "variants": [
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-400.avif",
+        "width": 400,
+        "height": 250,
+        "bytes": 3225,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-400.webp",
+        "width": 400,
+        "height": 250,
+        "bytes": 4298,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-800.avif",
+        "width": 800,
+        "height": 500,
+        "bytes": 9595,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-800.webp",
+        "width": 800,
+        "height": 500,
+        "bytes": 12796,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-1200.avif",
+        "width": 1200,
+        "height": 750,
+        "bytes": 17543,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-1200.webp",
+        "width": 1200,
+        "height": 750,
+        "bytes": 24738,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-1600.avif",
+        "width": 1600,
+        "height": 1000,
+        "bytes": 26912,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-1600.webp",
+        "width": 1600,
+        "height": 1000,
+        "bytes": 38280,
+        "format": "webp"
+      }
+    ]
+  },
+  "/assets/images/projects/nexora-signin-mobile.png": {
+    "width": 880,
+    "height": 1800,
+    "originalBytes": 68220,
+    "variants": [
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-mobile-400.avif",
+        "width": 400,
+        "height": 818,
+        "bytes": 8829,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-mobile-400.webp",
+        "width": 400,
+        "height": 818,
+        "bytes": 11184,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-mobile-800.avif",
+        "width": 800,
+        "height": 1636,
+        "bytes": 19812,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-mobile-800.webp",
+        "width": 800,
+        "height": 1636,
+        "bytes": 28840,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-mobile-880.avif",
+        "width": 880,
+        "height": 1800,
+        "bytes": 22330,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/nexora-signin-mobile-880.webp",
+        "width": 880,
+        "height": 1800,
+        "bytes": 32372,
+        "format": "webp"
+      }
+    ]
+  },
+  "/assets/images/projects/finora-signin.png": {
+    "width": 1800,
+    "height": 2000,
+    "originalBytes": 61986,
+    "variants": [
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-400.avif",
+        "width": 400,
+        "height": 444,
+        "bytes": 2479,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-400.webp",
+        "width": 400,
+        "height": 444,
+        "bytes": 3046,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-800.avif",
+        "width": 800,
+        "height": 889,
+        "bytes": 6605,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-800.webp",
+        "width": 800,
+        "height": 889,
+        "bytes": 8892,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-1200.avif",
+        "width": 1200,
+        "height": 1333,
+        "bytes": 12335,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-1200.webp",
+        "width": 1200,
+        "height": 1333,
+        "bytes": 16276,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-1600.avif",
+        "width": 1600,
+        "height": 1778,
+        "bytes": 15615,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-1600.webp",
+        "width": 1600,
+        "height": 1778,
+        "bytes": 24162,
+        "format": "webp"
+      }
+    ]
+  },
+  "/assets/images/projects/finora-signin-mobile.png": {
+    "width": 880,
+    "height": 1800,
+    "originalBytes": 55418,
+    "variants": [
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-mobile-400.avif",
+        "width": 400,
+        "height": 818,
+        "bytes": 7478,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-mobile-400.webp",
+        "width": 400,
+        "height": 818,
+        "bytes": 8582,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-mobile-800.avif",
+        "width": 800,
+        "height": 1636,
+        "bytes": 18871,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-mobile-800.webp",
+        "width": 800,
+        "height": 1636,
+        "bytes": 22624,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-mobile-880.avif",
+        "width": 880,
+        "height": 1800,
+        "bytes": 18662,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/projects/responsive/finora-signin-mobile-880.webp",
+        "width": 880,
+        "height": 1800,
+        "bytes": 25978,
+        "format": "webp"
+      }
+    ]
+  }
+}

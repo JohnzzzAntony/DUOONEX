@@ -1,6 +1,4 @@
-/* Load the geometric, clean Manrope typeface used by the reference-inspired design.
-   For best performance, these font preconnects can also be added in the HTML <head>. */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+/* Existing route components. Shared studio typography is self-hosted in studio.css. */
 
 /* =========================================================================
    NexPixels — design tokens and components.

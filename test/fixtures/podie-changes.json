@@ -1,0 +1,67 @@
+{
+  "index.html": {
+    "before": {
+      "text": "053416203e1c31826a01952c8b8469f48af3d3d2f811090840d43103397101d0",
+      "links": "e3da3ff9d16fec64b5cae532fbbb22ae638837deab668ce579b5536466eb978d",
+      "media": "90c2430e7528fccbd5cb6d005f9c7fcd4a49cc77ebc4ef661fcfb7e49993349b"
+    },
+    "after": {
+      "text": "3d5b1347d2e0fc54b5e8986a6766dc15aaa84c7c6ba1883bfb2b3de064e2b844",
+      "links": "53c76315a7c320b8bddc731c376acba79741b2094ac707b221d3789382758a5a",
+      "media": "0fae714bafc26bfe30d399cb19368b7b302d9fb589b1f882ba272e6325cdeb83"
+    },
+    "reason": "Original PODIE React components integrated with NexPixels capabilities, real projects and delivery stages. Main navigation links now use their respective pages."
+  },
+  "services/index.html": {
+    "before": {
+      "text": "8a71d73b73a5fe7cf40087039ea87aef450c0417946458d92d07e3b4ce5e6f06",
+      "links": "334920790989016eaab897c21f38f86bd30569a83af77261569dd0bc0551f084",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "d4d0673820fe85f6caa903a4788167d30288c70e1feb1b4b93230fae488d6661",
+      "links": "7a1788215757aae47455e566eb87f2024b90aa38603e4301c5ed85ccd0487277",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Original PODIE React components integrated with NexPixels capabilities, real projects and delivery stages. Main navigation links now use their respective pages."
+  },
+  "services/react-nextjs-development/index.html": {
+    "before": {
+      "text": "ffb8bd203ba090f2a09efc67656238d0460f7e1f3107624471070cf442cbb2c1",
+      "links": "bbf77d4f5ce14eecf4e643f996e05c16a6dae4aae996dd080c1ff5421d1ee36f",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "e2dd34f382eaf1f40631efbf64b4a9fe2fd340d3948cd5ea77e19df6dd5150b8",
+      "links": "48b93d6f570631ae79d4e27c581caa43209259223487f35fcd586a5d45bbabd8",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Original PODIE React components integrated with NexPixels capabilities, real projects and delivery stages. Main navigation links now use their respective pages."
+  },
+  "startups/index.html": {
+    "before": {
+      "text": "8ec5882d0a3cd7e4e32e24ece3bc5595fbb15c9920dc03b59f3873f5b913d212",
+      "links": "bf7458c7b175c297e1e431cda84307eb0997e7d396899555fe3f4549c7a8d484",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "after": {
+      "text": "c0476d186a9209762de670dec0639a7976c2ce240be9ca158a8d2ff97b8b015b",
+      "links": "bf7458c7b175c297e1e431cda84307eb0997e7d396899555fe3f4549c7a8d484",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "reason": "Original PODIE React components integrated with NexPixels capabilities, real projects and delivery stages. Main navigation links now use their respective pages."
+  },
+  "approach/index.html": {
+    "before": {
+      "text": "43920376ca585ea906c1ae8cb63dc7bdd3b34e1b0ef2f4ecdb486156f8dea192",
+      "links": "dbb73a61aabfb7e3bf98b743bad04418030f7feababb712b9fd20fab5d8e1a51",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "ba2b1e2aca0e0c34f4360db167a4c9fa69058be787ee07aa1a8bd4f66302e62a",
+      "links": "dbb73a61aabfb7e3bf98b743bad04418030f7feababb712b9fd20fab5d8e1a51",
+      "media": "b3e2f3fe7ca5baa175cef774f53db665f6ca5b721306492dff8e9e436c5ac5dc"
+    },
+    "reason": "Original PODIE React components integrated with NexPixels capabilities, real projects and delivery stages. Main navigation links now use their respective pages."
+  }
+}

@@ -1,0 +1,87 @@
+/*! Circuit Board — Copyright (c) 2023 Jordan-Gilliam. MIT; see licenses/cult--circuit-board.txt. */
+/*! How It Works — Copyright (c) 2026 Amarnath. MIT; see licenses/chamaac--how-it-works.txt. */
+/*! Process Card Reveal — Copyright (c) 2026 StaticMania. MIT; see licenses/tween-ui--process-card-reveal.txt. */
+
+Bundled license information:
+
+scheduler/cjs/scheduler.production.js:
+  /**
+   * @license React
+   * scheduler.production.js
+   *
+   * Copyright (c) Meta Platforms, Inc. and affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   */
+
+react/cjs/react.production.js:
+  /**
+   * @license React
+   * react.production.js
+   *
+   * Copyright (c) Meta Platforms, Inc. and affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   */
+
+react-dom/cjs/react-dom.production.js:
+  /**
+   * @license React
+   * react-dom.production.js
+   *
+   * Copyright (c) Meta Platforms, Inc. and affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   */
+
+react-dom/cjs/react-dom-client.production.js:
+  /**
+   * @license React
+   * react-dom-client.production.js
+   *
+   * Copyright (c) Meta Platforms, Inc. and affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   */
+
+react/cjs/react-jsx-runtime.production.js:
+  /**
+   * @license React
+   * react-jsx-runtime.production.js
+   *
+   * Copyright (c) Meta Platforms, Inc. and affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   */
+
+lucide-react/dist/esm/shared/src/utils.js:
+lucide-react/dist/esm/defaultAttributes.js:
+lucide-react/dist/esm/Icon.js:
+lucide-react/dist/esm/createLucideIcon.js:
+lucide-react/dist/esm/icons/arrow-up-right.js:
+lucide-react/dist/esm/icons/braces.js:
+lucide-react/dist/esm/icons/panels-top-left.js:
+lucide-react/dist/esm/icons/workflow.js:
+lucide-react/dist/esm/lucide-react.js:
+  /**
+   * @license lucide-react v0.468.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   */
+
+@gsap/react/src/index.js:
+  /*!
+   * @gsap/react 2.1.2
+   * https://gsap.com
+   *
+   * Copyright 2008-2025, GreenSock. All rights reserved.
+   * Subject to the terms at https://gsap.com/standard-license or for
+   * Club GSAP members, the agreement issued with that membership.
+   * @author: Jack Doyle, jack@greensock.com
+  */

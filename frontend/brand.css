@@ -1,0 +1,52 @@
+/* NexPixels identity: the green, obsidian and canvas in the brand PDF. */
+:root{--brand-signal:#00f076;--brand-forest:#0b6247;--brand-canvas:#f7f7f5;--brand-obsidian:#0a0a0a}
+html,.roveia-theme{background:var(--brand-canvas)}
+.roveia-theme .s-hero{background-color:#f3f8ef}
+.roveia-theme .s-button{background:var(--brand-signal);color:var(--brand-obsidian)}
+.roveia-theme .s-button:hover{background:#8cffb6;color:var(--brand-obsidian)}
+.roveia-theme .s-button-small,.roveia-theme .s-button-dark{background:var(--brand-obsidian);color:#fff}
+.roveia-theme .s-button-small:hover,.roveia-theme .s-button-dark:hover{background:var(--brand-forest);color:#fff}
+.roveia-theme .s-button-glass{background:#ffffffa6;color:var(--brand-obsidian);border-color:#10101030}
+.roveia-theme .s-button-glass:hover{background:#e6f9ed}
+.roveia-theme .s-scope-featured .s-button{background:var(--brand-signal);color:var(--brand-obsidian)}
+.roveia-theme .s-scope-featured .s-button:hover{background:#8cffb6}
+.roveia-theme .s-scope-badge{background:var(--brand-forest);color:#fff}
+.roveia-theme .s-scope-featured{background:#e4f3dc}
+.roveia-theme .s-hero h1 em{color:var(--brand-forest)}
+.roveia-theme .s-node-icon,.roveia-theme .s-location-cross{color:var(--brand-forest)}
+.roveia-theme .s-footer{background:var(--brand-obsidian);position:relative;isolation:isolate;overflow:hidden}
+.roveia-theme .s-footer::before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 12% 150%,#00f07625,transparent 65%);transform-origin:bottom;animation:nex-footer-tide 12s ease-in-out infinite alternate;pointer-events:none}
+@keyframes nex-footer-tide{to{transform:translateX(20%) scale(1.3)}}
+.roveia-theme .n-hero-artwork{padding:0;overflow:hidden;border:0;background:#163125}
+.n-art-picture{display:block;width:100%;height:100%}
+.n-art-picture>img{display:block;width:100%;height:100%;object-fit:cover}
+.roveia-theme .n-feature-art{margin:0;padding:0;overflow:hidden;display:flex;flex-direction:column;min-height:0}
+.n-feature-art .n-art-picture{aspect-ratio:3/2;height:auto;flex:1}
+.n-feature-art figcaption{padding:16px 22px;background:#f3f2ee;color:#40584a;font-size:12px;line-height:1.5}
+.n-editorial-art{max-width:1000px;margin:42px auto 0;overflow:hidden;border-radius:24px;background:#eeeae2}
+.n-editorial-art .n-art-picture{height:clamp(240px,38vw,500px)}
+.n-editorial-art figcaption{padding:14px 20px;color:#40584a;background:#f3f2ee;font-size:12px;line-height:1.5}
+.n-portfolio-picture{display:contents}
+.n-portfolio-picture>img{max-width:100%}
+@media(max-width:600px){.roveia-theme .s-hero h1{font-size:clamp(39px,11.6vw,52px);letter-spacing:-1.8px}.n-editorial-art{margin-top:30px;border-radius:20px}.n-editorial-art .n-art-picture{height:auto;aspect-ratio:3/2}.n-editorial-art figcaption,.n-feature-art figcaption{font-size:11px;padding:13px 16px}}
+.roveia-theme .s-desktop-nav a{position:relative;min-height:44px;display:inline-flex;align-items:center}
+.roveia-theme .s-desktop-nav a::after{content:'';position:absolute;left:0;right:0;bottom:6px;height:2px;background:var(--brand-forest);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.roveia-theme .s-desktop-nav a:hover::after,.roveia-theme .s-desktop-nav a[aria-current]::after{transform:scaleX(1)}
+.roveia-theme .s-mobile-nav a[aria-current]{color:var(--brand-forest)}
+.roveia-theme .s-mobile-nav:not([hidden]){animation:nex-menu-in .3s ease-out}
+@keyframes nex-menu-in{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:none}}
+.roveia-theme section[id]{scroll-margin-top:115px}
+.roveia-theme section[tabindex='-1']:focus{outline:none}
+.roveia-theme .s-faq-list details::details-content{transition:height .3s,content-visibility .3s allow-discrete;height:0;overflow:clip}
+.roveia-theme .s-faq-list details[open]::details-content{height:auto}
+@supports(interpolate-size:allow-keywords){.roveia-theme .s-faq-list{interpolate-size:allow-keywords}}
+.roveia-theme .s-faq-list summary>span{transition:transform .25s}
+.roveia-theme .s-faq-list details[open] summary>span{transform:rotate(45deg)}
+.roveia-theme .s-project a:focus-visible{outline-offset:8px}
+.roveia-theme :is(a,button,summary,input[type=range]){cursor:pointer}
+.roveia-theme main{animation:nex-page-in .45s ease-out}
+.roveia-theme.studio-home main{animation:none}
+@keyframes nex-page-in{from{opacity:.35}to{opacity:1}}
+html.studio-motion-paused .s-footer::before{animation-play-state:paused}
+html.studio-motion-paused .roveia-theme :is(main,.s-mobile-nav){animation:none}
+@media(prefers-reduced-motion:reduce){.roveia-theme main,.roveia-theme .s-footer::before,.roveia-theme .s-mobile-nav:not([hidden]){animation:none}.roveia-theme .s-faq-list details::details-content,.roveia-theme .s-faq-list summary>span{transition:none}}

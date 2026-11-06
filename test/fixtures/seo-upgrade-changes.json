@@ -1,0 +1,387 @@
+{
+  "index.html": {
+    "before": {
+      "text": "3fc476ab5fc8e6afde772aedf5df03d0cfa3793f82186931d37450a747cac317",
+      "media": "6eb00df5561b19f9315603296a72711e1477ae648b0160bff366a02dbf495734"
+    },
+    "after": {
+      "text": "053416203e1c31826a01952c8b8469f48af3d3d2f811090840d43103397101d0",
+      "media": "90c2430e7528fccbd5cb6d005f9c7fcd4a49cc77ebc4ef661fcfb7e49993349b"
+    },
+    "reason": "Lead with custom web development, refine service copy and introduce three original concept artworks."
+  },
+  "about/index.html": {
+    "before": {
+      "text": "225793c3d95b32671f5df5d805b1bc57ff35943e40c79d522a775ffac1a368fa",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "2dfde0acebaea8016a1e368cb548bb42d1c95f662af7411a3ac3bd092fdbae1c",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Add an original custom development concept illustration."
+  },
+  "blog/best-ai-product-design-agencies/index.html": {
+    "before": {
+      "text": "8819a82c5f7f7b9da1a24fbaba3d373c63124e64fa0bc93fbbb3fd5d3939166b",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "31095272a6cc11e07ecffea102a1ad8d6486f267c69608910f4b97c0b21a84be",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/best-no-code-website-builders/index.html": {
+    "before": {
+      "text": "374e08acdcd625be40d2eebe671491f7d4a558aa0d7535412d5cff091dad37d2",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "43dd22a24dd89af5a180e2953b56d5844354e1530047782bc7e090bcd1f0f272",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/best-shopify-agencies/index.html": {
+    "before": {
+      "text": "1067cce15533dd77b0f0cfbba1e51268e4a2a452744a23a99450fac62c1cb827",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "911bf1d1edb65f4f09ed715fa9f3fa626155cea0eb4502750f1751cd2a67822b",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/best-website-design-examples/index.html": {
+    "before": {
+      "text": "568a21a2ddd6db35210260af30715338cac0560f4d8d3c7ba8e0a4c35b979fa5",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "dab7f7a3e71a75077364cb53401c6faaeb269faf4caa96907a020c1c812b4a0d",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/dark-mode-vs-light-mode/index.html": {
+    "before": {
+      "text": "934c31544b087f99ff1397d7bafa61d06e0bd8ffe6c6bf1b96470216b582fee8",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "65b3f323289023a61977bd34f3dfe9989d6904e5f8906534321c3d292b3e450b",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/top-ai-ui-ux-agencies/index.html": {
+    "before": {
+      "text": "1109c477a28b14fdd3c52835fed32a21e01af07595854c7b770f9ab08d72ef4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "21883b5ba816e920298aca7c8d2e226faeaf8695ba73f24fbbdce559b651d966",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/top-branding-agencies-services/index.html": {
+    "before": {
+      "text": "afa49ce08a2d67336f65689b6c3a81a38a6b56aa8837200ff1fdbf0b3986da64",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "c93d7dc9a03f696c861c2c9f6feeaec73e9352caf9ec270a63c48381f80a9dda",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/top-mvp-development-companies/index.html": {
+    "before": {
+      "text": "1b1693f0d8b195597f751327a9ba0516ff591268b13be06e7e9690deb8e61382",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "1f15da08747fe6401ba2a14feab938a1ec3c7f9aa9bfd62200ada7308b844b54",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/top-ui-ux-design-agencies-usa/index.html": {
+    "before": {
+      "text": "9dbd36d0eb37ccf81fd1e34646c58418b891dc070a239501a35ff0a3f9be58bf",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "7576f28b9c9d917e75509278650db76b74003fe93fbd25af007ee67ab8fd5e5f",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/ui-ux-design-agencies-nyc/index.html": {
+    "before": {
+      "text": "7bdb7bba31bbbc858f5015a346e77933e20e70b9543d062150bdde22f2d4f624",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "22715341cace879e46c6024d5459c455dccaa1579f4db6c9eb783d431e0d4a1a",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/what-is-ux-ui-design/index.html": {
+    "before": {
+      "text": "765c22c0c59d12cbdd7f9ede2b918bb506476514556b4c4d60ce4f95896c96b3",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "e955c745da91bac8737718ca6c6753c656f12d35b8c7a29da17313b282958dea",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "blog/why-do-top-brands-choose-webflow/index.html": {
+    "before": {
+      "text": "596c25c4eebfd15795723f142a7f0027903219d994124cf74b581949c7da8402",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "9235518688b257bf70e9ae0d765cc3f3f731e6626f6ffdc8bb3c1341b625559f",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Add studio attribution and contextual concept artwork."
+  },
+  "services/conversion-rate-optimization/index.html": {
+    "before": {
+      "text": "077c586d174880dd55cffded8923da3d5be587a09ed2bdf79d57b26c2d50c3e0",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "218c404b283674d7349f67d9e65b8734a1e2a16a6863bc25c57b0429ba124437",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/custom-web-development/index.html": {
+    "before": {
+      "text": "2a9a3ae0615a6b023afabc15beae245f419b85b0167fe1ef9aa2a3ada4146a8d",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "07054447a8f963a52fccf78c0be7c63c3dbbc1eea9869b882c52317c02a8525f",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/design-systems/index.html": {
+    "before": {
+      "text": "c12af7df40adb47fb53d3fea04f4e819c10d08998f5979186f9043e738739c73",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "8bce4b1aba89e26fcb436b180481b818f530fef72c448e6e2c39763112a4082e",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/ecommerce-development/index.html": {
+    "before": {
+      "text": "6447666ae3f248d491b78e227642d2e69a106df4db6dc42076557cd2ab39f1eb",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "3aead110290fc6e3e2fe2e0860433046b069ca0f78c658ef6f7f69d65d99554c",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/ecommerce-integrations/index.html": {
+    "before": {
+      "text": "d11b4c4446ae8e809c12763918344a39aba44d28cc8c8cb9cbc1e6328ef8cd28",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "fe03350086f53aac813dbabe0f5e7b42169b72768d0cf1cd2c7b70dffa39f2a8",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/ecommerce-ux-research/index.html": {
+    "before": {
+      "text": "cf684347653de6d9d9c2f1394755978861a5a5c684ec3cf46077518a6f3ef399",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "bbfb829f285da38b64e59f855e9831c7b626faec0c2cb1a7a7cab9065c7a0bd4",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/figma-to-website/index.html": {
+    "before": {
+      "text": "b97ceb25fc8d131a89c4ff5c4922cc9a88375721fdfb0c3d5960333630bc7921",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "c34f86ed0ea46155f4acc5ec3e8d1520779534b3edb239b68fa4fec4c9e9871e",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/index.html": {
+    "before": {
+      "text": "3a7a7d01ba24f5e29094e446e54240ee8510ef87fdcafbba0c2b042d8799bb68",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "8a71d73b73a5fe7cf40087039ea87aef450c0417946458d92d07e3b4ce5e6f06",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/landing-page-design/index.html": {
+    "before": {
+      "text": "707dbaf1f700aa092d923552de8cfaaa8c85e9f6b5d234e08492ec5d16a9fad6",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "9b27a6d8d72b9e4a37dc8fad4e1fb01d21b5d267b376cf4f99a5278dc4b69fea",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/mobile-ecommerce-ux/index.html": {
+    "before": {
+      "text": "b0a4ef5c0b41897f65ce9da0f8a09e470b5cf28781fef2d00566abcaf58c0427",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "006ecfe9940be6d1f4369f9d51ce7b7cbaf385e76efd8609c139e34b45c3ccb7",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/mvp-development/index.html": {
+    "before": {
+      "text": "1fe764485a6a7713e26671e1cc15812383e3e5403c69f8e0954df1d4a7d849c9",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "ab26da0d6ce90966faa6dfce192282eea7db30098819ec50a8ee6f0c413f3385",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/python-ai-workflows/index.html": {
+    "before": {
+      "text": "800aaa83f2c3b6eac8bd442af02bd90b90739c6c6443576fef7cba1949a2cbf9",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "2c561deb8f8054ce86c0810f03496880eb49b5ae460fbccfbef068cde0e875f4",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/qa-launch-testing/index.html": {
+    "before": {
+      "text": "3a8008c502d801a06a6051f02dacd749f318b0c6b68cb8a6a83712e269d07549",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "77ca7d66b90419d4d3a78c51e258821537a356aeab40fcf51ef5db234c99c032",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/react-nextjs-development/index.html": {
+    "before": {
+      "text": "4fd32f60a9e69e7f9f9f71749c8b1bcf2c782faec4a5e33fb35bbd5fab4deec5",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "ffb8bd203ba090f2a09efc67656238d0460f7e1f3107624471070cf442cbb2c1",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/saas-design/index.html": {
+    "before": {
+      "text": "8dd9732d0b95a6128e4eb5e2b4346c00a92212d5a58e5b796d25a01279260203",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "a81fb219a1e03265ed0a53d5eae1ba9d280791ea153d75e2fc92bcab26572265",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/shopify-development/index.html": {
+    "before": {
+      "text": "317169d06941f91700996b36661d6a8e566f897531b230f9604ca6602105eef6",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "7378934fcff428f3f747cfffff383dd0114c5fd5f58da14abea99be3133d2340",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/ui-ux-design/index.html": {
+    "before": {
+      "text": "e4d1af4b4f556204a044f17430a9f0cf176be74e49b326d62c20442c5cebf29c",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "4b2d660563611ba5549926f1a9f1c727f47daed804a5af5b7769b3453944256a",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/ux-audit/index.html": {
+    "before": {
+      "text": "f44d3e999dacf61a5444cf0388de097e529fca21f12c5fbb919f376e50e43e74",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "6c4fff46fbce15d452528d8cd42bf766bc22f6a2bc3ad808c7149f8c0aa256e1",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/web-app-mvp-development/index.html": {
+    "before": {
+      "text": "67fc40e822a8df104b207b154cfae2a711fcd5b70dc0ea8434c4dff980d4f57f",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "331d112f0eadee8a01ac998d66afed28b0aaa07ca591ead396897843fa40201f",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/website-strategy/index.html": {
+    "before": {
+      "text": "2462710c99d26344ef5fdc2229e3895c3968a35476611d516346ea1225cff782",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "5f1024cf40075714f25a9b3bc84ec0c1939e5323aa8b9ac95076dd1bddee1806",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  },
+  "services/wordpress-development/index.html": {
+    "before": {
+      "text": "42b80d3c4ec362efab3368f7c66a93f5e74c09bf55fbc850ab06980a0d67b640",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "ff1619b1bb1ba53db006ebc22aa8d09a72065d686ccab64687dcb83a9eef701d",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Replace repeated FAQ wording with specific service answers and add an original concept illustration."
+  }
+}

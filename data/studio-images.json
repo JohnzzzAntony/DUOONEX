@@ -1,0 +1,169 @@
+{
+  "custom-web-development": {
+    "source": "design-assets/generated/custom-web-development.png",
+    "alt": "Glass browser panels wrapped in a green ribbon, illustrating custom web development",
+    "social": "/assets/images/studio/custom-web-development-social.jpg",
+    "width": 1672,
+    "height": 941,
+    "variants": [
+      {
+        "src": "/assets/images/studio/custom-web-development-480.avif",
+        "width": 480,
+        "height": 270,
+        "bytes": 6110,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/custom-web-development-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 10126,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/studio/custom-web-development-800.avif",
+        "width": 800,
+        "height": 450,
+        "bytes": 12545,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/custom-web-development-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21646,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/studio/custom-web-development-1200.avif",
+        "width": 1200,
+        "height": 675,
+        "bytes": 23330,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/custom-web-development-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "bytes": 39872,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/studio/custom-web-development-1600.avif",
+        "width": 1600,
+        "height": 900,
+        "bytes": 35084,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/custom-web-development-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 59954,
+        "format": "webp"
+      }
+    ]
+  },
+  "interface-design": {
+    "source": "design-assets/generated/interface-design.png",
+    "alt": "Frosted glass interface panels with a green accent, illustrating responsive UI design",
+    "social": "/assets/images/studio/interface-design-social.jpg",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/assets/images/studio/interface-design-480.avif",
+        "width": 480,
+        "height": 320,
+        "bytes": 5822,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/interface-design-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 9844,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/studio/interface-design-800.avif",
+        "width": 800,
+        "height": 533,
+        "bytes": 12336,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/interface-design-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 22058,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/studio/interface-design-1200.avif",
+        "width": 1200,
+        "height": 800,
+        "bytes": 24465,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/interface-design-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 43518,
+        "format": "webp"
+      }
+    ]
+  },
+  "connected-applications": {
+    "source": "design-assets/generated/connected-applications.png",
+    "alt": "Graphite modules joined by green glass channels, illustrating connected business applications",
+    "social": "/assets/images/studio/connected-applications-social.jpg",
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      {
+        "src": "/assets/images/studio/connected-applications-480.avif",
+        "width": 480,
+        "height": 320,
+        "bytes": 6726,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/connected-applications-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 11180,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/studio/connected-applications-800.avif",
+        "width": 800,
+        "height": 533,
+        "bytes": 14009,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/connected-applications-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 24280,
+        "format": "webp"
+      },
+      {
+        "src": "/assets/images/studio/connected-applications-1200.avif",
+        "width": 1200,
+        "height": 800,
+        "bytes": 25905,
+        "format": "avif"
+      },
+      {
+        "src": "/assets/images/studio/connected-applications-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 45710,
+        "format": "webp"
+      }
+    ]
+  }
+}

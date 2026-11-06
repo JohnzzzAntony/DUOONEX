@@ -1,0 +1,88 @@
+{
+  "index.html": {
+    "before": "4c04a8a960a551a3bd8be97ed946222a9f7fd006cd202e68934618f565b1d6c9",
+    "after": "3fc476ab5fc8e6afde772aedf5df03d0cfa3793f82186931d37450a747cac317",
+    "reason": "Clarify the Dubai studio’s web design, Shopify and custom application services.",
+    "removedParagraphs": []
+  },
+  "services/conversion-rate-optimization/index.html": {
+    "before": "af29eff637a73312b434f15f0554ed6b45e4db74a1b63aa161fc0f7f79e85234",
+    "after": "077c586d174880dd55cffded8923da3d5be587a09ed2bdf79d57b26c2d50c3e0",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "Conversion work begins with a defined action and reliable measurement. We review the steps before that action, identify missing information and separate observed issues from hypotheses. Changes are prioritised around user needs rather than unsupported promises of revenue growth."
+    ]
+  },
+  "services/design-systems/index.html": {
+    "before": "dd18b950f1461b49bcb316ef93b4f89870e37f55d5abb9fda720167cf1ef7971",
+    "after": "c12af7df40adb47fb53d3fea04f4e819c10d08998f5979186f9043e738739c73",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "Repeated screens become easier to maintain when teams share clear rules. We review existing patterns, identify genuine variations and document component behaviour. A useful system supports real product needs rather than adding a large library that nobody uses."
+    ]
+  },
+  "services/ecommerce-integrations/index.html": {
+    "before": "91890fb89e582a5f10af4aa5832a23345fae5e287140949967c2a3fdd5bac335",
+    "after": "d11b4c4446ae8e809c12763918344a39aba44d28cc8c8cb9cbc1e6328ef8cd28",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "We review business goals, customer tasks, content and the systems already in use."
+    ]
+  },
+  "services/mobile-ecommerce-ux/index.html": {
+    "before": "21a374647d425fca61ca16ab116ba62cdf2e84bf3add28940e39e622c30d3229",
+    "after": "b0a4ef5c0b41897f65ce9da0f8a09e470b5cf28781fef2d00566abcaf58c0427",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "Mobile commerce needs prioritisation rather than a compressed desktop page. We review navigation, product options, delivery information and error recovery at realistic screen sizes. Device and browser checks help identify friction in the customer journey before release."
+    ]
+  },
+  "services/mvp-development/index.html": {
+    "before": "bf4c3361283154b22ecf0e92f106468a79cb330c5582a41f4f6efb6bad551984",
+    "after": "1fe764485a6a7713e26671e1cc15812383e3e5403c69f8e0954df1d4a7d849c9",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "We review business goals, customer tasks, content and the systems already in use."
+    ]
+  },
+  "services/saas-design/index.html": {
+    "before": "191a5a284de452c69e4d369368ae75a56333f6ea0d3bf29f829d38630690b9e3",
+    "after": "8dd9732d0b95a6128e4eb5e2b4346c00a92212d5a58e5b796d25a01279260203",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "SaaS design must account for users with different permissions and responsibilities. We map recurring tasks and the information needed to complete them, then review navigation and interaction patterns. This helps keep complex workflows consistent as modules are added."
+    ]
+  },
+  "services/shopify-development/index.html": {
+    "before": "9b37f4fd2fad8f96ef4240fd6827a7b1dd2db540e3d76f002b7ee59c055f8979",
+    "after": "317169d06941f91700996b36661d6a8e566f897531b230f9604ca6602105eef6",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "A Shopify build should reflect how customers choose products and how staff maintain the catalogue. We define collections, variants, metafields and reusable theme sections first. Payment, delivery and third-party app requirements are checked against the selected providers before implementation."
+    ]
+  },
+  "services/ui-ux-design/index.html": {
+    "before": "dbd00f637bd7e2133d95e7b50ae2969a12c75415bd372a22b80d7699cfb81b83",
+    "after": "e4d1af4b4f556204a044f17430a9f0cf176be74e49b326d62c20442c5cebf29c",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "We review business goals, customer tasks, content and the systems already in use."
+    ]
+  },
+  "services/ux-audit/index.html": {
+    "before": "8eefc7492d0f81cb6d6028665421950fbf108a5df3ca176728d20068956321a3",
+    "after": "f44d3e999dacf61a5444cf0388de097e529fca21f12c5fbb919f376e50e43e74",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "A redesign should solve specific problems rather than replace pages without evidence. We review key journeys, available analytics and content gaps, then rank findings by impact and effort. Existing URLs and valuable pages are considered when planning changes."
+    ]
+  },
+  "services/website-strategy/index.html": {
+    "before": "ec3cfdaa074de4e57a361518fec060302efb5925402401847d9ec35f4b26b3b2",
+    "after": "2462710c99d26344ef5fdc2229e3895c3968a35476611d516346ea1225cff782",
+    "reason": "Remove repeated lead paragraphs while keeping the first occurrence.",
+    "removedParagraphs": [
+      "We review business goals, customer tasks, content and the systems already in use."
+    ]
+  }
+}

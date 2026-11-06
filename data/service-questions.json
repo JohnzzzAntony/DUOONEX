@@ -1,0 +1,82 @@
+{
+  "custom-web-development": [
+    ["Can our team edit the website after launch?", "Content editing is planned with the page structure. We identify the text, images and repeatable sections your team needs to manage, then define the CMS fields and permissions. Handover explains those controls and separates routine publishing from changes that need development."],
+    ["How do you plan a website redesign without losing useful URLs?", "We review the existing pages, content and enquiry routes before agreeing the new structure. Pages worth keeping are mapped to their new destinations. Any changed public URLs need a redirect plan and launch checks; search rankings cannot be guaranteed."]
+  ],
+  "ui-ux-design": [
+    ["What is included in a UI/UX design handover?", "The agreed scope can include user journeys, wireframes, responsive Figma layouts, reusable components and a clickable prototype. We document important interaction states so developers understand what happens during loading, empty results, invalid inputs and successful actions."],
+    ["Can you design around our existing application?", "Yes. We start with the users, tasks and technical constraints of the current product. Useful patterns can be retained while unclear navigation or workflows are redesigned. The proposal identifies the screens and states to cover before visual design begins."]
+  ],
+  "shopify-development": [
+    ["Do you build custom Shopify theme sections?", "Custom Liquid sections can support product information, collection layouts and reusable content blocks. We define what store editors should control, then implement the agreed theme behaviour. App requirements and any theme limitations are checked before development."],
+    ["Can you connect UAE payment and delivery providers?", "Available integrations depend on the provider, merchant account and Shopify configuration. We review your selected payment and delivery services, confirm their supported connection methods and test the agreed buying journey. Provider subscriptions, account approvals and transaction fees remain separate dependencies."]
+  ],
+  "wordpress-development": [
+    ["Will we be able to publish pages ourselves?", "WordPress templates and reusable content fields can let your team update the agreed page content without editing code. We plan the publishing workflow, roles and page components first. Handover covers the editor controls and the responsibilities for ongoing updates."],
+    ["How do you choose WordPress plugins?", "Plugins are assessed against the required functionality, support and maintenance needs. We avoid adding a plugin where a simpler implementation meets the brief. Hosting, backups, plugin licences and update responsibilities are identified in the proposal rather than assumed to be included indefinitely."]
+  ],
+  "react-nextjs-development": [
+    ["When does a project need React or Next.js?", "These tools suit interfaces that need reusable components, API-connected data or application behaviour beyond a simple content page. Rendering, publishing and hosting choices follow the requirements. We review whether a framework-based build offers useful control before recommending it over a simpler platform."],
+    ["Can you connect an existing backend?", "We review the API documentation, authentication, data models and access available from your backend. The frontend scope includes the agreed data states, errors and permissions. Any missing endpoints or changes to the backend are identified before implementation."]
+  ],
+  "python-ai-workflows": [
+    ["What can a Python backend handle?", "A Python or Django backend can support business records, role-based access, APIs and operational workflows. We model the required data and rules first, then define the integrations and deployment responsibilities. The stack is chosen around the application rather than around a predetermined feature list."],
+    ["How do you scope an AI integration?", "We define the task, input data, expected output and human review points before choosing an AI service. Provider limits, running costs and data handling need explicit agreement. Generated output is tested against representative cases; an AI feature is not a guarantee of accuracy."]
+  ],
+  "web-app-mvp-development": [
+    ["How do you define roles and permissions?", "We map who can view, create, change and approve each record. Those permissions are considered alongside the workflow and data model. The agreed access rules are then implemented and tested, including cases where a user tries to reach information outside their role."],
+    ["Can a web application replace spreadsheet workflows?", "A custom application can bring repeated spreadsheet tasks into a shared workflow when the rules and ownership are clear. We review the existing records, validation and reporting needs first. Data cleanup, import work and integration requirements are scoped separately from building the interface."]
+  ],
+  "mvp-development": [
+    ["What should go into a first release?", "Start with one complete user workflow that demonstrates the product’s main value. The first release should include the roles, data and feedback needed to finish that task. Secondary features can be deferred so the scope remains understandable and testable."],
+    ["How do you separate an MVP from a prototype?", "A prototype is used to review journeys and interface decisions before development. An MVP is working software with an agreed release scope. Hosting, real data, integrations, access controls and handover requirements therefore need to be discussed explicitly for the MVP."]
+  ],
+  "design-systems": [
+    ["What belongs in a practical design system?", "A useful system combines reusable Figma components with typography, spacing and interaction rules. Components should cover the states used by the actual product rather than every possible variation. We define the scope around the screens and workflows your team needs to maintain."],
+    ["How does the system connect to development?", "Component names, variants and behaviour need to be understandable to the implementation team. We document the agreed states and responsive rules, then align the handover with the frontend structure. A Figma library alone does not automatically create a coded component library."]
+  ],
+  "ecommerce-development": [
+    ["How do you choose an e-commerce platform?", "We compare the catalogue, product options, publishing workflow and required integrations before recommending a platform. Payment, delivery and operational dependencies matter alongside visual design. The proposal explains which features are native to the platform and which require additional development or services."],
+    ["What product content is needed before launch?", "Product names, descriptions, images, prices, variants and collection rules need clear ownership. Shipping, returns and payment information should also be prepared for the agreed buying journey. We identify content dependencies early because incomplete catalogue data can delay testing and launch."]
+  ],
+  "ecommerce-integrations": [
+    ["What do you need before connecting a provider?", "We need the provider documentation, account access and the records that must move between systems. Authentication, field mapping, error responses and any rate limits are reviewed before implementation. If a provider has no supported API or connector, that constraint affects the solution."],
+    ["How do you test an integration?", "Testing covers the agreed data flow and relevant failure cases, such as invalid records, rejected requests or interrupted connections. A sandbox is used where the provider supports one. Account approvals, production credentials and provider-side configuration remain part of the launch checklist."]
+  ],
+  "ecommerce-ux-research": [
+    ["What can a shopping journey review reveal?", "A review can identify unclear catalogue navigation, missing product information and friction in mobile product selection or cart steps. Findings are connected to specific customer tasks and available evidence. The output is a prioritised set of changes rather than a promise of a particular conversion increase."],
+    ["Do you need analytics access?", "Existing analytics, support questions and observed customer behaviour can make the review more useful. We agree which evidence is available before selecting research activities. When data is limited, assumptions are recorded so recommendations can be tested rather than presented as proven findings."]
+  ],
+  "figma-to-website": [
+    ["What makes a Figma file ready for development?", "The file should show the agreed layouts, reusable components and key interaction states. Responsive behaviour, fonts, imagery and content editing requirements also need clarity. We review gaps before implementation so uncertain design decisions do not become unexpected development work."],
+    ["Will the finished website match the design?", "We implement the approved visual direction while accounting for responsive layouts, real content and browser behaviour. Reviews compare the build with the agreed Figma screens and acceptance criteria. Missing mobile layouts or interaction states are clarified before they are implemented."]
+  ],
+  "landing-page-design": [
+    ["What should a campaign landing page focus on?", "One clear audience, one relevant offer and an understandable next action give the page a useful direction. We structure the message, supporting information and enquiry route around that goal. Claims and proof need to come from your business rather than from placeholder marketing copy."],
+    ["Can the page connect to our enquiry workflow?", "We review the form fields, destination and required integration before building the page. Validation, success feedback and failure states are included in the agreed scope. CRM access, account configuration and any third-party tracking requirements need to be provided and tested."]
+  ],
+  "mobile-ecommerce-ux": [
+    ["Which mobile shopping tasks do you review?", "We consider how customers browse collections, choose product options, read key information and move between cart steps. Layouts need to support realistic product names and content on smaller screens. The scope identifies the journeys and device sizes to review."],
+    ["Can you improve mobile UX without rebuilding the store?", "Sometimes navigation, product content or theme changes can address the main friction without a full rebuild. We assess the current platform and available controls first. Recommendations distinguish content changes, theme work and features that depend on third-party apps or checkout restrictions."]
+  ],
+  "qa-launch-testing": [
+    ["What is included in a website launch check?", "The checklist follows the agreed scope: responsive layouts, browser behaviour, forms, links and important user journeys. Public-page metadata and redirects are reviewed where relevant. Test results identify defects and dependencies so the release decision is based on documented checks."],
+    ["Do you test error and empty states?", "Yes, where those states belong to the agreed journeys. Invalid form inputs, missing results, loading and failed requests need understandable feedback. We define representative cases before testing; the coverage depends on the application, available environments and acceptance criteria."]
+  ],
+  "saas-design": [
+    ["How do you design for different user roles?", "We map the tasks, information and permissions each role needs before drawing the screens. Shared interface patterns can remain consistent while actions and navigation reflect the role. The scope records the journeys and states that the prototype must demonstrate."],
+    ["Can you simplify an existing dashboard?", "We start with the decisions users need to make and the actions they take most often. Information hierarchy, navigation and feedback are reviewed against those tasks. A useful redesign may remove distractions or combine steps rather than simply add more charts."]
+  ],
+  "ux-audit": [
+    ["What do you receive from a UX audit?", "The agreed output identifies usability problems, the journeys they affect and recommended priorities. We connect findings to observations and available evidence, separating confirmed issues from assumptions. The audit can guide a redesign brief without implying that every page needs rebuilding."],
+    ["How do you prioritise redesign work?", "We consider the user task, business importance, frequency of the problem and implementation constraints. Existing content and useful URLs are reviewed before changes are proposed. The resulting scope distinguishes essential fixes from optional improvements and items that need further evidence."]
+  ],
+  "website-strategy": [
+    ["What decisions should website strategy settle?", "Strategy should clarify the audience, business goals, important user journeys and the content needed to support them. We also review publishing responsibilities and system dependencies. Those decisions give design and development a practical brief rather than a list of disconnected pages."],
+    ["Can strategy start before the platform is chosen?", "Yes. Understanding the content, users and operational requirements first makes platform selection more useful. We compare the editing workflow, integrations and maintenance needs against the brief. A platform recommendation should explain the trade-offs relevant to your business."]
+  ],
+  "conversion-rate-optimization": [
+    ["What changes can a conversion review recommend?", "Recommendations may address unclear product information, mobile navigation, form friction or feedback during the buying journey. The review considers available evidence and technical constraints. We prioritise testable changes rather than promising a fixed improvement in sales or enquiries."],
+    ["Can you work with limited conversion data?", "We can review the interface and customer tasks while documenting where evidence is missing. Analytics, support questions and qualitative observations can inform the priorities. Recommendations made with limited data should be treated as hypotheses to validate after implementation."]
+  ]
+}

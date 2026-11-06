@@ -1,0 +1,518 @@
+{
+  "index.html": {
+    "title": "Custom Web Development Company in Dubai | NexPixels",
+    "description": "Custom web development in Dubai for websites and business applications. NexPixels connects UI/UX, integrations, testing and launch. Discuss your project.",
+    "canonical": "https://nexpixels.com/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "about/index.html": {
+    "title": "About NexPixels | Custom Web Development Studio Dubai",
+    "description": "Meet NexPixels, a Dubai web development agency connecting UI/UX design with websites, online stores and business applications. Explore our approach.",
+    "canonical": "https://nexpixels.com/about/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "blog/best-ai-product-design-agencies/index.html": {
+    "title": "Choosing a Digital Product Development Partner | NexPixels",
+    "description": "Assess a digital product partner through real workflows, implementation evidence and a clear scope. Read the NexPixels guide for UAE business teams.",
+    "canonical": "https://nexpixels.com/blog/best-ai-product-design-agencies/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/connected-applications-social.jpg",
+    "imageAlt": "Concept artwork of connected graphite modules and green glass channels"
+  },
+  "blog/best-no-code-website-builders/index.html": {
+    "title": "Choosing a Website Platform for a UAE Business | NexPixels",
+    "description": "Choose a platform for your UAE website by comparing commerce, publishing and application needs. Read NexPixels’s guide to scope, costs and ownership.",
+    "canonical": "https://nexpixels.com/blog/best-no-code-website-builders/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "blog/best-shopify-agencies/index.html": {
+    "title": "How to Choose a Shopify Developer in Dubai | NexPixels",
+    "description": "Choosing a Shopify developer in Dubai? Review Liquid work, mobile shopping, catalogue structure and integrations with this practical NexPixels guide.",
+    "canonical": "https://nexpixels.com/blog/best-shopify-agencies/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "blog/best-website-design-examples/index.html": {
+    "title": "What Makes a Useful E-commerce Product Page? | NexPixels",
+    "description": "Make e-commerce product pages easier to use with clear options, useful information and mobile testing. Read NexPixels’s guide for UAE online stores.",
+    "canonical": "https://nexpixels.com/blog/best-website-design-examples/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "blog/dark-mode-vs-light-mode/index.html": {
+    "title": "Dark or Light Mode: Choosing Readable Website UI | NexPixels",
+    "description": "Compare dark and light website interfaces through readability, content and interaction states. Read NexPixels’s practical UI guide for UAE businesses.",
+    "canonical": "https://nexpixels.com/blog/dark-mode-vs-light-mode/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "blog/index.html": {
+    "title": "Web Development, UI/UX & E-commerce Guides | NexPixels",
+    "description": "Explore NexPixels guides to custom web development, UI/UX, e-commerce and business applications. Plan your next website or digital product with a clearer brief.",
+    "canonical": "https://nexpixels.com/blog/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "blog/top-ai-ui-ux-agencies/index.html": {
+    "title": "Planning UX for a Custom Business Application | NexPixels",
+    "description": "Plan UX for a business application around user roles, records and complete tasks. Read NexPixels’s guide to practical workflows for UAE product teams.",
+    "canonical": "https://nexpixels.com/blog/top-ai-ui-ux-agencies/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "blog/top-branding-agencies-services/index.html": {
+    "title": "Planning an E-commerce Website for a UAE Brand | NexPixels",
+    "description": "Plan an e-commerce website for your UAE brand with a clear catalogue, product content and editing workflow. Read the practical guide from NexPixels.",
+    "canonical": "https://nexpixels.com/blog/top-branding-agencies-services/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "blog/top-mvp-development-companies/index.html": {
+    "title": "MVP Development in Dubai: What to Scope First | NexPixels",
+    "description": "Scope an MVP around one complete user workflow, clear acceptance criteria and a useful first release. Read NexPixels’s guide for startups in Dubai.",
+    "canonical": "https://nexpixels.com/blog/top-mvp-development-companies/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/connected-applications-social.jpg",
+    "imageAlt": "Concept artwork of connected graphite modules and green glass channels"
+  },
+  "blog/top-ui-ux-design-agencies-usa/index.html": {
+    "title": "Compare UI/UX Agencies for Your UAE Project | NexPixels",
+    "description": "Compare UI/UX agencies for your UAE project using deliverables, evidence and handover quality. Read NexPixels’s guide before requesting design proposals.",
+    "canonical": "https://nexpixels.com/blog/top-ui-ux-design-agencies-usa/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "blog/ui-ux-design-agencies-nyc/index.html": {
+    "title": "Website Redesign Checklist for Dubai Businesses | NexPixels",
+    "description": "Plan a website redesign in Dubai around observed issues, valuable pages and clear priorities. Read NexPixels’s checklist for scope and launch reviews.",
+    "canonical": "https://nexpixels.com/blog/ui-ux-design-agencies-nyc/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "blog/what-is-ux-ui-design/index.html": {
+    "title": "What Is UI/UX Design? A Guide for UAE Businesses | NexPixels",
+    "description": "Understand UI and UX design through user journeys, interface states and developer handover. Read NexPixels’s practical guide for UAE business websites.",
+    "canonical": "https://nexpixels.com/blog/what-is-ux-ui-design/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "blog/why-do-top-brands-choose-webflow/index.html": {
+    "title": "Shopify or WordPress for a UAE Business Website? | NexPixels",
+    "description": "Compare Shopify and WordPress for your UAE website using commerce, publishing and maintenance needs. Read NexPixels’s guide to choosing a platform.",
+    "canonical": "https://nexpixels.com/blog/why-do-top-brands-choose-webflow/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "case-studies/assethub/index.html": {
+    "title": "AssetHub Project Archive | NexPixels",
+    "description": "This archived AssetHub project URL redirects to the NexPixels portfolio. Explore current website and application case studies from our Dubai studio.",
+    "canonical": "https://nexpixels.com/case-studies/",
+    "robots": "noindex,follow"
+  },
+  "case-studies/certguard/index.html": {
+    "title": "CertGuard | Domain & SSL management | NexPixels",
+    "description": "A domain and SSL control panel that verifies expiry dates against live sources, alerts before expiry and automates certificate renewal. Explore the project.",
+    "canonical": "https://nexpixels.com/case-studies/certguard/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "case-studies/drec-pms/index.html": {
+    "title": "DREC Property Management System | NexPixels",
+    "description": "A property and lease platform managing plots, units, subtenants, subleases, EJARI registrations, rent collection and compliance alerts. Explore the project.",
+    "canonical": "https://nexpixels.com/case-studies/drec-pms/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "case-studies/finora/index.html": {
+    "title": "Finora | Accounting & business operations | NexPixels",
+    "description": "A UAE-focused accounting platform connecting sales, purchases, inventory, banking and ledger-based business reports. Explore the project.",
+    "canonical": "https://nexpixels.com/case-studies/finora/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "case-studies/index.html": {
+    "title": "Website & Application Projects UAE | NexPixels Portfolio",
+    "description": "Explore NexPixels website and application projects for UAE businesses, with original screenshots, project scope and videos. Discuss a similar build with us.",
+    "canonical": "https://nexpixels.com/case-studies/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "case-studies/invitara/index.html": {
+    "title": "Invitara | Interactive invitation platform | NexPixels",
+    "description": "Animated digital invitations with personalisation, guest replies, account-based publishing and event-date access rules. Explore the project.",
+    "canonical": "https://nexpixels.com/case-studies/invitara/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "case-studies/jaber-property/index.html": {
+    "title": "Jaber Property Project Archive | NexPixels",
+    "description": "This archived Jaber Property project URL redirects to the NexPixels portfolio. Explore current website and application case studies from our Dubai studio.",
+    "canonical": "https://nexpixels.com/case-studies/",
+    "robots": "noindex,follow"
+  },
+  "case-studies/mechaura/index.html": {
+    "title": "Mechaura International Website | NexPixels",
+    "description": "An industrial catalogue website connecting UAE buyers with product specifications, sector information and quotation enquiries. Explore the project.",
+    "canonical": "https://nexpixels.com/case-studies/mechaura/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "case-studies/nexora/index.html": {
+    "title": "Nexora | Help desk & work management | NexPixels",
+    "description": "A shared workspace for support tickets, tasks, approvals and customer service, with organisation-scoped access and activity history. Explore the project.",
+    "canonical": "https://nexpixels.com/case-studies/nexora/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "case-studies/workflow-hub/index.html": {
+    "title": "WorkFlow Hub Task Tracker | NexPixels",
+    "description": "An internal tool that turns incoming emails into owned tasks, drafts professional replies and chases work until it is closed. Explore the project.",
+    "canonical": "https://nexpixels.com/case-studies/workflow-hub/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "contact/index.html": {
+    "title": "Contact NexPixels | Custom Web Development Dubai",
+    "description": "Discuss custom web development with NexPixels in Dubai. Share your website, application or redesign brief, priorities and budget to plan a practical project.",
+    "canonical": "https://nexpixels.com/contact/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "faqs/index.html": {
+    "title": "Website & Application Development FAQs UAE | NexPixels",
+    "description": "Answers about NexPixels services, Shopify customisation, web development pricing, project timelines, integrations, technical SEO and ongoing support.",
+    "canonical": "https://nexpixels.com/faqs/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "llm-info/index.html": {
+    "title": "NexPixels Company Facts | Dubai Web Development Agency",
+    "description": "Find NexPixels company facts, development services and contact details. Explore the Dubai agency’s work for UAE businesses and discuss your project.",
+    "canonical": "https://nexpixels.com/llm-info/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "locations/index.html": {
+    "title": "Dubai Web Agency | UAE & Remote Services | NexPixels",
+    "description": "NexPixels provides website, commerce and application development from Dubai for UAE and remote projects. Explore service coverage and discuss your brief.",
+    "canonical": "https://nexpixels.com/locations/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "locations/ui-ux-agency-in-austin/index.html": {
+    "title": "Remote Web Development for Austin | NexPixels",
+    "description": "Remote web development for Austin, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-austin/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-in-berlin-de/index.html": {
+    "title": "Remote Web Development for Berlin | NexPixels",
+    "description": "Remote web development for Berlin, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-berlin-de/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-in-dubai-uae/index.html": {
+    "title": "Dubai Website & Application Development UAE | NexPixels",
+    "description": "Plan your Dubai website or application with NexPixels. Explore custom development, Shopify, UI/UX and integrations for UAE businesses. Share your brief.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-dubai-uae/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "locations/ui-ux-agency-in-france/index.html": {
+    "title": "Remote Web Development for Paris | NexPixels",
+    "description": "Remote web development for Paris, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-france/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-in-houston-texas/index.html": {
+    "title": "Remote Web Development for Houston | NexPixels",
+    "description": "Remote web development for Houston, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-houston-texas/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-in-london/index.html": {
+    "title": "Remote Web Development for London | NexPixels",
+    "description": "Remote web development for London, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-london/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-in-los-angeles/index.html": {
+    "title": "Remote Web Development for Los Angeles | NexPixels",
+    "description": "Remote web development for Los Angeles, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-los-angeles/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-in-malaysia/index.html": {
+    "title": "Remote Web Development for Kuala Lumpur | NexPixels",
+    "description": "Remote web development for Kuala Lumpur, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-malaysia/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-in-philippines/index.html": {
+    "title": "Remote Web Development for Manila | NexPixels",
+    "description": "Remote web development for Manila, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-philippines/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-in-qatar/index.html": {
+    "title": "Remote Web Development for Doha | NexPixels",
+    "description": "Remote web development for Doha, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-qatar/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-in-riyadh/index.html": {
+    "title": "Remote Web Development for Riyadh | NexPixels",
+    "description": "Remote web development for Riyadh, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-in-riyadh/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-new-york/index.html": {
+    "title": "Remote Web Development for New York | NexPixels",
+    "description": "Remote web development for New York, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-new-york/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-san-francisco/index.html": {
+    "title": "Remote Web Development for San Francisco | NexPixels",
+    "description": "Remote web development for San Francisco, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-san-francisco/",
+    "robots": "noindex, follow"
+  },
+  "locations/ui-ux-agency-toronto-ca/index.html": {
+    "title": "Remote Web Development for Toronto | NexPixels",
+    "description": "Remote web development for Toronto, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ui-ux-agency-toronto-ca/",
+    "robots": "noindex, follow"
+  },
+  "locations/ux-ui-design-agency-sydney/index.html": {
+    "title": "Remote Web Development for Sydney | NexPixels",
+    "description": "Remote web development for Sydney, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ux-ui-design-agency-sydney/",
+    "robots": "noindex, follow"
+  },
+  "locations/ux-ui-design-in-italy/index.html": {
+    "title": "Remote Web Development for Milan | NexPixels",
+    "description": "Remote web development for Milan, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ux-ui-design-in-italy/",
+    "robots": "noindex, follow"
+  },
+  "locations/ux-ui-design-in-netherland/index.html": {
+    "title": "Remote Web Development for Amsterdam | NexPixels",
+    "description": "Remote web development for Amsterdam, delivered from Dubai. NexPixels builds custom websites and business applications. Discuss your project.",
+    "canonical": "https://nexpixels.com/locations/ux-ui-design-in-netherland/",
+    "robots": "noindex, follow"
+  },
+  "privacy-policy/index.html": {
+    "title": "Website Privacy & Enquiry Data Policy UAE | NexPixels",
+    "description": "Read how the NexPixels website handles enquiry details and external services. Find contact information for questions about your personal information.",
+    "canonical": "https://nexpixels.com/privacy-policy/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "services/conversion-rate-optimization/index.html": {
+    "title": "Conversion Rate Optimisation Dubai | NexPixels",
+    "description": "Find friction in your online store with NexPixels. We review product information, mobile shopping and checkout journeys, then prioritise practical improvements.",
+    "canonical": "https://nexpixels.com/services/conversion-rate-optimization/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "services/custom-web-development/index.html": {
+    "title": "Custom Web Development Dubai | NexPixels",
+    "description": "Build a responsive business website with NexPixels in Dubai. Custom layouts, editable content, integrations and launch testing shaped around your requirements.",
+    "canonical": "https://nexpixels.com/services/custom-web-development/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "services/design-systems/index.html": {
+    "title": "Design Systems & Figma Components Dubai | NexPixels",
+    "description": "Create a consistent product interface with NexPixels. Reusable Figma components, typography, spacing rules and developer guidance for your design system.",
+    "canonical": "https://nexpixels.com/services/design-systems/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "services/ecommerce-development/index.html": {
+    "title": "E-commerce Website Development Dubai | NexPixels",
+    "description": "Develop an online store for your UAE business with NexPixels. Plan product catalogues, mobile shopping, payment integrations and a tested launch.",
+    "canonical": "https://nexpixels.com/services/ecommerce-development/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "services/ecommerce-integrations/index.html": {
+    "title": "E-commerce Integrations Dubai | NexPixels",
+    "description": "Connect your online store with payment, delivery and business systems. NexPixels scopes and tests e-commerce integrations for Dubai and UAE retailers.",
+    "canonical": "https://nexpixels.com/services/ecommerce-integrations/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/connected-applications-social.jpg",
+    "imageAlt": "Concept artwork of connected graphite modules and green glass channels"
+  },
+  "services/ecommerce-ux-research/index.html": {
+    "title": "E-commerce UX Research Dubai | NexPixels",
+    "description": "Understand your store’s shopping journey with NexPixels. Review catalogue structure, product information and mobile usability to prioritise design changes.",
+    "canonical": "https://nexpixels.com/services/ecommerce-ux-research/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "services/figma-to-website/index.html": {
+    "title": "Figma to Website Development Dubai | NexPixels",
+    "description": "Turn your Figma designs into a responsive website with NexPixels. Frontend implementation, reusable content, browser checks and a documented handover.",
+    "canonical": "https://nexpixels.com/services/figma-to-website/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "services/index.html": {
+    "title": "Custom Web Development Services Dubai | NexPixels",
+    "description": "Explore NexPixels custom web development services in Dubai: business websites, web applications, UI/UX, e-commerce and integrations. Discuss your requirements.",
+    "canonical": "https://nexpixels.com/services/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "services/landing-page-design/index.html": {
+    "title": "Landing Page Design & Development Dubai | NexPixels",
+    "description": "Build a focused campaign landing page with NexPixels. Clear messaging, responsive layouts, enquiry forms and launch checks for your UAE business.",
+    "canonical": "https://nexpixels.com/services/landing-page-design/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "services/mobile-ecommerce-ux/index.html": {
+    "title": "Mobile E-commerce UX Design Dubai | NexPixels",
+    "description": "Improve the mobile shopping experience with NexPixels. We design catalogue navigation, product details and cart journeys around your customers and store.",
+    "canonical": "https://nexpixels.com/services/mobile-ecommerce-ux/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "services/mvp-development/index.html": {
+    "title": "MVP Development for Dubai Startups | NexPixels",
+    "description": "Plan and build your first product release with NexPixels. Define core user journeys, prototype key screens and develop an MVP around an agreed scope.",
+    "canonical": "https://nexpixels.com/services/mvp-development/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/connected-applications-social.jpg",
+    "imageAlt": "Concept artwork of connected graphite modules and green glass channels"
+  },
+  "services/python-ai-workflows/index.html": {
+    "title": "Python Development & AI Workflows Dubai | NexPixels",
+    "description": "Build Python backends, business APIs and scoped AI integrations with NexPixels. Practical workflows, documented dependencies and testing before handover.",
+    "canonical": "https://nexpixels.com/services/python-ai-workflows/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/connected-applications-social.jpg",
+    "imageAlt": "Concept artwork of connected graphite modules and green glass channels"
+  },
+  "services/qa-launch-testing/index.html": {
+    "title": "Website QA & Launch Testing Dubai | NexPixels",
+    "description": "Prepare your website for launch with NexPixels. Responsive layouts, browser checks, forms and agreed user journeys tested against your project requirements.",
+    "canonical": "https://nexpixels.com/services/qa-launch-testing/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "services/react-nextjs-development/index.html": {
+    "title": "React & Next.js Development Dubai | NexPixels",
+    "description": "Build API-connected websites and application interfaces with NexPixels. React components, Next.js rendering and practical release planning for UAE teams.",
+    "canonical": "https://nexpixels.com/services/react-nextjs-development/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "services/saas-design/index.html": {
+    "title": "SaaS UI/UX Design Dubai | NexPixels",
+    "description": "Design clearer SaaS workflows with NexPixels. Role-based journeys, onboarding, dashboards and reusable Figma components for your product and development team.",
+    "canonical": "https://nexpixels.com/services/saas-design/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/connected-applications-social.jpg",
+    "imageAlt": "Concept artwork of connected graphite modules and green glass channels"
+  },
+  "services/shopify-development/index.html": {
+    "title": "Shopify Design & Development Dubai | NexPixels",
+    "description": "Build a Shopify store with NexPixels in Dubai. Custom Liquid sections, product and collection templates, store integrations and mobile purchase testing.",
+    "canonical": "https://nexpixels.com/services/shopify-development/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "services/ui-ux-design/index.html": {
+    "title": "UI/UX Design Agency Dubai | NexPixels",
+    "description": "Plan user journeys, wireframes and responsive Figma interfaces with NexPixels in Dubai. UI/UX design for websites and business applications. Share your brief.",
+    "canonical": "https://nexpixels.com/services/ui-ux-design/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "services/ux-audit/index.html": {
+    "title": "Website Redesign & UX Audit Dubai | NexPixels",
+    "description": "Plan your website redesign with NexPixels. Review navigation, content, mobile usability and technical constraints before prioritising a practical scope.",
+    "canonical": "https://nexpixels.com/services/ux-audit/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "services/web-app-mvp-development/index.html": {
+    "title": "Custom Web Application Development Dubai | NexPixels",
+    "description": "Build a business web application with NexPixels. User roles, dashboards, workflows, APIs and data modelling developed around your team’s operational needs.",
+    "canonical": "https://nexpixels.com/services/web-app-mvp-development/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/connected-applications-social.jpg",
+    "imageAlt": "Concept artwork of connected graphite modules and green glass channels"
+  },
+  "services/website-strategy/index.html": {
+    "title": "Website Strategy & Planning Dubai | NexPixels",
+    "description": "Plan your website with NexPixels in Dubai. Define goals, content, user journeys and system dependencies before design and development. Share your project brief.",
+    "canonical": "https://nexpixels.com/services/website-strategy/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
+    "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
+  },
+  "services/wordpress-development/index.html": {
+    "title": "WordPress Website Development Dubai | NexPixels",
+    "description": "Build a manageable WordPress website with NexPixels in Dubai. Responsive templates, reusable content fields, integrations and editor guidance for your team.",
+    "canonical": "https://nexpixels.com/services/wordpress-development/",
+    "robots": "index,follow,max-image-preview:large",
+    "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
+    "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
+  },
+  "startups/index.html": {
+    "title": "Startup Websites & Web MVP Development Dubai | NexPixels",
+    "description": "Build a useful first release with NexPixels in Dubai. Scope your startup website, online store or application around real user tasks. Discuss your MVP.",
+    "canonical": "https://nexpixels.com/startups/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "pricing/index.html": {
+    "title": "Website Development Pricing & Support UAE | NexPixels",
+    "description": "Explore website development and support options with NexPixels in the UAE. Pricing follows scope, integrations and delivery needs. Request a proposal.",
+    "canonical": "https://nexpixels.com/pricing/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "terms-conditions/index.html": {
+    "title": "Website Terms & Development Project Agreements | NexPixels",
+    "description": "Read the NexPixels website terms and how scope, ownership, estimates and support are defined in project agreements. Contact us with engagement questions.",
+    "canonical": "https://nexpixels.com/terms-conditions/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "approach/index.html": {
+    "title": "Working with NexPixels | UAE Website Project Commitments",
+    "description": "Explore NexPixels’s project commitments for UAE websites and applications: clear scope, practical reviews and documented handover. Discuss your brief.",
+    "canonical": "https://nexpixels.com/approach/",
+    "robots": "index,follow,max-image-preview:large"
+  },
+  "404.html": {
+    "title": "Page not found | NexPixels",
+    "description": "This NexPixels page could not be found. Explore our website design, Shopify and application development services, view our work or contact the Dubai studio.",
+    "canonical": "https://nexpixels.com/404.html",
+    "robots": "noindex,follow"
+  },
+  "products/index.html": {
+    "title": "NexPixels Products | Business Software and Websites",
+    "description": "Explore NexPixels products and digital platforms, from accounting and work management to property systems and business websites. View the project details.",
+    "canonical": "https://nexpixels.com/products/",
+    "robots": "index,follow,max-image-preview:large"
+  }
+}
