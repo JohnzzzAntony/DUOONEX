@@ -5,6 +5,14 @@ const cheerio=require('cheerio');
 const {header,footer}=require('../frontend/chrome.cjs');
 const root=path.resolve(__dirname,'..');
 const {files}=require('../lib/pages');
+const googleTag=`<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GX4YV1FRP5"></script>
+<script data-nexpixels-google-tag>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GX4YV1FRP5');
+</script>`;
 for(const file of [...files,'404.html']){
  const target=path.join(root,file);
  let html=fs.readFileSync(target,'utf8');
@@ -56,6 +64,10 @@ for(const file of [...files,'404.html']){
  html=require('./sync-seo.cjs').syncSeo(file,html);
  html=require('./sync-islands.cjs').syncIslands(html);
  html=require('./sync-images.cjs').syncImages(html);
+ html=html.replace(/<!-- Google tag \(gtag\.js\) -->\s*/g,'')
+  .replace(/<script\b[^>]*src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-GX4YV1FRP5"[^>]*><\/script>\s*/g,'')
+  .replace(/<script\b[^>]*data-nexpixels-google-tag[^>]*>[\s\S]*?<\/script>\s*/g,'');
+ html=html.replace(/<head>/i,'<head>\n'+googleTag+'\n');
  html=html.replace(/[\t ]+$/gm,'');
  if(html!==fs.readFileSync(target,'utf8'))fs.writeFileSync(target,html);
 }

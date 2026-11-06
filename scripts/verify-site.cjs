@@ -10,6 +10,9 @@ let links=0;
 for(const file of [...files,'404.html']){
  const $=cheerio.load(fs.readFileSync(path.join(root,file),'utf8'));
  assert.equal($('h1').length,1,`${file}: exactly one h1`);
+ assert.equal($('head script[src="https://www.googletagmanager.com/gtag/js?id=G-GX4YV1FRP5"]').length,1,`${file}: one Google tag loader`);
+ assert.equal($('head script[data-nexpixels-google-tag]').length,1,`${file}: one Google tag configuration`);
+ assert.equal($('head').children().first().attr('src'),'https://www.googletagmanager.com/gtag/js?id=G-GX4YV1FRP5',`${file}: Google tag at top of head`);
  assert.equal($('.s-header').length,1,`${file}: shared header`);
  assert.equal($('.s-footer').length,1,`${file}: shared footer`);
  assert.equal($('.s-mobile-nav').length,1,`${file}: shared mobile navigation`);
