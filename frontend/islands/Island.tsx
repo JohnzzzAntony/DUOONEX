@@ -6,6 +6,7 @@ import ProcessCardReveal from '../../components/podie/tween-ui--process-card-rev
 import VerticalTabs from '../../components/podie/uselayouts--vertical-tabs/registry/default/example/vertical-tabs';
 import StickyCards from './StickyCards';
 import { capabilities, stages, projects, delivery } from './content';
+import { enhanceCarousels } from '../carousels';
 
 export type IslandName='circuit'|'how'|'projects'|'delivery'|'vertical'|'sticky';
 class IslandBoundary extends Component<{children:ReactNode},{failed:boolean}>{
@@ -28,6 +29,7 @@ export function Island({name}:{name:IslandName}){
  useEffect(()=>{
   root.current?.querySelectorAll('svg').forEach(svg=>{if(paused)svg.pauseAnimations?.();else svg.unpauseAnimations?.();});
  },[paused,ready]);
+ useEffect(()=>{if(ready&&root.current)return enhanceCarousels(root.current);},[ready]);
  return <IslandBoundary><div ref={root} className={'pd-component pd-'+name} data-pd-ready={ready?'true':undefined} data-pd-paused={paused?'true':undefined}>
   <MotionConfig reducedMotion={paused?'always':'user'}>
    {name==='sticky'?<StickyCards paused={paused}/>:name==='vertical'?<VerticalTabs paused={paused}/>:name==='circuit'?<CircuitBoard items={capabilities} chipLabel="NexPixels" paused={paused}/>:name==='how'?<HowItWorks features={stages} className="pd-how-map" paused={paused}/>:<ProcessCardReveal steps={name==='projects'?projects:delivery} paused={paused} itemLabel={name==='projects'?'project':'step'} className="pd-card-reveal" aria-label={name==='projects'?'Selected NexPixels projects':'NexPixels delivery stages'}/>}

@@ -28,7 +28,7 @@ if(process.argv.includes('--snapshot')){
  fs.mkdirSync(path.dirname(baselineFile),{recursive:true});fs.writeFileSync(baselineFile,JSON.stringify(current(),null,2)+'\n');console.log('Saved content hashes for 73 templates.');
 }else{
  const baseline=JSON.parse(fs.readFileSync(baselineFile,'utf8')),actual=current();
- const copyChanges=require('../test/fixtures/seo-copy-changes.json'),seo=require('../data/seo-pages.json'),upgrades=require('../test/fixtures/seo-upgrade-changes.json'),podie=require('../test/fixtures/podie-changes.json');
+ const copyChanges=require('../test/fixtures/seo-copy-changes.json'),seo=require('../data/seo-pages.json'),upgrades=require('../test/fixtures/seo-upgrade-changes.json'),podie=require('../test/fixtures/podie-changes.json'),ux=require('../test/fixtures/ux-refinement-changes.json');
  for(const [file,values] of Object.entries(baseline)){
   assert.equal(actual[file].forms,values.forms,`${file}: preserve enquiry fields`);
   if(copyChanges[file])assert.equal(copyChanges[file].before,values.text,`${file}: reviewed copy change starts from original baseline`);
@@ -40,7 +40,9 @@ if(process.argv.includes('--snapshot')){
   const previous={text:upgrades[file]?.after.text||previousText,media:upgrades[file]?.after.media||values.media,links:values.links};
   for(const key of ['text','media','links']){
    if(podie[file])assert.equal(podie[file].before[key],previous[key],`${file}: component integration starts from reviewed ${key}`);
-   assert.equal(actual[file][key],podie[file]?.after[key]||previous[key],`${file}: only reviewed component ${key} changes`);
+   const beforeUx=podie[file]?.after[key]||previous[key];
+   if(ux[file])assert.equal(ux[file].before[key],beforeUx,`${file}: UX cleanup starts from reviewed ${key}`);
+   assert.equal(actual[file][key],ux[file]?.after[key]||beforeUx,`${file}: only reviewed UX ${key} changes`);
   }
   const {title,description,canonical}=seo[file];
   assert.equal(actual[file].metadata,hash({title,description,canonical}),`${file}: metadata matches reviewed SEO registry`);

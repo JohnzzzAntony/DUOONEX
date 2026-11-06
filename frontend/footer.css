@@ -1,0 +1,17 @@
+/* Obsidian editorial footer: shared baselines and clear contact actions. */
+.roveia-theme .s-footer-top{display:grid;grid-template-columns:minmax(220px,.9fr) minmax(0,2fr);gap:64px;align-items:start}
+.roveia-theme .s-footer-links{display:grid;grid-template-columns:1fr 1.2fr 1.5fr;gap:28px;align-items:start}
+.roveia-theme .s-footer-links>div{min-width:0;display:flex;flex-direction:column;gap:4px}
+.roveia-theme .s-footer-links h2{font-size:12px;line-height:1.5;letter-spacing:.1em;font-weight:600;text-transform:uppercase;color:var(--brand-canvas);margin:0 0 16px}
+.roveia-theme .s-footer-links a{display:flex;align-items:center;gap:10px;min-height:44px;margin:0;font-size:14px;line-height:1.5;color:var(--brand-canvas);overflow-wrap:anywhere}
+.roveia-theme .s-footer-links a:hover{color:var(--brand-signal)}
+.roveia-theme .s-footer .s-footer-links a>svg{flex:none;width:20px;height:20px;min-width:20px}.s-footer-detail{font-size:13px;opacity:.85}
+.roveia-theme .s-footer-studio>p{font-size:16px;line-height:1.6;margin:20px 0}
+.s-footer-social{display:flex;gap:10px}.s-footer-social a{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--studio-faint);border-radius:50%;color:var(--brand-canvas);transition:color .2s,border-color .2s}
+.s-footer-social a:hover{color:var(--brand-signal);border-color:var(--brand-signal)}
+.roveia-theme .s-footer-base{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:40px;padding-top:24px}
+.roveia-theme .s-footer-base>span:nth-child(2){display:flex;align-items:center;flex-wrap:wrap;gap:20px}
+.roveia-theme .s-footer-base :is(a,button){min-height:44px;display:inline-flex;align-items:center;margin:0}
+@media(max-width:991px){.roveia-theme .s-footer-top{grid-template-columns:1fr;gap:36px}.roveia-theme .s-footer-links{grid-template-columns:1fr 1fr 1.3fr}}
+@media(max-width:600px){.roveia-theme .s-footer-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 20px}.roveia-theme .s-footer-connect{grid-column:1/-1}.roveia-theme .s-footer-links h2{margin-bottom:10px}.roveia-theme .s-footer-base{align-items:flex-start;flex-direction:column;gap:8px;margin-top:28px}.roveia-theme .s-footer-connect a{width:fit-content;font-size:15px}.roveia-theme .s-footer-studio>p{margin-block:16px}.roveia-theme .s-footer{padding-block:40px 20px}}
+@media(prefers-reduced-motion:reduce){.s-footer-social a{transition:none}}

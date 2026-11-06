@@ -1,0 +1,90 @@
+/* Refined editorial: one page rhythm, compact media and deliberate mobile browsing. */
+:root{--n-container:1180px;--n-gutter:20px;--n-space:56px;--n-radius:20px}
+.roveia-theme :is(.container,.s-container){width:calc(100% - var(--n-gutter)*2);max-width:var(--n-container);margin-inline:auto;min-width:0}
+.roveia-theme .container{padding-inline:0}
+body.roveia-theme:not(.studio-home) .page-hero{margin-inline:0;border-radius:0}
+.roveia-theme :is(main section,.container,.s-container)>*{min-width:0}
+.roveia-theme main :is(h1,h2,h3,p,a){overflow-wrap:break-word}
+.roveia-theme main p{max-width:72ch}
+.roveia-theme .s-header{width:calc(100% - var(--n-gutter)*2);max-width:var(--n-container)}
+.roveia-theme .s-header-inner{width:100%;margin:0}
+.roveia-theme .s-section{padding-top:var(--n-space)}
+.roveia-theme:not(.studio-home) main .section,.pd-page-section{padding-block:var(--n-space)}
+.roveia-theme .s-section-head{gap:32px;margin-bottom:28px}
+.roveia-theme .s-section-head>*{min-width:0}
+.roveia-theme .s-section-head p{font-size:16px;line-height:1.65}
+.roveia-theme main :is(.card,.service-card,.plan,.awards__cell){padding:24px;border-radius:var(--n-radius)}
+.roveia-theme main :is(.section-head,.svc-group__head){gap:20px;margin-bottom:24px}
+.roveia-theme .svc-group{margin-top:32px;padding-top:24px}
+.roveia-theme .svc-group:first-child{margin-top:0}
+.n-service-group>summary{display:flex;align-items:center;justify-content:space-between;gap:20px;list-style:none;cursor:default}
+.n-service-group>summary::-webkit-details-marker{display:none}
+.n-service-group .svc-group__head{display:block;margin-top:16px}
+.n-service-group .svc-group__head>p{max-width:65ch}
+.roveia-theme .svc-list{gap:10px;background:transparent;border:0}
+.roveia-theme .svc-list>*{padding:18px;min-height:96px}
+.roveia-theme .contact-layout{gap:28px}
+.roveia-theme .book-card{margin-top:20px;padding:18px}
+.roveia-theme .badges{margin-top:24px}
+.roveia-theme .s-footer{padding-block:48px 24px}
+.roveia-theme .s-footer-links a{min-height:44px;display:flex;align-items:center}
+.n-carousel-controls{display:none}
+.roveia-theme .section--dark .n-carousel-controls{color:var(--brand-canvas)}
+.roveia-theme .section--dark .n-carousel-controls button{color:var(--brand-canvas);border-color:var(--brand-muted)}
+.roveia-theme .section--dark .n-carousel-controls button:hover{color:var(--brand-obsidian)}
+@media(min-width:768px){:root{--n-gutter:32px;--n-space:72px}.roveia-theme .s-hero{width:calc(100% - var(--n-gutter)*2);max-width:var(--n-container);margin:20px auto}.roveia-theme .s-footer-links{gap:36px}}
+@media(min-width:1280px){:root{--n-gutter:40px}}
+@media(max-width:767px){
+ .roveia-theme .s-hero{width:calc(100% - var(--n-gutter)*2);margin:12px auto;padding:100px 20px 24px;border-radius:24px}
+ .roveia-theme .s-beta{margin-bottom:20px;font-size:11px}.roveia-theme .s-hero h1{margin-bottom:20px}
+ .roveia-theme .s-hero-description{margin-bottom:20px}.roveia-theme .s-hero-buttons{gap:8px}.roveia-theme .s-hero-buttons .s-button{min-height:44px}
+ .roveia-theme .s-workflow-wrap{margin-top:24px;width:100%}.roveia-theme .s-workflow{height:200px}
+ .roveia-theme .s-hero-bottom{margin-top:16px;justify-content:center}
+ .roveia-theme .s-tools{padding:28px 0 0;margin:0 auto}.roveia-theme .s-tools-label{margin-bottom:16px}
+ .roveia-theme .s-tools-chain{gap:12px 18px}.roveia-theme .s-tools-chain strong{font-size:13px}.roveia-theme .s-tools-chain>div>span{width:28px;height:28px}
+ .roveia-theme .s-section-head{gap:16px;margin-bottom:24px}.roveia-theme .s-home h2{font-size:32px;letter-spacing:-1px}
+ .pd-page-section h2{font-size:32px;letter-spacing:-1px}
+ .roveia-theme #capabilities .s-feature{padding:20px;margin-bottom:16px;gap:12px}
+ .roveia-theme #capabilities .s-feature h3{font-size:27px;margin-block:8px 12px}.roveia-theme #capabilities .s-feature p{margin-bottom:8px}
+ .roveia-theme #capabilities .s-tags{margin-top:8px}.roveia-theme #capabilities .s-tags span{font-size:11px}
+ .roveia-theme .s-plate-section{padding-block:24px}.roveia-theme .s-plate{min-height:0;padding:32px 20px}.roveia-theme .s-plate h2{font-size:28px;margin-block:20px}
+ .roveia-theme .s-contact-grid{padding:0;background:transparent;gap:24px}.roveia-theme .s-contact-intro{min-height:0;padding:24px}.roveia-theme .s-contact-stamp{display:none}.roveia-theme .s-contact-bottom{position:static;margin-top:18px}
+ .roveia-theme .s-contact-form-card{padding:0}.roveia-theme .s-contact-intro h2,.roveia-theme .s-contact-form-card h2{font-size:30px}
+ .roveia-theme .s-contact-intro p{font-size:16px;margin-bottom:16px}.roveia-theme .s-contact-intro .s-text-link{margin-top:0}
+ .roveia-theme .s-form-row{gap:16px}.roveia-theme :is(input,textarea,select){font-size:16px}
+ .roveia-theme:not(.studio-home) .page-hero{padding-block:28px}.roveia-theme:not(.studio-home) .display{font-size:34px;line-height:1.12;max-width:23ch}
+ .roveia-theme:not(.studio-home) .lede{font-size:16px;line-height:1.65}.roveia-theme:not(.studio-home) .page-hero .lede{margin-top:18px}
+ .roveia-theme:not(.studio-home) .h2{font-size:28px;line-height:1.15;letter-spacing:-.8px}
+ .roveia-theme .n-editorial-art{margin-top:24px}.roveia-theme .n-editorial-art .n-art-picture{height:180px;min-height:0;aspect-ratio:auto}
+ .roveia-theme main :is(.card,.service-card,.plan){padding:20px;gap:12px}.roveia-theme main .card p{font-size:16px;line-height:1.55}
+ .roveia-theme .svc-group__head{gap:12px}.roveia-theme .svc-group__head p{font-size:16px}
+ .n-service-group>summary{min-height:48px;cursor:pointer}.n-service-group>summary h2{font-size:25px!important;margin:0}
+ .n-service-group>summary::after{content:'+';font-size:24px;flex:none;color:var(--brand-forest)}.n-service-group[open]>summary::after{content:'−'}
+ .roveia-theme .n-service-group{margin-top:18px;padding-top:16px}
+ .roveia-theme .svc-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.roveia-theme .svc-list>*{padding:14px;min-height:94px;border-radius:14px}.roveia-theme .svc-list .t{font-size:14px;line-height:1.4}
+ .roveia-theme .stats{grid-template-columns:repeat(2,minmax(0,1fr))}.roveia-theme .stat{padding:18px}.roveia-theme .stat strong{font-size:28px}
+ .roveia-theme .form-card{padding:20px}.roveia-theme .form-row{gap:12px}.roveia-theme .contact-layout{gap:24px}
+ .roveia-theme .chips label{min-height:44px;display:flex;align-items:center}.roveia-theme .chips{gap:8px}
+ .roveia-theme .contact-layout .checklist{margin-bottom:16px}.roveia-theme .book-card{max-width:none}.roveia-theme .contact-layout h2{font-size:30px;line-height:1.15}
+ .roveia-theme .vtest__card{aspect-ratio:auto;min-height:240px}.roveia-theme .vtest__foot{margin:12px;padding:16px}
+ .roveia-theme .awards{padding-block:40px}.roveia-theme .awards__grid{grid-template-columns:repeat(2,minmax(0,1fr))}.roveia-theme .awards__cell{padding:18px;min-height:0}
+ .roveia-theme .products-showcase{margin-block:24px 40px}.roveia-theme .products-index{margin-bottom:40px}
+ .roveia-theme .pd-circuit-panel{padding:20px 12px}.pd-circuit [data-circuit-cards]{margin-top:0}.pd-circuit [data-circuit-cards]>a{padding:18px}
+ .pd-how-map{padding:20px 12px!important}.pd-how-map [data-how-card]{margin:0!important}.pd-how-map [data-how-card]>div{height:100%;box-shadow:none}.pd-how-map [data-how-card] h3{font-size:24px}.pd-how-map [data-how-card] p{font-size:16px}.pd-how-map [data-how-card] span[style]{font-size:24px;margin-bottom:12px}
+ .pd-how-map .n-carousel>[data-how-card]{flex-basis:92%}
+ .pd-how-map [data-how-card]>div{display:flex;flex-direction:column}.pd-how-map [data-how-card]>div>div{height:auto;flex:1}
+ .pd-component [data-process-image]{height:180px}.pd-component [data-process-copy]{padding:20px}.pd-component [data-process-copy] h3{font-size:27px;margin-bottom:10px}.pd-component [data-process-copy]>div+div{margin-top:16px}
+ .pd-component [data-process-stage]{min-height:max(460px,var(--pd-mobile-stage-height,540px))}
+ .roveia-theme .n-carousel{position:relative;display:flex!important;flex-direction:row;flex-wrap:nowrap;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding:0;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:var(--brand-forest) transparent;padding:0 0 12px;margin-inline:0;width:100%;max-width:100%;transform:none!important;align-items:stretch}
+ .roveia-theme .n-carousel :focus-visible{outline-offset:-3px}
+ .roveia-theme .n-carousel>svg{display:none}.roveia-theme .n-carousel>:not(svg){flex:0 0 min(86%,320px);width:auto;min-width:0;max-width:none;scroll-snap-align:start;scroll-snap-stop:normal;margin:0!important;position:relative!important;inset:auto!important;transform:none!important;rotate:0deg!important;grid-column:auto}
+ .roveia-theme .n-carousel>.work__card--split{display:flex;flex-direction:column}.roveia-theme .n-carousel>.work__card .work__media{height:190px;min-height:0}
+ .roveia-theme .n-carousel>.s-scope-card{padding:22px!important}.roveia-theme .n-carousel>.s-scope-card h3{font-size:28px!important;margin-block:16px 12px!important}.roveia-theme .s-scope-badge{position:static;align-self:start;margin-bottom:8px}
+ .roveia-theme .n-carousel>.s-scope-card ul{font-size:14px}.roveia-theme .n-carousel>.s-scope-card .s-button{margin-top:auto}
+ .roveia-theme .pd-studio-notes{margin-top:20px}.roveia-theme .pd-studio-notes .s-small-card{padding:22px;min-height:240px}
+ .n-carousel-controls{display:flex;align-items:center;justify-content:flex-end;gap:8px;margin-top:8px;min-height:44px;color:var(--brand-forest);font-size:13px;font-variant-numeric:tabular-nums}
+ .n-carousel-controls>span{margin-right:auto}.n-carousel-controls button{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--studio-line);background:transparent;color:var(--brand-forest);font:20px var(--studio-sans);cursor:pointer;transition:background .2s}
+ .n-carousel-controls button:hover{background:var(--brand-accent-soft)}.n-carousel-controls button:disabled{opacity:.35;cursor:default}
+ .roveia-theme .s-footer-top{gap:28px}.roveia-theme .s-footer-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}.roveia-theme .s-footer-base{gap:16px;font-size:12px}.roveia-theme .s-footer-top>div>p{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){.n-carousel{scroll-behavior:auto}.n-carousel-controls button{transition:none}}

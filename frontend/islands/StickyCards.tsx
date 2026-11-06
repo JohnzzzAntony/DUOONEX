@@ -20,5 +20,5 @@ export default function StickyCards({paused}:{paused:boolean}){
   });
   return()=>media.revert();
  },{scope:root,dependencies:[paused],revertOnUpdate:true});
- return <div ref={root} className="np-sticky-cards">{projects.map(project=><img data-sticky-image key={project.id} src={project.image} alt={project.imageAlt} width="1200" height="900" loading="lazy" decoding="async"/>)}</div>;
+ return <div ref={root} className="np-sticky-cards n-carousel">{projects.map(project=><img data-sticky-image key={project.id} src={project.image} alt={project.imageAlt} width="1200" height="900" loading="lazy" decoding="async"/>)}</div>;
 }

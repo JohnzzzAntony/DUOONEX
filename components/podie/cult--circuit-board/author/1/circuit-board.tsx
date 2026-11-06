@@ -633,7 +633,8 @@ export function CircuitBoard({ items, chipLabel = 'Powered By', paused = false }
       {/* Technology Cards */}
       <motion.div
         animate="visible"
-        className="-mt-4 relative z-10 grid w-full grid-cols-1 gap-4 md:grid-cols-3"
+        className="n-carousel -mt-4 relative z-10 grid w-full grid-cols-1 gap-4 md:grid-cols-3"
+        data-circuit-cards
         initial={paused ? false : 'hidden'}
         variants={cardStagger}
       >

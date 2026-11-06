@@ -1,0 +1,964 @@
+{
+  "index.html": {
+    "before": {
+      "text": "3d5b1347d2e0fc54b5e8986a6766dc15aaa84c7c6ba1883bfb2b3de064e2b844",
+      "links": "53c76315a7c320b8bddc731c376acba79741b2094ac707b221d3789382758a5a",
+      "media": "0fae714bafc26bfe30d399cb19368b7b302d9fb589b1f882ba272e6325cdeb83"
+    },
+    "after": {
+      "text": "e5eeb03a5abd5e22b5daa9269baf5bae5df5cacc2b03150e2e5b05ea9c12a73f",
+      "links": "9df476131563eaac0091cfa8df0faf4746eb74cfe9b936c80e77ede93c9a36aa",
+      "media": "0fae714bafc26bfe30d399cb19368b7b302d9fb589b1f882ba272e6325cdeb83"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "products/index.html": {
+    "before": {
+      "text": "ee9ae58de624e58f945ba18426db64d187b67f64ae5e094065d13ecc7c49fca5",
+      "links": "cf7e290df6576d170d1a8d3da6ad3b8c52091a518b295716fe1a0829fc38efc4",
+      "media": "6f1a024faf99e89b42c7e416d40ce6f773cf03383ad8d630527ba908af4147fb"
+    },
+    "after": {
+      "text": "daa10422e6147ad6f1f85745c3d39094c70cc7bb55ef7714854a17e50c7a266a",
+      "links": "050fa7615484653ac249a4d19a9f3ff08544bac74ed1b05ce5a071eb92871388",
+      "media": "6f1a024faf99e89b42c7e416d40ce6f773cf03383ad8d630527ba908af4147fb"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "about/index.html": {
+    "before": {
+      "text": "2dfde0acebaea8016a1e368cb548bb42d1c95f662af7411a3ac3bd092fdbae1c",
+      "links": "f96c0c424184dcac88a36b431f97782724f5be87dc62848f885ceb623a1f57ea",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "a61351de0bae585650934e2080c282377fa900185d9a583e5b345715e12ed55e",
+      "links": "eb254920b39f71a30637f8f5f597f030cc0a3e90cf43a051053e3402120b7515",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/best-ai-product-design-agencies/index.html": {
+    "before": {
+      "text": "31095272a6cc11e07ecffea102a1ad8d6486f267c69608910f4b97c0b21a84be",
+      "links": "f65833d953410cc76a3f93c207d87ee328e594bf9450cc08fbfc05b06bab97e3",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "eb431787371bfacfe0de159aea92cfc79bdf2e1d53924330e9bd5c057f1819ee",
+      "links": "0a21459b16c8dc4c414f85531d07c6570eb7b255d3c88d6fbd288163541417ad",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/best-no-code-website-builders/index.html": {
+    "before": {
+      "text": "43dd22a24dd89af5a180e2953b56d5844354e1530047782bc7e090bcd1f0f272",
+      "links": "1c8b0a76cbb8aead48f6ae04a79c0d2cef8eab1b9dca6c6ff1a111ff620c5bef",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "326eceae6aa8a23e51340e6bb92cefb4071871ba3346ae556fc829d4c3bc4afb",
+      "links": "2e241785e2f90e23f052ada10f3a0c06f00c9bdc83bf0cc64a8d6399b8673ca1",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/best-shopify-agencies/index.html": {
+    "before": {
+      "text": "911bf1d1edb65f4f09ed715fa9f3fa626155cea0eb4502750f1751cd2a67822b",
+      "links": "51ff59b1a264ce995782cd784e091ca4f20fd72673497537efde6308edbe8eb7",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "d1a38160aaae03917ae99ebcc137d10cbb3ccfff390c7253ae24ab459f700638",
+      "links": "b1604c564d312f3706006d7c2b856d315dd3565c9439be2ee3ce35a824ea6147",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/best-website-design-examples/index.html": {
+    "before": {
+      "text": "dab7f7a3e71a75077364cb53401c6faaeb269faf4caa96907a020c1c812b4a0d",
+      "links": "8313805d0b1b01a6e6754aec8bf2a39eb92685092079e077d633e0985e220700",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "43b3f907121dda03266390391a3cf038f65d558d4af8562959c60b93f132bf1c",
+      "links": "d7f923fa4772c29eb55af59b542e51fd93d6adadf1bce503d7fd882db70d6378",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/dark-mode-vs-light-mode/index.html": {
+    "before": {
+      "text": "65b3f323289023a61977bd34f3dfe9989d6904e5f8906534321c3d292b3e450b",
+      "links": "9707d6acda422d9d8fd0ba6a674ced290b2c5b93f2bdf7cccb21381e6045a754",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "c7f1adbdccb706b7d111d5f6ee6b6ad7a483679047bf822639cbbbfd699a43d3",
+      "links": "0608e3d24a1bc2b0af43ba5c68211345a9584f37a26afb016d58d6def33a42f8",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/index.html": {
+    "before": {
+      "text": "cf213de856e3e284a8b340b72950682bdce99e9fb547e9dd4abc8c35f37c2792",
+      "links": "d6460b14b5860f4598777558d74c956a6610dc12dd1ab05cf3973bf66308708d",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "a9aed6bbe807858516969a9027c4ddc1a579c0d4d458c669c363d70b0a6e5f0d",
+      "links": "96c1af693a97d73904ec633700ab9504f849bf3a15070c48adaed551de27c8d4",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/top-ai-ui-ux-agencies/index.html": {
+    "before": {
+      "text": "21883b5ba816e920298aca7c8d2e226faeaf8695ba73f24fbbdce559b651d966",
+      "links": "75f186e06b46a93fc943922d06a95446ad64ca6de623598991ad192bf8a1c52d",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "1bd374718adcbe195ec326c786e4b03f7d23befe7b8aca18b99722f2bb45a42d",
+      "links": "26448324608bcd5c4b2ecd4dab7ef7b6daefd50325daf050bacdd5f5862bc25b",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/top-branding-agencies-services/index.html": {
+    "before": {
+      "text": "c93d7dc9a03f696c861c2c9f6feeaec73e9352caf9ec270a63c48381f80a9dda",
+      "links": "994fa8fe274cbcd72df1e5828b075ae64407a3fa533c0fc64236d4c23cbf4bf4",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "97894a8f0bb227f400ba0b991fa871a70548ee6831fb4d3e1663dde513b5a58c",
+      "links": "ef1f9ae87a01e02de9fb3b80aa825e0a0e693d3992fa94e6bdc87a6c61854fa0",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/top-mvp-development-companies/index.html": {
+    "before": {
+      "text": "1f15da08747fe6401ba2a14feab938a1ec3c7f9aa9bfd62200ada7308b844b54",
+      "links": "a61e6d670ba8cb457c9ef860a7d73a9a0509796083642b6f0726f3e8e2c51baa",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "aa95186f77ce58edb4a8080fad05b194ca2bdf29ec5d479d13bfb53bccbbf609",
+      "links": "4eb71f4a1577290588a6f938acc66efcf65186f4b13371a8e9bf201370542179",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/top-ui-ux-design-agencies-usa/index.html": {
+    "before": {
+      "text": "7576f28b9c9d917e75509278650db76b74003fe93fbd25af007ee67ab8fd5e5f",
+      "links": "1d94aba85bcc24fe5b9fcdd41166d3aed3994682dd60a323bfdf966eea8ba934",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "2edd2a4c3ac09f2dbee5d72bc6b49f3db8e22db42b68407f71c34723fa479e5d",
+      "links": "4308d3b947d381b613c6af24e1e2164292437f64d4b19a4723b3e121c9fc1100",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/ui-ux-design-agencies-nyc/index.html": {
+    "before": {
+      "text": "22715341cace879e46c6024d5459c455dccaa1579f4db6c9eb783d431e0d4a1a",
+      "links": "23b818fcf7359e742609218a6e12284b4ab1968fbf9b7b240f27c4a321920ab0",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "65d8612aef5130136b5d1cf14ac85a44a435c07f38beb157f0ca6525a009b564",
+      "links": "a751eece0a45cbbb57772daf96092a6c0580db2130a186d42a12260d97bab4fa",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/what-is-ux-ui-design/index.html": {
+    "before": {
+      "text": "e955c745da91bac8737718ca6c6753c656f12d35b8c7a29da17313b282958dea",
+      "links": "dd4022189a6dd8b8059ed7eb92d5830c385efa06557464de1344c9ab86300435",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "8467826f97834e431e914988ad5860d8c79ed98d397f5fcadc1edc0e2f209ab3",
+      "links": "a1418ccdc0cacf1f2b38fb9af2de528003160485ceb37cadb39eb3b7bef92ee5",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "blog/why-do-top-brands-choose-webflow/index.html": {
+    "before": {
+      "text": "9235518688b257bf70e9ae0d765cc3f3f731e6626f6ffdc8bb3c1341b625559f",
+      "links": "32ba119d7eadb390d4e3551260d232e2db85d49747414d3811aaef0e5d66426a",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "ef0b37463f6881024264873d00e9c5aac1798c425933858ca7ce5fc7f0be2643",
+      "links": "481c8467e0e6ae8e18c080edd3ef19d153272b04c277dc53996e556ef25a63d5",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/assethub/index.html": {
+    "before": {
+      "text": "46251a745d4bdb6498df8e782533220ec629546140a2250ea974909b90252531",
+      "links": "d5545e221a520f5b2d6a0fbc51e35a4ea5c7cfa9a96c571a37d8b3e61422fd65",
+      "media": "b9066d6581bdbbe7e7404db236124a136af352171623c72e7b8b432c5ebbff3d"
+    },
+    "after": {
+      "text": "7302794f510314e884f350105d6b47b37a4afd517fc2453ad3b22f43d91f096c",
+      "links": "b16aba8cbcc50a887bd3e4089f9d9c3a9cd0d1878ce36a4209cc5c32b82e0faa",
+      "media": "b9066d6581bdbbe7e7404db236124a136af352171623c72e7b8b432c5ebbff3d"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/certguard/index.html": {
+    "before": {
+      "text": "78f2d74e2340685e79957e0f2540c502d3a75af3d4ba44a18fe965034bcd9b46",
+      "links": "e5fa13cb1d2dc402b3bf777d2ef1998f7d8e2294213e8b17740fb10dcfe8641d",
+      "media": "95457cb391d47692137da4620b87b6d466dcd891a60cd1ca449ef629fcb69585"
+    },
+    "after": {
+      "text": "ebac78b940aa231e5d44d0f49f7c47af7a07f10b8638533be7c2cce5d96e3dc8",
+      "links": "f1e7e160361ce575361a649a8729f7b9f3885d759248f70032f1077ce1206add",
+      "media": "95457cb391d47692137da4620b87b6d466dcd891a60cd1ca449ef629fcb69585"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/drec-pms/index.html": {
+    "before": {
+      "text": "83e398701a2becba82f52a86613e3da5299ea91b256615f44feac58614746b2f",
+      "links": "632e9def303321e07d45bb51588b1f36369699e3eaa7d154f755c054ca759f8f",
+      "media": "6d57284d36ef64ea79e1cf0763b94256782ed6ad892be880090696020d4ae802"
+    },
+    "after": {
+      "text": "9b123f4ca9fd95a0486c646e016dfc90860cab641fb91e744a2dd038ff0fe54a",
+      "links": "a48ab7f1fe8d2a8bbeff46208b938bd54f67e91de0caa59c8afffd27352ca9b2",
+      "media": "6d57284d36ef64ea79e1cf0763b94256782ed6ad892be880090696020d4ae802"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/finora/index.html": {
+    "before": {
+      "text": "241923dcc14edbd46e7072c4ec52293b76f8b76f8a6caab131a1aa4f2507d8ef",
+      "links": "cf72a411db35f497d62b1ca0e9c17def08bb5f11e319bf6a39b4bcf93e5d3cfa",
+      "media": "36a50130aa19ded676c52842ff5a9e99f31e23667cf7862550c6396024c9282e"
+    },
+    "after": {
+      "text": "cd5e63a170a0da96d9607a1da441d539b30da9e16751ea61aab3feb148f0a425",
+      "links": "25836be485087949bab650da6f7909227df8572e0911133c182ab4682c6538e6",
+      "media": "36a50130aa19ded676c52842ff5a9e99f31e23667cf7862550c6396024c9282e"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/index.html": {
+    "before": {
+      "text": "3376f43daa01ddf76f486527eaecdfd56335cda1320a8ce5f5dc137b2cd50656",
+      "links": "c77e3db0ddc63f2c67f79093146b2dd12992e0d968392979ec0a765448ec2baa",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "after": {
+      "text": "595cd6c42df800089e328f7d1acb5e3ab73e1d026bfcc0384863c878acdabbae",
+      "links": "62490935ce16986ce1385decb77808c9addaaeae5da2ef25422bcffbc10ad6d7",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/invitara/index.html": {
+    "before": {
+      "text": "71f2933910ee2df3cc054b16a20cf708084849b2a3460fdec3f7a7e9825931ef",
+      "links": "5f1912ec814f418b402d8a469c3155627e4f24aabcc14b1454beb307e7286f08",
+      "media": "2c15864f0e616c8299c3631d84ace6b847398f1f1565df006b3eebb33ddb6d08"
+    },
+    "after": {
+      "text": "e6f592b4c4221af05f832ed25d845a0c12611dfad04d29e5cb3dafb313dd503e",
+      "links": "534bdfde8b8ac6acc57c51ee22a301a94add1fd6c1466b3874c234069a470c94",
+      "media": "2c15864f0e616c8299c3631d84ace6b847398f1f1565df006b3eebb33ddb6d08"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/jaber-property/index.html": {
+    "before": {
+      "text": "46251a745d4bdb6498df8e782533220ec629546140a2250ea974909b90252531",
+      "links": "d5545e221a520f5b2d6a0fbc51e35a4ea5c7cfa9a96c571a37d8b3e61422fd65",
+      "media": "b9066d6581bdbbe7e7404db236124a136af352171623c72e7b8b432c5ebbff3d"
+    },
+    "after": {
+      "text": "7302794f510314e884f350105d6b47b37a4afd517fc2453ad3b22f43d91f096c",
+      "links": "b16aba8cbcc50a887bd3e4089f9d9c3a9cd0d1878ce36a4209cc5c32b82e0faa",
+      "media": "b9066d6581bdbbe7e7404db236124a136af352171623c72e7b8b432c5ebbff3d"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/mechaura/index.html": {
+    "before": {
+      "text": "8edc7562d8ae7c26d0a3c68240d9571d8054448f867123fd9a1333fe626f854b",
+      "links": "d16c9d6aff0286c36d870c6c0ff7e17320de849ed0c5c2cf3fb36dd77325db49",
+      "media": "a2bea6dd3afdfee3173aa1a2ad8f30e9d06e23ef63581d77790b78d69be55937"
+    },
+    "after": {
+      "text": "6ae3f2739e000606522ddd9272d88bc42e8e13845f5360aff7ec416dba3de3e6",
+      "links": "efe7f5b4cfd5532bc90f80c9701439861028d2af5c9b36e8440b1db192591158",
+      "media": "a2bea6dd3afdfee3173aa1a2ad8f30e9d06e23ef63581d77790b78d69be55937"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/nexora/index.html": {
+    "before": {
+      "text": "b87b1ee1fb4d07759716f5219bee0895d3c7bbcacce978c1071bf2d45219a119",
+      "links": "61205d56b6ed249e7e8bbf2ae07dc6f7edb0f8383ba483d9b23554bc66c7ce1f",
+      "media": "0cd1ec27dc144223b44e7174e216d19966e6e5725bedc5471dac64c1eeb76dc0"
+    },
+    "after": {
+      "text": "7b62c45af1b62a2572df5769f1393615df22710dd90f8bc4f1847573d4f69051",
+      "links": "96b647e059b437c0abb690e80590235ba1c71edbfb6ae3cd1c9c6a80a339696b",
+      "media": "0cd1ec27dc144223b44e7174e216d19966e6e5725bedc5471dac64c1eeb76dc0"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "case-studies/workflow-hub/index.html": {
+    "before": {
+      "text": "b7f0a709e016ec140971b4205f7d5c97a6773a80fe401328146af3e185ff9e5e",
+      "links": "0759f9c66c297d893a882e0996643ef7319cdf607bcf27ca437fabdf4f0bf417",
+      "media": "c02c0e2ac5996d83a5cee10e1cde706396ddb507c71189e812ceaa0b3763fb78"
+    },
+    "after": {
+      "text": "2d2db2dcc0dfeed9910a7bd4bc38d98d33630ef3d3a034639cd7f111bb697da4",
+      "links": "cb9994a98fe3d8757f49fb9bbac09e50e2e615c53f34eddc5b2bf9d844d3a3e0",
+      "media": "c02c0e2ac5996d83a5cee10e1cde706396ddb507c71189e812ceaa0b3763fb78"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "contact/index.html": {
+    "before": {
+      "text": "f4ded404ef42708523272753c3f72eebdfe9bd983c778f29af96072da6d7cf12",
+      "links": "fb4691b3deca3a156063434eadead4cd215f884cf3011a3c0439f3b6a5c74229",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "1d3523ee90b773871c297ba6cba02736152e63ae99d4c622167662d77d753dde",
+      "links": "f4f0eb9b2b6962bcd89eaa0b245a58f6905769b20a72de9374ecb58b64019e31",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "faqs/index.html": {
+    "before": {
+      "text": "a7f3b2baec8c872e9c8a0a5aef49ff53bcfb0d908b43b3e2ea94b793414ec1ea",
+      "links": "c1094005ad6419e218039d93614fbab815e5d89cc41a09de48076f4dbbc19cef",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "d7462571122dd87603b9cd6937b4930a42b7cb871e9c75c7d0d2ad249d69084f",
+      "links": "daeeb099aa9601b83e9227628446cffed0a7b11b5bea5a57f81a84c6ff248fc9",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "llm-info/index.html": {
+    "before": {
+      "text": "98a9066372dc10798fa7b7b133c1d49a72e6437362ae5229bf59c6d3813d4635",
+      "links": "fb4691b3deca3a156063434eadead4cd215f884cf3011a3c0439f3b6a5c74229",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "dd83b992cabef1c8a257fb37e86b607e3029bf2aa200b29a65965ce42ee96258",
+      "links": "f4f0eb9b2b6962bcd89eaa0b245a58f6905769b20a72de9374ecb58b64019e31",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/index.html": {
+    "before": {
+      "text": "f995685ff0c1b8c302c05d5762fd11998ee42e9c4aca89189eff0c973e20f6c2",
+      "links": "0060af49b654775c71b0b0e5555534325872483199d44fd7db026eb1eb893e7c",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "3615c9cd7b9a92ac247355babc49cd33ed7c03551b0043725b35dad9ab2a6800",
+      "links": "e9d7adc5d3ca548965b247d87174ca125fdec267df4938b778af24f70a8dc2d3",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-austin/index.html": {
+    "before": {
+      "text": "0b261510b1fe8b99c5b8841ce94b1904e134270b0b93ad7bf5a6c1b1fa5924fa",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "a86843d8180dce262e601a8ae7140bacc61f7df021315fbbfe07c68186003a07",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-berlin-de/index.html": {
+    "before": {
+      "text": "03d4521a7c67b6fbeffb8969a4d9738457c0f9cfbaf4b5b5dd0a6cd6c96b4f36",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "c12a7fea7fd7ef3f2aa932974a641b9d964c804f49fa38e9fdd69772edd15d34",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-dubai-uae/index.html": {
+    "before": {
+      "text": "2c0fc150abc52a0281d287e242b403805cd1c5572578c3dbe49722f85e993868",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "ae51e60333eabae05612995cfae95643733bf57ed288fbb1216090b771204570",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-france/index.html": {
+    "before": {
+      "text": "a4b354549cca4d66c55512f15d7e2821484be827b6ce66245adb6c9dfea99b6d",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "9126c267f9e1afb595d7ea7d5738ef7f368bcf80c6882f961b6eb078cd424ec7",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-houston-texas/index.html": {
+    "before": {
+      "text": "460298d91f5342140bdc13a031d021d4cf6db0cb8cb76ca8f12c43b4280fb1b0",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "81f16aa562b36f7207dee99e923a59739a2588feb75cbbfabbd1469bc08e54d9",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-london/index.html": {
+    "before": {
+      "text": "f04a30f75fe439e8bd98f39184a01655edd78613b547379e636b7baa0de45492",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "6bbe828bb8d26bed9ec01da484691f2264a3eb6e4015e4568e59aaa3e9cab528",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-los-angeles/index.html": {
+    "before": {
+      "text": "fd8ccc7f3fa0272f93f8c03e064be88813669d65cbaaef55cfe02a05df5c6636",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "2510487ff9fbd5bb9d93b83f8d3a67e83920b0ecad4fe9e9bb4891410f4cccb1",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-malaysia/index.html": {
+    "before": {
+      "text": "112810a42e33760f21c6755cb78514fc038d300b0db069f4cf35c24254e94678",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "13076d4f328cb954bcc70a5e1bd8be8b12297c267c610b1ec44ec5b96ad8b827",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-philippines/index.html": {
+    "before": {
+      "text": "2b6046319f329fe3b87bc2bc71d14476e410e6807b83f45a675ce1be87d0055b",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "d8b50e7a2dd816adc4de72ce0f1ac04baf90e2f874a561cbdbef3eaff8a44e77",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-qatar/index.html": {
+    "before": {
+      "text": "c1e8cd687edcafc399b0b0a913fe31be8c6913157bf4dd4741ab6f3df9fbabb2",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "23414fbd01cfda018be65e167df95a7c1528941842169d9a1e20088f9797e29a",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-in-riyadh/index.html": {
+    "before": {
+      "text": "034b561773a91b5bdf3429c5366015852d23c458b282586d45e5df184e8f2c0d",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "44db3bc018434740602b6801ef9715c3c9599d83d4d2048c604e791c46a6fda3",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-new-york/index.html": {
+    "before": {
+      "text": "66ce692a646b4adb582a4845d162c86f8f2dd28975e202d15750573e9595bd43",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "4672c74a0b057b725c31508f20a79081cc7d6fd4259692e333195162e866f155",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-san-francisco/index.html": {
+    "before": {
+      "text": "653688b836550fcc66908e7b668f066b7b529b03289e121ba9f6bc60ce2fec82",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "fe2c063f9a7b6305a50b67c9c87c564241752590193bda1cdb835670a015b292",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ui-ux-agency-toronto-ca/index.html": {
+    "before": {
+      "text": "6b5c7cb3ba83c25d610442868d298eae82a44bf503cc6c8f7745c7a035e14b04",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "0197ead700f21fb114b3e94be847f772b5b8c7ceed9dabe5362b5b5a5a317166",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ux-ui-design-agency-sydney/index.html": {
+    "before": {
+      "text": "92ff083a6412994b2cb6abda317db6af143e5a1e457503f6d919f866648ed521",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "e0e79d6001f8fe37225176c7dbaab37ebcef2c00ca89ee19d41acbae4a06ec65",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ux-ui-design-in-italy/index.html": {
+    "before": {
+      "text": "0048995eb6f269b0441e6e4d215a5dd5c3776f2870805859d30415b21af6f896",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "98ec37443b5bfcee9a2591c046d55321985bc9893a9b053832304a6ce1a5b424",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "locations/ux-ui-design-in-netherland/index.html": {
+    "before": {
+      "text": "7b3d3dd605ea9fca34933bd53e562c8ad990947314ccd8a15e57ca5ec42d99bc",
+      "links": "3233145ac8eae4dd2b091573aacd53abeea84922c5bb7fb5a95fa2b7a3e66155",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "6d6b3011fdb03558dc2435c740577b9824b67ed0478eafb0a275e7fd300d7eb6",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "privacy-policy/index.html": {
+    "before": {
+      "text": "036d22378bb526c1d253d183c515c05e880997d933327c2ee27c28f120a79a4b",
+      "links": "fb4691b3deca3a156063434eadead4cd215f884cf3011a3c0439f3b6a5c74229",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "290d633ac2600eb5207fb1a5b144dfb3ba56a205d699cb3d4244ffde4210648e",
+      "links": "f4f0eb9b2b6962bcd89eaa0b245a58f6905769b20a72de9374ecb58b64019e31",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/conversion-rate-optimization/index.html": {
+    "before": {
+      "text": "218c404b283674d7349f67d9e65b8734a1e2a16a6863bc25c57b0429ba124437",
+      "links": "68d72710ce9a94cac70bb5534a435b767d2422fb02b5409f1b8796652c5ba160",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "10e2b7d9d8ce183da266086013cee721d12940af873b19f14046ec11efb45145",
+      "links": "c33f1d6973433ba1db27bb4000a5915b27e03576279e449e948a72638ca7d57b",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/custom-web-development/index.html": {
+    "before": {
+      "text": "07054447a8f963a52fccf78c0be7c63c3dbbc1eea9869b882c52317c02a8525f",
+      "links": "67377a93c91995691271724d60e3a3ec4ca7823c14cf1f2f03e0f78d1f896f62",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "fc715837e9f85fd289c9a058d26a91b24039fade99c710721c96f8f622d45185",
+      "links": "9dd37f196d41d994d35138544e449389b7583c5ed3f04789936b4fb670a6aaad",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/design-systems/index.html": {
+    "before": {
+      "text": "8bce4b1aba89e26fcb436b180481b818f530fef72c448e6e2c39763112a4082e",
+      "links": "e3d6bb1cae0c5dc5dd4ff266abeb5c7e6f23fd9c8e9375ef4211283c77529828",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "682f9046e62321954e009ed78689357e2fe9d40d6d66f3cf1f43640d42249be5",
+      "links": "726180deea62a2b58db25af169db83a8aa15141e649cf22e9c692b6df691cc12",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/ecommerce-development/index.html": {
+    "before": {
+      "text": "3aead110290fc6e3e2fe2e0860433046b069ca0f78c658ef6f7f69d65d99554c",
+      "links": "78e4db117c7d123fc1afdd6fe820e9eb516ba98872381278561600c831c62eca",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "6c11f8df4323eba46004c77e917e270e171a4d40fb99ec29aa0c95d225c1725c",
+      "links": "7170b6fab48f826da5e835b6ee306d4ba5cf0c19c5466f79821d75092c89b853",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/ecommerce-integrations/index.html": {
+    "before": {
+      "text": "fe03350086f53aac813dbabe0f5e7b42169b72768d0cf1cd2c7b70dffa39f2a8",
+      "links": "e3d6bb1cae0c5dc5dd4ff266abeb5c7e6f23fd9c8e9375ef4211283c77529828",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "d003b6ba6f39732478cbe32165bdf670964a64826d8bd7c798bec440f28327f4",
+      "links": "726180deea62a2b58db25af169db83a8aa15141e649cf22e9c692b6df691cc12",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/ecommerce-ux-research/index.html": {
+    "before": {
+      "text": "bbfb829f285da38b64e59f855e9831c7b626faec0c2cb1a7a7cab9065c7a0bd4",
+      "links": "e3d6bb1cae0c5dc5dd4ff266abeb5c7e6f23fd9c8e9375ef4211283c77529828",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "61ac972432f69d59cf42f571631e10dfef23f0cff9ba82f29cd57e58c59ed2ff",
+      "links": "726180deea62a2b58db25af169db83a8aa15141e649cf22e9c692b6df691cc12",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/figma-to-website/index.html": {
+    "before": {
+      "text": "c34f86ed0ea46155f4acc5ec3e8d1520779534b3edb239b68fa4fec4c9e9871e",
+      "links": "67377a93c91995691271724d60e3a3ec4ca7823c14cf1f2f03e0f78d1f896f62",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "fe0e667bff59ade639141ad904b9e19a82931225e3bc3ba3589d886e733e8116",
+      "links": "9dd37f196d41d994d35138544e449389b7583c5ed3f04789936b4fb670a6aaad",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/index.html": {
+    "before": {
+      "text": "d4d0673820fe85f6caa903a4788167d30288c70e1feb1b4b93230fae488d6661",
+      "links": "7a1788215757aae47455e566eb87f2024b90aa38603e4301c5ed85ccd0487277",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "8407737706659db3a5f7e72c8f5021b8986984bceb4422dcd5e2036e4af79998",
+      "links": "aab0d1efab64919f0e3b2243154acdb77634100ebf0dfaeaed1de2f8f6004e4b",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/landing-page-design/index.html": {
+    "before": {
+      "text": "9b27a6d8d72b9e4a37dc8fad4e1fb01d21b5d267b376cf4f99a5278dc4b69fea",
+      "links": "8c89c87ba535cb7a331701d3d8876bc9b45000084271ef8d52946b85693ad049",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "eddc2d97cdaa2e012ed72664cda8dadef53c1744f615487c9d0735517829355e",
+      "links": "67eb8321c0181123aca30011168be87ade3bafe8a1082d0cc73b9a1b6210c90d",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/mobile-ecommerce-ux/index.html": {
+    "before": {
+      "text": "006ecfe9940be6d1f4369f9d51ce7b7cbaf385e76efd8609c139e34b45c3ccb7",
+      "links": "78e4db117c7d123fc1afdd6fe820e9eb516ba98872381278561600c831c62eca",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "4f486b15476caadf14e3a0cb5380941b7590f9002e451b8c1ce410f016085cc3",
+      "links": "7170b6fab48f826da5e835b6ee306d4ba5cf0c19c5466f79821d75092c89b853",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/mvp-development/index.html": {
+    "before": {
+      "text": "ab26da0d6ce90966faa6dfce192282eea7db30098819ec50a8ee6f0c413f3385",
+      "links": "68d72710ce9a94cac70bb5534a435b767d2422fb02b5409f1b8796652c5ba160",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "503f1b83ca9d9246db80d54f1c56f058c2d0414b29bb206c2d4ed26870b417c5",
+      "links": "c33f1d6973433ba1db27bb4000a5915b27e03576279e449e948a72638ca7d57b",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/python-ai-workflows/index.html": {
+    "before": {
+      "text": "2c561deb8f8054ce86c0810f03496880eb49b5ae460fbccfbef068cde0e875f4",
+      "links": "86da8e04b6bf9b9a41bc51ac65a9114511a7488a458a90c36274222609213dfe",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "e9f26cb33721a03c61c6e0e51004565391422656d2f11558786fa0aad1d01793",
+      "links": "2782df22c6534e219594c7ab434449a35ba31becb7624316f5880280dc477308",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/qa-launch-testing/index.html": {
+    "before": {
+      "text": "77ca7d66b90419d4d3a78c51e258821537a356aeab40fcf51ef5db234c99c032",
+      "links": "78e4db117c7d123fc1afdd6fe820e9eb516ba98872381278561600c831c62eca",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "6ecbcfe1f49f26d899039bd16daa25b0402e06443a76ed61b17eeb14f38b418c",
+      "links": "7170b6fab48f826da5e835b6ee306d4ba5cf0c19c5466f79821d75092c89b853",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/react-nextjs-development/index.html": {
+    "before": {
+      "text": "e2dd34f382eaf1f40631efbf64b4a9fe2fd340d3948cd5ea77e19df6dd5150b8",
+      "links": "48b93d6f570631ae79d4e27c581caa43209259223487f35fcd586a5d45bbabd8",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "818364832af9e125c52562587a9cf2ec84f0411d9e753ec23a4c03b1e581fc64",
+      "links": "0e889e18c3eacf3299873e5e913b3d7d1d66af4585b490f95816f54c5221a7ab",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/saas-design/index.html": {
+    "before": {
+      "text": "a81fb219a1e03265ed0a53d5eae1ba9d280791ea153d75e2fc92bcab26572265",
+      "links": "78e4db117c7d123fc1afdd6fe820e9eb516ba98872381278561600c831c62eca",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "d9c3098025cc6ece80da211c226ebbd1b6beb10abfac5d3651022298ee813a39",
+      "links": "7170b6fab48f826da5e835b6ee306d4ba5cf0c19c5466f79821d75092c89b853",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/shopify-development/index.html": {
+    "before": {
+      "text": "7378934fcff428f3f747cfffff383dd0114c5fd5f58da14abea99be3133d2340",
+      "links": "f7daf61db8a58174fb42a7f54c5ebdfdd6c80258cdea73a5d7feb851dd7cb1c4",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "280924c8e567cffc429783b628fc8a0db4ce268382eecbbed67941b5a5897f88",
+      "links": "75631e985fe123ebe44f342486742fe23aeb8f3be338db14b59392a1505e3f65",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/ui-ux-design/index.html": {
+    "before": {
+      "text": "4b2d660563611ba5549926f1a9f1c727f47daed804a5af5b7769b3453944256a",
+      "links": "67377a93c91995691271724d60e3a3ec4ca7823c14cf1f2f03e0f78d1f896f62",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "91042983dab3b7228c9978bbb9ccfa42edcea1f859f3668b18f3932ed51232a2",
+      "links": "9dd37f196d41d994d35138544e449389b7583c5ed3f04789936b4fb670a6aaad",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/ux-audit/index.html": {
+    "before": {
+      "text": "6c4fff46fbce15d452528d8cd42bf766bc22f6a2bc3ad808c7149f8c0aa256e1",
+      "links": "68d72710ce9a94cac70bb5534a435b767d2422fb02b5409f1b8796652c5ba160",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "b6ee658321cb279fc9061ad8cbbeee5cb23b62ec88cd6a88d8424c8168ed8b3b",
+      "links": "c33f1d6973433ba1db27bb4000a5915b27e03576279e449e948a72638ca7d57b",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/web-app-mvp-development/index.html": {
+    "before": {
+      "text": "331d112f0eadee8a01ac998d66afed28b0aaa07ca591ead396897843fa40201f",
+      "links": "86da8e04b6bf9b9a41bc51ac65a9114511a7488a458a90c36274222609213dfe",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "04b9a83ad05e34e2628db91e7ef4a0d2577737faf4b54836d579264104bf9b19",
+      "links": "2782df22c6534e219594c7ab434449a35ba31becb7624316f5880280dc477308",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/website-strategy/index.html": {
+    "before": {
+      "text": "5f1024cf40075714f25a9b3bc84ec0c1939e5323aa8b9ac95076dd1bddee1806",
+      "links": "67377a93c91995691271724d60e3a3ec4ca7823c14cf1f2f03e0f78d1f896f62",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "bd126564b3909af332335e82b2f27936340d8f691111845bbb7495939a0e7b3d",
+      "links": "9dd37f196d41d994d35138544e449389b7583c5ed3f04789936b4fb670a6aaad",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "services/wordpress-development/index.html": {
+    "before": {
+      "text": "ff1619b1bb1ba53db006ebc22aa8d09a72065d686ccab64687dcb83a9eef701d",
+      "links": "28d1394e98b978cdf58e4deb82c72d77b894f90270fe0937cd06e65a40e26ffe",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "da3bdcf53913b76cb8e9adf7dc431dc9dba38eddc81261d40ff309d4d77fa820",
+      "links": "51517f7f318347b7af7ff7b62b58529d19d83b5d5165f5bc954fd01ae3ea087b",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "startups/index.html": {
+    "before": {
+      "text": "c0476d186a9209762de670dec0639a7976c2ce240be9ca158a8d2ff97b8b015b",
+      "links": "bf7458c7b175c297e1e431cda84307eb0997e7d396899555fe3f4549c7a8d484",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "after": {
+      "text": "5f45dac5f94a94312037f5efe506cdbeac7232d11ebb32f679987a4ed0397c15",
+      "links": "9acdf784a607dc921f33c223650d186c2e533a454afbff768f67b17695499f94",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "pricing/index.html": {
+    "before": {
+      "text": "85a7c164cd026970c50c4571197eb6ef949adf7658fdfaf5e0aa55a8a2767333",
+      "links": "77dc4b46207b35b3962108d043a0abbe382896a2ea811ff7c63f518b1573f513",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "after": {
+      "text": "27be2561d11406b5c6cf8b190064b565baf8bc61ff5d1f7de761a4c88a88f2b0",
+      "links": "10653439953f38e4b488554c0f24973f1c252138cd2843935ab18095f264d095",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "terms-conditions/index.html": {
+    "before": {
+      "text": "2d592f079d40a7e237d7e2fc17dd64bddc55d4865476bd72cf4539e7caa57544",
+      "links": "fb4691b3deca3a156063434eadead4cd215f884cf3011a3c0439f3b6a5c74229",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "d4a03c4ce02f35ef1fdf21232f8327bd6f53f6d879f88f1cdf5758806e495a56",
+      "links": "f4f0eb9b2b6962bcd89eaa0b245a58f6905769b20a72de9374ecb58b64019e31",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "approach/index.html": {
+    "before": {
+      "text": "ba2b1e2aca0e0c34f4360db167a4c9fa69058be787ee07aa1a8bd4f66302e62a",
+      "links": "dbb73a61aabfb7e3bf98b743bad04418030f7feababb712b9fd20fab5d8e1a51",
+      "media": "b3e2f3fe7ca5baa175cef774f53db665f6ca5b721306492dff8e9e436c5ac5dc"
+    },
+    "after": {
+      "text": "c8cdd977c5d947d18e5e0adcb2642a556ee37ec1e066c36783791f390ac2594d",
+      "links": "b92034d785caaa73473624f885fd1169c3a492976b2439f2e753e38995d51710",
+      "media": "b3e2f3fe7ca5baa175cef774f53db665f6ca5b721306492dff8e9e436c5ac5dc"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  },
+  "404.html": {
+    "before": {
+      "text": "dcda0a5d67078126b0b4be7146b017a9570b50e87a1c0f260cf8e53d1cf484d2",
+      "links": "657b747996e7a705eac6d983df37bda26ffecdc67c3cefac9fdac97bdf3711dd",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "add5ea7b68dc56d024aafa8db6eb62b32c4ba56ffd8e8e609d59b65e7e66a79d",
+      "links": "34395cf3b36f760e928db4d46d1fd598697754f65df73d370ea9473bde951727",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "Authorized responsive copy cleanup and shared footer: uppercase menus, social links and contact icons."
+  }
+}

@@ -1,8 +1,17 @@
+import { enhanceCarousels } from './carousels';
 const $=(selector,root=document)=>root.querySelector(selector);
 const $$=(selector,root=document)=>[...root.querySelectorAll(selector)];
 
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
 const home=document.body.classList.contains('studio-home');
+enhanceCarousels(document.querySelector('main')||document);
+const serviceGroups=[...document.querySelectorAll('.n-service-group')];
+if(serviceGroups.length){
+ const wide=matchMedia('(min-width: 768px)');
+ const arrange=()=>serviceGroups.forEach((group,index)=>group.open=wide.matches||index===0);
+ serviceGroups.forEach(group=>group.querySelector('summary').addEventListener('click',event=>{if(wide.matches)event.preventDefault();}));
+ wide.addEventListener('change',arrange);arrange();
+}
 let manuallyPaused=false,motionController;
 try{manuallyPaused=sessionStorage.getItem('studio-motion-paused')==='true';}catch{}
 const isPaused=()=>reduce.matches||manuallyPaused;

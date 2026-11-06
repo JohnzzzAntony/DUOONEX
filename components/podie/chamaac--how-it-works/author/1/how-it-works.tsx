@@ -205,7 +205,7 @@ export default function HowItWorks({
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div
-            className="relative w-full max-w-[1000px] mx-auto flex flex-col space-y-8 lg:space-y-0 lg:block h-auto lg:h-[var(--md-height)]"
+            className="n-carousel relative w-full max-w-[1000px] mx-auto flex flex-col space-y-8 lg:space-y-0 lg:block h-auto lg:h-[var(--md-height)]"
             style={{ "--md-height": `${height}px` } as React.CSSProperties}
           >
             {data.length > 1 && (

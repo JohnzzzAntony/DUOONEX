@@ -49,9 +49,8 @@ export function createMotion({isPaused,home}){
     const heroScene=gsap.timeline({scrollTrigger:{trigger:hero,start:'top top',end:()=>'+='+innerHeight*1.1,pin:true,scrub:1,anticipatePin:1,invalidateOnRefresh:true}});
     heroScene.to(frame,{scale:()=>Math.max(hero.clientWidth/frame.clientWidth,hero.clientHeight/window.clientHeight)+.03,y:()=>hero.clientHeight/2-(frame.offsetTop+window.clientHeight/2),duration:1,ease:'none'},0)
      .to(overlay,{opacity:.68,duration:1,ease:'none'},0)
-     .to('.s-hero h1,.s-hero h1 em,.s-hero-description,.s-hero-note,.s-hero-location,.s-hero-location span,.s-hero-bottom',{color:'#ffffff',duration:.7,ease:'none'},.15)
-     .to('.s-beta',{color:'#fff',backgroundColor:'#163125',borderColor:'#ffffff55',duration:.6,ease:'none'},.2)
-     .to('.s-canvas-caption,.s-orbit-label',{opacity:0,duration:.3},0);
+     .to('.s-hero h1,.s-hero h1 em,.s-hero-description,.s-hero-bottom',{color:'#ffffff',duration:.7,ease:'none'},.15)
+     .to('.s-beta',{color:'#fff',backgroundColor:'#163125',borderColor:'#ffffff55',duration:.6,ease:'none'},.2);
     hero.dataset.motionScene='expanding-media';
     // Portfolio panels settle over their predecessor as in the reference.
     const projects=$$('.s-project');
