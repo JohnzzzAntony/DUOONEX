@@ -1,0 +1,14 @@
+Skiper 16 StickyCard_001 — animation pattern supplied by the user.
+Author: @gurvinder-singh02
+Website: https://gxuri.me
+Twitter: https://x.com/Gur__vi
+
+User-supplied usage notice:
+Free to use and modify in personal and commercial projects.
+Attribution to Skiper UI is required when using the free version.
+No attribution required with Skiper UI Pro.
+
+NexPixels adaptation: retain the existing semantic capability sections and
+adapt the sticky positioning and scroll-driven shrinking progression to the
+project's shared GSAP/Lenis lifecycle. Visible Skiper UI attribution accompanies
+the enabled stack. No ownership of the original animation design is claimed.

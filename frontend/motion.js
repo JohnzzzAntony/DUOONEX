@@ -27,9 +27,19 @@ export function createMotion({isPaused,home}){
      context.add(()=>gsap.fromTo(entry.target,{y:22,opacity:0},{y:0,opacity:1,duration:.7,ease:'power3.out',clearProps:'transform,opacity'}));
     }
    },{rootMargin:'0px 0px -5% 0px'});
-   $$('.s-reveal').forEach(el=>observer.observe(el));
+   $$('.s-reveal:not(.s-feature)').forEach(el=>observer.observe(el));
    if(!home)return;
    const media=gsap.matchMedia();
+   media.add('(min-height: 680px)',()=>{
+    // Supplied StickyCard_001 progression, shared with the site's existing Lenis clock.
+    const stack=$('#capabilities'),cards=$$('.s-feature',stack);
+    const credit=document.createElement('a');credit.href='https://skiper-ui.com/';credit.textContent='Card-stack motion · Skiper UI';credit.className='n-stack-credit';stack.append(credit);
+    cards.forEach((card,index)=>{
+     gsap.to(card,{scale:Math.max(.5,1-(cards.length-index-1)*.1),ease:'none',scrollTrigger:{trigger:stack,start:()=>`top top-=${index*stack.offsetHeight*.25}`,end:'bottom bottom',scrub:.5,invalidateOnRefresh:true}});
+    });
+    stack.dataset.motionScene='sticky-card-stack';
+    return()=>{credit.remove();};
+   });
    media.add('(min-width: 992px)',()=>{
     // Roveia: compact media expands into the rounded hero while pinned.
     const hero=$('.s-hero'),frame=$('.s-workflow-wrap'),window=$('.s-workflow');
