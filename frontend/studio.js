@@ -96,12 +96,18 @@ $$('.s-enquiry-form').forEach(form=>{
    const response=await fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(form))),signal:AbortSignal.timeout(20000)});
    const result=await response.json();
    if(!response.ok)throw new Error(result.error||'Your brief could not be sent. Please try again.');
+   if(result.accepted===true&&typeof window.gtag==='function')window.gtag('event','generate_lead',{send_to:'G-GX4YV1FRP5',form_name:'project_enquiry'});
    form.reset();status.textContent='Your brief is with us. Thank you — we’ll be in touch.';
   }catch(error){status.classList.add('is-error');status.textContent=error.name==='TimeoutError'?'The connection took too long. Try again or email info@nexpixels.com.':error.message==='Failed to fetch'?'Please check your connection and try again, or email info@nexpixels.com.':error.message;}
   finally{submit.disabled=false;submit.innerHTML=original;}
  });
 });
 
+
+document.addEventListener('click',event=>{
+ const link=event.target.closest('a[href]');if(!link)return;
+ if(['wa.me','api.whatsapp.com','web.whatsapp.com'].includes(new URL(link.href).hostname)&&typeof window.gtag==='function')window.gtag('event','whatsapp_click',{send_to:'G-GX4YV1FRP5',contact_method:'whatsapp'});
+});
 
 function updateMotion(){
  document.documentElement.classList.toggle('studio-motion-paused',isPaused());

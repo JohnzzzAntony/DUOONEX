@@ -1,5 +1,8 @@
 /* Refined editorial: one page rhythm, compact media and deliberate mobile browsing. */
 :root{--n-container:1180px;--n-gutter:20px;--n-space:56px;--n-radius:20px}
+.roveia-theme .s-home .n-capabilities-heading{font-size:clamp(24px,3vw,36px);line-height:1.2;letter-spacing:-.7px;margin:28px 0 0;text-align:center}
+.n-breadcrumbs{padding-block:12px;font-size:13px;color:var(--brand-muted)}.n-breadcrumbs ol{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;list-style:none;margin:0;padding:0}.n-breadcrumbs li{min-width:0;max-width:100%;overflow-wrap:anywhere}.n-breadcrumbs li+li::before{content:'/';margin-right:10px;opacity:.6}.n-breadcrumbs a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px}.n-breadcrumbs [aria-current]{line-height:1.6}
+.roveia-theme main .container>p>.btn{white-space:normal;max-width:100%;height:auto;line-height:1.5;text-align:left;margin-block:4px}
 .roveia-theme :is(.container,.s-container){width:calc(100% - var(--n-gutter)*2);max-width:var(--n-container);margin-inline:auto;min-width:0}
 .roveia-theme .container{padding-inline:0}
 body.roveia-theme:not(.studio-home) .page-hero{margin-inline:0;border-radius:0}

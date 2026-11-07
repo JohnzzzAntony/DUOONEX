@@ -94,7 +94,7 @@ Canonical: ${origin}/.well-known/security.txt
         for(const key of ['name','email','message','budget','source','help']) {const v=data[key]||'';if(typeof v!=='string'||v.length>5000)fail(400,'Invalid enquiry');entry[key]=v;}
         if(state.inquiries.length>=10000)fail(503,'Inbox full. Please contact the agency directly.');
         state.inquiries.unshift(entry);await persist();await notify(entry);
-        if(html){res.writeHead(303,{Location:'/contact/?sent=1'});return res.end();}return send(201,{ok:true});
+        if(html){res.writeHead(303,{Location:'/contact/?sent=1'});return res.end();}return send(201,{ok:true,accepted:true});
       }
       if(pathname.startsWith('/api/')) {
         const token=auth(req);

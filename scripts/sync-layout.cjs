@@ -62,6 +62,7 @@ for(const file of [...files,'404.html']){
  html=html.replace('</body>','<script type="module" src="/assets/js/studio/app.js"></script>\n</body>');
  if(file==='index.html')html=html.replace(/<link\b[^>]*href="(?:\/)?assets\/css\/style.css"[^>]*>\s*/,'');
  html=require('./sync-seo.cjs').syncSeo(file,html);
+ html=require('./seo-structure.cjs').structure(file,html);
  html=require('./sync-islands.cjs').syncIslands(html);
  html=require('./sync-images.cjs').syncImages(html);
  html=html.replace(/<!-- Google tag \(gtag\.js\) -->\s*/g,'')

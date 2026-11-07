@@ -28,6 +28,7 @@ function syncSeo(file,html){
   $('script[type="application/ld+json"]').each((_,node)=>{
    const graph=JSON.parse($(node).text());
    for(const item of graph['@graph']||[graph]){
+    if(item['@type']==='Organization'){item.logo={'@type':'ImageObject',url:'https://nexpixels.com/assets/images/nexpixels-mark-new.png'};item.sameAs=['https://www.instagram.com/nexpixels_/','https://www.linkedin.com/in/nexpixels'];}
     if(['WebPage','AboutPage','ContactPage','CollectionPage'].includes(item['@type'])){Object.assign(item,{name:meta.title,description:meta.description,url:meta.canonical});if(meta.image)item.primaryImageOfPage={'@type':'ImageObject',url:meta.image,caption:meta.imageAlt};pageFound=true;}
     if(item['@type']==='FAQPage'&&faq.length)item.mainEntity=faq;
     if(item['@type']==='Article'||item['@type']==='BlogPosting'){if(meta.image)item.image=meta.image;item.author={'@type':'Organization',name:'NexPixels',url:'https://nexpixels.com/about/'};}

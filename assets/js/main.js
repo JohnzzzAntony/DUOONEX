@@ -445,6 +445,7 @@
         var response = await fetch('/api/inquiries', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(data) });
         var result = await response.json();
         if (!response.ok) throw new Error(result.error || 'Unable to send your enquiry. Please try again.');
+          if (result.accepted === true && typeof window.gtag === 'function') window.gtag('event', 'generate_lead', {send_to:'G-GX4YV1FRP5',form_name:'project_enquiry'});
         note.textContent = 'Thank you. Your enquiry has been received.';
         note.classList.add('is-ok');
         form.reset();
@@ -458,10 +459,6 @@
     note.textContent = 'Thank you. Your enquiry has been received.'; note.classList.add('is-ok');
   });
 
-  /* ---- WhatsApp click tracking (GTM) ---- */
-  $$('[data-wa-float]').forEach(function (link) {
-    link.addEventListener('click', function () { (window.dataLayer = window.dataLayer || []).push({event: 'whatsapp_click'}); });
-  });
 
   /* ---- Pause marquees while off-screen ---- */
   var marquees = $$('.marquee, .marquee-one, .marquee-two, .marquee-three');

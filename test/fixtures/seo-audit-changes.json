@@ -1,0 +1,717 @@
+{
+  "index.html": {
+    "before": {
+      "text": "e5eeb03a5abd5e22b5daa9269baf5bae5df5cacc2b03150e2e5b05ea9c12a73f",
+      "links": "9df476131563eaac0091cfa8df0faf4746eb74cfe9b936c80e77ede93c9a36aa",
+      "media": "0fae714bafc26bfe30d399cb19368b7b302d9fb589b1f882ba272e6325cdeb83"
+    },
+    "after": {
+      "text": "e294ba36e3628d00fb8ddb3cf2ef6368b7eb39b38db0e93c400e18f201138516",
+      "links": "9df476131563eaac0091cfa8df0faf4746eb74cfe9b936c80e77ede93c9a36aa",
+      "media": "0fae714bafc26bfe30d399cb19368b7b302d9fb589b1f882ba272e6325cdeb83"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "products/index.html": {
+    "before": {
+      "text": "daa10422e6147ad6f1f85745c3d39094c70cc7bb55ef7714854a17e50c7a266a",
+      "links": "050fa7615484653ac249a4d19a9f3ff08544bac74ed1b05ce5a071eb92871388",
+      "media": "6f1a024faf99e89b42c7e416d40ce6f773cf03383ad8d630527ba908af4147fb"
+    },
+    "after": {
+      "text": "19b6a94436d731da035be0d67650d8753fa3e4ff2997457af14fdda6f0fcef41",
+      "links": "fd70b115125e17fd16e81ef45bdd0d2dfb18dbba049ec093eba05a049f71bf0f",
+      "media": "6f1a024faf99e89b42c7e416d40ce6f773cf03383ad8d630527ba908af4147fb"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "about/index.html": {
+    "before": {
+      "text": "a61351de0bae585650934e2080c282377fa900185d9a583e5b345715e12ed55e",
+      "links": "eb254920b39f71a30637f8f5f597f030cc0a3e90cf43a051053e3402120b7515",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "d6322c16fb7092bf469b2f80f647b90735498c93d0bae6e6c2d4589b8f341ab0",
+      "links": "c94b646b18515b68b73fb94d6bacec7025b34d93ac6f4887b347b3feaebfbd73",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/best-ai-product-design-agencies/index.html": {
+    "before": {
+      "text": "eb431787371bfacfe0de159aea92cfc79bdf2e1d53924330e9bd5c057f1819ee",
+      "links": "0a21459b16c8dc4c414f85531d07c6570eb7b255d3c88d6fbd288163541417ad",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "9a0f4bccf48974becd935a5d10f86438deabd1227515cdcba5ff81ec2ed3b367",
+      "links": "75d8b290f502be4de97d0f78c429898917c20c44a59b2ce3d293c248479a8021",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/best-no-code-website-builders/index.html": {
+    "before": {
+      "text": "326eceae6aa8a23e51340e6bb92cefb4071871ba3346ae556fc829d4c3bc4afb",
+      "links": "2e241785e2f90e23f052ada10f3a0c06f00c9bdc83bf0cc64a8d6399b8673ca1",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "6bac4fd8e7ea2e8bffff2a04a338579923662da798fe5cfe0c6cfe3d0db8a360",
+      "links": "7304eb99896db5b056b0b56aefa438050bb2aa95833ec2c185dd8bfc1ae675a0",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/best-shopify-agencies/index.html": {
+    "before": {
+      "text": "d1a38160aaae03917ae99ebcc137d10cbb3ccfff390c7253ae24ab459f700638",
+      "links": "b1604c564d312f3706006d7c2b856d315dd3565c9439be2ee3ce35a824ea6147",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "c1d8a6f21b03727c1f202939bfd7510b7a212092b3c9222c9375dfbc75e6e695",
+      "links": "7bfd3b94f0dfe962dd2816f8b24a67ff61dd040d1b972dd081ea4e2f18bf5fa1",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/best-website-design-examples/index.html": {
+    "before": {
+      "text": "43b3f907121dda03266390391a3cf038f65d558d4af8562959c60b93f132bf1c",
+      "links": "d7f923fa4772c29eb55af59b542e51fd93d6adadf1bce503d7fd882db70d6378",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "fac3c24f51317584c853474e2a6fda346ea227eb2a89925ca1958b586d687a5a",
+      "links": "123289d7ba067b65aca86e5e811f0f045eeeb629527943269466db247fa2fb80",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/dark-mode-vs-light-mode/index.html": {
+    "before": {
+      "text": "c7f1adbdccb706b7d111d5f6ee6b6ad7a483679047bf822639cbbbfd699a43d3",
+      "links": "0608e3d24a1bc2b0af43ba5c68211345a9584f37a26afb016d58d6def33a42f8",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "7def749a7ca3f734d9f5effc19a6936f439b7668b8e1a79b64ca24723202803d",
+      "links": "018ff7a7d9908e1de7816bd01c044fb551f6c02bed477168bc6492db14687a26",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/index.html": {
+    "before": {
+      "text": "a9aed6bbe807858516969a9027c4ddc1a579c0d4d458c669c363d70b0a6e5f0d",
+      "links": "96c1af693a97d73904ec633700ab9504f849bf3a15070c48adaed551de27c8d4",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "54a8334db60fe03233279bd1d2453855e4a9decc78f1486f248cec0127abfcd0",
+      "links": "9b8ec54bd0a5c31d695fd467fd427ceae673a601734196d758093fb0d1451620",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/top-ai-ui-ux-agencies/index.html": {
+    "before": {
+      "text": "1bd374718adcbe195ec326c786e4b03f7d23befe7b8aca18b99722f2bb45a42d",
+      "links": "26448324608bcd5c4b2ecd4dab7ef7b6daefd50325daf050bacdd5f5862bc25b",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "03c3cdba22b1cbce2f497a08682d3bb5a3bdf509b8f5b4e3f6ae06e37b27611b",
+      "links": "e18c3aadb76dc5dfe1ba97205fd29964871e784cf6fd11ef781b34fc2776aa82",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/top-branding-agencies-services/index.html": {
+    "before": {
+      "text": "97894a8f0bb227f400ba0b991fa871a70548ee6831fb4d3e1663dde513b5a58c",
+      "links": "ef1f9ae87a01e02de9fb3b80aa825e0a0e693d3992fa94e6bdc87a6c61854fa0",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "d64126f26a0d9b8706e7e2222de41e0726f8c68d2a0f8b5b537f456de675f9ed",
+      "links": "27305cc9ac156c1a06d533bb0df9846e3fb39cea2096e685908da08a3c1e98fd",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/top-mvp-development-companies/index.html": {
+    "before": {
+      "text": "aa95186f77ce58edb4a8080fad05b194ca2bdf29ec5d479d13bfb53bccbbf609",
+      "links": "4eb71f4a1577290588a6f938acc66efcf65186f4b13371a8e9bf201370542179",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "93f7336513ec943b07baa53528d424daae3b471d7144de3c88ac9d48cff4966e",
+      "links": "7686adca8aa99fc54e0fe5c38d6b255f42c4fc02e48abbdcc624c20820bb932a",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/top-ui-ux-design-agencies-usa/index.html": {
+    "before": {
+      "text": "2edd2a4c3ac09f2dbee5d72bc6b49f3db8e22db42b68407f71c34723fa479e5d",
+      "links": "4308d3b947d381b613c6af24e1e2164292437f64d4b19a4723b3e121c9fc1100",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "af8b1688845397cee1a378fff1c4656bd02a3f1c47a3437e43e2df05dea6941e",
+      "links": "91a905e8d5955e8ae5580118b6070cad2e08f6aca83f3fce305a4606cf88241c",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/ui-ux-design-agencies-nyc/index.html": {
+    "before": {
+      "text": "65d8612aef5130136b5d1cf14ac85a44a435c07f38beb157f0ca6525a009b564",
+      "links": "a751eece0a45cbbb57772daf96092a6c0580db2130a186d42a12260d97bab4fa",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "f6fd8851c119f3fe909b48d08896efd483a4309d521e4311ae088a76fde4ae5b",
+      "links": "6c3c4982499d21fca4115b6e246eb8fc3a12416dbdf016a3e249e740c5800653",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/what-is-ux-ui-design/index.html": {
+    "before": {
+      "text": "8467826f97834e431e914988ad5860d8c79ed98d397f5fcadc1edc0e2f209ab3",
+      "links": "a1418ccdc0cacf1f2b38fb9af2de528003160485ceb37cadb39eb3b7bef92ee5",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "7323b498b6979e4ba320ed8f3ad059dce5c03e6e7012f7e185314dfe7f62614c",
+      "links": "8d72a5a8b631029746ec0bf9ae709e1659f52dad4199f8e3a8d3e9c225a8fe72",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "blog/why-do-top-brands-choose-webflow/index.html": {
+    "before": {
+      "text": "ef0b37463f6881024264873d00e9c5aac1798c425933858ca7ce5fc7f0be2643",
+      "links": "481c8467e0e6ae8e18c080edd3ef19d153272b04c277dc53996e556ef25a63d5",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "c38e64411eb219c8ac610717df0b5c9a9683854d4901b89c844a688a06abcf2d",
+      "links": "93b3769cdf64f95df4779489811d00c91c7dc10373026019a2c64413dd81dfab",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "case-studies/certguard/index.html": {
+    "before": {
+      "text": "ebac78b940aa231e5d44d0f49f7c47af7a07f10b8638533be7c2cce5d96e3dc8",
+      "links": "f1e7e160361ce575361a649a8729f7b9f3885d759248f70032f1077ce1206add",
+      "media": "95457cb391d47692137da4620b87b6d466dcd891a60cd1ca449ef629fcb69585"
+    },
+    "after": {
+      "text": "2716f81fdacbd7fb439531f40adc879a60bd2c724439f20add8553e515e57559",
+      "links": "8b5e80096a449e9ff3295c307314215171425db7b1f7db8948992db6da50e681",
+      "media": "95457cb391d47692137da4620b87b6d466dcd891a60cd1ca449ef629fcb69585"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "case-studies/drec-pms/index.html": {
+    "before": {
+      "text": "9b123f4ca9fd95a0486c646e016dfc90860cab641fb91e744a2dd038ff0fe54a",
+      "links": "a48ab7f1fe8d2a8bbeff46208b938bd54f67e91de0caa59c8afffd27352ca9b2",
+      "media": "6d57284d36ef64ea79e1cf0763b94256782ed6ad892be880090696020d4ae802"
+    },
+    "after": {
+      "text": "6e51b55b04a8a699719f5f9a3a133739eee5327322dbb0384e1af6ded5b0d00b",
+      "links": "c8a70bdac603c8015f7a1bfd8c0084d1ccc68c9ecbd172d669c4cd9029fd1ee5",
+      "media": "6d57284d36ef64ea79e1cf0763b94256782ed6ad892be880090696020d4ae802"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "case-studies/finora/index.html": {
+    "before": {
+      "text": "cd5e63a170a0da96d9607a1da441d539b30da9e16751ea61aab3feb148f0a425",
+      "links": "25836be485087949bab650da6f7909227df8572e0911133c182ab4682c6538e6",
+      "media": "36a50130aa19ded676c52842ff5a9e99f31e23667cf7862550c6396024c9282e"
+    },
+    "after": {
+      "text": "3637075a70acc2a6e4ea6da8cb20a95b755ffaed955ecad2997e3f208b6706d8",
+      "links": "0a981e59f7e04e3de9606b9b250deacacef26165d0d4d8fccb16bd2b3c38b45b",
+      "media": "36a50130aa19ded676c52842ff5a9e99f31e23667cf7862550c6396024c9282e"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "case-studies/index.html": {
+    "before": {
+      "text": "595cd6c42df800089e328f7d1acb5e3ab73e1d026bfcc0384863c878acdabbae",
+      "links": "62490935ce16986ce1385decb77808c9addaaeae5da2ef25422bcffbc10ad6d7",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "after": {
+      "text": "fd92dfb7113ea0a84b23a98c33b1599ef35d80ef7e50c2d6279d7edde09cbdf9",
+      "links": "20174da0e8d6fb6a4de25bb2d7d14d80c9dffb0cb991fde76a59249c54857a5c",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "case-studies/invitara/index.html": {
+    "before": {
+      "text": "e6f592b4c4221af05f832ed25d845a0c12611dfad04d29e5cb3dafb313dd503e",
+      "links": "534bdfde8b8ac6acc57c51ee22a301a94add1fd6c1466b3874c234069a470c94",
+      "media": "2c15864f0e616c8299c3631d84ace6b847398f1f1565df006b3eebb33ddb6d08"
+    },
+    "after": {
+      "text": "86cf17a234911d1e0b74570ba32020854717d12520bafd66cc83d07c6bc299b0",
+      "links": "e083993f6bed31ac6cf108fdddad0e73997971bbf01ac365c8deaabb472694c3",
+      "media": "2c15864f0e616c8299c3631d84ace6b847398f1f1565df006b3eebb33ddb6d08"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "case-studies/mechaura/index.html": {
+    "before": {
+      "text": "6ae3f2739e000606522ddd9272d88bc42e8e13845f5360aff7ec416dba3de3e6",
+      "links": "efe7f5b4cfd5532bc90f80c9701439861028d2af5c9b36e8440b1db192591158",
+      "media": "a2bea6dd3afdfee3173aa1a2ad8f30e9d06e23ef63581d77790b78d69be55937"
+    },
+    "after": {
+      "text": "6b94606434d6ecd46d637df55c68f19cccbf8847883f50867be3c201b426b967",
+      "links": "7394249a0ac517542359277d9cd88a094171aa434635f59776bed84c9e3d1062",
+      "media": "a2bea6dd3afdfee3173aa1a2ad8f30e9d06e23ef63581d77790b78d69be55937"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "case-studies/nexora/index.html": {
+    "before": {
+      "text": "7b62c45af1b62a2572df5769f1393615df22710dd90f8bc4f1847573d4f69051",
+      "links": "96b647e059b437c0abb690e80590235ba1c71edbfb6ae3cd1c9c6a80a339696b",
+      "media": "0cd1ec27dc144223b44e7174e216d19966e6e5725bedc5471dac64c1eeb76dc0"
+    },
+    "after": {
+      "text": "ae4512cad2a69d7037187f833ba62f3019b23a300af68f809169af9b53295a2a",
+      "links": "b5b925dad0386e64da16ff5002a395cceb45089df53cfbe69d75d8881270d895",
+      "media": "0cd1ec27dc144223b44e7174e216d19966e6e5725bedc5471dac64c1eeb76dc0"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "case-studies/workflow-hub/index.html": {
+    "before": {
+      "text": "2d2db2dcc0dfeed9910a7bd4bc38d98d33630ef3d3a034639cd7f111bb697da4",
+      "links": "cb9994a98fe3d8757f49fb9bbac09e50e2e615c53f34eddc5b2bf9d844d3a3e0",
+      "media": "c02c0e2ac5996d83a5cee10e1cde706396ddb507c71189e812ceaa0b3763fb78"
+    },
+    "after": {
+      "text": "69f51438c6db0d9e1fd3c484286d4006c3fbd60e2c01db06b63d953a622b41b9",
+      "links": "dc9386da5b98caa9e04e5ee4b910c3259b5c2b3555c890470fbdb7b2a86fba51",
+      "media": "c02c0e2ac5996d83a5cee10e1cde706396ddb507c71189e812ceaa0b3763fb78"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "contact/index.html": {
+    "before": {
+      "text": "1d3523ee90b773871c297ba6cba02736152e63ae99d4c622167662d77d753dde",
+      "links": "f4f0eb9b2b6962bcd89eaa0b245a58f6905769b20a72de9374ecb58b64019e31",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "c1d39f301f0e5855afb2d29777e0cb709518aabdecf95369e724723100e50f6c",
+      "links": "d536ee99d3c20641603053a26e70476f60c489ac0a1f535d0d0b57a351052586",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "faqs/index.html": {
+    "before": {
+      "text": "d7462571122dd87603b9cd6937b4930a42b7cb871e9c75c7d0d2ad249d69084f",
+      "links": "daeeb099aa9601b83e9227628446cffed0a7b11b5bea5a57f81a84c6ff248fc9",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "515d312f4f511e3fdd42f18db930b2136cc9fce39324b338756e0a4bdfbb80a1",
+      "links": "f00faa6837857ca5117a62c2a0d86cee469e1c5a86ffd46b2498da1239a1fe81",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "llm-info/index.html": {
+    "before": {
+      "text": "dd83b992cabef1c8a257fb37e86b607e3029bf2aa200b29a65965ce42ee96258",
+      "links": "f4f0eb9b2b6962bcd89eaa0b245a58f6905769b20a72de9374ecb58b64019e31",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "5819c15d51ed0c800bb886269bd065157e67f55f2ccc346a97f423ba110b9bc6",
+      "links": "d536ee99d3c20641603053a26e70476f60c489ac0a1f535d0d0b57a351052586",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "locations/index.html": {
+    "before": {
+      "text": "3615c9cd7b9a92ac247355babc49cd33ed7c03551b0043725b35dad9ab2a6800",
+      "links": "e9d7adc5d3ca548965b247d87174ca125fdec267df4938b778af24f70a8dc2d3",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "3b02c473454aa0bb06ed79415c0acfa9a0ed168827a471b68d598a6eeba509d4",
+      "links": "326f1fcad822cc28e5ffddacaa09c67c7e8d94119f9b2781b604a8fb8947f809",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "locations/ui-ux-agency-in-dubai-uae/index.html": {
+    "before": {
+      "text": "ae51e60333eabae05612995cfae95643733bf57ed288fbb1216090b771204570",
+      "links": "20c9ac4ed56fc6fe2b287a6cb74d1ad913f11a3d87ea05b55b3ae38ea599db4e",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "1e143e55c1eed70144cf3026f0581995a1cc3e004f9d037fdae2fa39ecfa2ecf",
+      "links": "7ad31b572670fdbb1c0ec8f9cdfa7b65b06c76d64c6904483db90a9fde947bb7",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "privacy-policy/index.html": {
+    "before": {
+      "text": "290d633ac2600eb5207fb1a5b144dfb3ba56a205d699cb3d4244ffde4210648e",
+      "links": "f4f0eb9b2b6962bcd89eaa0b245a58f6905769b20a72de9374ecb58b64019e31",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "81da7763d7ebca650125a2e427c363c2fa5f027ac33ad6e42d18abcb64fe1d65",
+      "links": "d536ee99d3c20641603053a26e70476f60c489ac0a1f535d0d0b57a351052586",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/conversion-rate-optimization/index.html": {
+    "before": {
+      "text": "10e2b7d9d8ce183da266086013cee721d12940af873b19f14046ec11efb45145",
+      "links": "c33f1d6973433ba1db27bb4000a5915b27e03576279e449e948a72638ca7d57b",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "0c148b540501bee8ab2f81df3f38debadfb1c357e65d4eda9da5fadbd193f775",
+      "links": "1ae6963ab40980401c3fc4912035c4670fa7a7b26ea94f7e0c4627eb67f4320e",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/custom-web-development/index.html": {
+    "before": {
+      "text": "fc715837e9f85fd289c9a058d26a91b24039fade99c710721c96f8f622d45185",
+      "links": "9dd37f196d41d994d35138544e449389b7583c5ed3f04789936b4fb670a6aaad",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "17996faa267b58e1ad93593961c93e5270a72afa10034394c388937743f6ca46",
+      "links": "79ce0143929147b3a2e695b49ba915c472cd52153a17c7c6b7acb9be0234e3ab",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/design-systems/index.html": {
+    "before": {
+      "text": "682f9046e62321954e009ed78689357e2fe9d40d6d66f3cf1f43640d42249be5",
+      "links": "726180deea62a2b58db25af169db83a8aa15141e649cf22e9c692b6df691cc12",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "53df3fb80888cba3b63f697a964d2f30a0fe47dba521fee06528f3348a174410",
+      "links": "475ef61bd035670408457ef87d40ad62bcd5c47cf7c9b23ac3a0316553a8cd70",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/ecommerce-development/index.html": {
+    "before": {
+      "text": "6c11f8df4323eba46004c77e917e270e171a4d40fb99ec29aa0c95d225c1725c",
+      "links": "7170b6fab48f826da5e835b6ee306d4ba5cf0c19c5466f79821d75092c89b853",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "a1fc6d3036ea7d8606710430232f539cb716d1138514ae42700de8e38d562b66",
+      "links": "0da9531497fcb7da2b1ff0775a21097c4de94635ef89efb248937fc8bec18ebb",
+      "media": "327ef1d3cf9d7d78931c3145b646c5f969fa5ea45660b4e7e4a77547853ff3d6"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/ecommerce-integrations/index.html": {
+    "before": {
+      "text": "d003b6ba6f39732478cbe32165bdf670964a64826d8bd7c798bec440f28327f4",
+      "links": "726180deea62a2b58db25af169db83a8aa15141e649cf22e9c692b6df691cc12",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "79314a60f013521b2d5ff5ff38a68d925fa0960a09742db6b96906bfcd08db72",
+      "links": "475ef61bd035670408457ef87d40ad62bcd5c47cf7c9b23ac3a0316553a8cd70",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/ecommerce-ux-research/index.html": {
+    "before": {
+      "text": "61ac972432f69d59cf42f571631e10dfef23f0cff9ba82f29cd57e58c59ed2ff",
+      "links": "726180deea62a2b58db25af169db83a8aa15141e649cf22e9c692b6df691cc12",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "eae7543402b9d4fe0ef02e87789647e5ac38d9b4e5397bf96cf0993212eeb369",
+      "links": "475ef61bd035670408457ef87d40ad62bcd5c47cf7c9b23ac3a0316553a8cd70",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/figma-to-website/index.html": {
+    "before": {
+      "text": "fe0e667bff59ade639141ad904b9e19a82931225e3bc3ba3589d886e733e8116",
+      "links": "9dd37f196d41d994d35138544e449389b7583c5ed3f04789936b4fb670a6aaad",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "56b36d0a8f6f927fdd250873926d618ff9117875bea2432c4b3f8e2c06c1902a",
+      "links": "79ce0143929147b3a2e695b49ba915c472cd52153a17c7c6b7acb9be0234e3ab",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/index.html": {
+    "before": {
+      "text": "8407737706659db3a5f7e72c8f5021b8986984bceb4422dcd5e2036e4af79998",
+      "links": "aab0d1efab64919f0e3b2243154acdb77634100ebf0dfaeaed1de2f8f6004e4b",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "22972f93373b84e911f7c1c23d8134880111562693625f98db8e016b8f28413b",
+      "links": "5ca3429a184ca86d08dfab1276795a582e824483bfbc1998addec71c68531e6b",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/landing-page-design/index.html": {
+    "before": {
+      "text": "eddc2d97cdaa2e012ed72664cda8dadef53c1744f615487c9d0735517829355e",
+      "links": "67eb8321c0181123aca30011168be87ade3bafe8a1082d0cc73b9a1b6210c90d",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "724ca588f7d60f9b15bc554fdfcb90d15a332eb3d78ab8923c31b0eb338aedb0",
+      "links": "fac22dc8fb7d8feb4288f5d10be567c9a090d1b60dffc9b0bf8afca7dd8169ab",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/mobile-ecommerce-ux/index.html": {
+    "before": {
+      "text": "4f486b15476caadf14e3a0cb5380941b7590f9002e451b8c1ce410f016085cc3",
+      "links": "7170b6fab48f826da5e835b6ee306d4ba5cf0c19c5466f79821d75092c89b853",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "db3345a66fc5620eb04a2aafe0dd651e83723ef586e511aa45ffc6064bf9875c",
+      "links": "0e746e188e5607d02ba50c1c8b37c382c68630a60b804f1876410ec0567740b6",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/mvp-development/index.html": {
+    "before": {
+      "text": "503f1b83ca9d9246db80d54f1c56f058c2d0414b29bb206c2d4ed26870b417c5",
+      "links": "c33f1d6973433ba1db27bb4000a5915b27e03576279e449e948a72638ca7d57b",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "8d507b728bd3202a1d3540b40e5f410d5b9ed09531bba763acd0b6e4c9843592",
+      "links": "1ae6963ab40980401c3fc4912035c4670fa7a7b26ea94f7e0c4627eb67f4320e",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/python-ai-workflows/index.html": {
+    "before": {
+      "text": "e9f26cb33721a03c61c6e0e51004565391422656d2f11558786fa0aad1d01793",
+      "links": "2782df22c6534e219594c7ab434449a35ba31becb7624316f5880280dc477308",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "7661702f60965c5da2f6debd5f847c38b38265fbbe45131bc08873c2346f45f1",
+      "links": "9a89b49ff1d22cf0448039711b78a38b8da67fc63ce523c7c38554f2e16bcb60",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/qa-launch-testing/index.html": {
+    "before": {
+      "text": "6ecbcfe1f49f26d899039bd16daa25b0402e06443a76ed61b17eeb14f38b418c",
+      "links": "7170b6fab48f826da5e835b6ee306d4ba5cf0c19c5466f79821d75092c89b853",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "7727772e735c19690986fa6145278e569dfdd90bccab860be9a1da46943d849f",
+      "links": "0e746e188e5607d02ba50c1c8b37c382c68630a60b804f1876410ec0567740b6",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/react-nextjs-development/index.html": {
+    "before": {
+      "text": "818364832af9e125c52562587a9cf2ec84f0411d9e753ec23a4c03b1e581fc64",
+      "links": "0e889e18c3eacf3299873e5e913b3d7d1d66af4585b490f95816f54c5221a7ab",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "36b40d2cdaf0adcbbfc90cc6a5a167e0919bcfb0b2b3bc443372808faa660d8c",
+      "links": "243de2a1647e774e688d6fb3984908e555be0b153d693b5261820b552421d9b3",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/saas-design/index.html": {
+    "before": {
+      "text": "d9c3098025cc6ece80da211c226ebbd1b6beb10abfac5d3651022298ee813a39",
+      "links": "7170b6fab48f826da5e835b6ee306d4ba5cf0c19c5466f79821d75092c89b853",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "34b8758ef9f37fad368f119e4a1cfdd8b7624ea1d9a63cb71496d9e9c04e4880",
+      "links": "0e746e188e5607d02ba50c1c8b37c382c68630a60b804f1876410ec0567740b6",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/shopify-development/index.html": {
+    "before": {
+      "text": "280924c8e567cffc429783b628fc8a0db4ce268382eecbbed67941b5a5897f88",
+      "links": "75631e985fe123ebe44f342486742fe23aeb8f3be338db14b59392a1505e3f65",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "59434e483aee4ecbe3018ca01927cdadd3744ecdafe2156115f6e497c982aa29",
+      "links": "6328720c981964a9de23c6d39bfae002786a0573fd4ca7968c78701b0d185521",
+      "media": "327ef1d3cf9d7d78931c3145b646c5f969fa5ea45660b4e7e4a77547853ff3d6"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/ui-ux-design/index.html": {
+    "before": {
+      "text": "91042983dab3b7228c9978bbb9ccfa42edcea1f859f3668b18f3932ed51232a2",
+      "links": "9dd37f196d41d994d35138544e449389b7583c5ed3f04789936b4fb670a6aaad",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "af31b2d9be261e7ce38529d0bd26c1ecd49a3515fcc06b75119743b8eb795859",
+      "links": "79ce0143929147b3a2e695b49ba915c472cd52153a17c7c6b7acb9be0234e3ab",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/ux-audit/index.html": {
+    "before": {
+      "text": "b6ee658321cb279fc9061ad8cbbeee5cb23b62ec88cd6a88d8424c8168ed8b3b",
+      "links": "c33f1d6973433ba1db27bb4000a5915b27e03576279e449e948a72638ca7d57b",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "5d2c4520a0ca3a86e98768c89d1b89cb0fb3f3de89b435981a63d28daa7d071b",
+      "links": "1ae6963ab40980401c3fc4912035c4670fa7a7b26ea94f7e0c4627eb67f4320e",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/web-app-mvp-development/index.html": {
+    "before": {
+      "text": "04b9a83ad05e34e2628db91e7ef4a0d2577737faf4b54836d579264104bf9b19",
+      "links": "2782df22c6534e219594c7ab434449a35ba31becb7624316f5880280dc477308",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "after": {
+      "text": "3fac3933dffd31cc306526af3fe97b297211c2e6628e94b611f99e766eb0b9c8",
+      "links": "9a89b49ff1d22cf0448039711b78a38b8da67fc63ce523c7c38554f2e16bcb60",
+      "media": "5c7ec760022eacde2db3634007fc6ac746cfba0dfed04e697e48a7d6c09a8d3d"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/website-strategy/index.html": {
+    "before": {
+      "text": "bd126564b3909af332335e82b2f27936340d8f691111845bbb7495939a0e7b3d",
+      "links": "9dd37f196d41d994d35138544e449389b7583c5ed3f04789936b4fb670a6aaad",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "after": {
+      "text": "c5b0e98f6c4eb6870ac9eed5d280cad1f2990a5688ea3e405b61f3327a67be05",
+      "links": "79ce0143929147b3a2e695b49ba915c472cd52153a17c7c6b7acb9be0234e3ab",
+      "media": "a6d08fe5f78669e50365338ac9f67d74424437d7a0eeed897be44b1671870bd7"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "services/wordpress-development/index.html": {
+    "before": {
+      "text": "da3bdcf53913b76cb8e9adf7dc431dc9dba38eddc81261d40ff309d4d77fa820",
+      "links": "51517f7f318347b7af7ff7b62b58529d19d83b5d5165f5bc954fd01ae3ea087b",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "after": {
+      "text": "950e867ad6cc604a49424cb7f24e2a76a6ead5a7063ed5b3614b7a750488c802",
+      "links": "5edb63f3e0c7ad05e0a130314f437227a3d317f96f8f6935692833a208edb458",
+      "media": "22aed1e634f31d929db25e0658ca54e266c561c072072681a60302bca1bd24fd"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "startups/index.html": {
+    "before": {
+      "text": "5f45dac5f94a94312037f5efe506cdbeac7232d11ebb32f679987a4ed0397c15",
+      "links": "9acdf784a607dc921f33c223650d186c2e533a454afbff768f67b17695499f94",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "after": {
+      "text": "ea7399b0786eb446e836cad4be4b65e36989c2f17cfbf88a9c678ff7af97403e",
+      "links": "31f86eba4f6733137eab7b51f4d42f9add4512dcaf0cfbc46264843ef84e76df",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "pricing/index.html": {
+    "before": {
+      "text": "27be2561d11406b5c6cf8b190064b565baf8bc61ff5d1f7de761a4c88a88f2b0",
+      "links": "10653439953f38e4b488554c0f24973f1c252138cd2843935ab18095f264d095",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "after": {
+      "text": "4eae21cb72f1a98ec1ce72cef5eb82f67b92f390ad486af26ae38f126cb73178",
+      "links": "78288bf8f47f6a1731015e35964058bf8a93137733400056d205d361706bdb1c",
+      "media": "143b5405ca616d330a6994c2ebb919931a0706f10503ebf2d076584a3e04e089"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "terms-conditions/index.html": {
+    "before": {
+      "text": "d4a03c4ce02f35ef1fdf21232f8327bd6f53f6d879f88f1cdf5758806e495a56",
+      "links": "f4f0eb9b2b6962bcd89eaa0b245a58f6905769b20a72de9374ecb58b64019e31",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "after": {
+      "text": "64063abad2363b9f0f064dce474d3a4e455d3f75ff0eb316272dc8cbb03fa648",
+      "links": "d536ee99d3c20641603053a26e70476f60c489ac0a1f535d0d0b57a351052586",
+      "media": "0fa91176974dfb2ab84fa55704d1408b2c1937a54f1a0bf48e61325442680b8c"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  },
+  "approach/index.html": {
+    "before": {
+      "text": "c8cdd977c5d947d18e5e0adcb2642a556ee37ec1e066c36783791f390ac2594d",
+      "links": "b92034d785caaa73473624f885fd1169c3a492976b2439f2e753e38995d51710",
+      "media": "b3e2f3fe7ca5baa175cef774f53db665f6ca5b721306492dff8e9e436c5ac5dc"
+    },
+    "after": {
+      "text": "fd9f3a2e105a25c66cd2246d4d66e7e36606277f7e00a03ea3442f1ebb42f50b",
+      "links": "708209bee15d32829115012db23d8aecfea9a80f8e282b17f4f16187ca8bfa37",
+      "media": "b3e2f3fe7ca5baa175cef774f53db665f6ca5b721306492dff8e9e436c5ac5dc"
+    },
+    "reason": "SEO audit repair: accurate commerce content and links, scoped catalogue evidence, visible breadcrumbs and homepage heading hierarchy."
+  }
+}
