@@ -192,8 +192,8 @@
     "robots": "index,follow,max-image-preview:large"
   },
   "llm-info/index.html": {
-    "title": "NexPixels Company Facts | Dubai Web Development Agency",
-    "description": "Find NexPixels company facts, development services and contact details. Explore the Dubai agency’s work for UAE businesses and discuss your project.",
+    "title": "NexPixels Company Facts | Dubai Web Development Studio",
+    "description": "Find NexPixels company facts, Dubai web development services, selected projects and contact details. Explore websites, online stores and business applications.",
     "canonical": "https://nexpixels.com/llm-info/",
     "robots": "index,follow,max-image-preview:large"
   },
@@ -312,8 +312,8 @@
     "robots": "index,follow,max-image-preview:large"
   },
   "services/conversion-rate-optimization/index.html": {
-    "title": "Conversion Rate Optimisation Dubai | NexPixels",
-    "description": "Find friction in your online store with NexPixels. We review product information, mobile shopping and checkout journeys, then prioritise practical improvements.",
+    "title": "Conversion Rate Optimisation in Dubai | NexPixels",
+    "description": "Find where shoppers get stuck with e-commerce CRO in Dubai. NexPixels reviews product pages, mobile journeys and checkout or enquiry paths.",
     "canonical": "https://nexpixels.com/services/conversion-rate-optimization/",
     "robots": "index,follow,max-image-preview:large",
     "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",
@@ -344,8 +344,8 @@
     "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
   },
   "services/ecommerce-integrations/index.html": {
-    "title": "E-commerce Integrations Dubai | NexPixels",
-    "description": "Connect your online store with payment, delivery and business systems. NexPixels scopes and tests e-commerce integrations for Dubai and UAE retailers.",
+    "title": "E-commerce Website Integrations Dubai | NexPixels",
+    "description": "Connect your online store to supported payment gateways, shipping providers, inventory and ERP systems with NexPixels e-commerce integration services in Dubai.",
     "canonical": "https://nexpixels.com/services/ecommerce-integrations/",
     "robots": "index,follow,max-image-preview:large",
     "image": "https://nexpixels.com/assets/images/studio/connected-applications-social.jpg",
@@ -416,8 +416,8 @@
     "imageAlt": "Concept artwork of glass browser panels and a green ribbon for NexPixels custom web development"
   },
   "services/react-nextjs-development/index.html": {
-    "title": "React & Next.js Development Dubai | NexPixels",
-    "description": "Build API-connected websites and application interfaces with NexPixels. React components, Next.js rendering and practical release planning for UAE teams.",
+    "title": "React & Next.js Development in Dubai | NexPixels",
+    "description": "Build a Next.js website, dashboard or customer portal with NexPixels. Our Dubai team plans public pages, API connections and signed-in workflows.",
     "canonical": "https://nexpixels.com/services/react-nextjs-development/",
     "robots": "index,follow,max-image-preview:large",
     "image": "https://nexpixels.com/assets/images/studio/custom-web-development-social.jpg",
@@ -448,8 +448,8 @@
     "imageAlt": "Concept artwork of frosted glass website interfaces with green accents"
   },
   "services/ux-audit/index.html": {
-    "title": "Website Redesign & UX Audit Dubai | NexPixels",
-    "description": "Plan your website redesign with NexPixels. Review navigation, content, mobile usability and technical constraints before prioritising a practical scope.",
+    "title": "Website UX Audit & Redesign in Dubai | NexPixels",
+    "description": "Get a website UX audit in Dubai. NexPixels reviews navigation, mobile usability and enquiry or purchase journeys, then prioritises changes for your redesign.",
     "canonical": "https://nexpixels.com/services/ux-audit/",
     "robots": "index,follow,max-image-preview:large",
     "image": "https://nexpixels.com/assets/images/studio/interface-design-social.jpg",

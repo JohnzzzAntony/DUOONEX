@@ -5,13 +5,16 @@
 ## Services
 - [Custom websites](https://nexpixels.com/services/custom-web-development/): Responsive business websites and content management.
 - [Custom applications](https://nexpixels.com/services/web-app-mvp-development/): Operational workflows, dashboards and customer portals.
-- [React and Next.js](https://nexpixels.com/services/react-nextjs-development/): API-connected websites and application interfaces.
+- [React and Next.js development](https://nexpixels.com/services/react-nextjs-development/): Public websites, API-connected dashboards and customer portals.
 - [Python and AI workflows](https://nexpixels.com/services/python-ai-workflows/): Business backends, APIs and scoped AI integrations.
 - [Shopify development](https://nexpixels.com/services/shopify-development/): Liquid themes, product content and store integrations.
 - [E-commerce development](https://nexpixels.com/services/ecommerce-development/): Platform selection, product catalogues, integrations and checkout testing.
-- [E-commerce integrations](https://nexpixels.com/services/ecommerce-integrations/): Scope data ownership and connections between the store and business systems.
+- [E-commerce website integrations](https://nexpixels.com/services/ecommerce-integrations/): Supported payment, shipping, inventory and ERP connections for online stores.
 - [WordPress development](https://nexpixels.com/services/wordpress-development/): Service websites and manageable publishing.
 - [UI/UX design](https://nexpixels.com/services/ui-ux-design/): Figma journeys, interfaces and prototypes.
+- [Website UX audits](https://nexpixels.com/services/ux-audit/): Navigation, mobile usability and prioritised recommendations for redesigns.
+- [E-commerce conversion rate optimisation](https://nexpixels.com/services/conversion-rate-optimization/): Product page, checkout and enquiry reviews for online stores.
+- [Landing page design](https://nexpixels.com/services/landing-page-design/): Campaign pages with a focused offer, responsive design and measurable actions.
 
 ## Guides
 - [Choosing a Shopify development partner](https://nexpixels.com/blog/best-shopify-agencies/): Questions about scope, account ownership, integrations and support.
