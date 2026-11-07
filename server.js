@@ -6,6 +6,7 @@ const crypto=require('node:crypto');
 const zlib=require('node:zlib');
 const {ROOT,files,documentFor,validate,fingerprints,titles}=require('./lib/pages');
 const seo=require('./lib/seo');
+const indexNowKey=fs.readFileSync(path.join(ROOT,'data/indexnow-key.txt'),'utf8').trim();
 const mime={'.css':'text/css','.js':'text/javascript','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.jfif':'image/jpeg','.webp':'image/webp','.gif':'image/gif','.svg':'image/svg+xml','.avif':'image/avif','.xml':'application/xml','.ico':'image/x-icon','.woff2':'font/woff2','.vtt':'text/vtt','.txt':'text/plain'};
 function createServer(options={}) {
   const storage=options.storage;
@@ -63,8 +64,11 @@ function createServer(options={}) {
       if(!['GET','HEAD'].includes(method))sameOrigin(req);
       if(pathname==='/api/health')return send(200,{ok:true});
       if(host==='www.'+new URL(origin).hostname&&['GET','HEAD'].includes(method)){res.writeHead(301,{Location:origin+req.url});return res.end();}
-      if(pathname==='/robots.txt'&&method==='GET')return send(200,seo.robots(origin),'text/plain');
-      if(pathname==='/llms.txt'&&method==='GET')return send(200,seo.llms(origin),'text/plain');
+      if(method==='GET'||method==='HEAD'){
+        if(pathname===`/${indexNowKey}.txt`)return send(200,indexNowKey,'text/plain');
+        if(pathname==='/robots.txt')return send(200,seo.robots(origin),'text/plain');
+        if(pathname==='/llms.txt')return send(200,seo.llms(origin),'text/plain');
+      }
       if(pathname==='/.well-known/security.txt'&&method==='GET')return send(200,`Contact: mailto:info@nexpixels.com
 Expires: ${new Date(Date.now()+180*864e5).toISOString()}
 Preferred-Languages: en

@@ -8,8 +8,13 @@
 - [React and Next.js](https://nexpixels.com/services/react-nextjs-development/): API-connected websites and application interfaces.
 - [Python and AI workflows](https://nexpixels.com/services/python-ai-workflows/): Business backends, APIs and scoped AI integrations.
 - [Shopify development](https://nexpixels.com/services/shopify-development/): Liquid themes, product content and store integrations.
+- [E-commerce development](https://nexpixels.com/services/ecommerce-development/): Platform selection, product catalogues, integrations and checkout testing.
+- [E-commerce integrations](https://nexpixels.com/services/ecommerce-integrations/): Scope data ownership and connections between the store and business systems.
 - [WordPress development](https://nexpixels.com/services/wordpress-development/): Service websites and manageable publishing.
 - [UI/UX design](https://nexpixels.com/services/ui-ux-design/): Figma journeys, interfaces and prototypes.
+
+## Guides
+- [Choosing a Shopify development partner](https://nexpixels.com/blog/best-shopify-agencies/): Questions about scope, account ownership, integrations and support.
 
 ## Selected projects
 - [Finora](https://nexpixels.com/case-studies/finora/): A UAE-focused accounting platform connecting sales, purchases, inventory, banking and ledger-based business reports.
