@@ -29,6 +29,14 @@ The services hub directs readers to specific offers. The Dubai location page foc
 2. Linked the Mechaura project from the homepage and the custom website page. The case study demonstrates catalogue and quote-enquiry scope. Add owner-verified outcomes and client references as they become available.
 3. After release, inspect the updated canonical URLs in Search Console. Compare successive 28-day UAE query and page reports for impressions, clicks and position. Compare accepted enquiries over the same periods. Check which URL earns impressions for broad web development terms.
 
+## Implementation and ranking baseline
+
+- The six page updates are live. Search Console reports all six as submitted and indexed with matching canonicals. Its recorded crawl dates predate the release.
+- Public DNS resolves the www alias. A test using that answer returned HTTP 301 to the apex and preserved the path and query string. A local resolver still returned a negative DNS response at the time of the check.
+- The sitemap serves its XML with GET and matching headers with HEAD. It contains 55 canonical URLs.
+- UAE Google Search Console baseline, 8 October to 4 November 2026: 261 impressions, 16 clicks and average position 62.7. “Landing page design Dubai” had 38 impressions and average position 89.9. This window predates the release. [Search Console performance](https://app.openseo.so/p/c631b91b-1d0b-45e6-bd40-9eff268b8c49/search-performance).
+- The 7 November UAE English Google sample found NexPixels outside the first 40 organic results for all seven audit queries. All seven are now in the existing manual tracker. [UAE rank tracker](https://app.openseo.so/p/c631b91b-1d0b-45e6-bd40-9eff268b8c49/rank-tracking/2c5e7268-bab6-4c62-92ef-ff1be2490267).
+
 ## Sources and rerun
 
 - Firecrawl map and page scrapes. [Homepage](https://www.digitalgravity.ae/), [web development](https://www.digitalgravity.ae/services/web-development/), [Shopify](https://www.digitalgravity.ae/services/ecommerce-web-development/shopify-dubai/), [UI/UX](https://www.digitalgravity.ae/services/ui-ux-design-dubai/), [landing page design](https://www.digitalgravity.ae/services/landing-page-design-dubai/).

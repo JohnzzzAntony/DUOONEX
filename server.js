@@ -78,7 +78,7 @@ Canonical: ${origin}/.well-known/security.txt
       if(legacy&&['GET','HEAD'].includes(method)){res.writeHead(301,{Location:legacy});return res.end();}
       const canonicalPath=pathname.replace(/index\.html$/,'').replace(/\/?$/,'/');
       if(seo.redirects[canonicalPath]&&['GET','HEAD'].includes(method)){res.writeHead(301,{Location:seo.redirects[canonicalPath]});return res.end();}
-      if(pathname==='/sitemap.xml'&&method==='GET') {
+      if(pathname==='/sitemap.xml'&&['GET','HEAD'].includes(method)) {
         return send(200,seo.sitemap(files.filter(file=>seo.indexable(file,documentFor(file,content(file)).html)),origin),'application/xml');
       }
       if(pathname==='/api/login'&&method==='POST') {
