@@ -40,3 +40,26 @@ test('private CMS endpoints remain authenticated',async()=>{
  assert.equal((await fetch(base+'/api/backup')).status,401);
  assert.deepEqual(await (await fetch(base+'/api/health')).json(),{ok:true});
 });
+test('cloud mode serves new bundled portfolio images with an older media registry',async()=>{
+ const requested=[];
+ const cloud=createServer({secret:crypto.randomBytes(32).toString('hex'),production:false,publicMedia:['nexpixels-mark-new.png'],storage:{
+  async open(){return {state,async persist(){}};},
+  async serveMedia(url,req,res){requested.push(url);if(url==='/media/stored.webp'){res.writeHead(200,{'Content-Type':'image/webp'});res.end('stored-image');return true;}return false;},
+  async close(){}
+ }});
+ await new Promise(resolve=>cloud.listen(0,'127.0.0.1',resolve));
+ const origin='http://127.0.0.1:'+cloud.address().port;
+ try{
+  for(const project of Object.values(require('../data/website-projects.json')).flat()){
+   const response=await fetch(origin+project.image);assert.equal(response.status,200,project.image);
+   assert.match(response.headers.get('content-type'),/image\/webp/);
+   const actual=Buffer.from(await response.arrayBuffer()),expected=require('node:fs').readFileSync('.'+project.image);
+   assert.deepEqual(actual,expected,'cloud fallback returns the actual bundled screenshot');
+   const head=await fetch(origin+project.image,{method:'HEAD'});assert.equal(head.status,200);assert.equal(Number(head.headers.get('content-length')),expected.length);assert.equal((await head.arrayBuffer()).byteLength,0);
+  }
+  assert.equal(await (await fetch(origin+'/media/stored.webp')).text(),'stored-image','existing cloud uploads still use storage');
+  assert.equal((await fetch(origin+'/media/unknown.webp')).status,404);
+  assert.equal((await fetch(origin+'/assets/images/studio/private-unlisted.png')).status,404);
+  assert(!requested.includes('/assets/images/studio/private-unlisted.png'),'unlisted files never reach storage');
+ }finally{await new Promise(resolve=>cloud.close(resolve));}
+});

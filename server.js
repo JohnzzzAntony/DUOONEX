@@ -10,7 +10,7 @@ const indexNowKey=fs.readFileSync(path.join(ROOT,'data/indexnow-key.txt'),'utf8'
 const mime={'.css':'text/css','.js':'text/javascript','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.jfif':'image/jpeg','.webp':'image/webp','.gif':'image/gif','.svg':'image/svg+xml','.avif':'image/avif','.xml':'application/xml','.ico':'image/x-icon','.woff2':'font/woff2','.vtt':'text/vtt','.txt':'text/plain'};
 function createServer(options={}) {
   const storage=options.storage;
-  const publicMedia=options.publicMedia||require('./data/public-media.json');
+  const publicMedia=[...new Set([...require('./data/public-media.json'),...(options.publicMedia||[])])];
   const secret=options.secret||process.env.CMS_ADMIN_TOKEN;
   if(!secret || secret.length<32) throw new Error('Set CMS_ADMIN_TOKEN to a random secret of at least 32 characters. See README_CMS.md.');
   const production=options.production??process.env.NODE_ENV==='production';
@@ -160,8 +160,10 @@ Canonical: ${origin}/.well-known/security.txt
       let target;
       if(storage&&(pathname.startsWith('/assets/images/')||pathname.startsWith('/media/'))){
         if(pathname.startsWith('/assets/images/')&&!publicMedia.includes(pathname.slice('/assets/images/'.length)))fail(404,'Not found');
-        if(!await storage.serveMedia(pathname,req,res))fail(404,'Not found');
-        return;
+        if(await storage.serveMedia(pathname,req,res))return;
+        // New release assets may not yet have a cloud media record. Only registered
+        // /assets/images files can continue to the existing local-file checks.
+        if(pathname.startsWith('/media/'))fail(404,'Not found');
       }
       if(/^\/media\/[a-f0-9-]+\.(png|jpg|webp|gif)$/.test(pathname)) target=path.join(dir,'uploads',path.basename(pathname));
       else if(/^(assets\/(css|js|images)\/|admin\/(admin\.js|admin\.css|preview\.js)$)/.test(file)&&!file.split('/').some(s=>s==='..'||s.startsWith('.'))&&!file.includes('\\'))target=path.resolve(ROOT,file);

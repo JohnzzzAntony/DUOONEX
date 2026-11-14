@@ -13,6 +13,8 @@ The initial migration copied all 29 published media files (24 project images, fo
 
 Objects use content-addressed keys under `nexpixels/media/`. The bucket stays private. The Node server streams approved objects through the existing `/assets/images/…` and `/media/…` URLs, including byte-range video responses. Credentials and temporary signed URLs are not exposed to browsers.
 
+The public media allowlist combines the deployment's `data/public-media.json` with the database registry. Registered `/assets/images/…` files bundled with a release are served locally when no cloud media record exists, so new portfolio screenshots work immediately after deployment without a separate storage migration. Existing cloud media retains priority. Missing `/media/…` uploads still return 404; unregistered files are never exposed.
+
 ## Running
 
 `npm start` loads `.env.local` when present. This ignored local file contains the supplied connection settings and a generated CMS admin token. Deployment uses the host's secret/environment settings; the release archive never includes `.env.local`.
