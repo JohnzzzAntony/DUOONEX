@@ -61,14 +61,18 @@ const {createServer}=require('../server');
   }
   const plain=await browser.newContext({javaScriptEnabled:false}),tab=await plain.newPage();
   for(const path of ['/','/case-studies/','/products/']){
-   await tab.goto(base+path,{waitUntil:'domcontentloaded'});assert.equal(await tab.locator('#ecommerce-experience .np-commerce-card').count(),7);
+   await tab.goto(base+path,{waitUntil:'domcontentloaded'});
+   if(path==='/'){assert.equal(await tab.locator('#ecommerce-experience').count(),0,'employment work appears only on inner pages');continue;}
+   assert.equal(await tab.locator('#ecommerce-experience .np-commerce-card').count(),8);
    for(const project of websites.ecommerce)assert.equal(await tab.locator('#ecommerce-experience a.np-commerce-link[href="'+project.href+'"]').count(),1);
-   assert.match(await tab.locator('.np-commerce-note').innerText(),/not as NexPixels client commissions/);
+   assert.match(await tab.locator('.np-commerce-heading').innerText(),/Designed, built and shipped complete e-commerce platforms as an employee/);
+   assert.equal(await tab.locator('#ecommerce-experience .np-commerce-copy p').count(),0,'concise employment entries');
+   assert.match(await tab.locator('.np-commerce-note').innerText(),/during employment at another company/);
    if(path==='/products/'){assert.equal(await tab.locator('.np-product-panel').count(),10);assert.equal(await tab.locator('.np-live-products .np-commerce-card').count(),3);}
    const broken=await tab.locator('.np-commerce-card img,.np-product-panel img').evaluateAll(images=>images.filter(img=>img.complete&&img.naturalWidth===0).map(img=>img.src));assert.deepEqual(broken,[]);
   }
   await plain.close();assert.deepEqual(errors,[]);
-  Object.assign(report,{scrollForward:10,scrollReverse:true,buttons:true,pause:true,noJavaScript:true,commerceSites:7,liveDemos:3,errors});
+  Object.assign(report,{scrollForward:10,scrollReverse:true,buttons:true,pause:true,noJavaScript:true,innerPagesOnly:true,commerceSites:8,liveDemos:3,errors});
   fs.writeFileSync('release/website-projects/browser-results.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
  }finally{await browser.close();await new Promise(resolve=>server.close(resolve));}
 })().catch(error=>{console.error(error);process.exitCode=1;});

@@ -6,7 +6,7 @@ export function createLightStream(host,initiallyPaused){
  try{renderer=new WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'});}catch{return null;}
  const low=innerWidth<768||(navigator.hardwareConcurrency||8)<=4;
  renderer.setPixelRatio(Math.min(devicePixelRatio,low?1:1.5));
- renderer.setSize(innerWidth,innerHeight);renderer.setClearColor(0,0);
+ renderer.setSize(host.clientWidth,host.clientHeight);renderer.setClearColor(0,0);
  host.append(renderer.domElement);host.classList.add('is-ready');
  const scene=new Scene(),camera=new OrthographicCamera(-1,1,1,-1,0,2);camera.position.z=1;
  const curves=[
@@ -16,7 +16,7 @@ export function createLightStream(host,initiallyPaused){
  ].map(points=>new CatmullRomCurve3(points.map(([x,y])=>new Vector3(x,y,0))));
  const count=low?90:180,samples=80,hero=[],mid=[],wave=[],offset=[],colors=[];
  const sampledCurves=curves.map(curve=>curve.getPoints(samples-1));
- const lime=new Color('#c6f24e'),cyan=new Color('#59c3e8'),yellow=new Color('#b4c936');
+ const lime=new Color('#00f076'),cyan=new Color('#0b6247'),yellow=new Color('#75bc92');
  for(let strand=0;strand<count;strand++){
   const shift=(strand-count/2)/count*.18,phase=strand*.317;
   const color=strand%7===0?cyan:lime.clone().lerp(yellow,(strand%11)/18);
@@ -45,34 +45,36 @@ export function createLightStream(host,initiallyPaused){
   fragmentShader:`varying float vFade;uniform float uProgress;void main(){float d=length(gl_PointCoord-.5);float alpha=smoothstep(.5,.08,d)*vFade*(1.-smoothstep(.85,1.,uProgress));gl_FragColor=vec4(.65,.83,.32,alpha);}`
  });
  scene.add(new Points(particles,particleMaterial));
- let paused=initiallyPaused,disposed=false,started=performance.now(),previous=started,average=16.7,frames=0,quality=0;
+ let paused=initiallyPaused,visible=true,disposed=false,started=performance.now(),previous=started,average=16.7,frames=0,quality=0;
  const draw=time=>{
   const elapsed=time-previous;previous=time;
   if(elapsed>0&&elapsed<200){average=average*.94+elapsed*.06;frames++;}
   // Preserve a smooth interface on software renderers and slower integrated GPUs.
   // Fast devices retain all 180 strands; slow devices progressively reduce fill work.
   if(!paused&&frames>60&&average>24&&quality===0){
-   quality=1;renderer.setPixelRatio(Math.min(devicePixelRatio,1));renderer.setSize(innerWidth,innerHeight);
+   quality=1;renderer.setPixelRatio(Math.min(devicePixelRatio,1));renderer.setSize(host.clientWidth,host.clientHeight);
    geometry.setDrawRange(0,Math.floor(count/2)*(samples-1)*2);particles.setDrawRange(0,Math.floor(particleCount/2));frames=0;
   }else if(!paused&&frames>90&&average>30&&quality===1){
-   quality=2;renderer.setPixelRatio(.75);renderer.setSize(innerWidth,innerHeight);
+   quality=2;renderer.setPixelRatio(.75);renderer.setSize(host.clientWidth,host.clientHeight);
    geometry.setDrawRange(0,Math.floor(count/3)*(samples-1)*2);particles.setDrawRange(0,Math.floor(particleCount/3));
   }
   uniforms.uTime.value=(time-started)/1000;renderer.render(scene,camera);
  };
  const loop=()=>{
   if(disposed)return;
-  renderer.setAnimationLoop(paused||document.hidden?null:draw);
-  if(!document.hidden)draw(performance.now());
+  renderer.setAnimationLoop(paused||document.hidden||!visible?null:draw);
+  if(!document.hidden&&visible)draw(performance.now());
  };
- const resize=()=>{renderer.setSize(innerWidth,innerHeight);uniforms.uAspect.value=innerWidth/innerHeight;if(paused)draw(performance.now());};
- addEventListener('resize',resize,{passive:true});document.addEventListener('visibilitychange',loop);
+ const resize=()=>{renderer.setSize(host.clientWidth,host.clientHeight);uniforms.uAspect.value=host.clientWidth/host.clientHeight;if(paused)draw(performance.now());};
+ const dimensions=new ResizeObserver(resize);dimensions.observe(host);
+ const visibility=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;loop();});visibility.observe(host);
+ document.addEventListener('visibilitychange',loop);
  const contextLost=event=>{event.preventDefault();renderer.setAnimationLoop(null);host.classList.remove('is-ready');};
  renderer.domElement.addEventListener('webglcontextlost',contextLost);
  loop();
  return {
   setProgress(progress){if(!paused)uniforms.uProgress.value=progress;},
   setPaused(value){paused=value;loop();},
-  dispose(){disposed=true;renderer.setAnimationLoop(null);removeEventListener('resize',resize);document.removeEventListener('visibilitychange',loop);renderer.domElement.removeEventListener('webglcontextlost',contextLost);geometry.dispose();material.dispose();particles.dispose();particleMaterial.dispose();renderer.dispose();renderer.domElement.remove();}
+  dispose(){disposed=true;renderer.setAnimationLoop(null);dimensions.disconnect();visibility.disconnect();document.removeEventListener('visibilitychange',loop);renderer.domElement.removeEventListener('webglcontextlost',contextLost);geometry.dispose();material.dispose();particles.dispose();particleMaterial.dispose();renderer.dispose();renderer.domElement.remove();}
  };
 }

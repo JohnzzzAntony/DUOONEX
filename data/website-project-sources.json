@@ -1,29 +1,29 @@
 [
   {
-    "id": "atelier-perfumery",
-    "url": "https://atelierperfumery.com/",
-    "finalUrl": "https://atelierperfumery.com/",
-    "title": "Atelier Perfumery",
-    "image": "/assets/images/websites/atelier-perfumery.webp",
-    "capturedAt": "2026-11-14T02:09:40.168Z",
-    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
-  },
-  {
     "id": "karji",
     "url": "https://karjistore.com/",
     "finalUrl": "https://karjistore.com/",
     "title": "The House Of Karji",
     "image": "/assets/images/websites/karji.webp",
-    "capturedAt": "2026-11-14T02:09:44.479Z",
+    "capturedAt": "2026-11-14T21:35:26.795Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "atelier-perfumery",
+    "url": "https://atelierperfumery.com/",
+    "finalUrl": "https://atelierperfumery.com/",
+    "title": "Atelier Perfumery",
+    "image": "/assets/images/websites/atelier-perfumery.webp",
+    "capturedAt": "2026-11-14T21:35:29.509Z",
     "method": "Actual homepage screenshot, 1440 × 1000 viewport"
   },
   {
     "id": "daima",
-    "url": "https://daima.ae/",
+    "url": "https://www.daima.ae/",
     "finalUrl": "https://www.daima.ae/",
     "title": "Daima",
     "image": "/assets/images/websites/daima.webp",
-    "capturedAt": "2026-11-14T02:09:49.843Z",
+    "capturedAt": "2026-11-14T21:38:10.480Z",
     "method": "Actual homepage screenshot, 1440 × 1000 viewport"
   },
   {
@@ -32,16 +32,7 @@
     "finalUrl": "https://juvenisparis.com/",
     "title": "Juvenis Paris",
     "image": "/assets/images/websites/juvenis-paris.webp",
-    "capturedAt": "2026-11-14T02:10:09.394Z",
-    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
-  },
-  {
-    "id": "touch-of-oud",
-    "url": "https://touchofoud.com/",
-    "finalUrl": "https://www.touchofoud.com/",
-    "title": "Touch Of Oud",
-    "image": "/assets/images/websites/touch-of-oud.webp",
-    "capturedAt": "2026-11-14T02:10:09.829Z",
+    "capturedAt": "2026-11-14T21:36:27.620Z",
     "method": "Actual homepage screenshot, 1440 × 1000 viewport"
   },
   {
@@ -50,25 +41,16 @@
     "finalUrl": "https://www.saleelparfums.com/",
     "title": "Saleel Parfums",
     "image": "/assets/images/websites/saleel-parfums.webp",
-    "capturedAt": "2026-11-14T02:10:11.350Z",
+    "capturedAt": "2026-11-14T21:36:28.429Z",
     "method": "Actual homepage screenshot, 1440 × 1000 viewport"
   },
   {
-    "id": "torque",
-    "url": "https://torque-production-51b4.up.railway.app/",
-    "finalUrl": "https://torque-production-51b4.up.railway.app/",
-    "title": "Torque Moulds Factory | Precision Sheet-Metal Tooling in Dubai",
-    "image": "/assets/images/websites/torque.webp",
-    "capturedAt": "2026-11-14T02:10:19.019Z",
-    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
-  },
-  {
-    "id": "elmoretto",
-    "url": "https://elmoretto-production.up.railway.app/",
-    "finalUrl": "https://elmoretto-production.up.railway.app/",
-    "title": "El Moretto | From the mountain to your morning",
-    "image": "/assets/images/websites/elmoretto.webp",
-    "capturedAt": "2026-11-14T02:10:29.385Z",
+    "id": "touch-of-oud",
+    "url": "https://touchofoud.com/",
+    "finalUrl": "https://www.touchofoud.com/",
+    "title": "Touch Of Oud",
+    "image": "/assets/images/websites/touch-of-oud.webp",
+    "capturedAt": "2026-11-14T21:36:28.793Z",
     "method": "Actual homepage screenshot, 1440 × 1000 viewport"
   },
   {
@@ -77,7 +59,34 @@
     "finalUrl": "https://flowerdistrict.ae/",
     "title": "Flower District | Crafting moments with flowers 🌸Luxury bouquets & bespoke events 💐 UAE – Flower District | Crafting moments with flowers 🌸Luxury bouquets & bespoke events 💐 UAE",
     "image": "/assets/images/websites/flower-district.webp",
-    "capturedAt": "2026-11-14T02:10:31.794Z",
+    "capturedAt": "2026-11-14T21:36:45.538Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "the-exceptional",
+    "url": "https://theexceptionalparfums.com/",
+    "finalUrl": "https://theexceptionalparfums.com/",
+    "title": "The Exceptional Parfums",
+    "image": "/assets/images/websites/the-exceptional.webp",
+    "capturedAt": "2026-11-14T21:36:47.281Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "elmoretto",
+    "url": "https://elmoretto-production.up.railway.app/",
+    "finalUrl": "https://elmoretto-production.up.railway.app/",
+    "title": "El Moretto | From the mountain to your morning",
+    "image": "/assets/images/websites/elmoretto.webp",
+    "capturedAt": "2026-11-14T21:36:48.243Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "torque",
+    "url": "https://torque-production-51b4.up.railway.app/",
+    "finalUrl": "https://torque-production-51b4.up.railway.app/",
+    "title": "Torque Moulds Factory | Precision Tooling, Dubai",
+    "image": "/assets/images/websites/torque.webp",
+    "capturedAt": "2026-11-14T21:36:58.199Z",
     "method": "Actual homepage screenshot, 1440 × 1000 viewport"
   },
   {
@@ -86,7 +95,7 @@
     "finalUrl": "https://ecommerce-production-f437.up.railway.app/",
     "title": "NexEcoms — The fashion salon",
     "image": "/assets/images/websites/ecommerce.webp",
-    "capturedAt": "2026-11-14T02:10:44.955Z",
+    "capturedAt": "2026-11-14T21:37:09.116Z",
     "method": "Actual homepage screenshot, 1440 × 1000 viewport"
   }
 ]

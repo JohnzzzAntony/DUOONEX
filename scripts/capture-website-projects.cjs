@@ -6,15 +6,16 @@ const sharp=require('sharp');
 const sites=[
  ['karji','https://karjistore.com/'],
  ['atelier-perfumery','https://atelierperfumery.com/'],
- ['daima','https://daima.ae/'],
+ ['daima','https://www.daima.ae/'],
  ['touch-of-oud','https://touchofoud.com/'],
  ['saleel-parfums','https://saleelparfums.com/'],
  ['juvenis-paris','https://juvenisparis.com/'],
  ['flower-district','https://flowerdistrict.ae/'],
+ ['the-exceptional','https://theexceptionalparfums.com/'],
  ['elmoretto','https://elmoretto-production.up.railway.app/'],
  ['torque','https://torque-production-51b4.up.railway.app/'],
  ['ecommerce','https://ecommerce-production-f437.up.railway.app/']
-];
+].filter(([id])=>!process.argv.slice(2).length||process.argv.slice(2).includes(id));
 (async()=>{
  fs.mkdirSync('assets/images/websites',{recursive:true});
  fs.mkdirSync('release/website-projects',{recursive:true});
@@ -40,7 +41,13 @@ const sites=[
    finally{await context.close();}
   }));
  }finally{await browser.close();}
- fs.writeFileSync('release/website-projects/sources.json',JSON.stringify(results,null,2)+'\n');
- fs.writeFileSync('data/website-project-sources.json',JSON.stringify(results.map(({id,url,finalUrl,title,image,capturedAt,method,error})=>({id,url,finalUrl,title,image,capturedAt,method,error})),null,2)+'\n');
+ for(const [file,records] of [
+  ['release/website-projects/sources.json',results],
+  ['data/website-project-sources.json',results.map(({id,url,finalUrl,title,image,capturedAt,method,error})=>({id,url,finalUrl,title,image,capturedAt,method,error}))]
+ ]){
+  const saved=new Map((fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):[]).map(record=>[record.id,record]));
+  for(const record of records)if(!record.error||!saved.has(record.id))saved.set(record.id,record);
+  fs.writeFileSync(file,JSON.stringify([...saved.values()],null,2)+'\n');
+ }
  if(results.some(result=>result.error))process.exitCode=1;
 })().catch(error=>{console.error(error);process.exitCode=1;});

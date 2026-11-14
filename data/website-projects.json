@@ -6,7 +6,8 @@
     {"id":"touch-of-oud","title":"Touch of Oud","category":"Perfume · oud · home fragrance","description":"An online store for perfumes, oud, incense and home fragrance.","href":"https://touchofoud.com/","image":"/assets/images/websites/touch-of-oud.webp"},
     {"id":"saleel-parfums","title":"Saleel Parfums","category":"Perfumery","description":"A perfume storefront featuring Gemstone, Symphony, Royal Legacy and Vanilla collections.","href":"https://saleelparfums.com/","image":"/assets/images/websites/saleel-parfums.webp"},
     {"id":"juvenis-paris","title":"Juvenis Paris","category":"Fragrance collections","description":"A fragrance storefront with discovery sets and signature collections.","href":"https://juvenisparis.com/","image":"/assets/images/websites/juvenis-paris.webp"},
-    {"id":"flower-district","title":"Flower District","category":"Flowers · gifting","description":"Luxury bouquets, floral gifting and bespoke events in the UAE.","href":"https://flowerdistrict.ae/","image":"/assets/images/websites/flower-district.webp"}
+    {"id":"flower-district","title":"Flower District","category":"Flowers · gifting","description":"Luxury bouquets, floral gifting and bespoke events in the UAE.","href":"https://flowerdistrict.ae/","image":"/assets/images/websites/flower-district.webp"},
+    {"id":"the-exceptional","title":"The Exceptional Parfums","category":"Perfumery","description":"An e-commerce platform for The Exceptional Parfums.","href":"https://theexceptionalparfums.com/","image":"/assets/images/websites/the-exceptional.webp"}
   ],
   "products": [
     {"id":"elmoretto","title":"El Moretto","category":"Coffee · brand storytelling","description":"An immersive coffee website following the journey from mountain-grown beans to the morning cup.","href":"https://elmoretto-production.up.railway.app/","image":"/assets/images/websites/elmoretto.webp"},

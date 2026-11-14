@@ -41,6 +41,13 @@ export function createMotion({isPaused,home}){
     return()=>{credit.remove();};
    });
    media.add('(min-width: 992px)',()=>{
+    const streamHost=document.createElement('div');streamHost.className='np-hero-stream';streamHost.setAttribute('aria-hidden','true');$('.s-hero').prepend(streamHost);
+    let stream,streamDisposed=false;
+    import('./light-stream.js').then(({createLightStream})=>{
+     if(streamDisposed)return;
+     stream=createLightStream(streamHost,false);
+    }).catch(()=>{});
+    cleanups.push(()=>{streamDisposed=true;stream?.dispose();streamHost.remove();});
     // Roveia: compact media expands into the rounded hero while pinned.
     const hero=$('.s-hero'),frame=$('.s-workflow-wrap'),window=$('.s-workflow');
     const overlay=document.createElement('div');overlay.className='r-hero-overlay';overlay.setAttribute('aria-hidden','true');window.append(overlay);

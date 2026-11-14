@@ -9,6 +9,8 @@ const {chromium}=require('playwright');
   page.on('pageerror',error=>errors.push(error.message));
   await page.goto('http://127.0.0.1:4180/',{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);await page.mouse.move(5,5);
   await page.waitForFunction(()=>document.documentElement.dataset.referenceMotion==='ready');
+  await page.waitForSelector('.np-hero-stream.is-ready canvas');
+  assert(await page.locator('.np-hero-stream canvas').evaluate(el=>el.width>0&&el.height>0),'Three.js hero ribbon renders');
   const initial=await page.locator('.s-workflow-wrap').boundingBox();
   await page.mouse.wheel(0,750);await page.waitForTimeout(1800);
   const expanded=await page.locator('.s-workflow-wrap').boundingBox();assert(expanded.width>initial.width*1.4,'hero media expands');
@@ -30,6 +32,7 @@ const {chromium}=require('playwright');
   await page.screenshot({path:'release/brand-seo/horizontal-services.png'});
   assert.equal(await page.locator('#podie-how [data-how-card]').count(),4,'original How It Works renders delivery stages');
   await page.locator('.s-motion-toggle').click();assert.equal(await page.locator('.pin-spacer').count(),0);
+  assert.equal(await page.locator('.np-hero-stream').count(),0,'pause disposes the WebGL scene');
   for(const width of [1024,768,360]){
    await page.setViewportSize({width,height:900});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),width,'responsive overflow at '+width);
   }
@@ -40,7 +43,7 @@ const {chromium}=require('playwright');
   await mobile.goto('http://127.0.0.1:4180/',{waitUntil:'networkidle'});await mobile.locator('.s-menu-toggle').click();await mobile.locator('.s-mobile-nav').getByRole('link',{name:'Our work',exact:true}).click();
   await mobile.waitForURL('http://127.0.0.1:4180/case-studies/');assert.equal(await mobile.locator('.s-menu-toggle').getAttribute('aria-expanded'),'false');assert.equal(await mobile.locator('.pin-spacer').count(),0);
   await reduced.close();assert.deepEqual(errors,[]);
-  const report={hero:{initial:initial.width,expanded:expanded.width},nativePageNavigation:reached,horizontalRailX:railX,podieDeliveryStages:4,pauseRestoresFlow:true,responsiveWidths:[1440,1024,768,390,360],reducedMotion:true,errors};
+  const report={hero:{initial:initial.width,expanded:expanded.width,threeJsRibbon:true},nativePageNavigation:reached,horizontalRailX:railX,podieDeliveryStages:4,pauseRestoresFlow:true,responsiveWidths:[1440,1024,768,390,360],reducedMotion:true,errors};
   fs.writeFileSync('release/brand-seo/motion-results.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));
  }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

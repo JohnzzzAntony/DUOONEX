@@ -1,4 +1,6 @@
 /* Explicit component styles keep project colors and layout independent of utility resets. */
+.np-hero-stream{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;opacity:.4}
+.np-hero-stream canvas{display:block;width:100%;height:100%}
 .pd-component.pd-vertical{overflow:visible;background:transparent;border-radius:0}
 .np-product-scroll{--product-stage-height:min(680px,calc(100svh - 150px));color:#fff}
 .np-product-stage{border-radius:30px;background:#101e18;padding:32px;overflow:hidden}
@@ -50,6 +52,7 @@
 .np-commerce-copy p{color:#40584a;font-size:14px;line-height:1.7;margin:0 0 12px}
 .np-commerce-credit{display:block;font-size:11px;color:#486352;margin-bottom:12px}
 .np-commerce-link{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#0b6247;min-height:44px;border-top:1px solid #0b624720;font-size:13px;text-decoration:none}
+.np-commerce :is(a,button):focus-visible,.np-live-products a:focus-visible{outline:2px solid var(--brand-forest);outline-offset:4px}
 .np-commerce-services{margin-top:24px;font-size:14px;color:#40584a;line-height:1.7}
 .np-commerce-services a{text-decoration:underline;text-underline-offset:4px}
 .np-live-products{padding-block:20px 64px}.np-live-products>h2{font-size:32px;margin:0 0 24px}
@@ -66,4 +69,4 @@
  .np-product-controls{gap:8px}.np-scroll-hint{display:none}.np-product-dots{margin-left:-4px}.pd-vertical .np-product-dots button{min-width:18px;width:18px}.np-product-dots button[aria-current]>span{width:14px}.np-product-arrows{gap:4px}
  .np-commerce{padding-block:40px}.np-commerce-heading{display:block;margin-bottom:20px}.np-commerce-heading p{margin-top:18px}.np-commerce-grid,.np-demo-grid{grid-template-columns:1fr;gap:20px}.np-commerce-note{padding:14px 16px;font-size:12px}.np-commerce-copy{padding:18px}
 }
-@media(prefers-reduced-motion:reduce){.np-product-scroll *, .np-commerce-preview img{transition:none!important}}
+@media(prefers-reduced-motion:reduce){.np-product-scroll *, .np-commerce-preview img{transition:none!important}.np-hero-stream{display:none}}
