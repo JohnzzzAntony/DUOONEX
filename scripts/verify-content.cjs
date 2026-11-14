@@ -28,6 +28,7 @@ if(process.argv.includes('--snapshot')){
  fs.mkdirSync(path.dirname(baselineFile),{recursive:true});fs.writeFileSync(baselineFile,JSON.stringify(current(),null,2)+'\n');console.log('Saved content hashes for 73 templates.');
 }else{
  const baseline=JSON.parse(fs.readFileSync(baselineFile,'utf8')),actual=current();
+ const portfolio=require('../test/fixtures/portfolio-changes.json');
  const copyChanges=require('../test/fixtures/seo-copy-changes.json'),seo=require('../data/seo-pages.json'),upgrades=require('../test/fixtures/seo-upgrade-changes.json'),podie=require('../test/fixtures/podie-changes.json'),ux=require('../test/fixtures/ux-refinement-changes.json'),audit=require('../test/fixtures/seo-audit-changes.json');
  for(const [file,values] of Object.entries(baseline)){
   assert.equal(actual[file].forms,values.forms,`${file}: preserve enquiry fields`);
@@ -44,7 +45,9 @@ if(process.argv.includes('--snapshot')){
    if(ux[file])assert.equal(ux[file].before[key],beforeUx,`${file}: UX cleanup starts from reviewed ${key}`);
    const beforeAudit=ux[file]?.after[key]||beforeUx;
    if(audit[file])assert.equal(audit[file].before[key],beforeAudit,`${file}: audit repair starts from reviewed ${key}`);
-   assert.equal(actual[file][key],audit[file]?.after[key]||beforeAudit,`${file}: only reviewed audit ${key} changes`);
+   const beforePortfolio=audit[file]?.after[key]||beforeAudit;
+   if(portfolio[file])assert.equal(portfolio[file].before[key],beforePortfolio,`${file}: portfolio update starts from reviewed ${key}`);
+   assert.equal(actual[file][key],portfolio[file]?.after[key]||beforePortfolio,`${file}: only requested portfolio ${key} changes`);
   }
   const {title,description,canonical}=seo[file];
   assert.equal(actual[file].metadata,hash({title,description,canonical}),`${file}: metadata matches reviewed SEO registry`);

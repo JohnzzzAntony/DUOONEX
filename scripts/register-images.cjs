@@ -2,6 +2,7 @@
 const fs=require('node:fs');
 const list=require('../data/public-media.json');
 const names=new Set(list);
+for(const project of Object.values(require('../data/website-projects.json')).flat())names.add(project.image.replace('/assets/images/',''));
 for(const file of ['../data/studio-images.json','../data/portfolio-images.json']){
  for(const image of Object.values(require(file))){
   for(const variant of image.variants)names.add(variant.src.replace('/assets/images/',''));

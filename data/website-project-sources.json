@@ -1,0 +1,92 @@
+[
+  {
+    "id": "atelier-perfumery",
+    "url": "https://atelierperfumery.com/",
+    "finalUrl": "https://atelierperfumery.com/",
+    "title": "Atelier Perfumery",
+    "image": "/assets/images/websites/atelier-perfumery.webp",
+    "capturedAt": "2026-11-14T02:09:40.168Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "karji",
+    "url": "https://karjistore.com/",
+    "finalUrl": "https://karjistore.com/",
+    "title": "The House Of Karji",
+    "image": "/assets/images/websites/karji.webp",
+    "capturedAt": "2026-11-14T02:09:44.479Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "daima",
+    "url": "https://daima.ae/",
+    "finalUrl": "https://www.daima.ae/",
+    "title": "Daima",
+    "image": "/assets/images/websites/daima.webp",
+    "capturedAt": "2026-11-14T02:09:49.843Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "juvenis-paris",
+    "url": "https://juvenisparis.com/",
+    "finalUrl": "https://juvenisparis.com/",
+    "title": "Juvenis Paris",
+    "image": "/assets/images/websites/juvenis-paris.webp",
+    "capturedAt": "2026-11-14T02:10:09.394Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "touch-of-oud",
+    "url": "https://touchofoud.com/",
+    "finalUrl": "https://www.touchofoud.com/",
+    "title": "Touch Of Oud",
+    "image": "/assets/images/websites/touch-of-oud.webp",
+    "capturedAt": "2026-11-14T02:10:09.829Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "saleel-parfums",
+    "url": "https://saleelparfums.com/",
+    "finalUrl": "https://www.saleelparfums.com/",
+    "title": "Saleel Parfums",
+    "image": "/assets/images/websites/saleel-parfums.webp",
+    "capturedAt": "2026-11-14T02:10:11.350Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "torque",
+    "url": "https://torque-production-51b4.up.railway.app/",
+    "finalUrl": "https://torque-production-51b4.up.railway.app/",
+    "title": "Torque Moulds Factory | Precision Sheet-Metal Tooling in Dubai",
+    "image": "/assets/images/websites/torque.webp",
+    "capturedAt": "2026-11-14T02:10:19.019Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "elmoretto",
+    "url": "https://elmoretto-production.up.railway.app/",
+    "finalUrl": "https://elmoretto-production.up.railway.app/",
+    "title": "El Moretto | From the mountain to your morning",
+    "image": "/assets/images/websites/elmoretto.webp",
+    "capturedAt": "2026-11-14T02:10:29.385Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "flower-district",
+    "url": "https://flowerdistrict.ae/",
+    "finalUrl": "https://flowerdistrict.ae/",
+    "title": "Flower District | Crafting moments with flowers 🌸Luxury bouquets & bespoke events 💐 UAE – Flower District | Crafting moments with flowers 🌸Luxury bouquets & bespoke events 💐 UAE",
+    "image": "/assets/images/websites/flower-district.webp",
+    "capturedAt": "2026-11-14T02:10:31.794Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  },
+  {
+    "id": "ecommerce",
+    "url": "https://ecommerce-production-f437.up.railway.app/",
+    "finalUrl": "https://ecommerce-production-f437.up.railway.app/",
+    "title": "NexEcoms — The fashion salon",
+    "image": "/assets/images/websites/ecommerce.webp",
+    "capturedAt": "2026-11-14T02:10:44.955Z",
+    "method": "Actual homepage screenshot, 1440 × 1000 viewport"
+  }
+]

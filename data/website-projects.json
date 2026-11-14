@@ -1,0 +1,16 @@
+{
+  "ecommerce": [
+    {"id":"karji","title":"The House of Karji","category":"Fragrance · watches · accessories","description":"A multi-brand destination for fragrances, watches and accessories.","href":"https://karjistore.com/","image":"/assets/images/websites/karji.webp"},
+    {"id":"atelier-perfumery","title":"Atelier Perfumery","category":"Niche perfumery","description":"A curated online collection of fine fragrances, home scents and gifts.","href":"https://atelierperfumery.com/","image":"/assets/images/websites/atelier-perfumery.webp"},
+    {"id":"daima","title":"Daima","category":"Gourmet food · gifting","description":"Chocolates, dates, Arabic sweets and gourmet gifts in the UAE.","href":"https://daima.ae/","image":"/assets/images/websites/daima.webp"},
+    {"id":"touch-of-oud","title":"Touch of Oud","category":"Perfume · oud · home fragrance","description":"An online store for perfumes, oud, incense and home fragrance.","href":"https://touchofoud.com/","image":"/assets/images/websites/touch-of-oud.webp"},
+    {"id":"saleel-parfums","title":"Saleel Parfums","category":"Perfumery","description":"A perfume storefront featuring Gemstone, Symphony, Royal Legacy and Vanilla collections.","href":"https://saleelparfums.com/","image":"/assets/images/websites/saleel-parfums.webp"},
+    {"id":"juvenis-paris","title":"Juvenis Paris","category":"Fragrance collections","description":"A fragrance storefront with discovery sets and signature collections.","href":"https://juvenisparis.com/","image":"/assets/images/websites/juvenis-paris.webp"},
+    {"id":"flower-district","title":"Flower District","category":"Flowers · gifting","description":"Luxury bouquets, floral gifting and bespoke events in the UAE.","href":"https://flowerdistrict.ae/","image":"/assets/images/websites/flower-district.webp"}
+  ],
+  "products": [
+    {"id":"elmoretto","title":"El Moretto","category":"Coffee · brand storytelling","description":"An immersive coffee website following the journey from mountain-grown beans to the morning cup.","href":"https://elmoretto-production.up.railway.app/","image":"/assets/images/websites/elmoretto.webp"},
+    {"id":"torque","title":"Torque Moulds Factory","category":"Industrial catalogue · enquiries","description":"A precision-tooling website showcasing CNC punches, press brake tools, dies and blades for UAE fabricators.","href":"https://torque-production-51b4.up.railway.app/","image":"/assets/images/websites/torque.webp"},
+    {"id":"ecommerce","title":"NexEcoms","category":"Fashion · interactive storefront","description":"An interactive fashion salon with browsable looks and a live storefront experience.","href":"https://ecommerce-production-f437.up.railway.app/","image":"/assets/images/websites/ecommerce.webp"}
+  ]
+}

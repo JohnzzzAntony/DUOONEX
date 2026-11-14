@@ -3,7 +3,7 @@ import { MotionConfig } from 'motion/react';
 import { CircuitBoard } from '../../components/podie/cult--circuit-board/author/1/circuit-board';
 import HowItWorks from '../../components/podie/chamaac--how-it-works/author/1/how-it-works';
 import ProcessCardReveal from '../../components/podie/tween-ui--process-card-reveal/author/1/process-card-reveal';
-import VerticalTabs from '../../components/podie/uselayouts--vertical-tabs/registry/default/example/vertical-tabs';
+import VerticalTabs from './ProductShowcase';
 import StickyCards from './StickyCards';
 import { capabilities, stages, projects, delivery } from './content';
 import { enhanceCarousels } from '../carousels';
@@ -32,7 +32,7 @@ export function Island({name}:{name:IslandName}){
  useEffect(()=>{if(ready&&root.current)return enhanceCarousels(root.current);},[ready]);
  return <IslandBoundary><div ref={root} className={'pd-component pd-'+name} data-pd-ready={ready?'true':undefined} data-pd-paused={paused?'true':undefined}>
   <MotionConfig reducedMotion={paused?'always':'user'}>
-   {name==='sticky'?<StickyCards paused={paused}/>:name==='vertical'?<VerticalTabs paused={paused}/>:name==='circuit'?<CircuitBoard items={capabilities} chipLabel="NexPixels" paused={paused}/>:name==='how'?<HowItWorks features={stages} className="pd-how-map" paused={paused}/>:<ProcessCardReveal steps={name==='projects'?projects:delivery} paused={paused} itemLabel={name==='projects'?'project':'step'} className="pd-card-reveal" aria-label={name==='projects'?'Selected NexPixels projects':'NexPixels delivery stages'}/>}
+   {name==='sticky'?<StickyCards paused={paused}/>:name==='vertical'?<VerticalTabs paused={motionPaused||localPaused}/>:name==='circuit'?<CircuitBoard items={capabilities} chipLabel="NexPixels" paused={paused}/>:name==='how'?<HowItWorks features={stages} className="pd-how-map" paused={paused}/>:<ProcessCardReveal steps={name==='projects'?projects:delivery} paused={paused} itemLabel={name==='projects'?'project':'step'} className="pd-card-reveal" aria-label={name==='projects'?'Selected NexPixels projects':'NexPixels delivery stages'}/>}
   </MotionConfig>
   {(name==='projects'||name==='delivery')&&<div className="pd-playback-controls">{ready&&!motionPaused?<button type="button" aria-pressed={localPaused} onClick={()=>setLocalPaused(value=>!value)}>{localPaused?'Resume playback':'Pause playback'}</button>:<span>Use the numbered controls to explore each {name==='projects'?'project':'stage'}.</span>}</div>}
  </div></IslandBoundary>;
